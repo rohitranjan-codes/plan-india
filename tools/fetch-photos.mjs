@@ -49,6 +49,38 @@ const QUERIES = {
   kolkata: ['Victoria Memorial Kolkata', 'Howrah Bridge', 'Kolkata Victoria Memorial'],
 };
 
+
+/* Wikipedia articles whose lead image represents the place. First usable one wins. */
+const ARTICLES = {
+  bengaluru: ['Vidhana Soudha', 'Bangalore Palace', 'Lal Bagh', 'Bangalore'],
+  goa: ['Palolem Beach', 'Chapora Fort', 'Baga Beach', 'Goa'],
+  munnar: ['Munnar', 'Eravikulam National Park', 'Anamudi'],
+  kochi: ['Chinese fishing nets', 'Fort Kochi', 'Kerala backwaters', 'Alappuzha'],
+  thekkady: ['Periyar National Park', 'Thekkady', 'Periyar Lake'],
+  mysuru: ['Mysore Palace', 'Mysore'],
+  coorg: ['Kodagu district', 'Abbey Falls', 'Madikeri', "Raja's Seat"],
+  hampi: ['Hampi', 'Vittala Temple', 'Virupaksha Temple, Hampi'],
+  hyderabad: ['Charminar', 'Golconda Fort', 'Chowmahalla Palace', 'Hyderabad'],
+  ooty: ['Nilgiri Mountain Railway', 'Ooty', 'Doddabetta', 'Coonoor'],
+  kabini: ['Nagarhole National Park', 'Kabini River', 'Kabini Reservoir'],
+  chikmagalur: ['Mullayanagiri', 'Chikkamagaluru', 'Baba Budangiri', 'Hebbe Falls'],
+  gokarna: ['Om Beach', 'Gokarna, Karnataka', 'Kudle Beach'],
+  wayanad: ['Edakkal Caves', 'Banasura Sagar Dam', 'Wayanad district', 'Chembra Peak'],
+  varkala: ['Varkala Beach', 'Varkala', 'Kovalam'],
+  andaman: ['Radhanagar Beach', 'Havelock Island', 'Neil Island', 'Andaman Islands'],
+  madurai: ['Meenakshi Temple', 'Madurai', 'Thirumalai Nayakkar Mahal'],
+  badami: ['Badami cave temples', 'Badami', 'Pattadakal', 'Aihole'],
+  pondicherry: ['Matrimandir', 'Promenade Beach', 'Pondicherry', 'Auroville'],
+  goldentriangle: ['Taj Mahal', 'Amber Fort', 'Hawa Mahal', 'Agra Fort'],
+  rajasthan: ['Lake Palace', 'Mehrangarh', 'City Palace, Udaipur', 'Udaipur', 'Jodhpur'],
+  varanasi: ['Ghats in Varanasi', 'Varanasi', 'Dashashwamedh Ghat'],
+  rishikesh: ['Lakshman Jhula', 'Ram Jhula', 'Rishikesh', 'Triveni Ghat'],
+  mumbai: ['Gateway of India', 'Marine Drive, Mumbai', 'Chhatrapati Shivaji Maharaj Terminus', 'Mumbai'],
+  delhi: ["Humayun's Tomb", 'Qutb Minar', 'India Gate', 'Lotus Temple', 'Red Fort'],
+  chennai: ['Shore Temple', 'Kapaleeshwarar Temple', 'Marina Beach', 'Chennai'],
+  kolkata: ['Victoria Memorial, Kolkata', 'Howrah Bridge', 'Kolkata'],
+};
+
 const OK_LICENSE = /^(cc0|cc[ -]by([ -]sa)?([ -][0-9.]+)?|pd|public domain)/i;
 const BAD_TITLE = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|panorama|collage|montage|interior|inside|hotel|restaurant|cafe|menu|room|bedroom|selfie|portrait|wedding|crowd|people|miniature|model|replica|star trail|butterfly|moth|bird|egret|flower|hibiscus|seed|bulb|leaf|insect|spider|frog|snake|lizard|fungus|mushroom|macro|closeup|close-up)\b|\b(18|19)\d\d\b|\bca\.|\.svg$|\.png$|\.gif$/i;
 
@@ -66,6 +98,30 @@ async function api(params) {
     await sleep(1500 * (i + 1));
   }
   throw new Error('API failed for ' + params.gsrsearch);
+}
+
+
+const WIKI = 'https://en.wikipedia.org/w/api.php';
+async function getJson(base, params) {
+  const url = base + '?' + new URLSearchParams({ format: 'json', origin: '*', ...params });
+  for (let i = 0; i < 3; i++) { const r = await fetch(url, { headers: { 'User-Agent': UA } }); if (r.ok) return r.json(); await sleep(1500 * (i + 1)); }
+  throw new Error('request failed ' + url.slice(0, 80));
+}
+/** Lead image of a Wikipedia article, resolved on Commons with licence + size. null if unusable. */
+async function leadImage(article) {
+  const j = await getJson(WIKI, { action: 'query', titles: article, prop: 'pageimages', piprop: 'name', redirects: 1 });
+  const page = Object.values((j.query && j.query.pages) || {})[0];
+  const name = page && page.pageimage; if (!name) return null;
+  const c = await getJson(API, { action: 'query', titles: 'File:' + name, prop: 'imageinfo|categories', clshow: '!hidden', cllimit: 30, iiprop: 'url|size|mime|extmetadata', iiurlwidth: WIDTH });
+  const p = Object.values((c.query && c.query.pages) || {})[0];
+  const ii = p && p.imageinfo && p.imageinfo[0]; if (!ii || p.missing !== undefined) return null;
+  const m = ii.extmetadata || {};
+  const license = (m.LicenseShortName && m.LicenseShortName.value) || '';
+  if (!OK_LICENSE.test(license)) return null;
+  if (!/^image\/jpe?g$/.test(ii.mime) || ii.width < 1000 || ii.width / ii.height < 1.0) return null;
+  const year = +(((m.DateTimeOriginal && m.DateTimeOriginal.value) || '').match(/\b(19|20)\d\d\b/) || [0])[0];
+  if (year && year < 2000) return null;
+  return { title: p.title, width: ii.width, height: ii.height, mime: ii.mime, thumb: ii.thumburl, page: ii.descriptionurl, license, author: ((m.Artist && m.Artist.value) || '').replace(/<[^>]+>/g, '').trim(), article };
 }
 
 async function candidates(q) {
@@ -116,8 +172,13 @@ for (const id of ids) {
   const file = `img/${id}.jpg`;
   if (!force && (await exists(file)) && credits[id]) { console.log(`= ${id} (kept)`); continue; }
   let chosen = null, usedQuery = '';
+  for (const art of ARTICLES[id] || []) {
+    try { chosen = await leadImage(art); } catch (e) { console.warn(`  ! ${id}/${art}: ${e.message}`); }
+    if (chosen) { usedQuery = 'wikipedia:' + art; break; }
+    await sleep(200);
+  }
   const tiers = ['incategory:Featured_pictures_on_Wikimedia_Commons', 'incategory:Quality_images', ''];
-  outer: for (const tier of tiers) {
+  if (!chosen) outer: for (const tier of tiers) {
     for (const q of QUERIES[id] || []) {
       try { chosen = pick(await candidates(`${q} ${tier}`.trim()), q); } catch (e) { console.warn(`  ! ${id}: ${e.message}`); }
       if (chosen) { usedQuery = q; break outer; }
