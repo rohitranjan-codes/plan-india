@@ -474,6 +474,7 @@
   on('planchange', () => paintWeather());
   on('langchange', () => paintWeather());
 
+  document.getElementById('onwardStrip')?.addEventListener('click', (e) => { const b = e.target.closest('.onward-tile'); if (b) A.openDest(b.dataset.id); });
   // deep link: #quiz
   if (location.hash === '#quiz') setTimeout(() => $('#quiz').scrollIntoView(), 300);
 })();

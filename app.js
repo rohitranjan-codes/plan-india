@@ -191,20 +191,24 @@
       <button class="close" aria-label="Close">✕</button>
       ${window.coverHTML(d, (() => { const p = window.photoOf && window.photoOf(d.id); return p && p.author ? `<a class="photo-credit" target="_blank" rel="noopener" href="${esc(p.page || '#')}">📷 ${esc(p.author)} · ${esc(p.license || '')}</a>` : ''; })())}
       <div class="content">
-        <h3>${esc(d.name)}</h3>
-        <div class="tag">${esc(d.tag)} · 🌡 ${esc(d.weather)}</div>
-        <div class="live modal-live" data-wx="${d.id}"></div>
-        ${(() => { const lg = legFromGateway(d); return `<div class="chip-row" style="margin-top:10px">${lg ? `<span class="chip warm">${window.GEO.MODE_ICON[lg.leg.mode]} ${esc(lg.leg.label)} · ${lg.leg.hours} h · ${fmtNum(lg.leg.cost)} pp ${t('desk.from')} ${esc(lg.gd.name)}</span>` : ''}<span class="chip">🛏 ${esc(d.nights)}</span>${(window.APP || {}).monthBadge ? (window.APP || {}).monthBadge(d) : ''}</div>`; })()}
-        <div class="month-strip" title="${t('month.best')} / ${t('month.good')} / ${t('month.ok')} / ${t('month.avoid')}">${(d.months || []).map((r, i) => `<span class="r${r} ${(window.APP || {}).month && (window.APP || {}).month() === i + 1 ? 'cur' : ''}">${'JFMAMJJASOND'[i]}</span>`).join('')}</div>
-        <div class="comfort-card">
-          <h4>🛡️ ${t('comfort.title')} <span class="score">${[1, 2, 3, 4, 5].map((n) => `<i class="${n <= d.comfort.score ? 'on' : ''}"></i>`).join('')}</span></h4>
-          <p><b>${t('comfort.hospital')}:</b> ${esc(d.comfort.hospital)}</p>
-          <ul>${d.comfort.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>
+        <div class="modal-title">
+          <h3>${esc(d.name)}</h3>
+          <div class="tag">${esc(d.tag)}</div>
         </div>
+        ${(() => { const lg = legFromGateway(d); const AP = window.APP || {}; const r = AP.monthRating ? AP.monthRating(d) : 2; const RM = AP.RATING || {}; return `
+        <div class="stat-tiles">
+          <div class="stile"><span class="stile-k">${LANG.cur === 'de' ? 'Dieser Monat' : 'This month'}</span><b class="mbadge ${(RM[r] || {}).cls || ''}">${t((RM[r] || {}).k || 'month.good')}</b><div class="month-strip mini">${(d.months || []).map((x, i) => `<span class="r${x} ${AP.month && AP.month() === i + 1 ? 'cur' : ''}"></span>`).join('')}</div></div>
+          <div class="stile"><span class="stile-k">${lg ? t('desk.from') + ' ' + esc(lg.gd.name) : t('gw.arrive')}</span><b>${lg ? `${window.GEO.MODE_ICON[lg.leg.mode]} ${lg.leg.hours} h` : '🛬'}</b><small>${lg ? `${esc(lg.leg.label)} · ${fmtNum(lg.leg.cost)} pp` : (LANG.cur === 'de' ? 'Euer Gateway' : 'Your gateway')}</small></div>
+          <div class="stile"><span class="stile-k">${t('comfort.score')}</span><b class="score">${[1, 2, 3, 4, 5].map((n) => `<i class="${n <= d.comfort.score ? 'on' : ''}"></i>`).join('')}</b><small>🏥 ${esc(d.comfort.hospital.split('·')[0].trim())}</small></div>
+          <div class="stile"><span class="stile-k">${M.styles[state.style].label} · ${M.styles[state.style].stars}</span><b>${fmtNum(nightPrice(d))}</b><small>${LANG.cur === 'de' ? 'pro Nacht' : 'per night'} · 🛏 ${esc(d.nights)}</small></div>
+        </div>`; })()}
+        <div class="live modal-live" data-wx="${d.id}"></div>
         <p class="intro">${esc(d.intro)}</p>
+        <h4>✨ ${LANG.cur === 'de' ? 'Erleben' : 'Things to do'}</h4>
+        <div class="todo-strip">${d.todo.map((x, i) => `<div class="todo-card" style="--i:${i}"><span>${['🌅', '🏛️', '🛶', '🥾', '🎭', '🛍️', '🍃', '📸'][i % 8]}</span><p>${esc(x)}</p></div>`).join('')}</div>
+        <details class="safety-notes"><summary>🛡️ ${t('comfort.title')}</summary><ul>${d.comfort.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul></details>
         <div class="cols">
           <div>
-            <h4>✨ Things to do</h4><ul>${d.todo.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
             <h4>🍛 ${t('guide.eat')}</h4>
             <p class="rating-summary"></p>
             <div class="picks">${(window.GUIDE?.eat[d.id] || []).length ? (window.GUIDE.eat[d.id]).map((p) => `
@@ -221,7 +225,7 @@
             <p class="picks-note">${t('guide.picksNote')}</p>
             <p class="rating-summary"></p>
             <div class="picks">${(window.GUIDE?.picks[d.id] || []).map((p) => `
-              <div class="pick-row rated" data-q="${esc(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">
+              <div class="pick-row pick-card rated tier-band-${p.tier}" data-q="${esc(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">
                 <span class="tier tier-${p.tier}">${t('tier.' + p.tier)}</span>
                 <div><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(p.why)}</p>
                   <div class="pick-links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">Google ↗</a><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">Booking.com ↗</a></div>

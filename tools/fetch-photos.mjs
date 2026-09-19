@@ -20,37 +20,37 @@ const WIDTH = 1600;
 
 /* Curated search queries per destination: iconic, photogenic, landscape-friendly subjects. First match wins. */
 const QUERIES = {
-  bengaluru: ['Bangalore Palace', 'Vidhana Soudha Bangalore', 'Lalbagh Glass House Bangalore'],
-  goa: ['Palolem Beach Goa', 'Chapora Fort Goa', 'Basilica of Bom Jesus Goa', 'Goa beach sunset'],
+  bengaluru: ['Vidhana Soudha', 'Bangalore Palace', 'Lalbagh Bangalore', 'Bengaluru skyline'],
+  goa: ['Palolem Beach', 'Goa beach palm', 'Chapora Fort', 'Vagator Beach', 'Goa sunset beach'],
   munnar: ['Munnar tea plantation', 'Munnar tea gardens', 'Munnar hills'],
-  kochi: ['Chinese fishing nets Kochi', 'Alleppey houseboat backwaters', 'Fort Kochi'],
+  kochi: ['Chinese fishing nets Fort Kochi', 'Kerala backwaters houseboat Alappuzha', 'Alleppey backwaters', 'Fort Kochi beach'],
   thekkady: ['Periyar Lake Thekkady', 'Periyar Tiger Reserve boat', 'Thekkady'],
-  mysuru: ['Mysore Palace illuminated', 'Mysore Palace', 'Chamundi Hills Mysore'],
-  coorg: ['Coorg coffee plantation', 'Abbey Falls Coorg', 'Madikeri'],
+  mysuru: ['Mysore Palace night', 'Mysore Palace', 'Amba Vilas Palace'],
+  coorg: ['Coorg', 'Kodagu coffee plantation', 'Madikeri Raja Seat', 'Abbey Falls'],
   hampi: ['Vittala Temple Hampi stone chariot', 'Hampi Virupaksha Temple', 'Hampi boulders'],
   hyderabad: ['Charminar Hyderabad', 'Golconda Fort Hyderabad', 'Chowmahalla Palace'],
-  ooty: ['Nilgiri Mountain Railway', 'Ooty tea estate Coonoor', 'Ooty Botanical Garden'],
+  ooty: ['Nilgiri Mountain Railway', 'Ooty', 'Coonoor tea estate', 'Nilgiris tea', 'Udhagamandalam'],
   kabini: ['Kabini River elephant', 'Nagarhole National Park', 'Kabini backwaters'],
-  chikmagalur: ['Mullayanagiri', 'Chikmagalur coffee estate', 'Baba Budangiri'],
-  gokarna: ['Om Beach Gokarna', 'Kudle Beach Gokarna', 'Gokarna beach'],
+  chikmagalur: ['Mullayanagiri', 'Chikmagalur', 'Chikkamagaluru coffee', 'Baba Budan Giri', 'Western Ghats Karnataka'],
+  gokarna: ['Om Beach', 'Kudle Beach', 'Gokarna Karnataka', 'Gokarna beach sunset'],
   wayanad: ['Edakkal Caves', 'Banasura Sagar Dam', 'Wayanad tea plantation', 'Chembra Peak'],
-  varkala: ['Varkala cliff beach', 'Varkala Beach', 'Kovalam lighthouse beach'],
-  andaman: ['Radhanagar Beach Havelock', 'Havelock Island beach', 'Neil Island Andaman'],
-  madurai: ['Meenakshi Amman Temple gopuram', 'Meenakshi Temple Madurai', 'Thirumalai Nayak Palace'],
+  varkala: ['Varkala Beach cliff', 'Varkala', 'Papanasam Beach', 'Kovalam beach'],
+  andaman: ['Radhanagar Beach', 'Havelock Island', 'Andaman Islands beach', 'Port Blair sea', 'Andaman and Nicobar beach'],
+  madurai: ['Meenakshi Amman Temple', 'Meenakshi Temple gopuram', 'Madurai temple tower', 'Thirumalai Nayakkar Mahal'],
   badami: ['Badami cave temples', 'Badami Agastya lake', 'Pattadakal temples'],
   pondicherry: ['Pondicherry White Town', 'Promenade Beach Pondicherry', 'Auroville Matrimandir'],
   goldentriangle: ['Taj Mahal sunrise', 'Taj Mahal', 'Amber Fort Jaipur', 'Hawa Mahal'],
   rajasthan: ['Lake Palace Udaipur', 'Mehrangarh Fort Jodhpur blue city', 'City Palace Udaipur'],
-  varanasi: ['Varanasi ghats sunrise', 'Dashashwamedh Ghat aarti', 'Varanasi ghats boat'],
-  rishikesh: ['Laxman Jhula Rishikesh', 'Rishikesh Ganges', 'Rishikesh rafting'],
+  varanasi: ['Varanasi ghats', 'Ganges Varanasi boats', 'Dashashwamedh Ghat', 'Varanasi river'],
+  rishikesh: ['Lakshman Jhula', 'Ram Jhula Rishikesh', 'Rishikesh Ganga', 'Rishikesh'],
   mumbai: ['Gateway of India Mumbai', 'Marine Drive Mumbai night', 'Chhatrapati Shivaji Terminus'],
-  delhi: ["Humayun's Tomb", 'Qutub Minar', 'India Gate Delhi'],
+  delhi: ['Humayun Tomb Delhi', 'Qutb Minar', 'India Gate', 'Lotus Temple Delhi', 'Red Fort Delhi'],
   chennai: ['Kapaleeshwarar Temple', 'Mahabalipuram Shore Temple', 'Marina Beach Chennai'],
   kolkata: ['Victoria Memorial Kolkata', 'Howrah Bridge', 'Kolkata Victoria Memorial'],
 };
 
-const OK_LICENSE = /^(cc0|cc-by(-sa)?(-[0-9.]+)?|pd|public domain)/i;
-const BAD_TITLE = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|panorama|collage|montage)\b|\.svg$|\.png$|\.gif$/i;
+const OK_LICENSE = /^(cc0|cc[ -]by([ -]sa)?([ -][0-9.]+)?|pd|public domain)/i;
+const BAD_TITLE = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|panorama|collage|montage|interior|inside|hotel|restaurant|cafe|menu|room|bedroom|selfie|portrait|wedding|crowd|people)\b|\b(18|19)\d\d\b|\bca\.|\.svg$|\.png$|\.gif$/i;
 
 const args = process.argv.slice(2);
 const force = args.includes('--force');
@@ -77,15 +77,18 @@ async function candidates(q) {
     const license = (m.LicenseShortName && m.LicenseShortName.value) || '';
     const restrictions = (m.Restrictions && m.Restrictions.value) || '';
     const assessments = ((m.Assessments && m.Assessments.value) || '').toLowerCase();
-    return { title: p.title, width: ii.width, height: ii.height, mime: ii.mime, thumb: ii.thumburl, page: ii.descriptionurl, license, author: ((m.Artist && m.Artist.value) || '').replace(/<[^>]+>/g, '').trim(), restrictions, quality: /featured|quality|valued/.test(assessments) ? 1 : 0, credit: ((m.Credit && m.Credit.value) || '').replace(/<[^>]+>/g, '').trim() };
+    const year = +(((m.DateTimeOriginal && m.DateTimeOriginal.value) || '').match(/\b(19|20)\d\d\b/) || [0])[0];
+    const quality = /featured/.test(assessments) ? 3 : /quality/.test(assessments) ? 2 : /valued/.test(assessments) ? 1 : 0;
+    return { title: p.title, width: ii.width, height: ii.height, mime: ii.mime, thumb: ii.thumburl, page: ii.descriptionurl, license, author: ((m.Artist && m.Artist.value) || '').replace(/<[^>]+>/g, '').trim(), restrictions, quality, year, credit: ((m.Credit && m.Credit.value) || '').replace(/<[^>]+>/g, '').trim() };
   }).filter(Boolean);
 }
 
 function pick(list) {
   return list
-    .filter((c) => c.mime === 'image/jpeg' && c.width >= 1200 && c.width / c.height >= 1.25 && c.width / c.height <= 2.2)
+    .filter((c) => c.mime === 'image/jpeg' && c.width >= 1600 && c.width / c.height >= 1.3 && c.width / c.height <= 2.1)
     .filter((c) => OK_LICENSE.test(c.license) && !/trademarked|personality/i.test(c.restrictions) && !BAD_TITLE.test(c.title))
-    .sort((a, b) => b.quality - a.quality)[0];
+    .filter((c) => !c.year || c.year >= 2008)
+    .sort((a, b) => (b.quality - a.quality) || (b.year - a.year) || (b.width - a.width))[0];
 }
 
 async function download(url, file) {
@@ -104,10 +107,13 @@ for (const id of ids) {
   const file = `img/${id}.jpg`;
   if (!force && (await exists(file)) && credits[id]) { console.log(`= ${id} (kept)`); continue; }
   let chosen = null, usedQuery = '';
-  for (const q of QUERIES[id] || []) {
-    try { chosen = pick(await candidates(q)); } catch (e) { console.warn(`  ! ${id}: ${e.message}`); }
-    if (chosen) { usedQuery = q; break; }
-    await sleep(300);
+  const tiers = ['incategory:Featured_pictures_on_Wikimedia_Commons', 'incategory:Quality_images', ''];
+  outer: for (const tier of tiers) {
+    for (const q of QUERIES[id] || []) {
+      try { chosen = pick(await candidates(`${q} ${tier}`.trim())); } catch (e) { console.warn(`  ! ${id}: ${e.message}`); }
+      if (chosen) { usedQuery = q; break outer; }
+      await sleep(250);
+    }
   }
   if (!chosen) { console.warn(`x ${id}: no suitable photo found`); continue; }
   try {

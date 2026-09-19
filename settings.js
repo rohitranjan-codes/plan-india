@@ -58,7 +58,7 @@
       <div class="set"><label>${t('set.depart')}</label><select id="setGateway2">${opt('', t('set.same'), !state.gateway2 || state.gateway2 === state.gateway)}${T.gateways.map((g) => opt(g.code, `${g.city} (${g.code})`, state.gateway2 === g.code && g.code !== state.gateway)).join('')}</select></div>
       <div class="set"><label>${t('set.date')}</label><input type="date" id="tripDate" min="2026-09-01" max="2028-12-31" value="${esc(store.get('tripDate', '2026-11-07'))}"></div>
       <div class="set"><label>${t('set.people')}</label><select id="setPeople">${Array.from({ length: 12 }, (_, i) => opt(i + 1, i + 1, state.people === i + 1)).join('')}</select></div>
-      <div class="set"><label>${t('set.style')}</label><select id="setStyle">${Object.entries(A.M.styles).map(([k, v]) => opt(k, `${v.label} · ${v.stars}`, state.style === k)).join('')}</select></div>
+      <div class="set set-wide"><label>${t('set.style')}</label><div class="style-tiles">${Object.entries(A.M.styles).map(([k, v]) => `<button class="style-tile ${state.style === k ? 'active' : ''}" data-v="${k}"><span>${({ comfort: '🏨', premium: '🏩', luxury: '🏰' })[k]}</span><b>${esc(v.label)}</b><small>${esc(v.stars)}</small></button>`).join('')}</div></div>
       <div class="set"><label>${t('set.currency')}</label><select id="setCurrency">${Object.keys(E.currencies).map((k) => opt(k, k, state.currency === k)).join('')}</select></div>`;
     $('#setOrigin').addEventListener('change', (e) => { state.origin = e.target.value; state.country = origin().country; state.currency = E.countries[state.country]?.currency || 'EUR'; commit(true); });
     $('#setCountry').addEventListener('change', (e) => { state.country = e.target.value; state.currency = E.countries[state.country]?.currency || state.currency; commit(true); });
@@ -66,7 +66,7 @@
     $('#setGateway2').addEventListener('change', (e) => { state.gateway2 = e.target.value; commit(); });
     $('#tripDate').addEventListener('change', (e) => { if (e.target.value) { store.set('tripDate', e.target.value); state.month = +e.target.value.slice(5, 7); } commit(); });
     $('#setPeople').addEventListener('change', (e) => { state.people = +e.target.value; commit(); });
-    $('#setStyle').addEventListener('change', (e) => { state.style = e.target.value; commit(); });
+    $$('.style-tile', bar).forEach((b) => b.addEventListener('click', () => { state.style = b.dataset.v; commit(true); }));
     $('#setCurrency').addEventListener('change', (e) => { state.currency = e.target.value; commit(); });
   }
   function commit(rerenderBar = false, gatewayChanged = false) {
@@ -127,7 +127,7 @@
     // onward connections from the gateway
     const legs = T.destinations.filter((d) => d.id !== gd.id).map((d) => ({ d, l: window.GEO.leg(gd, d, state.style, state.people) })).sort((a, b) => a.l.hours - b.l.hours);
     $('#onwardTitle').textContent = A.LANG.cur === 'de' ? `Weiterreise ab ${gd.name}` : `Onward from ${gd.name}`;
-    $('#domesticBody').innerHTML = legs.map(({ d, l }) => `<tr><td><b>${d.emoji} ${esc(d.name)}</b><span class="note">${esc(d.tag)} · ${monthBadge(d)}</span></td><td>${window.GEO.MODE_ICON[l.mode]} ${esc(l.label)}</td><td>${l.hours} h</td><td><b>${A.fmtNum(l.cost)}</b> pp</td></tr>`).join('');
+    $('#onwardStrip').innerHTML = legs.map(({ d, l }, i) => `<button class="onward-tile" data-id="${d.id}" style="--i:${i}">${window.coverHTML(d)}<div class="ot-body"><b>${esc(d.name)}</b><span>${window.GEO.MODE_ICON[l.mode]} ${l.hours} h · ${A.fmtNum(l.cost)} pp</span>${monthBadge(d)}</div></button>`).join('');
   }
 
   /* ---------- When to go (month strip) ---------- */

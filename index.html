@@ -108,7 +108,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="weather.kicker">When to go</span>
       <h2 data-i18n="weather.h2">India has a season for everything — pick the right one.</h2>
-      <p data-i18n="weather.p">Every destination is rated for your travel month. Live weather and last year's real averages appear on the cards once the site is online.</p>
+      <p data-i18n="weather.p">Every place, rated for your month.</p>
     </div>
     <div class="when-to-go card" id="whenToGo"></div>
     <p class="wx-status" id="weatherNovNote" style="margin:22px 0 6px">November in the south, in detail:</p>
@@ -123,19 +123,14 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="flights.kicker">Getting there</span>
       <h2 id="flightsTitle">Frankfurt to Bengaluru</h2>
-      <p data-i18n="flights.p">Nonstop links and the best one-stop options for your airport and gateway, plus every onward connection from the gateway with time and cost for your style.</p>
+      <p data-i18n="flights.p">Your airport to your gateway, then onward.</p>
     </div>
     <div class="flight-grid" id="flightGrid"></div>
 
     <div class="card reveal in" style="margin-top:24px" id="arrivalCard"></div>
 
-    <h3 class="sub-title" id="onwardTitle">Onward from Bengaluru</h3>
-    <div class="table-wrap reveal in">
-      <table>
-        <thead><tr><th data-i18n="flights.th1">Destination</th><th>How</th><th data-i18n="flights.th2">Time</th><th data-i18n="flights.th3">Price pp</th></tr></thead>
-        <tbody id="domesticBody"></tbody>
-      </table>
-    </div>
+    <h3 class="sub-title onward-title" id="onwardTitle">Onward from Bengaluru</h3>
+    <div class="onward-strip" id="onwardStrip"></div>
   </div>
 </section>
 
@@ -145,7 +140,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="quiz.kicker">A quick game</span>
       <h2 data-i18n="quiz.h2">Which trip is you?</h2>
-      <p data-i18n="quiz.p">Five questions, thirty seconds. You get a route and three destinations at the end — share the result in the group chat and see who matches.</p>
+      <p data-i18n="quiz.p">Five questions, thirty seconds, one route.</p>
     </div>
     <div class="quiz card reveal" id="quizBox"></div>
   </div>
@@ -157,7 +152,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="routes.kicker">Itineraries</span>
       <h2 data-i18n="routes.h2">Three routes, one gateway.</h2>
-      <p data-i18n="routes.p">Every route starts with two easy days in Bengaluru to recover from the flight. Pick one, combine Goa and Kerala with the direct Goa → Kochi flight, or swap in any of the destinations below.</p>
+      <p data-i18n="routes.p">Ready-made plans for your gateway. Pick one or build your own below.</p>
     </div>
     <div class="tabs" id="routeTabs"></div>
     <div class="route-panel" id="routePanel"></div>
@@ -170,7 +165,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="map.kicker">The map</span>
       <h2 data-i18n="map.h2">Everything within reach of Bengaluru.</h2>
-      <p data-i18n="map.p">Hover a pin for travel time from BLR and cost per day; click to open the guide or add the place straight into your trip plan.</p>
+      <p data-i18n="map.p">Hover a pin for time and cost from your gateway. Click to explore or add to your trip.</p>
     </div>
     <div id="mapWrap" class="reveal">
       <div id="mapEl" role="region" aria-label="Map of destinations"></div>
@@ -185,7 +180,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="dest.kicker">Destinations</span>
       <h2 data-i18n="dest.h2">Where you'll actually go.</h2>
-      <p data-i18n="dest.p">Twenty-four places you can reach from Bengaluru — by a short flight, a fast train or a scenic drive. Filter by mood, then tap a card for things to do, what to eat, where to stay at three budgets, and how to get there.</p>
+      <p data-i18n="dest.p">Filter by mood, tap a card for the full guide.</p>
     </div>
     <div class="passport" id="passport"></div>
     <div class="dest-toolbar">
@@ -203,7 +198,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="food.kicker">Eat this</span>
       <h2 data-i18n="food.h2">The dishes worth flying for.</h2>
-      <p data-i18n="food.p">South India eats differently from the north: rice, coconut, tamarind, seafood and coffee. Sixteen dishes with a spice rating and where each one is best.</p>
+      <p data-i18n="food.p">Sixteen dishes, with spice level and where to eat them.</p>
     </div>
     <div class="food-grid" id="foodGrid"></div>
   </div>
@@ -215,7 +210,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="builder.kicker">Your trip</span>
       <h2 data-i18n="builder.h2">Build your own plan.</h2>
-      <p data-i18n="builder.p">Tap or drag destinations, set nights, reorder. The page works out days, transfers and cost. Share the link in the group — everyone can build their version and compare.</p>
+      <p data-i18n="builder.p">Tap or drag stops, set nights. Share the link with the group.</p>
     </div>
     <div class="builder-layout">
       <aside class="card builder-pool reveal">
@@ -244,7 +239,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="desk.kicker">Booking desk</span>
       <h2 data-i18n="desk.h2">Book everything, in the right order.</h2>
-      <p data-i18n="desk.p">The desk reads your plan and dates: international flights, every hop, every hotel, transfers and activities — each link opens the search already filled in, with live prices and live reviews. Tick things off as you book.</p>
+      <p data-i18n="desk.p">Your plan as a booking list, every link prefilled. Tick as you go.</p>
     </div>
     <div class="desk-progress reveal"><div class="check-progress"><div id="deskFill"></div></div><span id="deskCount"></span></div>
     <div class="desk" id="deskList"></div>
@@ -257,7 +252,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="costs.kicker">Cost planner</span>
       <h2 data-i18n="costs.h2">What will it cost?</h2>
-      <p data-i18n="costs.p">Move the sliders. Estimates are per person, include the Europe flights, and assume double rooms shared by two. Treat them as a planning range, not a quote.</p>
+      <p data-i18n="costs.p">Per person, flights included, shared double rooms. A range, not a quote.</p>
     </div>
     <div class="cost-layout">
       <div class="card reveal">
@@ -298,7 +293,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="dates.kicker">Your dates</span>
       <h2 data-i18n="dates.h2">Countdown, festivals & packing.</h2>
-      <p data-i18n="dates.p">Pick the departure date. The page counts down, shows the festivals that fall inside your trip, and writes a packing list from the plan you built above.</p>
+      <p data-i18n="dates.p">Countdown, festivals in your window, and a packing list from your plan.</p>
     </div>
     <div class="dates-layout">
       <div class="card date-card reveal">
@@ -317,7 +312,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="safety.kicker">Safe & smooth</span>
       <h2 data-i18n="safety.h2">Travel like you've been before.</h2>
-      <p data-i18n="safety.p">South India is welcoming and well organised for visitors. These are the few things that make the difference between a good trip and a great one.</p>
+      <p data-i18n="safety.p">The few things that make the difference.</p>
     </div>
     <div class="safe country-card reveal in" id="countryCard"></div>
     <div class="safety-grid" id="safetyGrid"></div>
@@ -354,7 +349,7 @@
     <div class="section-head reveal">
       <span class="kicker" data-i18n="links.kicker">Useful links</span>
       <h2 data-i18n="links.h2">Everything you'll need to book.</h2>
-      <p data-i18n="links.p">Only official or widely trusted services. Book Indian domestic flights and trains on their home sites for the best prices.</p>
+      <p data-i18n="links.p">Official and widely trusted services only.</p>
     </div>
     <div class="links-grid" id="linksGrid"></div>
   </div>
