@@ -24,33 +24,33 @@ const QUERIES = {
   goa: ['Palolem Beach', 'Goa beach palm', 'Chapora Fort', 'Vagator Beach', 'Goa sunset beach'],
   munnar: ['Munnar tea plantation', 'Munnar tea gardens', 'Munnar hills'],
   kochi: ['Chinese fishing nets Fort Kochi', 'Kerala backwaters houseboat Alappuzha', 'Alleppey backwaters', 'Fort Kochi beach'],
-  thekkady: ['Periyar Lake Thekkady', 'Periyar Tiger Reserve boat', 'Thekkady'],
+  thekkady: ['Periyar Lake', 'Periyar Tiger Reserve', 'Thekkady lake', 'Periyar National Park boat'],
   mysuru: ['Mysore Palace night', 'Mysore Palace', 'Amba Vilas Palace'],
   coorg: ['Coorg', 'Kodagu coffee plantation', 'Madikeri Raja Seat', 'Abbey Falls'],
   hampi: ['Vittala Temple Hampi stone chariot', 'Hampi Virupaksha Temple', 'Hampi boulders'],
-  hyderabad: ['Charminar Hyderabad', 'Golconda Fort Hyderabad', 'Chowmahalla Palace'],
-  ooty: ['Nilgiri Mountain Railway', 'Ooty', 'Coonoor tea estate', 'Nilgiris tea', 'Udhagamandalam'],
-  kabini: ['Kabini River elephant', 'Nagarhole National Park', 'Kabini backwaters'],
+  hyderabad: ['Charminar', 'Golconda Fort', 'Chowmahalla Palace', 'Qutb Shahi tombs'],
+  ooty: ['Nilgiri Mountain Railway', 'Ooty lake', 'Coonoor tea', 'Doddabetta', 'Ooty Botanical Garden'],
+  kabini: ['Kabini elephant', 'Nagarhole elephant', 'Kabini reservoir', 'Nagarhole tiger', 'Nagarhole National Park'],
   chikmagalur: ['Mullayanagiri', 'Chikmagalur', 'Chikkamagaluru coffee', 'Baba Budan Giri', 'Western Ghats Karnataka'],
   gokarna: ['Om Beach', 'Kudle Beach', 'Gokarna Karnataka', 'Gokarna beach sunset'],
   wayanad: ['Edakkal Caves', 'Banasura Sagar Dam', 'Wayanad tea plantation', 'Chembra Peak'],
-  varkala: ['Varkala Beach cliff', 'Varkala', 'Papanasam Beach', 'Kovalam beach'],
-  andaman: ['Radhanagar Beach', 'Havelock Island', 'Andaman Islands beach', 'Port Blair sea', 'Andaman and Nicobar beach'],
-  madurai: ['Meenakshi Amman Temple', 'Meenakshi Temple gopuram', 'Madurai temple tower', 'Thirumalai Nayakkar Mahal'],
+  varkala: ['Varkala cliff', 'Varkala beach', 'Papanasam beach Varkala', 'Kovalam lighthouse'],
+  andaman: ['Radhanagar Beach', 'Havelock Island beach', 'Neil Island', 'Andaman beach', 'Port Blair'],
+  madurai: ['Meenakshi Amman Temple gopuram', 'Meenakshi Temple Madurai', 'Thirumalai Nayakkar Mahal', 'Madurai temple'],
   badami: ['Badami cave temples', 'Badami Agastya lake', 'Pattadakal temples'],
-  pondicherry: ['Pondicherry White Town', 'Promenade Beach Pondicherry', 'Auroville Matrimandir'],
+  pondicherry: ['Matrimandir Auroville', 'Promenade Beach Pondicherry', 'Puducherry French Quarter', 'Pondicherry rock beach'],
   goldentriangle: ['Taj Mahal sunrise', 'Taj Mahal', 'Amber Fort Jaipur', 'Hawa Mahal'],
   rajasthan: ['Lake Palace Udaipur', 'Mehrangarh Fort Jodhpur blue city', 'City Palace Udaipur'],
   varanasi: ['Varanasi ghats', 'Ganges Varanasi boats', 'Dashashwamedh Ghat', 'Varanasi river'],
-  rishikesh: ['Lakshman Jhula', 'Ram Jhula Rishikesh', 'Rishikesh Ganga', 'Rishikesh'],
-  mumbai: ['Gateway of India Mumbai', 'Marine Drive Mumbai night', 'Chhatrapati Shivaji Terminus'],
-  delhi: ['Humayun Tomb Delhi', 'Qutb Minar', 'India Gate', 'Lotus Temple Delhi', 'Red Fort Delhi'],
+  rishikesh: ['Lakshman Jhula', 'Ram Jhula', 'Rishikesh Ganga ghat', 'Triveni Ghat Rishikesh'],
+  mumbai: ['Gateway of India', 'Marine Drive Mumbai', 'Chhatrapati Shivaji Terminus', 'Taj Mahal Palace Hotel Mumbai'],
+  delhi: ['Humayun Tomb', 'Qutb Minar', 'India Gate Delhi', 'Lotus Temple', 'Red Fort Delhi'],
   chennai: ['Kapaleeshwarar Temple', 'Mahabalipuram Shore Temple', 'Marina Beach Chennai'],
   kolkata: ['Victoria Memorial Kolkata', 'Howrah Bridge', 'Kolkata Victoria Memorial'],
 };
 
 const OK_LICENSE = /^(cc0|cc[ -]by([ -]sa)?([ -][0-9.]+)?|pd|public domain)/i;
-const BAD_TITLE = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|panorama|collage|montage|interior|inside|hotel|restaurant|cafe|menu|room|bedroom|selfie|portrait|wedding|crowd|people)\b|\b(18|19)\d\d\b|\bca\.|\.svg$|\.png$|\.gif$/i;
+const BAD_TITLE = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|panorama|collage|montage|interior|inside|hotel|restaurant|cafe|menu|room|bedroom|selfie|portrait|wedding|crowd|people|miniature|model|replica|star trail|butterfly|moth|bird|egret|flower|hibiscus|seed|bulb|leaf|insect|spider|frog|snake|lizard|fungus|mushroom|macro|closeup|close-up)\b|\b(18|19)\d\d\b|\bca\.|\.svg$|\.png$|\.gif$/i;
 
 const args = process.argv.slice(2);
 const force = args.includes('--force');
@@ -69,7 +69,7 @@ async function api(params) {
 }
 
 async function candidates(q) {
-  const j = await api({ action: 'query', generator: 'search', gsrsearch: `${q} filetype:bitmap`, gsrnamespace: 6, gsrlimit: 30, prop: 'imageinfo', iiprop: 'url|size|mime|extmetadata', iiurlwidth: WIDTH });
+  const j = await api({ action: 'query', generator: 'search', gsrsearch: `${q} filetype:bitmap`, gsrnamespace: 6, gsrlimit: 30, prop: 'imageinfo|categories', clshow: '!hidden', cllimit: 30, iiprop: 'url|size|mime|extmetadata', iiurlwidth: WIDTH });
   const pages = Object.values((j.query && j.query.pages) || {});
   return pages.map((p) => {
     const ii = p.imageinfo && p.imageinfo[0]; if (!ii) return null;
@@ -79,12 +79,21 @@ async function candidates(q) {
     const assessments = ((m.Assessments && m.Assessments.value) || '').toLowerCase();
     const year = +(((m.DateTimeOriginal && m.DateTimeOriginal.value) || '').match(/\b(19|20)\d\d\b/) || [0])[0];
     const quality = /featured/.test(assessments) ? 3 : /quality/.test(assessments) ? 2 : /valued/.test(assessments) ? 1 : 0;
-    return { title: p.title, width: ii.width, height: ii.height, mime: ii.mime, thumb: ii.thumburl, page: ii.descriptionurl, license, author: ((m.Artist && m.Artist.value) || '').replace(/<[^>]+>/g, '').trim(), restrictions, quality, year, credit: ((m.Credit && m.Credit.value) || '').replace(/<[^>]+>/g, '').trim() };
+    const cats = (p.categories || []).map((c) => c.title.replace(/^Category:/, '')).join(' | ');
+    const desc = ((m.ImageDescription && m.ImageDescription.value) || '').replace(/<[^>]+>/g, '');
+    return { cats, desc, title: p.title, width: ii.width, height: ii.height, mime: ii.mime, thumb: ii.thumburl, page: ii.descriptionurl, license, author: ((m.Artist && m.Artist.value) || '').replace(/<[^>]+>/g, '').trim(), restrictions, quality, year, credit: ((m.Credit && m.Credit.value) || '').replace(/<[^>]+>/g, '').trim() };
   }).filter(Boolean);
 }
 
-function pick(list) {
+const STOP = new Set(['beach', 'temple', 'fort', 'palace', 'lake', 'hills', 'hill', 'tea', 'estate', 'park', 'national', 'island', 'islands', 'river', 'india', 'karnataka', 'kerala', 'tamil', 'nadu', 'city', 'night', 'sunset', 'sunrise', 'view', 'skyline', 'coffee', 'plantation', 'ghats', 'boats', 'sea', 'palm', 'tower', 'gate', 'caves', 'railway', 'mountain', 'western']);
+function relevant(c, q) {
+  const hay = `${c.title} ${c.desc} ${c.cats}`.toLowerCase();
+  const tokens = q.toLowerCase().replace(/incategory:\S+/g, '').split(/[^a-z]+/).filter((w) => w.length >= 4 && !STOP.has(w));
+  return tokens.length === 0 || tokens.some((w) => hay.includes(w));
+}
+function pick(list, q) {
   return list
+    .filter((c) => relevant(c, q))
     .filter((c) => c.mime === 'image/jpeg' && c.width >= 1600 && c.width / c.height >= 1.3 && c.width / c.height <= 2.1)
     .filter((c) => OK_LICENSE.test(c.license) && !/trademarked|personality/i.test(c.restrictions) && !BAD_TITLE.test(c.title))
     .filter((c) => !c.year || c.year >= 2008)
@@ -110,7 +119,7 @@ for (const id of ids) {
   const tiers = ['incategory:Featured_pictures_on_Wikimedia_Commons', 'incategory:Quality_images', ''];
   outer: for (const tier of tiers) {
     for (const q of QUERIES[id] || []) {
-      try { chosen = pick(await candidates(`${q} ${tier}`.trim())); } catch (e) { console.warn(`  ! ${id}: ${e.message}`); }
+      try { chosen = pick(await candidates(`${q} ${tier}`.trim()), q); } catch (e) { console.warn(`  ! ${id}: ${e.message}`); }
       if (chosen) { usedQuery = q; break outer; }
       await sleep(250);
     }
@@ -118,7 +127,8 @@ for (const id of ids) {
   if (!chosen) { console.warn(`x ${id}: no suitable photo found`); continue; }
   try {
     await download(chosen.thumb, file);
-    credits[id] = { title: chosen.title.replace(/^File:/, ''), author: chosen.author || 'Unknown', license: chosen.license, page: chosen.page, query: usedQuery };
+    const author = (chosen.author || 'Unknown').replace(/^this photo was taken by\s*/i, '').split(/[\n.]/)[0].trim().slice(0, 60) || 'Unknown';
+    credits[id] = { title: chosen.title.replace(/^File:/, ''), author, license: chosen.license, page: chosen.page, query: usedQuery };
     console.log(`+ ${id}: ${credits[id].title} · ${credits[id].license} · ${chosen.author}`);
   } catch (e) { console.warn(`x ${id}: ${e.message}`); }
   await sleep(400);
