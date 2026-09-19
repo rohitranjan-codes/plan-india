@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Europe → India Travel Planner</title>
+<meta name="description" content="A safe, comfortable and detailed India trip planner for travellers from any European airport: pick your gateway, month and style — routes, 4★+ hotels, costs, live weather and booking links adapt." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛫</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="vendor/leaflet.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="progress"></div>
+
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="#top"><span class="dot">✈</span> Plan India</a>
+  <ul class="nav-links">
+    <li><a href="#flights" data-i18n="nav.flights">Flights</a></li>
+    <li><a href="#routes" data-i18n="nav.routes">Routes</a></li>
+    <li><a href="#map" data-i18n="nav.map">Map</a></li>
+    <li><a href="#destinations" data-i18n="nav.destinations">Destinations</a></li>
+    <li><a href="#food" data-i18n="nav.food">Food</a></li>
+    <li><a href="#builder" data-i18n="nav.builder">Build</a></li>
+    <li><a href="#desk" data-i18n="nav.desk">Book</a></li>
+    <li><a href="#safety" data-i18n="nav.safety">Safety</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="pill-btn" id="stampsBtn" title="Passport stamps">🛂 <span id="stampCount">0/24</span></button>
+    <button class="pill-btn" id="langBtn" aria-label="Sprache wechseln">DE</button>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+    <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+  <div class="grid-bg"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow reveal in"><span class="pulse"></span> <span id="heroEyebrow">Europe → India</span></span>
+      <h1 data-i18n="hero.title">Europe to India,<br /><span class="accent">planned properly.</span></h1>
+      <p class="lead" data-i18n="hero.lead">A safe, comfortable and detailed trip plan from any European airport to all of India. Choose your gateway, month and style — routes, 4-star-plus hotels, costs, live weather and booking links adapt to you.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#routes" data-i18n="hero.cta1">See the itineraries ↓</a>
+        <a class="btn btn-ghost" href="#builder" data-i18n="hero.cta2">🧳 Build your trip</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b id="statHours">9 h</b><span id="statHoursLabel">Nonstop</span></div>
+        <div class="stat"><b id="statBest">0</b><span id="statBestLabel">Best time this month</span></div>
+        <div class="stat"><b id="statDest">27</b><span data-i18n="hero.s3">Destinations across India</span></div>
+        <div class="stat"><b id="statFrom">€1,650</b><span id="statFromLabel">per person from (Comfort)</span></div>
+      </div>
+    </div>
+
+    <div class="flight-card">
+      <svg viewBox="0 0 520 360" role="img" aria-label="Route map from Frankfurt and Zurich to Bengaluru, then on to Goa and Kochi">
+        <defs>
+          <path id="pFRA" d="M60 60 C 200 40, 360 120, 400 250" />
+          <path id="pZRH" d="M80 110 C 220 110, 360 170, 400 250" />
+          <path id="pGOA" d="M400 250 C 385 240, 355 215, 340 185" />
+          <path id="pCOK" d="M400 250 C 400 280, 385 300, 370 320" />
+        </defs>
+        <!-- routes -->
+        <use href="#pFRA" class="route-outline" />
+        <use href="#pFRA" class="route-path" />
+        <use href="#pZRH" class="route-path" style="opacity:.55" />
+        <use href="#pGOA" class="route-path secondary" />
+        <use href="#pCOK" class="route-path secondary" />
+        <!-- cities -->
+        <circle cx="60" cy="60" r="6" class="city-dot" /><text x="60" y="44" text-anchor="middle" class="city" id="svgOrigin">FRANKFURT</text>
+        <circle cx="80" cy="110" r="6" class="city-dot" /><text x="80" y="134" text-anchor="middle" class="city">EUROPE</text>
+        <circle cx="400" cy="250" r="12" class="ring" /><circle cx="400" cy="250" r="12" class="ring" style="animation-delay:1.3s" />
+        <circle cx="400" cy="250" r="8" class="city-dot" /><text x="418" y="255" class="city" id="svgGateway">BENGALURU</text>
+        <circle cx="340" cy="185" r="5" class="city-dot teal" /><text x="340" y="172" text-anchor="middle" class="city" id="svgSpoke1">GOA</text>
+        <circle cx="370" cy="320" r="5" class="city-dot teal" /><text x="370" y="342" text-anchor="middle" class="city" id="svgSpoke2">KOCHI</text>
+        <!-- planes -->
+        <g class="plane"><path d="M0-7 L2-2 L9 0 L2 2 L0 7 L-1 2 L-6 1 L-6-1 L-1-2 Z" /><animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#pFRA" /></animateMotion></g>
+        <g class="plane-2"><path d="M0-5 L1.5-1.5 L6 0 L1.5 1.5 L0 5 L-.7 1.5 L-4 .7 L-4-.7 L-.7-1.5 Z" /><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#pGOA" /></animateMotion></g>
+        <g class="plane-2"><path d="M0-5 L1.5-1.5 L6 0 L1.5 1.5 L0 5 L-.7 1.5 L-4 .7 L-4-.7 L-.7-1.5 Z" /><animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#pCOK" /></animateMotion></g>
+      </svg>
+      <div class="legend">
+        <span><i style="background:var(--accent)"></i> <span data-i18n="hero.legend1">Long-haul ≈ 9 h</span></span>
+        <span><i style="background:var(--accent-2)"></i> <span data-i18n="hero.legend2">Domestic ≈ 1 h</span></span>
+        <span id="tzNote">🕐 IST = CET + 4:30</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= SETTINGS ================= -->
+<section id="settings" class="settings-section">
+  <div class="container">
+    <div class="settings-card reveal in">
+      <div class="settings-title"><span>🧭</span><b data-i18n="set.title">Your trip settings</b><small data-i18n="set.sub">Everything below adapts: flights, routes, costs, weather, safety and booking links.</small></div>
+      <div class="settings-bar" id="settingsBar"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WEATHER ================= -->
+<section id="weather" class="alt" style="padding-top:70px">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="weather.kicker">When to go</span>
+      <h2 data-i18n="weather.h2">India has a season for everything — pick the right one.</h2>
+      <p data-i18n="weather.p">Every destination is rated for your travel month. Live weather and last year's real averages appear on the cards once the site is online.</p>
+    </div>
+    <div class="when-to-go card" id="whenToGo"></div>
+    <p class="wx-status" id="weatherNovNote" style="margin:22px 0 6px">November in the south, in detail:</p>
+    <div class="weather-row" id="weatherRow"></div>
+    <p class="wx-status" id="wxStatus"></p>
+  </div>
+</section>
+
+<!-- ================= FLIGHTS ================= -->
+<section id="flights">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="flights.kicker">Getting there</span>
+      <h2 id="flightsTitle">Frankfurt to Bengaluru</h2>
+      <p data-i18n="flights.p">Nonstop links and the best one-stop options for your airport and gateway, plus every onward connection from the gateway with time and cost for your style.</p>
+    </div>
+    <div class="flight-grid" id="flightGrid"></div>
+
+    <div class="card reveal in" style="margin-top:24px" id="arrivalCard"></div>
+
+    <h3 class="sub-title" id="onwardTitle">Onward from Bengaluru</h3>
+    <div class="table-wrap reveal in">
+      <table>
+        <thead><tr><th data-i18n="flights.th1">Destination</th><th>How</th><th data-i18n="flights.th2">Time</th><th data-i18n="flights.th3">Price pp</th></tr></thead>
+        <tbody id="domesticBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="quiz.kicker">A quick game</span>
+      <h2 data-i18n="quiz.h2">Which trip is you?</h2>
+      <p data-i18n="quiz.p">Five questions, thirty seconds. You get a route and three destinations at the end — share the result in the group chat and see who matches.</p>
+    </div>
+    <div class="quiz card reveal" id="quizBox"></div>
+  </div>
+</section>
+
+<!-- ================= ROUTES ================= -->
+<section id="routes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="routes.kicker">Itineraries</span>
+      <h2 data-i18n="routes.h2">Three routes, one gateway.</h2>
+      <p data-i18n="routes.p">Every route starts with two easy days in Bengaluru to recover from the flight. Pick one, combine Goa and Kerala with the direct Goa → Kochi flight, or swap in any of the destinations below.</p>
+    </div>
+    <div class="tabs" id="routeTabs"></div>
+    <div class="route-panel" id="routePanel"></div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section id="map" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="map.kicker">The map</span>
+      <h2 data-i18n="map.h2">Everything within reach of Bengaluru.</h2>
+      <p data-i18n="map.p">Hover a pin for travel time from BLR and cost per day; click to open the guide or add the place straight into your trip plan.</p>
+    </div>
+    <div id="mapWrap" class="reveal">
+      <div id="mapEl" role="region" aria-label="Map of destinations"></div>
+      <div class="map-foot"><div class="map-legend" id="mapLegend"></div><span id="mapNote"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DESTINATIONS ================= -->
+<section id="destinations">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="dest.kicker">Destinations</span>
+      <h2 data-i18n="dest.h2">Where you'll actually go.</h2>
+      <p data-i18n="dest.p">Twenty-four places you can reach from Bengaluru — by a short flight, a fast train or a scenic drive. Filter by mood, then tap a card for things to do, what to eat, where to stay at three budgets, and how to get there.</p>
+    </div>
+    <div class="passport" id="passport"></div>
+    <div class="dest-toolbar">
+      <div class="filters" id="destFilters"></div>
+      <label class="best-toggle"><input type="checkbox" id="bestOnly"> <span data-i18n="dest.bestOnly">Best this month</span></label>
+      <span id="destCount"></span>
+    </div>
+    <div class="dest-grid" id="destGrid"></div>
+  </div>
+</section>
+
+<!-- ================= FOOD ================= -->
+<section id="food" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="food.kicker">Eat this</span>
+      <h2 data-i18n="food.h2">The dishes worth flying for.</h2>
+      <p data-i18n="food.p">South India eats differently from the north: rice, coconut, tamarind, seafood and coffee. Sixteen dishes with a spice rating and where each one is best.</p>
+    </div>
+    <div class="food-grid" id="foodGrid"></div>
+  </div>
+</section>
+
+<!-- ================= BUILDER ================= -->
+<section id="builder">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="builder.kicker">Your trip</span>
+      <h2 data-i18n="builder.h2">Build your own plan.</h2>
+      <p data-i18n="builder.p">Tap or drag destinations, set nights, reorder. The page works out days, transfers and cost. Share the link in the group — everyone can build their version and compare.</p>
+    </div>
+    <div class="builder-layout">
+      <aside class="card builder-pool reveal">
+        <h3 data-i18n="builder.pool">Add a stop</h3>
+        <div class="pool-filters" id="poolFilters"></div>
+        <div class="pool" id="builderPool"></div>
+      </aside>
+      <div class="builder-main reveal" data-delay="2">
+        <div class="presets"><span data-i18n="builder.presets">Load a template:</span><div id="builderPresets"></div></div>
+        <div class="timeline-builder" id="builderTimeline"></div>
+        <div class="result builder-summary" id="builderSummary"></div>
+        <div class="builder-actions">
+          <button class="btn btn-primary" id="shareWa">💬 <span data-i18n="builder.share">Share on WhatsApp</span></button>
+          <button class="btn btn-ghost" id="copyLink">🔗 <span data-i18n="builder.copy">Copy link</span></button>
+          <button class="btn btn-ghost" id="printPlan">🖨️ <span data-i18n="builder.print">Print / PDF</span></button>
+          <button class="btn btn-ghost" id="clearPlan">↺ <span data-i18n="builder.clear">Reset</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKING DESK ================= -->
+<section id="desk" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="desk.kicker">Booking desk</span>
+      <h2 data-i18n="desk.h2">Book everything, in the right order.</h2>
+      <p data-i18n="desk.p">The desk reads your plan and dates: international flights, every hop, every hotel, transfers and activities — each link opens the search already filled in, with live prices and live reviews. Tick things off as you book.</p>
+    </div>
+    <div class="desk-progress reveal"><div class="check-progress"><div id="deskFill"></div></div><span id="deskCount"></span></div>
+    <div class="desk" id="deskList"></div>
+  </div>
+</section>
+
+<!-- ================= COSTS ================= -->
+<section id="costs">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="costs.kicker">Cost planner</span>
+      <h2 data-i18n="costs.h2">What will it cost?</h2>
+      <p data-i18n="costs.p">Move the sliders. Estimates are per person, include the Europe flights, and assume double rooms shared by two. Treat them as a planning range, not a quote.</p>
+    </div>
+    <div class="cost-layout">
+      <div class="card reveal">
+        <div class="field">
+          <label for="people"><span data-i18n="label.travellers">Travellers</span> <output id="peopleOut"></output></label>
+          <input type="range" id="people" min="1" max="12" step="1" />
+        </div>
+        <div class="field">
+          <label for="days"><span data-i18n="label.length">Trip length</span> <output id="daysOut"></output></label>
+          <input type="range" id="days" min="7" max="21" step="1" />
+        </div>
+        <div class="field">
+          <label data-i18n="label.style">Travel style</label>
+          <div class="seg" id="styleSeg"></div>
+          <p id="styleNote" style="margin-top:10px;font-size:.85rem;color:var(--muted)"></p>
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <label data-i18n="label.route">Route</label>
+          <div class="seg" id="routeSeg"></div>
+        </div>
+      </div>
+      <div class="result reveal" data-delay="2">
+        <div class="currency-toggle" id="currencyToggle"><button data-c="home">EUR</button><button data-c="INR">INR</button></div>
+        <div class="label" data-i18n="result.label">Estimated total per person</div>
+        <div class="big" id="perPerson">€0</div>
+        <div id="perDay" style="opacity:.75;font-weight:700"></div>
+        <div class="group-total"><span class="label" data-i18n="result.group">Whole group</span><b id="groupTotal">€0</b></div>
+        <div class="breakdown" id="breakdown"></div>
+        <p class="fine">Includes a 10 % buffer. Rate: €1 ≈ ₹<span id="rate"></span> (<span id="rateLabel"></span>). Long-haul priced 2–4 months ahead; Premium assumes premium economy, Luxury business class and domestic business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DATES ================= -->
+<section id="dates" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="dates.kicker">Your dates</span>
+      <h2 data-i18n="dates.h2">Countdown, festivals & packing.</h2>
+      <p data-i18n="dates.p">Pick the departure date. The page counts down, shows the festivals that fall inside your trip, and writes a packing list from the plan you built above.</p>
+    </div>
+    <div class="dates-layout">
+      <div class="card date-card reveal">
+        <p class="picks-note" data-i18n="dates.moved">Departure date is set in the trip settings at the top.</p>
+        <div class="countdown" id="countdown"></div>
+      </div>
+      <div class="card reveal" data-delay="2"><h3 class="small" data-i18n="dates.festivals">🎆 Festivals during your trip</h3><div id="festivalList"></div></div>
+      <div class="card reveal" data-delay="3"><h3 class="small" data-i18n="dates.packing">🎒 Your packing list</h3><div class="packing" id="packingList"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAFETY ================= -->
+<section id="safety">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="safety.kicker">Safe & smooth</span>
+      <h2 data-i18n="safety.h2">Travel like you've been before.</h2>
+      <p data-i18n="safety.p">South India is welcoming and well organised for visitors. These are the few things that make the difference between a good trip and a great one.</p>
+    </div>
+    <div class="safe country-card reveal in" id="countryCard"></div>
+    <div class="safety-grid" id="safetyGrid"></div>
+
+    <div class="checklist reveal">
+      <h3 data-i18n="check.h3">✅ Pre-departure checklist</h3>
+      <p class="sub"><span data-i18n="check.sub">Ticks are saved on this device, so the group organiser can track progress.</span> <span id="checkCount"></span></p>
+      <div class="check-progress"><div id="checkFill"></div></div>
+      <ul id="checklist">
+        <li><label><input type="checkbox" value="visa" /><span>Indian e-Visa approved &amp; printed (apply ≥ 7 days before)</span></label></li>
+        <li><label><input type="checkbox" value="passport" /><span>Passport valid 6+ months with 2 blank pages</span></label></li>
+        <li><label><input type="checkbox" value="flights" /><span>Europe ↔ Bengaluru flights booked</span></label></li>
+        <li><label><input type="checkbox" value="domestic" /><span>Domestic flights / trains booked (IndiGo, IRCTC or 12Go)</span></label></li>
+        <li><label><input type="checkbox" value="hotel1" /><span>First-night hotel booked from the night before arrival</span></label></li>
+        <li><label><input type="checkbox" value="insurance" /><span>Travel &amp; medical insurance with evacuation cover</span></label></li>
+        <li><label><input type="checkbox" value="vax" /><span>Travel clinic visit: Hep A, Typhoid, routine boosters</span></label></li>
+        <li><label><input type="checkbox" value="meds" /><span>Medical kit: ORS, anti-diarrhoeal, mosquito repellent (DEET), sunscreen</span></label></li>
+        <li><label><input type="checkbox" value="cards" /><span>Wise/Revolut card + one backup credit card; bank informed</span></label></li>
+        <li><label><input type="checkbox" value="sim" /><span>eSIM installed or plan to buy Airtel/Jio SIM at BLR</span></label></li>
+        <li><label><input type="checkbox" value="apps" /><span>Apps: Uber, Ola, Google Maps offline, Zomato, WhatsApp group</span></label></li>
+        <li><label><input type="checkbox" value="adapter" /><span>Universal adapter (Type C/D/M), power bank</span></label></li>
+        <li><label><input type="checkbox" value="copies" /><span>Digital copies of passport, visa, insurance shared in the group</span></label></li>
+        <li><label><input type="checkbox" value="consulate" /><span>Consulate numbers saved (Bengaluru) + 112 and 1363</span></label></li>
+        <li><label><input type="checkbox" value="clothes" /><span>Packing: light cotton, one fleece for Munnar, modest temple outfit, rain jacket</span></label></li>
+        <li><label><input type="checkbox" value="register" /><span>Registered trip with Auswärtiges Amt (ELEFAND) / EDA Travel Admin</span></label></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINKS ================= -->
+<section id="links" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="links.kicker">Useful links</span>
+      <h2 data-i18n="links.h2">Everything you'll need to book.</h2>
+      <p data-i18n="links.p">Only official or widely trusted services. Book Indian domestic flights and trains on their home sites for the best prices.</p>
+    </div>
+    <div class="links-grid" id="linksGrid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container row">
+    <span>✈ Plan India · Europe → India travel planner · <span id="year"></span></span>
+    <span data-i18n="footer.note">Prices are approximate planning estimates in EUR — verify before booking. Not affiliated with any airline or hotel.</span>
+  </div>
+</footer>
+
+<button class="btn btn-primary" id="toTop" aria-label="Back to top">↑</button>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="backdrop"></div>
+  <div class="sheet"></div>
+</div>
+
+<div id="printArea"></div>
+
+<script src="data.js"></script>
+<script src="content.js"></script>
+<script src="guide.js"></script>
+<script src="europe.js"></script>
+<script src="geo.js"></script>
+<script src="ratings.js"></script>
+<script src="illustrations.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script src="app.js"></script>
+<script src="settings.js"></script>
+<script src="features.js"></script>
+</body>
+</html>
