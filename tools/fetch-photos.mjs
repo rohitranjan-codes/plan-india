@@ -81,7 +81,7 @@ const ARTICLES = {
   shimla: ['Kalka–Shimla railway', 'Shimla', 'The Ridge, Shimla', 'Viceregal Lodge'],
   manali: ['Manali', 'Solang Valley', 'Rohtang Pass', 'Hidimba Devi Temple'],
   dharamshala: ['McLeod Ganj', 'Dharamshala', 'Triund', 'Dhauladhar'],
-  leh: ['Pangong Tso', 'Thikse Monastery', 'Leh', 'Nubra Valley', 'Ladakh'],
+  leh: ['Thikse Monastery', 'Shanti Stupa', 'Leh Palace', 'Hemis Monastery', 'Diskit Monastery', 'Khardung La', 'Pangong Tso', 'Nubra Valley'],
   corbett: ['Jim Corbett National Park', 'Dhikala'],
   khajuraho: ['Khajuraho Group of Monuments', 'Kandariya Mahadeva Temple', 'Khajuraho'],
   bandhavgarh: ['Bandhavgarh National Park', 'Bandhavgarh Fort'],
@@ -104,7 +104,7 @@ const ARTICLES = {
 };
 
 const OK_LICENSE = /^(cc0|cc[ -]by([ -]sa)?([ -][0-9.]+)?|pd|public domain)/i;
-const BAD_TITLE = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|panorama|collage|montage|interior|inside|hotel|restaurant|cafe|menu|room|bedroom|selfie|portrait|wedding|crowd|people|miniature|model|replica|star trail|butterfly|moth|bird|egret|flower|hibiscus|seed|bulb|leaf|insect|spider|frog|snake|lizard|fungus|mushroom|macro|closeup|close-up)\b|\b(18|19)\d\d\b|\bca\.|\.svg$|\.png$|\.gif$/i;
+const BAD_TITLE = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|panorama|collage|montage|interior|inside|hotel|restaurant|cafe|menu|room|bedroom|selfie|portrait|wedding|crowd|people|miniature|model|replica|star trail|satellite|view of earth|iss\d|from orbit|landsat|sentinel|butterfly|moth|bird|egret|flower|hibiscus|seed|bulb|leaf|insect|spider|frog|snake|lizard|fungus|mushroom|macro|closeup|close-up)\b|\b(18|19)\d\d\b|\bca\.|\.svg$|\.png$|\.gif$/i;
 
 const args = process.argv.slice(2);
 const force = args.includes('--force');
@@ -140,7 +140,7 @@ async function leadImage(article) {
   const m = ii.extmetadata || {};
   const license = (m.LicenseShortName && m.LicenseShortName.value) || '';
   if (!OK_LICENSE.test(license)) return null;
-  if (!/^image\/jpe?g$/.test(ii.mime) || ii.width < 1000 || ii.width / ii.height < 1.0) return null;
+  if (!/^image\/jpe?g$/.test(ii.mime) || ii.width < 1000 || ii.width / ii.height < 1.0 || BAD_TITLE.test(p.title)) return null;
   const year = +(((m.DateTimeOriginal && m.DateTimeOriginal.value) || '').match(/\b(19|20)\d\d\b/) || [0])[0];
   if (year && year < 2000) return null;
   return { title: p.title, width: ii.width, height: ii.height, mime: ii.mime, thumb: ii.thumburl, page: ii.descriptionurl, license, author: ((m.Artist && m.Artist.value) || '').replace(/<[^>]+>/g, '').trim(), article };
