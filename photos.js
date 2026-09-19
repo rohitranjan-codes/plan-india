@@ -2,110 +2,164 @@
 window.PHOTOS = {
  "goa": {
   "src": "img/goa.jpg",
-  "author": "D'Souza and Paul Studio",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Basilica_of_Bom_Jesus,_Old_Goa_(ca._1870).jpg"
+  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Laterite_Cliffs_Cola_Bay_Goa_Jan19_DSC06161.jpg"
  },
  "munnar": {
   "src": "img/munnar.jpg",
-  "author": "No machine-readable author provided. Pradeepvkrishna assumed (based on copyright claims).",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:TEA_GARDEN_MUNNAR.JPG"
+  "author": "Rainer Halama",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eravikulam_National_Park-WUS07189.jpg"
  },
  "kochi": {
   "src": "img/kochi.jpg",
-  "author": "Yourusernamewillbepublic2",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Fort_Kochi_Hotel.jpg"
+  "author": "Ingo Mehling",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Nets_-_3.jpg"
  },
  "thekkady": {
   "src": "img/thekkady.jpg",
-  "author": "Jonathanawhite at English Wikipedia",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Periyar_National_Park_-_2.JPG"
+  "author": "Jeevan Jose, Kerala, India",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Melanitis_leda-Kadavoor-2017-04-26-001.jpg"
  },
  "mysuru": {
   "src": "img/mysuru.jpg",
-  "author": "Emilien Lebourgeois",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Mysore_Chamundi_Hills_(51057117476).jpg"
+  "author": "Ingo Mehling",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mysuru_Palace_-_Night_View.jpg"
  },
  "coorg": {
   "src": "img/coorg.jpg",
-  "author": "No machine-readable author provided. Nmadhubala assumed (based on copyright claims).",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Abbey_Falls_Coorg.jpg"
+  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SH85_Inakanahalli_Monsoon_Coorg_Jun24_A7CR_01591.jpg"
  },
  "hampi": {
   "src": "img/hampi.jpg",
-  "author": "Ms Sarah Welch",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:071017_Vitthala_temple_complex_aerial_view,_Hampi_Karnataka.jpg"
+  "author": "Ingo Mehling",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hampi_-_Hemakuta_Hill,_Virupaksha_Temple.jpg"
  },
  "hyderabad": {
   "src": "img/hyderabad.jpg",
-  "author": "Kavali Chandrakanth KCK",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chowmahalla_Palace_Hyderabad_Tealagana_India.jpg"
+  "author": "Bernard Gagnon",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hyderabad_02.jpg"
  },
  "kabini": {
   "src": "img/kabini.jpg",
-  "author": "Forestowlet",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kabini_river.JPG"
+  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Inter_Egret_Descending_Tree_Kabini_Apr22_D72_23600.jpg"
  },
  "wayanad": {
   "src": "img/wayanad.jpg",
-  "author": "Apletters",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chembra_Peak.JPG"
+  "author": "Ingo Mehling",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Edakkal_Caves_-_Petroglyphs_-_4.jpg"
  },
  "varkala": {
   "src": "img/varkala.jpg",
-  "author": "P.K.Niyogi",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Kovalam_Lighthouse_Beach.JPG"
+  "author": "Shishirdasika",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pink_Hibiscus_at_Varkala.jpg"
  },
  "badami": {
   "src": "img/badami.jpg",
-  "author": "Haneeshkm",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Badami_caves_Cave_One_(15).jpg"
+  "author": "Naveen R Gowda",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sangameshwar_Temple,_Pattadakal,_Karnataka,_India.jpg"
  },
  "pondicherry": {
   "src": "img/pondicherry.jpg",
-  "author": "(WT-en) Jarrettman at English Wikivoyage",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Matrimandir,_Auroville,_Tamil_Nadu,_India_(2004).jpg"
+  "author": "iMahesh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Petit_Canal_Street,_Puducherry.jpg"
  },
  "goldentriangle": {
   "src": "img/goldentriangle.jpg",
-  "author": "Shivansh2401",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_the_morning_2023.jpg"
+  "author": "Antrix3",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aks_The_Reflection_Taj_Mahal.jpg"
  },
  "rajasthan": {
   "src": "img/rajasthan.jpg",
-  "author": "Knowledge Seeker",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Jodhpur_from_Mehrangarh_Fort.jpg"
+  "author": "UnpetitproleX",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lake_Pichola_at_sunset,_Udaipur,_Rajasthan,_India.jpg"
  },
  "mumbai": {
   "src": "img/mumbai.jpg",
-  "author": "Mitchell Mark Gilbert",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Mumbai_Arabian_Sea_Night_View-_A_Reflection_of_Infrastructure_Brilliance.jpg"
+  "author": "iMahesh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Middle_Ground_Coastal_Battery,_Arabian_Sea,_Mumbai,_India.jpg"
  },
  "chennai": {
   "src": "img/chennai.jpg",
-  "author": "Abinayasekar357",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Marina_beach_Chennai.jpg"
+  "author": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mamallapuram,_Shore_Temple,_India.jpg"
  },
  "kolkata": {
   "src": "img/kolkata.jpg",
-  "author": "K.Venkataramana",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Victoria_Memorial,_Kolkata,_West_Bengal_(1).jpg"
+  "author": "DeepanjanGhosh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Victoria_Memorial_Kolkata_at_night.jpg"
+ },
+ "bengaluru": {
+  "src": "img/bengaluru.jpg",
+  "author": "DeepanjanGhosh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vidhana_Soudha_LE.jpg"
+ },
+ "ooty": {
+  "src": "img/ooty.jpg",
+  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bulbil_Root_Right_Crinum_Moorei_Ooty_Jul26_A7CR_12081-116_zsp.jpg"
+ },
+ "chikmagalur": {
+  "src": "img/chikmagalur.jpg",
+  "author": "T. R. Shankar Raman",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Areca_and_Vanilla_DSC_1306.jpg"
+ },
+ "gokarna": {
+  "src": "img/gokarna.jpg",
+  "author": "Toby Hudson",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Australian_Pelican_Kioloa.jpg"
+ },
+ "andaman": {
+  "src": "img/andaman.jpg",
+  "author": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Havelock_Island,_Mangrove_tree_on_the_beach,_Andaman_Islands.jpg"
+ },
+ "madurai": {
+  "src": "img/madurai.jpg",
+  "author": "IM3847",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Miniature_of_Meenakshi_Amman_Temple_1.jpg"
+ },
+ "varanasi": {
+  "src": "img/varanasi.jpg",
+  "author": "travelwayoflife",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Scindia_Ghat_in_morning,_Varanasi,_Uttar_Pradesh,_India_(2012).jpg"
+ },
+ "rishikesh": {
+  "src": "img/rishikesh.jpg",
+  "author": "Navneet Sharma",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Star_trail_in_Rishikesh.jpg"
+ },
+ "delhi": {
+  "src": "img/delhi.jpg",
+  "author": "Joydeep Chakraborty",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Monastery_Gate,_Sikkim,_India.jpg"
  }
 };
