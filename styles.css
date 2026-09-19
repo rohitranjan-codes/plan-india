@@ -621,3 +621,6 @@ footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; ga
 .sheet .cover.has-photo .emoji-badge { display: none; }
 .sheet .photo-credit { left: auto; right: 14px; bottom: 12px; }
 .sheet .cover.has-photo .stamp { top: 70px; }
+/* Route-card legend: keep on one row, wrap as chips on narrow screens */
+.flight-card .legend { flex-wrap: wrap; gap: 6px 14px; font-size: .74rem; }
+.flight-card .legend span { white-space: nowrap; }

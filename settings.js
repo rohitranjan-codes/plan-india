@@ -118,7 +118,7 @@
         <div class="tip">💡 ${esc(f.tip)}</div>
       </article>`).join('');
     $('#flightsTitle').textContent = A.LANG.cur === 'de' ? `${o.city} nach ${g.city}` : `${o.city} to ${g.city}`;
-    $('#tzNote').textContent = `${t('flights.time')}: IST = ${o.country === 'GB' || o.country === 'IE' || o.country === 'PT' ? 'GMT' : 'CET'} + ${tz} h`;
+    $('#tzNote').textContent = `🕐 IST = ${o.country === 'GB' || o.country === 'IE' || o.country === 'PT' ? 'GMT' : 'CET'} + ${tz} h`;
     // arrival card
     const gd = gatewayDest();
     $('#arrivalCard').innerHTML = `<h3 style="font-size:1.3rem;margin-bottom:10px">🛬 ${gd.name} (${g.code})</h3>
