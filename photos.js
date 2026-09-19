@@ -78,18 +78,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:The_Matrimandir_in_Auroville,_Tamil_Nadu,_India.jpg"
  },
- "goldentriangle": {
-  "src": "img/goldentriangle.jpg",
-  "author": "Yann; edited by Jim Carter",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg"
- },
- "rajasthan": {
-  "src": "img/rajasthan.jpg",
-  "author": "user:Flicka",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg"
- },
  "mumbai": {
   "src": "img/mumbai.jpg",
   "author": "Sailko",
@@ -161,5 +149,155 @@ window.PHOTOS = {
   "author": "Incredible India Portal",
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:India_Gate_in_the_Evening.jpg"
+ },
+ "agra": {
+  "src": "img/agra.jpg",
+  "author": "Yann; edited by Jim Carter",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg"
+ },
+ "jaipur": {
+  "src": "img/jaipur.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20191219_Fort_Amber,_Amer,_Jaipur_0955_9481.jpg"
+ },
+ "jodhpur": {
+  "src": "img/jodhpur.jpg",
+  "author": "Sanhitasinha",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mehrangarh_Fort_sanhita.jpg"
+ },
+ "udaipur": {
+  "src": "img/udaipur.jpg",
+  "author": "user:Flicka",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg"
+ },
+ "jaisalmer": {
+  "src": "img/jaisalmer.jpg",
+  "author": "Gérard Janot",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaisalmer_forteresse.jpg"
+ },
+ "pushkar": {
+  "src": "img/pushkar.jpg",
+  "author": "Felipe Skroski from Wellington, New Zealand",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Evening_lights_by_the_Pushkar_Lake,_Pushkar.jpg"
+ },
+ "ranthambore": {
+  "src": "img/ranthambore.jpg",
+  "author": "THerrington",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ranthambore_National_Park.JPG"
+ },
+ "amritsar": {
+  "src": "img/amritsar.jpg",
+  "author": "Shagil Kannur",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Golden_Temple_of_Amrithsar_7.jpg"
+ },
+ "shimla": {
+  "src": "img/shimla.jpg",
+  "author": "No machine-readable author provided",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:KSR_Steam_special_at_Taradevi_05-02-13_56.jpeg"
+ },
+ "manali": {
+  "src": "img/manali.jpg",
+  "author": "Harvinder Chandigarh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Solang_Valley_,Manali,_Himachal_Pardes,_India.JPG"
+ },
+ "dharamshala": {
+  "src": "img/dharamshala.jpg",
+  "author": "Rignam Wangkhang",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:McLeod_Ganj_Dharamkot_Dharmsala_Himachal_Pradesh_India_April_2014.jpg"
+ },
+ "leh": {
+  "src": "img/leh.jpg",
+  "author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Ce",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:ISS054-E-7809_-_View_of_Earth_(cropped).jpg"
+ },
+ "corbett": {
+  "src": "img/corbett.jpg",
+  "author": "Soumyajit Nandy",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg"
+ },
+ "khajuraho": {
+  "src": "img/khajuraho.jpg",
+  "author": "PLBechly",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1_Khajuraho.jpg"
+ },
+ "bandhavgarh": {
+  "src": "img/bandhavgarh.jpg",
+  "author": "This Image was created by User:Archith",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tigress_in_Bandhavgarh_NP.jpg"
+ },
+ "kanha": {
+  "src": "img/kanha.jpg",
+  "author": "Davidvraju",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tiger_Kanha_National_Park.jpg"
+ },
+ "aurangabad": {
+  "src": "img/aurangabad.jpg",
+  "author": "No machine-readable author provided",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg"
+ },
+ "kutch": {
+  "src": "img/kutch.jpg",
+  "author": "Superfast1111",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rann_of_Kutch_-_White_Desert.jpg"
+ },
+ "darjeeling": {
+  "src": "img/darjeeling.jpg",
+  "author": "Arne Hückelheim",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DarjeelingTrainFruitshop_(2).jpg"
+ },
+ "gangtok": {
+  "src": "img/gangtok.jpg",
+  "author": "Ashinpt at enwiki",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kangch-Goechala.jpg"
+ },
+ "kaziranga": {
+  "src": "img/kaziranga.jpg",
+  "author": "Diganta Talukdar",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Beauty_of_Kaziranga_National_Park.jpg"
+ },
+ "shillong": {
+  "src": "img/shillong.jpg",
+  "author": "Arshiya Urveeja Bose",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Living_root_bridges,_Nongriat_village,_Meghalaya2.jpg"
+ },
+ "puri": {
+  "src": "img/puri.jpg",
+  "author": "Subham9423",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Konarka_Temple.jpg"
+ },
+ "thanjavur": {
+  "src": "img/thanjavur.jpg",
+  "author": "Original:  Rainer Halama",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_(edit).jpg"
+ },
+ "kodaikanal": {
+  "src": "img/kodaikanal.jpg",
+  "author": "KARTY JazZ",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Boating_in_Kodaikanal_Lake_with_Mist.jpg"
  }
 };

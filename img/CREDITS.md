@@ -15,8 +15,6 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **varkala** — [Varkala beach from above.jpg](https://commons.wikimedia.org/wiki/File:Varkala_beach_from_above.jpg) by Kondephy · CC BY-SA 4.0
 - **badami** — [BadamiCaves87.JPG](https://commons.wikimedia.org/wiki/File:BadamiCaves87.JPG) by Sanyam Bahga · CC BY-SA 3.0
 - **pondicherry** — [The Matrimandir in Auroville, Tamil Nadu, India.jpg](https://commons.wikimedia.org/wiki/File:The_Matrimandir_in_Auroville,_Tamil_Nadu,_India.jpg) by Matthew T Rader · CC BY-SA 4.0
-- **goldentriangle** — [Taj Mahal (Edited).jpeg](https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg) by Yann; edited by Jim Carter · CC BY-SA 4.0
-- **rajasthan** — [Udaipur Lake Palace.jpg](https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg) by user:Flicka · CC BY-SA 3.0
 - **mumbai** — [Chhatrapati shivaji terminus, esterno 01.jpg](https://commons.wikimedia.org/wiki/File:Chhatrapati_shivaji_terminus,_esterno_01.jpg) by Sailko · CC BY 3.0
 - **chennai** — [Shore Temple -Mamallapuram -Tamil Nadu -N-TN-C55.jpg](https://commons.wikimedia.org/wiki/File:Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg) by Swarna1311 · CC BY-SA 4.0
 - **kolkata** — [Victoria Memorial situated in Kolkata.jpg](https://commons.wikimedia.org/wiki/File:Victoria_Memorial_situated_in_Kolkata.jpg) by Subhrajyoti07 · CC BY-SA 4.0
@@ -29,3 +27,28 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **varanasi** — [Ahilya Ghat by the Ganges, Varanasi.jpg](https://commons.wikimedia.org/wiki/File:Ahilya_Ghat_by_the_Ganges,_Varanasi.jpg) by Ken Wieland · CC BY-SA 2.0
 - **rishikesh** — [Rishikesh-Lakshman Jhula by Kaustubh Nayyar.jpg](https://commons.wikimedia.org/wiki/File:Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg) by KaustubhNayyar · CC BY-SA 4.0
 - **delhi** — [India Gate in the Evening.jpg](https://commons.wikimedia.org/wiki/File:India_Gate_in_the_Evening.jpg) by Incredible India Portal · CC0
+- **agra** — [Taj Mahal (Edited).jpeg](https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg) by Yann; edited by Jim Carter · CC BY-SA 4.0
+- **jaipur** — [20191219 Fort Amber, Amer, Jaipur 0955 9481.jpg](https://commons.wikimedia.org/wiki/File:20191219_Fort_Amber,_Amer,_Jaipur_0955_9481.jpg) by Jakub Hałun · CC BY-SA 4.0
+- **jodhpur** — [Mehrangarh Fort sanhita.jpg](https://commons.wikimedia.org/wiki/File:Mehrangarh_Fort_sanhita.jpg) by Sanhitasinha · CC BY-SA 4.0
+- **udaipur** — [Udaipur Lake Palace.jpg](https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg) by user:Flicka · CC BY-SA 3.0
+- **jaisalmer** — [Jaisalmer forteresse.jpg](https://commons.wikimedia.org/wiki/File:Jaisalmer_forteresse.jpg) by Gérard Janot · CC BY-SA 3.0
+- **pushkar** — [Evening lights by the Pushkar Lake, Pushkar.jpg](https://commons.wikimedia.org/wiki/File:Evening_lights_by_the_Pushkar_Lake,_Pushkar.jpg) by Felipe Skroski from Wellington, New Zealand · CC BY 2.0
+- **ranthambore** — [Ranthambore National Park.JPG](https://commons.wikimedia.org/wiki/File:Ranthambore_National_Park.JPG) by THerrington · CC BY-SA 3.0
+- **amritsar** — [The Golden Temple of Amrithsar 7.jpg](https://commons.wikimedia.org/wiki/File:The_Golden_Temple_of_Amrithsar_7.jpg) by Shagil Kannur · CC BY-SA 4.0
+- **shimla** — [KSR Steam special at Taradevi 05-02-13 56.jpeg](https://commons.wikimedia.org/wiki/File:KSR_Steam_special_at_Taradevi_05-02-13_56.jpeg) by No machine-readable author provided · CC BY 2.5
+- **manali** — [Solang Valley ,Manali, Himachal Pardes, India.JPG](https://commons.wikimedia.org/wiki/File:Solang_Valley_,Manali,_Himachal_Pardes,_India.JPG) by Harvinder Chandigarh · CC BY-SA 4.0
+- **dharamshala** — [McLeod Ganj Dharamkot Dharmsala Himachal Pradesh India April 2014.jpg](https://commons.wikimedia.org/wiki/File:McLeod_Ganj_Dharamkot_Dharmsala_Himachal_Pradesh_India_April_2014.jpg) by Rignam Wangkhang · CC BY 2.0
+- **leh** — [ISS054-E-7809 - View of Earth (cropped).jpg](https://commons.wikimedia.org/wiki/File:ISS054-E-7809_-_View_of_Earth_(cropped).jpg) by Earth Science and Remote Sensing Unit, NASA Johnson Space Ce · Public domain
+- **corbett** — [Bengal-Tiger Corbett Uttarakhand Dec-2013.jpg](https://commons.wikimedia.org/wiki/File:Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg) by Soumyajit Nandy · CC BY-SA 3.0
+- **khajuraho** — [1 Khajuraho.jpg](https://commons.wikimedia.org/wiki/File:1_Khajuraho.jpg) by PLBechly · CC BY-SA 4.0
+- **bandhavgarh** — [Tigress in Bandhavgarh NP.jpg](https://commons.wikimedia.org/wiki/File:Tigress_in_Bandhavgarh_NP.jpg) by This Image was created by User:Archith · CC BY-SA 3.0
+- **kanha** — [Tiger Kanha National Park.jpg](https://commons.wikimedia.org/wiki/File:Tiger_Kanha_National_Park.jpg) by Davidvraju · CC BY-SA 4.0
+- **aurangabad** — [Ajanta (63).jpg](https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg) by No machine-readable author provided · CC BY 2.5
+- **kutch** — [Rann of Kutch - White Desert.jpg](https://commons.wikimedia.org/wiki/File:Rann_of_Kutch_-_White_Desert.jpg) by Superfast1111 · CC BY-SA 3.0
+- **darjeeling** — [DarjeelingTrainFruitshop (2).jpg](https://commons.wikimedia.org/wiki/File:DarjeelingTrainFruitshop_(2).jpg) by Arne Hückelheim · CC BY-SA 4.0
+- **gangtok** — [Kangch-Goechala.jpg](https://commons.wikimedia.org/wiki/File:Kangch-Goechala.jpg) by Ashinpt at enwiki · CC BY-SA 3.0
+- **kaziranga** — [Beauty of Kaziranga National Park.jpg](https://commons.wikimedia.org/wiki/File:Beauty_of_Kaziranga_National_Park.jpg) by Diganta Talukdar · CC BY-SA 4.0
+- **shillong** — [Living root bridges, Nongriat village, Meghalaya2.jpg](https://commons.wikimedia.org/wiki/File:Living_root_bridges,_Nongriat_village,_Meghalaya2.jpg) by Arshiya Urveeja Bose · CC BY 2.0
+- **puri** — [Konarka Temple.jpg](https://commons.wikimedia.org/wiki/File:Konarka_Temple.jpg) by Subham9423 · CC BY-SA 4.0
+- **thanjavur** — [Brihadisvara Temple during Maha Shivaratri-WUS03611 (edit).jpg](https://commons.wikimedia.org/wiki/File:Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_(edit).jpg) by Original:  Rainer Halama · CC BY-SA 4.0
+- **kodaikanal** — [Boating in Kodaikanal Lake with Mist.jpg](https://commons.wikimedia.org/wiki/File:Boating_in_Kodaikanal_Lake_with_Mist.jpg) by KARTY JazZ · CC BY-SA 4.0
