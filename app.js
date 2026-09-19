@@ -189,7 +189,7 @@
     const d = T.destinations.find((x) => x.id === id); if (!d) return;
     $('.sheet', modal).innerHTML = `
       <button class="close" aria-label="Close">✕</button>
-      ${window.coverHTML(d)}
+      ${window.coverHTML(d, (() => { const p = window.photoOf && window.photoOf(d.id); return p && p.author ? `<a class="photo-credit" target="_blank" rel="noopener" href="${esc(p.page || '#')}">📷 ${esc(p.author)} · ${esc(p.license || '')}</a>` : ''; })())}
       <div class="content">
         <h3>${esc(d.name)}</h3>
         <div class="tag">${esc(d.tag)} · 🌡 ${esc(d.weather)}</div>

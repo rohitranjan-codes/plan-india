@@ -81,6 +81,8 @@
   /* ---------- Hero ---------- */
   function renderHero() {
     const o = origin(), g = gateway(), gd = gatewayDest();
+    const hp = $('#heroPhoto'), photo = window.photoOf && window.photoOf(gd.id);
+    if (hp) { if (photo) { hp.style.backgroundImage = `url("${photo.src}")`; hp.classList.add('on'); } else hp.classList.remove('on'); }
     const best = T.destinations.filter((d) => monthRating(d) === 3).length;
     $('#heroEyebrow').textContent = `${o.city} → ${g.city} · ${monthName()} ${store.get('tripDate', '2026-11-07').slice(0, 4)}`;
     $('#svgOrigin').textContent = o.city.split(' ')[0].toUpperCase();

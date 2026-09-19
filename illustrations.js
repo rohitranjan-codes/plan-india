@@ -55,6 +55,8 @@
     return `<svg class="scene" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${body}</svg>`;
   }
 
-  window.coverHTML = (d, extra = '') => `<div class="cover" style="background:${d.hue}">${scene(d.id, d.type, d.hue)}${(window.TRIP.photos || []).includes(d.id) ? `<img class="photo" src="img/${d.id}.jpg" alt="" loading="lazy">` : ''}<span class="emoji-badge">${d.emoji}</span>${extra}</div>`;
+  const photoOf = (id) => (window.PHOTOS && window.PHOTOS[id]) || ((window.TRIP.photos || []).includes(id) ? { src: `img/${id}.jpg` } : null);
+  window.photoOf = photoOf;
+  window.coverHTML = (d, extra = '') => { const p = photoOf(d.id); return `<div class="cover ${p ? 'has-photo' : ''}" style="background:${d.hue}">${scene(d.id, d.type, d.hue)}${p ? `<img class="photo" src="${p.src}" alt="${(d.name || '').replace(/"/g, '&quot;')}" loading="lazy">` : ''}<span class="emoji-badge">${d.emoji}</span>${extra}</div>`; };
   window.sceneSVG = scene;
 })();

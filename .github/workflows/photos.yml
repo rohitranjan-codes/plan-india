@@ -1,0 +1,30 @@
+name: Fetch destination photos
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-fetch photos that already exist"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch photos from Wikimedia Commons
+        run: node tools/fetch-photos.mjs ${{ inputs.force && '--force' || '' }}
+      - name: Commit photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img photos.js
+          git diff --cached --quiet && echo "No changes" || git commit -m "Add destination photos from Wikimedia Commons (credits in img/CREDITS.md)"
+          git push
