@@ -2,7 +2,7 @@
 window.PHOTOS = {
  "goa": {
   "src": "img/goa.jpg",
-  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "author": "Timothy A",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Laterite_Cliffs_Cola_Bay_Goa_Jan19_DSC06161.jpg"
  },
@@ -22,7 +22,7 @@ window.PHOTOS = {
   "src": "img/thekkady.jpg",
   "author": "Jeevan Jose, Kerala, India",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Melanitis_leda-Kadavoor-2017-04-26-001.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Mycalesis_junonia-Thekkady.jpg"
  },
  "mysuru": {
   "src": "img/mysuru.jpg",
@@ -32,7 +32,7 @@ window.PHOTOS = {
  },
  "coorg": {
   "src": "img/coorg.jpg",
-  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "author": "Timothy A",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:SH85_Inakanahalli_Monsoon_Coorg_Jun24_A7CR_01591.jpg"
  },
@@ -44,15 +44,15 @@ window.PHOTOS = {
  },
  "hyderabad": {
   "src": "img/hyderabad.jpg",
-  "author": "Bernard Gagnon",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hyderabad_02.jpg"
+  "author": "iMahesh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silhouette_of_Sultan_Quli_Qutub_Shah_Tomb.jpg"
  },
  "kabini": {
   "src": "img/kabini.jpg",
-  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "author": "Timothy A",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Inter_Egret_Descending_Tree_Kabini_Apr22_D72_23600.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Brahminy_Kite_Perched_Prey_Kabini_Nagarhole_Dec21_D72_21603.jpg"
  },
  "wayanad": {
   "src": "img/wayanad.jpg",
@@ -62,9 +62,9 @@ window.PHOTOS = {
  },
  "varkala": {
   "src": "img/varkala.jpg",
-  "author": "Shishirdasika",
+  "author": "Krissubh",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pink_Hibiscus_at_Varkala.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Varkala_Cliff_by_KS.jpg"
  },
  "badami": {
   "src": "img/badami.jpg",
@@ -74,9 +74,9 @@ window.PHOTOS = {
  },
  "pondicherry": {
   "src": "img/pondicherry.jpg",
-  "author": "iMahesh",
+  "author": "Jay",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Petit_Canal_Street,_Puducherry.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Golden_Mosaic.jpg"
  },
  "goldentriangle": {
   "src": "img/goldentriangle.jpg",
@@ -94,7 +94,7 @@ window.PHOTOS = {
   "src": "img/mumbai.jpg",
   "author": "iMahesh",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Middle_Ground_Coastal_Battery,_Arabian_Sea,_Mumbai,_India.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Hampi_gateway_1_on_Hampi-Hospete_road.jpg"
  },
  "chennai": {
   "src": "img/chennai.jpg",
@@ -116,13 +116,13 @@ window.PHOTOS = {
  },
  "ooty": {
   "src": "img/ooty.jpg",
-  "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact me before commercial use.\n\n\n\nPlease do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "author": "Timothy A",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bulbil_Root_Right_Crinum_Moorei_Ooty_Jul26_A7CR_12081-116_zsp.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Tea_Fields_Nilgiris_Ranges_Mynala_Dec25_A7CR_09866.jpg"
  },
  "chikmagalur": {
   "src": "img/chikmagalur.jpg",
-  "author": "T. R. Shankar Raman",
+  "author": "T",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Areca_and_Vanilla_DSC_1306.jpg"
  },
@@ -140,9 +140,9 @@ window.PHOTOS = {
  },
  "madurai": {
   "src": "img/madurai.jpg",
-  "author": "IM3847",
+  "author": "MADHURANTHAKAN JAGADEESAN",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Miniature_of_Meenakshi_Amman_Temple_1.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:S-TN-34_Meenakshi_Amman_Temple_South_Gopuram_enriched_with_delicate_Stucco_works.jpg"
  },
  "varanasi": {
   "src": "img/varanasi.jpg",
@@ -152,14 +152,14 @@ window.PHOTOS = {
  },
  "rishikesh": {
   "src": "img/rishikesh.jpg",
-  "author": "Navneet Sharma",
+  "author": "Dey",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Star_trail_in_Rishikesh.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Laxman_Jhula_Bridge.jpg"
  },
  "delhi": {
   "src": "img/delhi.jpg",
-  "author": "Joydeep Chakraborty",
+  "author": "Basile Morin",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_Monastery_Gate,_Sikkim,_India.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Founder%27s_Hall_gate_of_Higashi-Honganji_Temple,_with_water_reflection,_Kyoto,_Japan.jpg"
  }
 };
