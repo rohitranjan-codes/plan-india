@@ -27,7 +27,7 @@
     const h = location.hash;
     const get = (k) => { const m = h.match(new RegExp('[#&]' + k + '=([^&]+)')); return m ? decodeURIComponent(m[1]) : null; };
     const o = get('o'); if (o && E.origins.some((x) => x.code === o)) state.origin = o;
-    const c = get('c'); if (c && E.countries[c]) state.country = c;
+    const c = get('c'); if (c && E.countries[c]) state.country = c; else if (o) { const oc = E.origins.find((x) => x.code === o); if (oc) { state.country = oc.country; state.currency = E.countries[oc.country]?.currency || state.currency; } }
     const g = get('g'); if (g && T.gateways.some((x) => x.code === g)) state.gateway = g;
     const g2 = get('g2'); if (g2 && T.gateways.some((x) => x.code === g2)) state.gateway2 = g2;
     const d = get('d'); if (d && /^\d{4}-\d{2}-\d{2}$/.test(d)) store.set('tripDate', d);
