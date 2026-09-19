@@ -2,30 +2,30 @@
 
 All photos from Wikimedia Commons under the licence shown. Thank you to the photographers.
 
-- **goa** — [Laterite Cliffs Cola Bay Goa Jan19 DSC06161.jpg](https://commons.wikimedia.org/wiki/File:Laterite_Cliffs_Cola_Bay_Goa_Jan19_DSC06161.jpg) by Timothy A · CC BY-SA 4.0
-- **munnar** — [Eravikulam National Park-WUS07189.jpg](https://commons.wikimedia.org/wiki/File:Eravikulam_National_Park-WUS07189.jpg) by Rainer Halama · CC BY-SA 4.0
-- **kochi** — [Chinese Fishing Nets - 3.jpg](https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Nets_-_3.jpg) by Ingo Mehling · CC BY-SA 4.0
-- **thekkady** — [Mycalesis junonia-Thekkady.jpg](https://commons.wikimedia.org/wiki/File:Mycalesis_junonia-Thekkady.jpg) by Jeevan Jose, Kerala, India · CC BY-SA 4.0
+- **goa** — [Palolem Beach, South Goa.jpg](https://commons.wikimedia.org/wiki/File:Palolem_Beach,_South_Goa.jpg) by iMahesh · CC BY-SA 4.0
+- **munnar** — [Munnar Overview.jpg](https://commons.wikimedia.org/wiki/File:Munnar_Overview.jpg) by Kondephy · CC BY-SA 4.0
+- **kochi** — [Chinese Fishing Net Raising Birds Sunrise Ashtamudi Kollam Mar22 A7C 01784.jpg](https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Net_Raising_Birds_Sunrise_Ashtamudi_Kollam_Mar22_A7C_01784.jpg) by Timothy A · CC BY-SA 4.0
+- **thekkady** — [Periyar National Park.JPG](https://commons.wikimedia.org/wiki/File:Periyar_National_Park.JPG) by Wouter Hagens · Public domain
 - **mysuru** — [Mysuru Palace - Night View.jpg](https://commons.wikimedia.org/wiki/File:Mysuru_Palace_-_Night_View.jpg) by Ingo Mehling · CC BY-SA 4.0
-- **coorg** — [SH85 Inakanahalli Monsoon Coorg Jun24 A7CR 01591.jpg](https://commons.wikimedia.org/wiki/File:SH85_Inakanahalli_Monsoon_Coorg_Jun24_A7CR_01591.jpg) by Timothy A · CC BY-SA 4.0
-- **hampi** — [Hampi - Hemakuta Hill, Virupaksha Temple.jpg](https://commons.wikimedia.org/wiki/File:Hampi_-_Hemakuta_Hill,_Virupaksha_Temple.jpg) by Ingo Mehling · CC BY-SA 4.0
-- **hyderabad** — [Silhouette of Sultan Quli Qutub Shah Tomb.jpg](https://commons.wikimedia.org/wiki/File:Silhouette_of_Sultan_Quli_Qutub_Shah_Tomb.jpg) by iMahesh · CC BY-SA 4.0
-- **kabini** — [Brahminy Kite Perched Prey Kabini Nagarhole Dec21 D72 21603.jpg](https://commons.wikimedia.org/wiki/File:Brahminy_Kite_Perched_Prey_Kabini_Nagarhole_Dec21_D72_21603.jpg) by Timothy A · CC BY-SA 4.0
-- **wayanad** — [Edakkal Caves - Petroglyphs - 4.jpg](https://commons.wikimedia.org/wiki/File:Edakkal_Caves_-_Petroglyphs_-_4.jpg) by Ingo Mehling · CC BY-SA 4.0
-- **varkala** — [Varkala Cliff by KS.jpg](https://commons.wikimedia.org/wiki/File:Varkala_Cliff_by_KS.jpg) by Krissubh · CC BY-SA 4.0
-- **badami** — [Sangameshwar Temple, Pattadakal, Karnataka, India.jpg](https://commons.wikimedia.org/wiki/File:Sangameshwar_Temple,_Pattadakal,_Karnataka,_India.jpg) by Naveen R Gowda · CC BY-SA 4.0
-- **pondicherry** — [Golden Mosaic.jpg](https://commons.wikimedia.org/wiki/File:Golden_Mosaic.jpg) by Jay · CC BY-SA 4.0
-- **goldentriangle** — [Aks The Reflection Taj Mahal.jpg](https://commons.wikimedia.org/wiki/File:Aks_The_Reflection_Taj_Mahal.jpg) by Antrix3 · CC BY-SA 4.0
-- **rajasthan** — [Lake Pichola at sunset, Udaipur, Rajasthan, India.jpg](https://commons.wikimedia.org/wiki/File:Lake_Pichola_at_sunset,_Udaipur,_Rajasthan,_India.jpg) by UnpetitproleX · CC BY-SA 4.0
-- **mumbai** — [Hampi gateway 1 on Hampi-Hospete road.jpg](https://commons.wikimedia.org/wiki/File:Hampi_gateway_1_on_Hampi-Hospete_road.jpg) by iMahesh · CC BY-SA 4.0
-- **chennai** — [Mamallapuram, Shore Temple, India.jpg](https://commons.wikimedia.org/wiki/File:Mamallapuram,_Shore_Temple,_India.jpg) by Vyacheslav Argenberg · CC BY 4.0
-- **kolkata** — [Victoria Memorial Kolkata at night.jpg](https://commons.wikimedia.org/wiki/File:Victoria_Memorial_Kolkata_at_night.jpg) by DeepanjanGhosh · CC BY-SA 4.0
-- **bengaluru** — [Vidhana Soudha LE.jpg](https://commons.wikimedia.org/wiki/File:Vidhana_Soudha_LE.jpg) by DeepanjanGhosh · CC BY-SA 4.0
-- **ooty** — [Tea Fields Nilgiris Ranges Mynala Dec25 A7CR 09866.jpg](https://commons.wikimedia.org/wiki/File:Tea_Fields_Nilgiris_Ranges_Mynala_Dec25_A7CR_09866.jpg) by Timothy A · CC BY-SA 4.0
-- **chikmagalur** — [Areca and Vanilla DSC 1306.jpg](https://commons.wikimedia.org/wiki/File:Areca_and_Vanilla_DSC_1306.jpg) by T · CC BY-SA 4.0
+- **coorg** — [Tadiandamol Valley, Western Ghats.jpg](https://commons.wikimedia.org/wiki/File:Tadiandamol_Valley,_Western_Ghats.jpg) by Jyotirmoy · CC BY-SA 4.0
+- **hampi** — [Wide angle of Galigopuram of Virupaksha Temple, Hampi (04) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Wide_angle_of_Galigopuram_of_Virupaksha_Temple,_Hampi_(04)_(cropped).jpg) by iMahesh · CC BY-SA 4.0
+- **hyderabad** — [Golconda Fort 005.jpg](https://commons.wikimedia.org/wiki/File:Golconda_Fort_005.jpg) by Bernard Gagnon · CC BY-SA 3.0
+- **kabini** — [Bengal Tiger Karnataka.jpg](https://commons.wikimedia.org/wiki/File:Bengal_Tiger_Karnataka.jpg) by Paul Mannix · CC BY 2.0
+- **wayanad** — [Banasurasagar Main Dam.jpg](https://commons.wikimedia.org/wiki/File:Banasurasagar_Main_Dam.jpg) by KSEB · CC BY-SA 2.5
+- **varkala** — [Varkala beach from above.jpg](https://commons.wikimedia.org/wiki/File:Varkala_beach_from_above.jpg) by Kondephy · CC BY-SA 4.0
+- **badami** — [BadamiCaves87.JPG](https://commons.wikimedia.org/wiki/File:BadamiCaves87.JPG) by Sanyam Bahga · CC BY-SA 3.0
+- **pondicherry** — [The Matrimandir in Auroville, Tamil Nadu, India.jpg](https://commons.wikimedia.org/wiki/File:The_Matrimandir_in_Auroville,_Tamil_Nadu,_India.jpg) by Matthew T Rader · CC BY-SA 4.0
+- **goldentriangle** — [Taj Mahal (Edited).jpeg](https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg) by Yann; edited by Jim Carter · CC BY-SA 4.0
+- **rajasthan** — [Udaipur Lake Palace.jpg](https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg) by user:Flicka · CC BY-SA 3.0
+- **mumbai** — [Chhatrapati shivaji terminus, esterno 01.jpg](https://commons.wikimedia.org/wiki/File:Chhatrapati_shivaji_terminus,_esterno_01.jpg) by Sailko · CC BY 3.0
+- **chennai** — [Shore Temple -Mamallapuram -Tamil Nadu -N-TN-C55.jpg](https://commons.wikimedia.org/wiki/File:Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg) by Swarna1311 · CC BY-SA 4.0
+- **kolkata** — [Victoria Memorial situated in Kolkata.jpg](https://commons.wikimedia.org/wiki/File:Victoria_Memorial_situated_in_Kolkata.jpg) by Subhrajyoti07 · CC BY-SA 4.0
+- **bengaluru** — [Bangalore Mysore Maharaja Palace.jpg](https://commons.wikimedia.org/wiki/File:Bangalore_Mysore_Maharaja_Palace.jpg) by Chuggingtrails · CC BY-SA 4.0
+- **ooty** — [NMR train at Ketti 05-02-26 75.jpeg](https://commons.wikimedia.org/wiki/File:NMR_train_at_Ketti_05-02-26_75.jpeg) by A · CC BY 2.5
+- **chikmagalur** — [Chikmagalur, India. (7793316622).jpg](https://commons.wikimedia.org/wiki/File:Chikmagalur,_India._(7793316622).jpg) by Prof · CC BY-SA 2.0
 - **gokarna** — [Australian Pelican Kioloa.jpg](https://commons.wikimedia.org/wiki/File:Australian_Pelican_Kioloa.jpg) by Toby Hudson · CC BY-SA 3.0
-- **andaman** — [Havelock Island, Mangrove tree on the beach, Andaman Islands.jpg](https://commons.wikimedia.org/wiki/File:Havelock_Island,_Mangrove_tree_on_the_beach,_Andaman_Islands.jpg) by Vyacheslav Argenberg · CC BY 4.0
-- **madurai** — [S-TN-34 Meenakshi Amman Temple South Gopuram enriched with delicate Stucco works.jpg](https://commons.wikimedia.org/wiki/File:S-TN-34_Meenakshi_Amman_Temple_South_Gopuram_enriched_with_delicate_Stucco_works.jpg) by MADHURANTHAKAN JAGADEESAN · CC BY-SA 4.0
-- **varanasi** — [Scindia Ghat in morning, Varanasi, Uttar Pradesh, India (2012).jpg](https://commons.wikimedia.org/wiki/File:Scindia_Ghat_in_morning,_Varanasi,_Uttar_Pradesh,_India_(2012).jpg) by travelwayoflife · CC BY-SA 2.0
-- **rishikesh** — [Laxman Jhula Bridge.jpg](https://commons.wikimedia.org/wiki/File:Laxman_Jhula_Bridge.jpg) by Dey · CC BY-SA 4.0
-- **delhi** — [Founder's Hall gate of Higashi-Honganji Temple, with water reflection, Kyoto, Japan.jpg](https://commons.wikimedia.org/wiki/File:Founder%27s_Hall_gate_of_Higashi-Honganji_Temple,_with_water_reflection,_Kyoto,_Japan.jpg) by Basile Morin · CC BY-SA 4.0
+- **andaman** — [Radha Nagar beach, Havelock Island, Andamn, India- Sun set view.jpg](https://commons.wikimedia.org/wiki/File:Radha_Nagar_beach,_Havelock_Island,_Andamn,_India-_Sun_set_view.jpg) by Harvinder Chandigarh · CC BY-SA 4.0
+- **madurai** — [An aerial view of Madurai city from atop of Meenakshi Amman temple.jpg](https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg) by எஸ்ஸார் · CC BY 3.0
+- **varanasi** — [Ahilya Ghat by the Ganges, Varanasi.jpg](https://commons.wikimedia.org/wiki/File:Ahilya_Ghat_by_the_Ganges,_Varanasi.jpg) by Ken Wieland · CC BY-SA 2.0
+- **rishikesh** — [Rishikesh-Lakshman Jhula by Kaustubh Nayyar.jpg](https://commons.wikimedia.org/wiki/File:Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg) by KaustubhNayyar · CC BY-SA 4.0
+- **delhi** — [India Gate in the Evening.jpg](https://commons.wikimedia.org/wiki/File:India_Gate_in_the_Evening.jpg) by Incredible India Portal · CC0

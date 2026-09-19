@@ -2,27 +2,27 @@
 window.PHOTOS = {
  "goa": {
   "src": "img/goa.jpg",
-  "author": "Timothy A",
+  "author": "iMahesh",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Laterite_Cliffs_Cola_Bay_Goa_Jan19_DSC06161.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Palolem_Beach,_South_Goa.jpg"
  },
  "munnar": {
   "src": "img/munnar.jpg",
-  "author": "Rainer Halama",
+  "author": "Kondephy",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Eravikulam_National_Park-WUS07189.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Munnar_Overview.jpg"
  },
  "kochi": {
   "src": "img/kochi.jpg",
-  "author": "Ingo Mehling",
+  "author": "Timothy A",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Nets_-_3.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Net_Raising_Birds_Sunrise_Ashtamudi_Kollam_Mar22_A7C_01784.jpg"
  },
  "thekkady": {
   "src": "img/thekkady.jpg",
-  "author": "Jeevan Jose, Kerala, India",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mycalesis_junonia-Thekkady.jpg"
+  "author": "Wouter Hagens",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Periyar_National_Park.JPG"
  },
  "mysuru": {
   "src": "img/mysuru.jpg",
@@ -32,99 +32,99 @@ window.PHOTOS = {
  },
  "coorg": {
   "src": "img/coorg.jpg",
-  "author": "Timothy A",
+  "author": "Jyotirmoy",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:SH85_Inakanahalli_Monsoon_Coorg_Jun24_A7CR_01591.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Tadiandamol_Valley,_Western_Ghats.jpg"
  },
  "hampi": {
   "src": "img/hampi.jpg",
-  "author": "Ingo Mehling",
+  "author": "iMahesh",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hampi_-_Hemakuta_Hill,_Virupaksha_Temple.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Wide_angle_of_Galigopuram_of_Virupaksha_Temple,_Hampi_(04)_(cropped).jpg"
  },
  "hyderabad": {
   "src": "img/hyderabad.jpg",
-  "author": "iMahesh",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Silhouette_of_Sultan_Quli_Qutub_Shah_Tomb.jpg"
+  "author": "Bernard Gagnon",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Golconda_Fort_005.jpg"
  },
  "kabini": {
   "src": "img/kabini.jpg",
-  "author": "Timothy A",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Brahminy_Kite_Perched_Prey_Kabini_Nagarhole_Dec21_D72_21603.jpg"
+  "author": "Paul Mannix",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bengal_Tiger_Karnataka.jpg"
  },
  "wayanad": {
   "src": "img/wayanad.jpg",
-  "author": "Ingo Mehling",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Edakkal_Caves_-_Petroglyphs_-_4.jpg"
+  "author": "KSEB",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Banasurasagar_Main_Dam.jpg"
  },
  "varkala": {
   "src": "img/varkala.jpg",
-  "author": "Krissubh",
+  "author": "Kondephy",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Varkala_Cliff_by_KS.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Varkala_beach_from_above.jpg"
  },
  "badami": {
   "src": "img/badami.jpg",
-  "author": "Naveen R Gowda",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sangameshwar_Temple,_Pattadakal,_Karnataka,_India.jpg"
+  "author": "Sanyam Bahga",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BadamiCaves87.JPG"
  },
  "pondicherry": {
   "src": "img/pondicherry.jpg",
-  "author": "Jay",
+  "author": "Matthew T Rader",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Golden_Mosaic.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:The_Matrimandir_in_Auroville,_Tamil_Nadu,_India.jpg"
  },
  "goldentriangle": {
   "src": "img/goldentriangle.jpg",
-  "author": "Antrix3",
+  "author": "Yann; edited by Jim Carter",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Aks_The_Reflection_Taj_Mahal.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg"
  },
  "rajasthan": {
   "src": "img/rajasthan.jpg",
-  "author": "UnpetitproleX",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lake_Pichola_at_sunset,_Udaipur,_Rajasthan,_India.jpg"
+  "author": "user:Flicka",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg"
  },
  "mumbai": {
   "src": "img/mumbai.jpg",
-  "author": "iMahesh",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hampi_gateway_1_on_Hampi-Hospete_road.jpg"
+  "author": "Sailko",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chhatrapati_shivaji_terminus,_esterno_01.jpg"
  },
  "chennai": {
   "src": "img/chennai.jpg",
-  "author": "Vyacheslav Argenberg",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mamallapuram,_Shore_Temple,_India.jpg"
+  "author": "Swarna1311",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg"
  },
  "kolkata": {
   "src": "img/kolkata.jpg",
-  "author": "DeepanjanGhosh",
+  "author": "Subhrajyoti07",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Victoria_Memorial_Kolkata_at_night.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Victoria_Memorial_situated_in_Kolkata.jpg"
  },
  "bengaluru": {
   "src": "img/bengaluru.jpg",
-  "author": "DeepanjanGhosh",
+  "author": "Chuggingtrails",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Vidhana_Soudha_LE.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Bangalore_Mysore_Maharaja_Palace.jpg"
  },
  "ooty": {
   "src": "img/ooty.jpg",
-  "author": "Timothy A",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tea_Fields_Nilgiris_Ranges_Mynala_Dec25_A7CR_09866.jpg"
+  "author": "A",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:NMR_train_at_Ketti_05-02-26_75.jpeg"
  },
  "chikmagalur": {
   "src": "img/chikmagalur.jpg",
-  "author": "T",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Areca_and_Vanilla_DSC_1306.jpg"
+  "author": "Prof",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chikmagalur,_India._(7793316622).jpg"
  },
  "gokarna": {
   "src": "img/gokarna.jpg",
@@ -134,32 +134,32 @@ window.PHOTOS = {
  },
  "andaman": {
   "src": "img/andaman.jpg",
-  "author": "Vyacheslav Argenberg",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Havelock_Island,_Mangrove_tree_on_the_beach,_Andaman_Islands.jpg"
+  "author": "Harvinder Chandigarh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Radha_Nagar_beach,_Havelock_Island,_Andamn,_India-_Sun_set_view.jpg"
  },
  "madurai": {
   "src": "img/madurai.jpg",
-  "author": "MADHURANTHAKAN JAGADEESAN",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:S-TN-34_Meenakshi_Amman_Temple_South_Gopuram_enriched_with_delicate_Stucco_works.jpg"
+  "author": "எஸ்ஸார்",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg"
  },
  "varanasi": {
   "src": "img/varanasi.jpg",
-  "author": "travelwayoflife",
+  "author": "Ken Wieland",
   "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Scindia_Ghat_in_morning,_Varanasi,_Uttar_Pradesh,_India_(2012).jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Ahilya_Ghat_by_the_Ganges,_Varanasi.jpg"
  },
  "rishikesh": {
   "src": "img/rishikesh.jpg",
-  "author": "Dey",
+  "author": "KaustubhNayyar",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Laxman_Jhula_Bridge.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"
  },
  "delhi": {
   "src": "img/delhi.jpg",
-  "author": "Basile Morin",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Founder%27s_Hall_gate_of_Higashi-Honganji_Temple,_with_water_reflection,_Kyoto,_Japan.jpg"
+  "author": "Incredible India Portal",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:India_Gate_in_the_Evening.jpg"
  }
 };
