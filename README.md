@@ -62,6 +62,11 @@ Live site (once GitHub Pages is enabled): **https://rohitranjan-codes.github.io/
   saved.
 - **Cost planner** — sliders for group size, trip length, travel style, departure city and route,
   in EUR or INR. Uses a live EUR→INR rate from the free Frankfurter API when online.
+- **Festival & events ticker** — a scrolling strip filtered to your dates and regions with three
+  kinds of entry: celebrate (Diwali, Pushkar fair, Dev Deepawali, Hornbill…), caution (post-Diwali
+  smog, winter fog, dry days, monsoon) and closed (tiger reserves in monsoon, Ladakh passes, the Taj
+  on Fridays). The same calendar flags each stop in the trip builder and booking desk. Edit
+  `events.js` to add years or events.
 - **Dates** — departure-date picker with countdown, November 2026 festival calendar filtered to
   your trip window, and a packing list generated from your plan.
 - **Safety & practical guide** plus a saved pre-departure checklist (confetti when complete).

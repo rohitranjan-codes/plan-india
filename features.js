@@ -212,6 +212,7 @@
         <div class="stop-cover">${window.sceneSVG(d.id, d.type, d.hue)}<span>${d.emoji}</span></div>
         <div class="stop-body">
           <div class="stop-title"><b>${esc(d.name)}</b><small>${A.monthBadge ? A.monthBadge(d) : ''}${tripDates(i) ? ' 📅 ' + tripDates(i) : ''}</small></div>
+          ${(() => { const r = stopRange(i); return window.stopEventsHTML && r ? window.stopEventsHTML(d.id, r.start, r.end) : ''; })()}
           <div class="stop-cost">≈ ${A.fmtNum(s.nights * perDay(d))} ${t('builder.perPerson')}${(() => { const r = stopRange(i), fc = r && window.wxForecast ? window.wxForecast(d.id, r.start, r.end) : null; return fc ? ` <span class="stop-wx">· ${fc.icon} ${fc.min}–${fc.max}°${fc.rain != null ? ' · 🌧 ' + fc.rain + '%' : ''}</span>` : ''; })()}</div>
         </div>
         <div class="stop-nights"><button data-act="minus" aria-label="fewer nights">−</button><b>${s.nights}</b><span>${t('builder.nights')}</span><button data-act="plus" aria-label="more nights">+</button></div>
@@ -281,6 +282,7 @@
     renderPresets(); renderPool(); renderBuilder(); if (gwChanged) savePlan(); else emit('planchange', plan);
   });
   window.addStop = addStop;
+  window.PLAN = () => plan; window.PLAN_DAYS = () => nights() + 2;
 
   /* ---------- Dates: countdown, festivals, packing ---------- */
   const dateEl = $('#tripDate');
@@ -346,7 +348,8 @@
     plan.forEach((s, i) => {
       const d = byId(s.id), r = stopRange(i), city = G.searchCity[s.id] || d.name;
       const hop = legRowFor(L[i], `hop${i}`, r ? (i === 0 ? new Date(r.start.getTime() - 86400000) : r.start) : null); if (hop) rows.push(hop);
-      if (s.nights > 0) rows.push({ key: `stay${i}-${s.id}`, icon: '🛏️', kind: t('desk.stay'), title: `${d.emoji} ${d.name} · ${s.nights} ${s.nights === 1 ? (A.LANG.cur === 'de' ? 'Nacht' : 'night') : t('desk.nights')}`, sub: `${r ? dfmt(r.start) + ' → ' + dfmt(r.end) + ' · ' : ''}${Math.ceil(A.state.people / 2)} ${t('desk.rooms')} · ${d.perDay}/day`,
+      const evs = r && window.stopEvents ? window.stopEvents(s.id, r.start, r.end) : [];
+      if (s.nights > 0) rows.push({ key: `stay${i}-${s.id}`, icon: '🛏️', kind: t('desk.stay'), title: `${d.emoji} ${d.name} · ${s.nights} ${s.nights === 1 ? (A.LANG.cur === 'de' ? 'Nacht' : 'night') : t('desk.nights')}`, sub: `${r ? dfmt(r.start) + ' → ' + dfmt(r.end) + ' · ' : ''}${Math.ceil(A.state.people / 2)} ${t('desk.rooms')} · ${d.perDay}/day${evs.length ? ' · ' + evs.map((e) => e.k.icon + ' ' + e.name).join(' · ') : ''}`,
         links: [{ l: t('desk.booking'), u: bookingUrl(city, r?.start, r?.end), p: true }, { l: t('desk.ghotels'), u: ghotels(city, r?.start, r?.end) }, ...(G.picks[s.id] || []).filter((p) => p.tier !== 'budget' && pickPasses(p.n + ' ' + city)).slice(0, 3).map((p) => ({ l: '★ ' + p.n, u: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + city)}${r ? `&checkin=${ymd(r.start)}&checkout=${ymd(r.end)}` : ''}&group_adults=${A.state.people}&no_rooms=${Math.ceil(A.state.people / 2)}`, c: 'pickchip' }))] });
       (G.ops[s.id] || []).filter((o) => o.kind === 'activity' || o.kind === 'boat' || o.kind === 'train').forEach((o, k) => rows.push({ key: `act${s.id}-${k}`, icon: ({ activity: '🎟️', boat: '⛵', train: '🚆' })[o.kind], kind: t('desk.book'), title: `${d.name} · ${o.n}`, sub: o.why, links: [{ l: o.n + ' ↗', u: o.url, p: true }] }));
     });
@@ -371,6 +374,7 @@
   }
   deskEl.addEventListener('change', (e) => { const row = e.target.closest('.desk-row'); if (!row) return; deskEl.dataset.touched = '1'; e.target.checked ? deskDone.add(row.dataset.key) : deskDone.delete(row.dataset.key); store.set('deskDone', [...deskDone]); renderDesk(); });
   renderDesk(); prefetchDeskRatings();
+  on('eventsready', () => { renderBuilder(); renderDesk(); });
   on('planchange', () => { renderDesk(); prefetchDeskRatings(); }); on('costchange', renderDesk); on('langchange', renderDesk);
   dateEl.addEventListener('change', renderDesk);
 
