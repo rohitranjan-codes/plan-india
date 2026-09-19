@@ -616,3 +616,8 @@ footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; ga
 .pick-card { border-left: 4px solid var(--line); border-bottom: 0; margin-bottom: 8px; padding: 10px 12px; border-radius: 12px; background: var(--bg-2); }
 .pick-card.tier-band-lux { border-left-color: #d4a017; } .pick-card.tier-band-mid { border-left-color: #3b82f6; } .pick-card.tier-band-budget { border-left-color: #16a34a; }
 .pick-card p { display: none; } .pick-card:hover p { display: block; }
+/* Modal photo header fixes */
+.sheet .cover { position: relative; top: auto; }
+.sheet .cover.has-photo .emoji-badge { display: none; }
+.sheet .photo-credit { left: auto; right: 14px; bottom: 12px; }
+.sheet .cover.has-photo .stamp { top: 70px; }
