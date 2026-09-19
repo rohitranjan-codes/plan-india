@@ -38,7 +38,7 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **shimla** — [KSR Steam special at Taradevi 05-02-13 56.jpeg](https://commons.wikimedia.org/wiki/File:KSR_Steam_special_at_Taradevi_05-02-13_56.jpeg) by No machine-readable author provided · CC BY 2.5
 - **manali** — [Solang Valley ,Manali, Himachal Pardes, India.JPG](https://commons.wikimedia.org/wiki/File:Solang_Valley_,Manali,_Himachal_Pardes,_India.JPG) by Harvinder Chandigarh · CC BY-SA 4.0
 - **dharamshala** — [McLeod Ganj Dharamkot Dharmsala Himachal Pradesh India April 2014.jpg](https://commons.wikimedia.org/wiki/File:McLeod_Ganj_Dharamkot_Dharmsala_Himachal_Pradesh_India_April_2014.jpg) by Rignam Wangkhang · CC BY 2.0
-- **leh** — [ISS054-E-7809 - View of Earth (cropped).jpg](https://commons.wikimedia.org/wiki/File:ISS054-E-7809_-_View_of_Earth_(cropped).jpg) by Earth Science and Remote Sensing Unit, NASA Johnson Space Ce · Public domain
+- **leh** — [Thikse Monastery .jpg](https://commons.wikimedia.org/wiki/File:Thikse_Monastery_.jpg) by Aksveer · CC BY-SA 4.0
 - **corbett** — [Bengal-Tiger Corbett Uttarakhand Dec-2013.jpg](https://commons.wikimedia.org/wiki/File:Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg) by Soumyajit Nandy · CC BY-SA 3.0
 - **khajuraho** — [1 Khajuraho.jpg](https://commons.wikimedia.org/wiki/File:1_Khajuraho.jpg) by PLBechly · CC BY-SA 4.0
 - **bandhavgarh** — [Tigress in Bandhavgarh NP.jpg](https://commons.wikimedia.org/wiki/File:Tigress_in_Bandhavgarh_NP.jpg) by This Image was created by User:Archith · CC BY-SA 3.0

@@ -218,9 +218,9 @@ window.PHOTOS = {
  },
  "leh": {
   "src": "img/leh.jpg",
-  "author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Ce",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:ISS054-E-7809_-_View_of_Earth_(cropped).jpg"
+  "author": "Aksveer",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thikse_Monastery_.jpg"
  },
  "corbett": {
   "src": "img/corbett.jpg",
