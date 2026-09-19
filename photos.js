@@ -122,15 +122,15 @@ window.PHOTOS = {
  },
  "chikmagalur": {
   "src": "img/chikmagalur.jpg",
-  "author": "Prof",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chikmagalur,_India._(7793316622).jpg"
+  "author": "Pavankumar",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_scenery_from_bababudan_hill.jpg"
  },
  "gokarna": {
   "src": "img/gokarna.jpg",
-  "author": "Toby Hudson",
+  "author": "Gandharva S",
   "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Australian_Pelican_Kioloa.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Mirjan_Fort_02.JPG"
  },
  "andaman": {
   "src": "img/andaman.jpg",

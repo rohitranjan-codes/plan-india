@@ -22,8 +22,8 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **kolkata** — [Victoria Memorial situated in Kolkata.jpg](https://commons.wikimedia.org/wiki/File:Victoria_Memorial_situated_in_Kolkata.jpg) by Subhrajyoti07 · CC BY-SA 4.0
 - **bengaluru** — [Bangalore Mysore Maharaja Palace.jpg](https://commons.wikimedia.org/wiki/File:Bangalore_Mysore_Maharaja_Palace.jpg) by Chuggingtrails · CC BY-SA 4.0
 - **ooty** — [NMR train at Ketti 05-02-26 75.jpeg](https://commons.wikimedia.org/wiki/File:NMR_train_at_Ketti_05-02-26_75.jpeg) by A · CC BY 2.5
-- **chikmagalur** — [Chikmagalur, India. (7793316622).jpg](https://commons.wikimedia.org/wiki/File:Chikmagalur,_India._(7793316622).jpg) by Prof · CC BY-SA 2.0
-- **gokarna** — [Australian Pelican Kioloa.jpg](https://commons.wikimedia.org/wiki/File:Australian_Pelican_Kioloa.jpg) by Toby Hudson · CC BY-SA 3.0
+- **chikmagalur** — [A scenery from bababudan hill.jpg](https://commons.wikimedia.org/wiki/File:A_scenery_from_bababudan_hill.jpg) by Pavankumar · CC BY-SA 4.0
+- **gokarna** — [Mirjan Fort 02.JPG](https://commons.wikimedia.org/wiki/File:Mirjan_Fort_02.JPG) by Gandharva S · CC BY-SA 3.0
 - **andaman** — [Radha Nagar beach, Havelock Island, Andamn, India- Sun set view.jpg](https://commons.wikimedia.org/wiki/File:Radha_Nagar_beach,_Havelock_Island,_Andamn,_India-_Sun_set_view.jpg) by Harvinder Chandigarh · CC BY-SA 4.0
 - **madurai** — [An aerial view of Madurai city from atop of Meenakshi Amman temple.jpg](https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg) by எஸ்ஸார் · CC BY 3.0
 - **varanasi** — [Ahilya Ghat by the Ganges, Varanasi.jpg](https://commons.wikimedia.org/wiki/File:Ahilya_Ghat_by_the_Ganges,_Varanasi.jpg) by Ken Wieland · CC BY-SA 2.0
