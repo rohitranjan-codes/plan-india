@@ -35,10 +35,10 @@ Live site (once GitHub Pages is enabled): **https://rohitranjan-codes.github.io/
 - **Interactive map** (Leaflet + OpenStreetMap/CARTO tiles, no API key) — pins for every
   destination, route lines from Bengaluru on hover, popups that open the guide or add the place
   to your plan.
-- **24 Indian destinations from Bengaluru**, filterable by mood — beaches, hills & tea, culture,
-  wildlife, cities and "further afield in India" (Golden Triangle, Rajasthan, Varanasi,
-  Rishikesh). Each has an illustrated cover, things to do, food, hotels at three budgets, travel
-  time from BLR and suggested nights.
+- **50 destinations across India**, filterable by region and mood — beaches, hills & tea,
+  culture, wildlife and cities from Ladakh to the Andamans. Each has a photo, things to do,
+  restaurants, 4★-and-up hotel picks, operators, a 12-month rating, a safety and comfort card,
+  and the leg from your chosen gateway.
 - **Passport stamps** — every destination you open earns a stamp; collect all 24.
 - **Food gallery** — sixteen dishes with region, veg/non-veg, spice rating and where to eat them.
 - **Trip builder** — tap or drag destinations into a timeline, set nights, reorder, load one of

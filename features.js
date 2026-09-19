@@ -92,7 +92,7 @@
   quizIntro();
 
   /* ---------- Map ---------- */
-  const TYPE_COLORS = { beach: '#0ea5e9', hills: '#10b981', culture: '#f59e0b', wildlife: '#65a30d', city: '#8b5cf6', far: '#ef4444' };
+  const TYPE_COLORS = { beach: '#0ea5e9', hills: '#10b981', culture: '#f59e0b', wildlife: '#65a30d', city: '#8b5cf6' };
   const mapEl = $('#mapEl');
   if (window.L && mapEl) {
     const map = L.map(mapEl, { scrollWheelZoom: false, zoomControl: true });
@@ -141,11 +141,11 @@
     goa: [['bengaluru', 2], ['goa', 5], ['bengaluru', 1]],
     kerala: [['bengaluru', 2], ['munnar', 3], ['thekkady', 1], ['kochi', 2], ['bengaluru', 1]],
     heritage: [['bengaluru', 2], ['mysuru', 2], ['coorg', 2], ['hampi', 2], ['bengaluru', 1]],
-    golden: [['delhi', 2], ['goldentriangle', 3], ['varanasi', 2], ['delhi', 1]],
-    rajasthan: [['delhi', 1], ['rajasthan', 6], ['delhi', 1]],
+    golden: [['delhi', 2], ['agra', 1], ['jaipur', 2], ['varanasi', 2], ['delhi', 1]],
+    rajasthan: [['delhi', 1], ['jaipur', 2], ['jodhpur', 2], ['udaipur', 3]],
   };
   let plan = [];
-  const parseHash = () => { const m = location.hash.match(/plan=([a-z0-9.\-]+)/i); if (!m) return null; const p = m[1].split('-').map((s) => s.split('.')).filter(([id, n]) => byId(id) && +n >= 0).map(([id, n]) => ({ id, nights: +n })); const pp = location.hash.match(/p=(\d+)/), st = location.hash.match(/s=(\w+)/); if (pp) A.state.people = Math.min(12, Math.max(1, +pp[1])); if (st && A.M.styles[st[1]]) A.state.style = st[1]; return p; };
+  const parseHash = () => { const pp = location.hash.match(/[#&]p=(\d+)/), st = location.hash.match(/[#&]s=(\w+)/); if (pp) A.state.people = Math.min(12, Math.max(1, +pp[1])); if (st && A.M.styles[st[1]]) A.state.style = st[1]; const m = location.hash.match(/plan=([a-z0-9.\-]+)/i); if (!m) return null; return m[1].split('-').map((s) => s.split('.')).filter(([id, n]) => byId(id) && +n >= 0).map(([id, n]) => ({ id, nights: +n })); };
   plan = parseHash() || store.get('plan', null) || PRESETS.goa.map(([id, nights]) => ({ id, nights }));
   plan = plan.filter((s) => byId(s.id));
   const planUrl = () => `${location.origin}${location.pathname}${location.hash}`;
@@ -347,7 +347,7 @@
       const d = byId(s.id), r = stopRange(i), city = G.searchCity[s.id] || d.name;
       const hop = legRowFor(L[i], `hop${i}`, r ? (i === 0 ? new Date(r.start.getTime() - 86400000) : r.start) : null); if (hop) rows.push(hop);
       if (s.nights > 0) rows.push({ key: `stay${i}-${s.id}`, icon: '🛏️', kind: t('desk.stay'), title: `${d.emoji} ${d.name} · ${s.nights} ${s.nights === 1 ? (A.LANG.cur === 'de' ? 'Nacht' : 'night') : t('desk.nights')}`, sub: `${r ? dfmt(r.start) + ' → ' + dfmt(r.end) + ' · ' : ''}${Math.ceil(A.state.people / 2)} ${t('desk.rooms')} · ${d.perDay}/day`,
-        links: [{ l: t('desk.booking'), u: bookingUrl(city, r?.start, r?.end), p: true }, { l: t('desk.ghotels'), u: ghotels(city, r?.start, r?.end) }, ...(G.picks[s.id] || []).filter((p) => pickPasses(p.n + ' ' + city)).slice(0, 3).map((p) => ({ l: '★ ' + p.n, u: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + city)}${r ? `&checkin=${ymd(r.start)}&checkout=${ymd(r.end)}` : ''}&group_adults=${A.state.people}&no_rooms=${Math.ceil(A.state.people / 2)}`, c: 'pickchip' }))] });
+        links: [{ l: t('desk.booking'), u: bookingUrl(city, r?.start, r?.end), p: true }, { l: t('desk.ghotels'), u: ghotels(city, r?.start, r?.end) }, ...(G.picks[s.id] || []).filter((p) => p.tier !== 'budget' && pickPasses(p.n + ' ' + city)).slice(0, 3).map((p) => ({ l: '★ ' + p.n, u: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + city)}${r ? `&checkin=${ymd(r.start)}&checkout=${ymd(r.end)}` : ''}&group_adults=${A.state.people}&no_rooms=${Math.ceil(A.state.people / 2)}`, c: 'pickchip' }))] });
       (G.ops[s.id] || []).filter((o) => o.kind === 'activity' || o.kind === 'boat' || o.kind === 'train').forEach((o, k) => rows.push({ key: `act${s.id}-${k}`, icon: ({ activity: '🎟️', boat: '⛵', train: '🚆' })[o.kind], kind: t('desk.book'), title: `${d.name} · ${o.n}`, sub: o.why, links: [{ l: o.n + ' ↗', u: o.url, p: true }] }));
     });
     const out = legRowFor(L[plan.length], 'hopOut', endD ? new Date(endD.getTime() - 86400000) : null); if (out) rows.push(out);

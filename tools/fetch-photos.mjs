@@ -39,8 +39,7 @@ const QUERIES = {
   madurai: ['Meenakshi Amman Temple gopuram', 'Meenakshi Temple Madurai', 'Thirumalai Nayakkar Mahal', 'Madurai temple'],
   badami: ['Badami cave temples', 'Badami Agastya lake', 'Pattadakal temples'],
   pondicherry: ['Matrimandir Auroville', 'Promenade Beach Pondicherry', 'Puducherry French Quarter', 'Pondicherry rock beach'],
-  goldentriangle: ['Taj Mahal sunrise', 'Taj Mahal', 'Amber Fort Jaipur', 'Hawa Mahal'],
-  rajasthan: ['Lake Palace Udaipur', 'Mehrangarh Fort Jodhpur blue city', 'City Palace Udaipur'],
+  agra: ['Taj Mahal'], jaipur: ['Amber Fort', 'Hawa Mahal'], jodhpur: ['Mehrangarh Fort'], udaipur: ['Lake Pichola Udaipur'], jaisalmer: ['Jaisalmer Fort'], pushkar: ['Pushkar Lake'], ranthambore: ['Ranthambore tiger'], amritsar: ['Golden Temple Amritsar'], shimla: ['Shimla Ridge'], manali: ['Manali valley'], dharamshala: ['McLeod Ganj'], leh: ['Pangong Lake'], corbett: ['Corbett National Park'], khajuraho: ['Khajuraho temple'], bandhavgarh: ['Bandhavgarh tiger'], kanha: ['Kanha National Park'], aurangabad: ['Kailasa Temple Ellora'], kutch: ['Rann of Kutch'], darjeeling: ['Darjeeling tea garden'], gangtok: ['Gangtok'], kaziranga: ['Kaziranga rhino'], shillong: ['Living root bridge Meghalaya'], puri: ['Konark Sun Temple'], thanjavur: ['Brihadeeswarar Temple'], kodaikanal: ['Kodaikanal Lake'],
   varanasi: ['Varanasi ghats', 'Ganges Varanasi boats', 'Dashashwamedh Ghat', 'Varanasi river'],
   rishikesh: ['Lakshman Jhula', 'Ram Jhula', 'Rishikesh Ganga ghat', 'Triveni Ghat Rishikesh'],
   mumbai: ['Gateway of India', 'Marine Drive Mumbai', 'Chhatrapati Shivaji Terminus', 'Taj Mahal Palace Hotel Mumbai'],
@@ -71,8 +70,31 @@ const ARTICLES = {
   madurai: ['Meenakshi Temple', 'Madurai', 'Thirumalai Nayakkar Mahal'],
   badami: ['Badami cave temples', 'Badami', 'Pattadakal', 'Aihole'],
   pondicherry: ['Matrimandir', 'Promenade Beach', 'Pondicherry', 'Auroville'],
-  goldentriangle: ['Taj Mahal', 'Amber Fort', 'Hawa Mahal', 'Agra Fort'],
-  rajasthan: ['Lake Palace', 'Mehrangarh', 'City Palace, Udaipur', 'Udaipur', 'Jodhpur'],
+  agra: ['Taj Mahal', 'Agra Fort', 'Mehtab Bagh'],
+  jaipur: ['Amber Fort', 'Hawa Mahal', 'City Palace, Jaipur', 'Jal Mahal'],
+  jodhpur: ['Mehrangarh', 'Jodhpur', 'Umaid Bhawan Palace'],
+  udaipur: ['Lake Palace', 'City Palace, Udaipur', 'Lake Pichola', 'Udaipur'],
+  jaisalmer: ['Jaisalmer Fort', 'Jaisalmer', 'Thar Desert'],
+  pushkar: ['Pushkar Lake', 'Pushkar Fair', 'Pushkar'],
+  ranthambore: ['Ranthambore National Park', 'Ranthambore Fort'],
+  amritsar: ['Golden Temple', 'Harmandir Sahib', 'Amritsar'],
+  shimla: ['Kalka–Shimla railway', 'Shimla', 'The Ridge, Shimla', 'Viceregal Lodge'],
+  manali: ['Manali', 'Solang Valley', 'Rohtang Pass', 'Hidimba Devi Temple'],
+  dharamshala: ['McLeod Ganj', 'Dharamshala', 'Triund', 'Dhauladhar'],
+  leh: ['Pangong Tso', 'Thikse Monastery', 'Leh', 'Nubra Valley', 'Ladakh'],
+  corbett: ['Jim Corbett National Park', 'Dhikala'],
+  khajuraho: ['Khajuraho Group of Monuments', 'Kandariya Mahadeva Temple', 'Khajuraho'],
+  bandhavgarh: ['Bandhavgarh National Park', 'Bandhavgarh Fort'],
+  kanha: ['Kanha Tiger Reserve', 'Barasingha'],
+  aurangabad: ['Kailasa Temple, Ellora', 'Ellora Caves', 'Ajanta Caves'],
+  kutch: ['Rann of Kutch', 'Great Rann of Kutch', 'Bhuj'],
+  darjeeling: ['Darjeeling', 'Darjeeling Himalayan Railway', 'Tiger Hill, Darjeeling', 'Kangchenjunga'],
+  gangtok: ['Gangtok', 'Rumtek Monastery', 'Tsomgo Lake', 'Sikkim'],
+  kaziranga: ['Kaziranga National Park', 'Indian rhinoceros'],
+  shillong: ['Living root bridge', 'Nohkalikai Falls', 'Shillong', 'Dawki'],
+  puri: ['Konark Sun Temple', 'Puri', 'Jagannath Temple, Puri'],
+  thanjavur: ['Brihadisvara Temple, Thanjavur', 'Ranganathaswamy Temple, Srirangam', 'Thanjavur'],
+  kodaikanal: ['Kodaikanal Lake', 'Kodaikanal', 'Pillar Rocks'],
   varanasi: ['Ghats in Varanasi', 'Varanasi', 'Dashashwamedh Ghat'],
   rishikesh: ['Lakshman Jhula', 'Ram Jhula', 'Rishikesh', 'Triveni Ghat'],
   mumbai: ['Gateway of India', 'Marine Drive, Mumbai', 'Chhatrapati Shivaji Maharaj Terminus', 'Mumbai'],
@@ -195,6 +217,7 @@ for (const id of ids) {
   await sleep(400);
 }
 
+Object.keys(credits).forEach((k) => { if (!QUERIES[k]) delete credits[k]; });
 await writeFile('img/credits.json', JSON.stringify(credits, null, 2));
 await writeFile('img/CREDITS.md', '# Photo credits\n\nAll photos from Wikimedia Commons under the licence shown. Thank you to the photographers.\n\n' +
   Object.entries(credits).map(([id, c]) => `- **${id}** — [${c.title}](${c.page}) by ${c.author} · ${c.license}`).join('\n') + '\n');

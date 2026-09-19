@@ -12,7 +12,12 @@
   /* Excellent day trains worth preferring over a car (both directions). hours door-to-door, cost per person EUR (executive/first class). */
   const TRAINS = [
     { a: 'bengaluru', b: 'mysuru', name: 'Vande Bharat Express', hours: 2.5, cost: 15 },
-    { a: 'delhi', b: 'goldentriangle', name: 'Gatimaan / Vande Bharat to Agra', hours: 2.5, cost: 18 },
+    { a: 'delhi', b: 'agra', name: 'Gatimaan / Vande Bharat to Agra', hours: 2.5, cost: 18 },
+    { a: 'delhi', b: 'jaipur', name: 'Vande Bharat to Jaipur', hours: 5, cost: 22 },
+    { a: 'delhi', b: 'amritsar', name: 'Vande Bharat to Amritsar', hours: 6, cost: 25 },
+    { a: 'delhi', b: 'ranthambore', name: 'Vande Bharat to Sawai Madhopur', hours: 4.5, cost: 20 },
+    { a: 'agra', b: 'jaipur', name: 'Car via Fatehpur Sikri (or train 4 h)', hours: 5, cost: 30 },
+    { a: 'mumbai', b: 'aurangabad', name: 'Vande Bharat to Aurangabad', hours: 6.5, cost: 25 },
     { a: 'delhi', b: 'rishikesh', name: 'Vande Bharat to Dehradun / Rishikesh', hours: 5, cost: 20 },
     { a: 'chennai', b: 'bengaluru', name: 'Vande Bharat Express', hours: 5, cost: 22 },
     { a: 'mumbai', b: 'goa', name: 'Vande Bharat (Madgaon)', hours: 8.5, cost: 30 },
@@ -20,7 +25,9 @@
 
   /* road speed incl. stops: hills are slower */
   const ROAD_KMH = { default: 50, hills: 35 };
-  const HILLS = new Set(['munnar', 'thekkady', 'coorg', 'ooty', 'wayanad', 'chikmagalur', 'kabini', 'rishikesh']);
+  const HILLS = new Set(['munnar', 'thekkady', 'coorg', 'ooty', 'wayanad', 'chikmagalur', 'kabini', 'rishikesh', 'shimla', 'manali', 'dharamshala', 'leh', 'darjeeling', 'gangtok', 'shillong', 'kodaikanal', 'corbett']);
+  /* Regional airports that are not destinations themselves (for 'via' legs) */
+  const HUBS = { IXC: { lat: 30.67, lng: 76.79, name: 'Chandigarh' }, JLR: { lat: 23.18, lng: 80.05, name: 'Jabalpur' }, IXB: { lat: 26.68, lng: 88.33, name: 'Bagdogra' }, GAU: { lat: 26.11, lng: 91.59, name: 'Guwahati' }, BBI: { lat: 20.25, lng: 85.82, name: 'Bhubaneswar' }, TRZ: { lat: 10.77, lng: 78.71, name: 'Trichy' }, NAG: { lat: 21.09, lng: 79.05, name: 'Nagpur' } };
 
   const STYLE = {
     comfort: { flightMult: 1.0, carPerDay: 90, seat: 'economy' },       // 4★, IndiGo/Air India economy, Innova Crysta with driver
@@ -45,7 +52,7 @@
     }
     // road, possibly with a flight to the nearest airport first (e.g. Bengaluru → Munnar via Kochi)
     if (!to.airport && to.via && to.via !== from.airport && d > 350) {
-      const via = window.TRIP.destinations.find((x) => x.airport === to.via);
+      const via = window.TRIP.destinations.find((x) => x.airport === to.via) || (HUBS[to.via] ? { id: 'hub-' + to.via, airport: to.via, ...HUBS[to.via] } : null);
       if (via) { const f = leg(from, via, style, people), r = leg(via, to, style, people); return { mode: 'flight+road', hours: f.hours + r.hours, cost: f.cost + r.cost, km: f.km + r.km, label: `Flight ${from.airport} → ${to.via}, then car ${r.km} km` }; }
     }
     return road;

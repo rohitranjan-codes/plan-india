@@ -624,3 +624,9 @@ footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; ga
 /* Route-card legend: keep on one row, wrap as chips on narrow screens */
 .flight-card .legend { flex-wrap: wrap; gap: 6px 14px; font-size: .74rem; }
 .flight-card .legend span { white-space: nowrap; }
+
+/* Region filter row */
+.filters.regions { margin-top: 8px; } .filter.small-r { padding: 6px 11px; font-size: .78rem; }
+.dest-toolbar { align-items: flex-end; }
+
+.stamp-mini { width: 32px; height: 32px; font-size: .95rem; }

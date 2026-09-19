@@ -35,7 +35,7 @@ window.TRIP = {
     { id: 'hampi', place: 'Hampi', temp: '18–31 °C', note: 'Dry and clear — ideal for walking the ruins.', icon: '☀️', rating: 'great' },
     { id: 'hyderabad', place: 'Hyderabad', temp: '18–30 °C', note: 'Dry, sunny, crisp evenings — great city weather.', icon: '☀️', rating: 'great' },
     { id: 'andaman', place: 'Andaman Islands', temp: '24–30 °C', note: 'Post-monsoon calm seas and good visibility for diving.', icon: '🏝️', rating: 'great' },
-    { id: 'goldentriangle', place: 'Delhi / Agra / Jaipur', temp: '12–28 °C', note: 'Ideal temperatures, but Delhi smog peaks in November.', icon: '🌤️', rating: 'good' },
+    { id: 'agra', place: 'Delhi / Agra / Jaipur', temp: '12–28 °C', note: 'Ideal temperatures, but Delhi smog peaks in November.', icon: '🌤️', rating: 'good' },
     { id: 'pondicherry', place: 'Pondicherry / Chennai', temp: '24–30 °C', note: 'Peak NE-monsoon rain in November. Better in January.', icon: '🌧️', rating: 'skip' },
   ],
 

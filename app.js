@@ -27,8 +27,9 @@
   }
   const TYPES = {
     all: { en: 'All', de: 'Alle', icon: '🧭' }, beach: { en: 'Beaches', de: 'Strände', icon: '🏖️' }, hills: { en: 'Hills & tea', de: 'Berge & Tee', icon: '🍃' },
-    culture: { en: 'Culture & heritage', de: 'Kultur & Erbe', icon: '🏛️' }, wildlife: { en: 'Wildlife', de: 'Wildtiere', icon: '🐘' }, city: { en: 'Cities', de: 'Städte', icon: '🏙️' }, far: { en: 'Further afield in India', de: 'Weiter weg in Indien', icon: '🧳' },
+    culture: { en: 'Culture & heritage', de: 'Kultur & Erbe', icon: '🏛️' }, wildlife: { en: 'Wildlife', de: 'Wildtiere', icon: '🐘' }, city: { en: 'Cities', de: 'Städte', icon: '🏙️' },
   };
+  const REGIONS = { all: { en: 'All regions', de: 'Alle Regionen' }, north: { en: 'North & Himalaya', de: 'Norden & Himalaya' }, west: { en: 'West', de: 'Westen' }, central: { en: 'Central', de: 'Zentrum' }, south: { en: 'South', de: 'Süden' }, east: { en: 'East & North-east', de: 'Osten & Nordosten' }, islands: { en: 'Islands', de: 'Inseln' } };
   Object.values(TYPES).forEach((v) => { v.label = LANG.cur === 'de' ? v.de : v.en; });
 
   /* ---------- Shared trip state (settings.js extends it) ---------- */
@@ -148,13 +149,21 @@
   /* ---------- Destinations ---------- */
   const grid = $('#destGrid');
   const filters = $('#destFilters');
-  let destType = store.get('destType', 'all');
+  let destType = store.get('destType', 'all'), destRegion = store.get('destRegion', 'all');
+  if (!TYPES[destType]) destType = 'all';
+  const regionFilters = $('#regionFilters');
   function renderFilters() {
+    const inRegion = (d) => destRegion === 'all' || d.region === destRegion;
     filters.innerHTML = Object.entries(TYPES).map(([k, v]) => {
-      const n = k === 'all' ? T.destinations.length : T.destinations.filter((d) => d.type === k).length;
+      const n = T.destinations.filter((d) => inRegion(d) && (k === 'all' || d.type === k)).length;
       return `<button class="filter ${destType === k ? 'active' : ''}" data-type="${k}">${v.icon} ${esc(v.label)} <b>${n}</b></button>`;
     }).join('');
+    regionFilters.innerHTML = Object.entries(REGIONS).map(([k, v]) => {
+      const n = k === 'all' ? T.destinations.length : T.destinations.filter((d) => d.region === k).length;
+      return `<button class="filter small-r ${destRegion === k ? 'active' : ''}" data-region="${k}">${esc(LANG.cur === 'de' ? v.de : v.en)} <b>${n}</b></button>`;
+    }).join('');
   }
+  regionFilters.addEventListener('click', (e) => { const b = e.target.closest('.filter'); if (b) { destRegion = b.dataset.region; store.set('destRegion', destRegion); renderDests(); } });
   const bestOnly = $('#bestOnly'); bestOnly.checked = !!store.get('bestOnly', false);
   bestOnly.addEventListener('change', () => { store.set('bestOnly', bestOnly.checked); renderDests(); });
   const legFromGateway = (d) => { const AP = window.APP || {}; const gd = AP.gatewayDest && AP.gatewayDest(); return gd && window.GEO && gd.id !== d.id ? { gd, leg: window.GEO.leg(gd, d, state.style, state.people) } : null; };
@@ -162,7 +171,7 @@
   function renderDests(type = destType) {
     destType = type; renderFilters();
     const mr = (window.APP || {}).monthRating || (() => 2);
-    const list = T.destinations.filter((d) => (type === 'all' || d.type === type) && (!bestOnly.checked || mr(d) === 3));
+    const list = T.destinations.filter((d) => (type === 'all' || d.type === type) && (destRegion === 'all' || d.region === destRegion) && (!bestOnly.checked || mr(d) === 3));
     grid.innerHTML = list.map((d, i) => { const lg = legFromGateway(d); return `
       <article class="dest" style="--i:${i}" data-id="${d.id}" tabindex="0" role="button" aria-label="Open ${esc(d.name)}">
         ${window.coverHTML(d, `<em class="type-pill">${TYPES[d.type].icon} ${esc(TYPES[d.type].label)}</em>`)}
@@ -224,7 +233,7 @@
             <h4>🛏️ ${t('guide.picks')}</h4>
             <p class="picks-note">${t('guide.picksNote')}</p>
             <p class="rating-summary"></p>
-            <div class="picks">${(window.GUIDE?.picks[d.id] || []).map((p) => `
+            <div class="picks">${(window.GUIDE?.picks[d.id] || []).filter((p) => p.tier !== 'budget').map((p) => `
               <div class="pick-row pick-card rated tier-band-${p.tier}" data-q="${esc(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">
                 <span class="tier tier-${p.tier}">${t('tier.' + p.tier)}</span>
                 <div><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(p.why)}</p>
