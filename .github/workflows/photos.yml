@@ -7,6 +7,10 @@ on:
         description: "Re-fetch photos that already exist"
         type: boolean
         default: false
+      ids:
+        description: "Space-separated destination ids to fetch (empty = all)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -20,7 +24,7 @@ jobs:
         with:
           node-version: 22
       - name: Fetch photos from Wikimedia Commons
-        run: node tools/fetch-photos.mjs ${{ inputs.force && '--force' || '' }}
+        run: node tools/fetch-photos.mjs ${{ inputs.force && '--force' || '' }} ${{ inputs.ids }}
       - name: Commit photos
         run: |
           git config user.name "github-actions[bot]"

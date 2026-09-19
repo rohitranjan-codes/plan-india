@@ -63,8 +63,8 @@ const ARTICLES = {
   hyderabad: ['Charminar', 'Golconda Fort', 'Chowmahalla Palace', 'Hyderabad'],
   ooty: ['Nilgiri Mountain Railway', 'Ooty', 'Doddabetta', 'Coonoor'],
   kabini: ['Nagarhole National Park', 'Kabini River', 'Kabini Reservoir'],
-  chikmagalur: ['Mullayanagiri', 'Chikkamagaluru', 'Baba Budangiri', 'Hebbe Falls'],
-  gokarna: ['Om Beach', 'Gokarna, Karnataka', 'Kudle Beach'],
+  chikmagalur: ['Mullayanagiri', 'Baba Budangiri', 'Hebbe Falls', 'Kemmangundi', 'Kudremukh', 'Kudremukh National Park', 'Bhadra Wildlife Sanctuary'],
+  gokarna: ['Om Beach', 'Kudle Beach', 'Gokarna, Karnataka', 'Mahabaleshwar Temple, Gokarna', 'Murudeshwar', 'Mirjan Fort', 'Yana, India'],
   wayanad: ['Edakkal Caves', 'Banasura Sagar Dam', 'Wayanad district', 'Chembra Peak'],
   varkala: ['Varkala Beach', 'Varkala', 'Kovalam'],
   andaman: ['Radhanagar Beach', 'Havelock Island', 'Neil Island', 'Andaman Islands'],
@@ -145,7 +145,7 @@ const STOP = new Set(['beach', 'temple', 'fort', 'palace', 'lake', 'hills', 'hil
 function relevant(c, q) {
   const hay = `${c.title} ${c.desc} ${c.cats}`.toLowerCase();
   const tokens = q.toLowerCase().replace(/incategory:\S+/g, '').split(/[^a-z]+/).filter((w) => w.length >= 4 && !STOP.has(w));
-  return tokens.length === 0 || tokens.some((w) => hay.includes(w));
+  return tokens.length > 0 && tokens.some((w) => hay.includes(w));
 }
 function pick(list, q) {
   return list
