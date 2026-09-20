@@ -85,6 +85,7 @@
     if (hp) { if (photo) { hp.style.backgroundImage = `url("${photo.src}")`; hp.classList.add('on'); } else hp.classList.remove('on'); }
     const best = T.destinations.filter((d) => monthRating(d) === 3).length;
     $('#heroEyebrow').textContent = `${o.city} → ${g.city} · ${monthName()} ${store.get('tripDate', '2026-11-07').slice(0, 4)}`;
+    const nya = $('#notYours'); if (nya) nya.hidden = false;
     $('#svgOrigin').textContent = o.city.split(' ')[0].toUpperCase();
     $('#svgGateway').textContent = g.city.toUpperCase();
     const nonstop = o.nonstop[g.code];
@@ -157,6 +158,23 @@
   }
 
   /* ---------- init ---------- */
+  /* First visit with nothing saved and no link parameters: guess origin from the browser's timezone / language. */
+  function guessOrigin() {
+    const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || '').toLowerCase();
+    const langs = (navigator.languages || [navigator.language || 'en']).map((l) => l.toLowerCase());
+    const byTz = { 'europe/london': 'LHR', 'europe/dublin': 'DUB', 'europe/paris': 'CDG', 'europe/amsterdam': 'AMS', 'europe/brussels': 'BRU', 'europe/berlin': 'FRA', 'europe/zurich': 'ZRH', 'europe/vienna': 'VIE', 'europe/copenhagen': 'CPH', 'europe/stockholm': 'ARN', 'europe/oslo': 'OSL', 'europe/helsinki': 'HEL', 'europe/warsaw': 'WAW', 'europe/prague': 'PRG', 'europe/budapest': 'BUD', 'europe/rome': 'FCO', 'europe/madrid': 'MAD', 'europe/lisbon': 'LIS', 'europe/athens': 'ATH', 'europe/istanbul': 'IST' };
+    const byLang = { 'en-gb': 'LHR', 'en-ie': 'DUB', fr: 'CDG', nl: 'AMS', 'nl-be': 'BRU', 'fr-be': 'BRU', de: 'FRA', 'de-ch': 'ZRH', 'fr-ch': 'GVA', 'it-ch': 'ZRH', 'de-at': 'VIE', da: 'CPH', sv: 'ARN', nb: 'OSL', no: 'OSL', fi: 'HEL', pl: 'WAW', cs: 'PRG', hu: 'BUD', it: 'MXP', es: 'MAD', 'es-es': 'MAD', ca: 'BCN', pt: 'LIS', 'pt-pt': 'LIS', el: 'ATH', tr: 'IST' };
+    let code = byTz[tz];
+    if (!code) for (const l of langs) { code = byLang[l] || byLang[l.split('-')[0]]; if (code) break; }
+    if (!code) return null;
+    const o = E.origins.find((x) => x.code === code); if (!o) return null;
+    // sensible gateway: prefer a nonstop from this origin; Delhi first, then Mumbai, Bengaluru
+    const gw = ['DEL', 'BOM', 'BLR'].find((g) => o.nonstop[g]) || 'DEL';
+    return { origin: o.code, country: o.country, currency: E.countries[o.country]?.currency || 'EUR', gateway: gw };
+  }
+  const firstVisit = !window.HAD_SAVED_SETTINGS && !store.get('originChosen', false) && !/[#&](o|g|plan)=/.test(location.hash);
+  if (firstVisit) { const g = guessOrigin(); if (g) Object.assign(state, g); }
+  store.set('originChosen', true);
   readUrl();
   if (!store.get('tripDate', null)) store.set('tripDate', '2026-11-07');
   state.month = +store.get('tripDate', '2026-11-07').slice(5, 7) || 11;

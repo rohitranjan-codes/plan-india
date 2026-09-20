@@ -34,6 +34,7 @@
 
   /* ---------- Shared trip state (settings.js extends it) ---------- */
   const M = T.costModel;
+  window.HAD_SAVED_SETTINGS = !!store.get('cost', null);
   const state = Object.assign({ people: 4, days: 10, style: 'comfort', origin: 'FRA', country: 'DE', gateway: 'BLR', gateway2: '', month: 11, route: 'goa', currency: 'EUR', showInr: false }, store.get('cost', {}));
   if (!M.styles[state.style]) state.style = 'comfort';
   if (({ fra: 'FRA', zrh: 'ZRH', other: 'FRA' })[state.origin]) state.origin = ({ fra: 'FRA', zrh: 'ZRH', other: 'FRA' })[state.origin];

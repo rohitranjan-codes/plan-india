@@ -656,3 +656,6 @@ footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; ga
 .stop-events { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 2px; }
 .se { padding: 2px 8px; border-radius: 999px; font-size: .7rem; font-weight: 800; }
 .se.celebrate { background: #dcfce7; color: #166534; } .se.caution { background: #fef3c7; color: #92400e; } .se.closed { background: #fee2e2; color: #991b1b; }
+
+.not-yours { margin-left: 8px; padding-left: 10px; border-left: 1px solid var(--line); font-size: .72rem; letter-spacing: .02em; text-transform: none; color: var(--accent); font-weight: 800; }
+.not-yours:hover { text-decoration: underline; }

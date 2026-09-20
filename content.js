@@ -92,6 +92,7 @@ window.CONTENT = {
     'hero.eyebrow': 'Europa → Indien · richtig geplant',
     'hero.title': 'Europa nach Indien,<br /><span class="accent">richtig geplant.</span>',
     'hero.lead': 'Ein sicherer, komfortabler und detaillierter Reiseplan von jedem europäischen Flughafen nach ganz Indien: Gateway, Monat und Stil wählen — Routen, Hotels ab 4 Sternen, Kosten, Wetter und Buchungslinks passen sich an.',
+    'hero.notYours': 'Nicht euer Flughafen?',
     'hero.cta1': 'Zu den Routen ↓', 'hero.cta2': '💶 Kosten schätzen',
     'hero.s1': 'Flugzeit nonstop', 'hero.s2': 'im Reisemonat', 'hero.s3': 'Ziele ab BLR', 'hero.s4': '€ pro Person ab',
     'hero.legend1': 'Langstrecke ≈ 9 h', 'hero.legend2': 'Inland ≈ 1 h',
