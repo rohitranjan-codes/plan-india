@@ -18,6 +18,7 @@
 <nav class="nav" aria-label="Main">
   <a class="brand" href="#top"><span class="dot">✈</span> Plan India</a>
   <ul class="nav-links">
+    <li><a href="#inspire" data-i18n="nav.inspire">Explore</a></li>
     <li><a href="#flights" data-i18n="nav.flights">Flights</a></li>
     <li><a href="#routes" data-i18n="nav.routes">Routes</a></li>
     <li><a href="#map" data-i18n="nav.map">Map</a></li>
@@ -46,7 +47,7 @@
       <h1 data-i18n="hero.title">Europe to India,<br /><span class="accent">planned properly.</span></h1>
       <p class="lead" data-i18n="hero.lead">A safe, comfortable and detailed trip plan from any European airport to all of India. Choose your gateway, month and style — routes, 4-star-plus hotels, costs, live weather and booking links adapt to you.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#routes" data-i18n="hero.cta1">See the itineraries ↓</a>
+        <a class="btn btn-primary" href="#inspire" data-i18n="hero.cta1">Start with pictures ↓</a>
         <a class="btn btn-ghost" href="#builder" data-i18n="hero.cta2">🧳 Build your trip</a>
       </div>
       <div class="hero-stats">
@@ -91,6 +92,20 @@
     </div>
   </div>
 </header>
+
+<!-- ================= INSPIRE ================= -->
+<section id="inspire" class="inspire">
+  <div class="container">
+    <div class="section-head reveal in">
+      <span class="kicker" data-i18n="inspire.kicker">Start with pictures</span>
+      <h2 data-i18n="inspire.h2">Where would you like to wake up?</h2>
+      <p data-i18n="inspire.p">Tap a heart on the places that pull you in. We'll turn them into a plan.</p>
+    </div>
+    <div class="filters wall-chips" id="wallChips"></div>
+    <div class="wall" id="wall"></div>
+  </div>
+</section>
+<div class="wish-bar" id="wishBar" hidden></div>
 
 <!-- ================= SETTINGS ================= -->
 <section id="settings" class="settings-section">
@@ -397,5 +412,6 @@
 <script src="settings.js"></script>
 <script src="features.js"></script>
 <script src="ticker.js"></script>
+<script src="inspire.js"></script>
 </body>
 </html>

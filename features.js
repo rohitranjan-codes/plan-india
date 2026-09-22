@@ -283,6 +283,7 @@
   });
   window.addStop = addStop;
   window.PLAN = () => plan; window.PLAN_DAYS = () => nights() + 2;
+  window.setPlan = (p) => { plan = p.filter((s) => byId(s.id)); renderBuilder(); savePlan(); };
 
   /* ---------- Dates: countdown, festivals, packing ---------- */
   const dateEl = $('#tripDate');

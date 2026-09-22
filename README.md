@@ -8,6 +8,9 @@ Live site (once GitHub Pages is enabled): **https://rohitranjan-codes.github.io/
 
 ## What's inside
 
+- **Inspiration wall** — the page opens on a photo wall of all destinations with mood chips and a
+  shuffle. Tap hearts to save places; a bar turns the picks into a trip in the shortest sensible
+  order from your gateway and hands it to the builder. Pictures first, planning second.
 - **Trip settings bar** — 29 European origin airports with their nonstop links, 20 home countries,
   8 Indian gateways (arrive in one, leave from another), departure date, travellers, style and
   currency (EUR, CHF, GBP, SEK, NOK, DKK, PLN, CZK, HUF, INR with live rates). Everything is
