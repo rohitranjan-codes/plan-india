@@ -55,7 +55,7 @@
   }
   function renderBar() {
     const n = wish.size;
-    bar.hidden = n === 0;
+    bar.hidden = n === 0; document.body.classList.toggle('has-wish', n > 0);
     if (!n) return;
     const names = [...wish].map((id) => T.destinations.find((d) => d.id === id)).filter(Boolean);
     bar.innerHTML = `<div class="wish-thumbs">${names.slice(0, 6).map((d) => { const p = window.photoOf && window.photoOf(d.id); return p ? `<img src="${p.src}" alt="" title="${esc(d.name)}">` : `<span>${d.emoji}</span>`; }).join('')}${n > 6 ? `<i>+${n - 6}</i>` : ''}</div>

@@ -686,3 +686,23 @@ footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; ga
 .wish-bar .btn { padding: 10px 16px; font-size: .86rem; } .wish-bar .btn-ghost { padding: 10px 12px; }
 @media (max-width: 640px) { .wish-text small { display: none; } .wish-bar { gap: 8px; } }
 #toTop { bottom: 90px; }
+
+/* Trip builder fixes */
+.timeline-builder.no-anim .stop { animation: none; opacity: 1; }
+.leg { flex-wrap: wrap; row-gap: 2px; }
+@media (max-width: 960px) {
+  .builder-pool { position: static !important; top: auto; max-height: none !important; }
+  .pool { display: flex; gap: 8px; overflow-x: auto; overflow-y: hidden; max-height: none; padding: 4px 2px 10px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .pool-chip { flex: 0 0 200px; scroll-snap-align: start; }
+}
+@media (max-width: 640px) {
+  .stop { grid-template-columns: 60px 1fr; grid-template-areas: "cover body" "nights tools"; row-gap: 8px; }
+  .stop-cover { grid-area: cover; height: 52px; } .stop-body { grid-area: body; min-width: 0; }
+  .stop-nights { grid-area: nights; justify-self: start; } .stop-tools { grid-area: tools; justify-self: end; }
+  .stop-title b { font-size: 1rem; } .stop-title small { display: block; }
+  .leg { padding-left: 14px; font-size: .76rem; } .leg .leg-cost { margin-left: auto; }
+  .timeline-builder { padding: 6px 0; }
+  .sum-cost b { font-size: 1.6rem; }
+}
+body.has-wish { padding-bottom: 96px; }
+.builder-layout > * { min-width: 0; } .builder-pool { min-width: 0; } .pool { max-width: 100%; }

@@ -204,8 +204,12 @@
   $('#builderPresets').addEventListener('click', (e) => { const b = e.target.closest('[data-preset]'); if (b) { plan = PRESETS[b.dataset.preset].map(([id, nights]) => ({ id, nights })); renderBuilder(); savePlan(); } });
 
   const timeline = $('#builderTimeline');
+  let lastPlanKey = '';
   function renderBuilder() {
     const L = legs();
+    // animate the list only when stops are added, removed or reordered — not on every nights click
+    const key = plan.map((s) => s.id).join('>');
+    timeline.classList.toggle('no-anim', key === lastPlanKey); lastPlanKey = key;
     if (!plan.length) timeline.innerHTML = `<div class="drop-empty">${t('builder.empty')}</div>`;
     else timeline.innerHTML = plan.map((s, i) => { const d = byId(s.id); return legRow(L[i]) + `
       <div class="stop" draggable="true" data-i="${i}" style="--i:${i};--c:${TYPE_COLORS[d.type]}">
