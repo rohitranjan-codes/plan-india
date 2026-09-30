@@ -238,7 +238,7 @@
               <div class="pick-row pick-card rated tier-band-${p.tier}" data-q="${esc(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">
                 <span class="tier tier-${p.tier}">${t('tier.' + p.tier)}</span>
                 <div><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(p.why)}</p>
-                  <div class="pick-links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">Google ↗</a><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">Booking.com ↗</a></div>
+                  <div class="pick-links"><a class="primary" target="_blank" rel="noopener" href="${window.hotelUrl ? window.hotelUrl(p.n, window.GUIDE.searchCity[d.id] || d.name) : '#'}">${t('guide.hotelLink')} ↗</a><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}&dest_type=hotel">Booking.com ↗</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">${t('guide.maps')} ↗</a></div>
                 </div>
               </div>`).join('')}</div>
             <div class="chip-row" style="margin-top:12px">

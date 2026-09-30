@@ -89,11 +89,13 @@
     $('#svgOrigin').textContent = o.city.split(' ')[0].toUpperCase();
     $('#svgGateway').textContent = g.city.toUpperCase();
     const nonstop = o.nonstop[g.code];
-    $('#statHours').textContent = `${nonstop ? o.hours : o.hours + 3} h`; $('#statHoursLabel').textContent = nonstop ? `${t('flights.nonstop')} ${o.code} → ${g.code}` : `${o.code} → ${g.code}, 1 stop`;
-    $('#statBest').textContent = best; $('#statBestLabel').textContent = `${t('month.best')} ${t('month.in')} ${monthName()}`;
-    $('#statDest').textContent = T.destinations.length;
-    $('#statFrom').textContent = A.fmtNum(A.M.styles.comfort.intl + 5 * 120 + 150);
-    $('#statFromLabel').textContent = A.LANG.cur === 'de' ? `pro Person ab (${A.M.styles.comfort.label})` : `per person from (${A.M.styles.comfort.label})`;
+    if ($('#statHours')) {
+      $('#statHours').textContent = `${nonstop ? o.hours : o.hours + 3} h`; $('#statHoursLabel').textContent = nonstop ? `${t('flights.nonstop')} ${o.code} → ${g.code}` : `${o.code} → ${g.code}, 1 stop`;
+      $('#statBest').textContent = best; $('#statBestLabel').textContent = `${t('month.best')} ${t('month.in')} ${monthName()}`;
+      $('#statDest').textContent = T.destinations.length;
+      $('#statFrom').textContent = A.fmtNum(A.M.styles.comfort.intl + 5 * 120 + 150);
+      $('#statFromLabel').textContent = A.LANG.cur === 'de' ? `pro Person ab (${A.M.styles.comfort.label})` : `per person from (${A.M.styles.comfort.label})`;
+    }
     const near = T.destinations.filter((d) => d.id !== gd.id && d.region === gd.region).sort((a, b) => window.GEO.km(gd, a) - window.GEO.km(gd, b)).slice(0, 2);
     $('#svgSpoke1').textContent = (near[0]?.name || '').toUpperCase(); $('#svgSpoke2').textContent = (near[1]?.name || '').toUpperCase();
   }

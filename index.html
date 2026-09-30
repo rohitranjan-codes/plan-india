@@ -29,7 +29,7 @@
     <li><a href="#safety" data-i18n="nav.safety">Safety</a></li>
   </ul>
   <div class="nav-actions">
-    <button class="pill-btn" id="stampsBtn" title="Passport stamps">🛂 <span id="stampCount">0/24</span></button>
+    <button class="pill-btn" id="stampsBtn" title="Passport stamps">🛂 <span id="stampCount" class="hide-phone">0/24</span></button>
     <button class="pill-btn" id="langBtn" aria-label="Sprache wechseln">DE</button>
     <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
     <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
@@ -41,55 +41,17 @@
   <div class="hero-photo" id="heroPhoto"></div>
   <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
   <div class="grid-bg"></div>
-  <div class="container hero-grid">
+  <div class="container hero-compact">
     <div>
       <span class="eyebrow reveal in"><span class="pulse"></span> <span id="heroEyebrow">Europe → India</span> <a href="#settings" class="not-yours" id="notYours" hidden data-i18n="hero.notYours">Not your airport?</a></span>
-      <h1 data-i18n="hero.title">Europe to India,<br /><span class="accent">planned properly.</span></h1>
-      <p class="lead" data-i18n="hero.lead">A safe, comfortable and detailed trip plan from any European airport to all of India. Choose your gateway, month and style — routes, 4-star-plus hotels, costs, live weather and booking links adapt to you.</p>
+      <h1 data-i18n="hero.title">Europe to India, <br /><span class="accent">planned properly.</span></h1>
+      <p class="lead" data-i18n="hero.lead">Safe, comfortable trips from any European airport to all of India. Pick the places you love — we do the planning.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#inspire" data-i18n="hero.cta1">Start with pictures ↓</a>
-        <a class="btn btn-ghost" href="#builder" data-i18n="hero.cta2">🧳 Build your trip</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><b id="statHours">9 h</b><span id="statHoursLabel">Nonstop</span></div>
-        <div class="stat"><b id="statBest">0</b><span id="statBestLabel">Best time this month</span></div>
-        <div class="stat"><b id="statDest">27</b><span data-i18n="hero.s3">Destinations across India</span></div>
-        <div class="stat"><b id="statFrom">€1,650</b><span id="statFromLabel">per person from (Comfort)</span></div>
+        <a class="btn btn-primary" href="#builder" data-i18n="hero.cta1">Build your trip</a>
+        <a class="btn btn-ghost" href="#settings" data-i18n="hero.cta2">⚙️ Trip settings</a>
       </div>
     </div>
 
-    <div class="flight-card">
-      <svg viewBox="0 0 520 360" role="img" aria-label="Route map from Frankfurt and Zurich to Bengaluru, then on to Goa and Kochi">
-        <defs>
-          <path id="pFRA" d="M60 60 C 200 40, 360 120, 400 250" />
-          <path id="pZRH" d="M80 110 C 220 110, 360 170, 400 250" />
-          <path id="pGOA" d="M400 250 C 385 240, 355 215, 340 185" />
-          <path id="pCOK" d="M400 250 C 400 280, 385 300, 370 320" />
-        </defs>
-        <!-- routes -->
-        <use href="#pFRA" class="route-outline" />
-        <use href="#pFRA" class="route-path" />
-        <use href="#pZRH" class="route-path" style="opacity:.55" />
-        <use href="#pGOA" class="route-path secondary" />
-        <use href="#pCOK" class="route-path secondary" />
-        <!-- cities -->
-        <circle cx="60" cy="60" r="6" class="city-dot" /><text x="60" y="44" text-anchor="middle" class="city" id="svgOrigin">FRANKFURT</text>
-        <circle cx="80" cy="110" r="6" class="city-dot" /><text x="80" y="134" text-anchor="middle" class="city">EUROPE</text>
-        <circle cx="400" cy="250" r="12" class="ring" /><circle cx="400" cy="250" r="12" class="ring" style="animation-delay:1.3s" />
-        <circle cx="400" cy="250" r="8" class="city-dot" /><text x="418" y="255" class="city" id="svgGateway">BENGALURU</text>
-        <circle cx="340" cy="185" r="5" class="city-dot teal" /><text x="340" y="172" text-anchor="middle" class="city" id="svgSpoke1">GOA</text>
-        <circle cx="370" cy="320" r="5" class="city-dot teal" /><text x="370" y="342" text-anchor="middle" class="city" id="svgSpoke2">KOCHI</text>
-        <!-- planes -->
-        <g class="plane"><path d="M0-7 L2-2 L9 0 L2 2 L0 7 L-1 2 L-6 1 L-6-1 L-1-2 Z" /><animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#pFRA" /></animateMotion></g>
-        <g class="plane-2"><path d="M0-5 L1.5-1.5 L6 0 L1.5 1.5 L0 5 L-.7 1.5 L-4 .7 L-4-.7 L-.7-1.5 Z" /><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#pGOA" /></animateMotion></g>
-        <g class="plane-2"><path d="M0-5 L1.5-1.5 L6 0 L1.5 1.5 L0 5 L-.7 1.5 L-4 .7 L-4-.7 L-.7-1.5 Z" /><animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#pCOK" /></animateMotion></g>
-      </svg>
-      <div class="legend">
-        <span><i style="background:var(--accent)"></i> <span data-i18n="hero.legend1">Long-haul ≈ 9 h</span></span>
-        <span><i style="background:var(--accent-2)"></i> <span data-i18n="hero.legend2">Domestic ≈ 1 h</span></span>
-        <span id="tzNote">🕐 IST = CET + 4:30</span>
-      </div>
-    </div>
   </div>
 </header>
 
@@ -150,7 +112,40 @@
       <h2 id="flightsTitle">Frankfurt to Bengaluru</h2>
       <p data-i18n="flights.p">Your airport to your gateway, then onward.</p>
     </div>
-    <div class="flight-grid" id="flightGrid"></div>
+    <div class="flights-top"><div class="flight-grid" id="flightGrid"></div>
+    <div class="flight-card">
+      <svg viewBox="0 0 520 360" role="img" aria-label="Route map from Frankfurt and Zurich to Bengaluru, then on to Goa and Kochi">
+        <defs>
+          <path id="pFRA" d="M60 60 C 200 40, 360 120, 400 250" />
+          <path id="pZRH" d="M80 110 C 220 110, 360 170, 400 250" />
+          <path id="pGOA" d="M400 250 C 385 240, 355 215, 340 185" />
+          <path id="pCOK" d="M400 250 C 400 280, 385 300, 370 320" />
+        </defs>
+        <!-- routes -->
+        <use href="#pFRA" class="route-outline" />
+        <use href="#pFRA" class="route-path" />
+        <use href="#pZRH" class="route-path" style="opacity:.55" />
+        <use href="#pGOA" class="route-path secondary" />
+        <use href="#pCOK" class="route-path secondary" />
+        <!-- cities -->
+        <circle cx="60" cy="60" r="6" class="city-dot" /><text x="60" y="44" text-anchor="middle" class="city" id="svgOrigin">FRANKFURT</text>
+        <circle cx="80" cy="110" r="6" class="city-dot" /><text x="80" y="134" text-anchor="middle" class="city">EUROPE</text>
+        <circle cx="400" cy="250" r="12" class="ring" /><circle cx="400" cy="250" r="12" class="ring" style="animation-delay:1.3s" />
+        <circle cx="400" cy="250" r="8" class="city-dot" /><text x="418" y="255" class="city" id="svgGateway">BENGALURU</text>
+        <circle cx="340" cy="185" r="5" class="city-dot teal" /><text x="340" y="172" text-anchor="middle" class="city" id="svgSpoke1">GOA</text>
+        <circle cx="370" cy="320" r="5" class="city-dot teal" /><text x="370" y="342" text-anchor="middle" class="city" id="svgSpoke2">KOCHI</text>
+        <!-- planes -->
+        <g class="plane"><path d="M0-7 L2-2 L9 0 L2 2 L0 7 L-1 2 L-6 1 L-6-1 L-1-2 Z" /><animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#pFRA" /></animateMotion></g>
+        <g class="plane-2"><path d="M0-5 L1.5-1.5 L6 0 L1.5 1.5 L0 5 L-.7 1.5 L-4 .7 L-4-.7 L-.7-1.5 Z" /><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#pGOA" /></animateMotion></g>
+        <g class="plane-2"><path d="M0-5 L1.5-1.5 L6 0 L1.5 1.5 L0 5 L-.7 1.5 L-4 .7 L-4-.7 L-.7-1.5 Z" /><animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#pCOK" /></animateMotion></g>
+      </svg>
+      <div class="legend">
+        <span><i style="background:var(--accent)"></i> <span data-i18n="hero.legend1">Long-haul ≈ 9 h</span></span>
+        <span><i style="background:var(--accent-2)"></i> <span data-i18n="hero.legend2">Domestic ≈ 1 h</span></span>
+        <span id="tzNote">🕐 IST = CET + 4:30</span>
+      </div>
+    </div>
+    </div>
 
     <div class="card reveal in" style="margin-top:24px" id="arrivalCard"></div>
 

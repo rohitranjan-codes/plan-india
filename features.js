@@ -327,6 +327,8 @@
   const BK_FILTER = '&nflt=review_score%3D80'; // Booking.com "review score 8+" — the closest match to a 4★+ filter on that site
   const bookingUrl = (city, inD, outD) => `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city + ', India')}${inD ? `&checkin=${ymd(inD)}&checkout=${ymd(outD)}` : ''}&group_adults=${A.state.people}&no_rooms=${Math.ceil(A.state.people / 2)}&group_children=0${BK_FILTER}`;
   const ghotels = (city, inD, outD) => `https://www.google.com/travel/search?q=${encodeURIComponent('hotels in ' + city + ' India')}${inD ? `&dates=${ymd(inD)},${ymd(outD)}` : ''}`;
+  /* Direct link to one property: Google Hotels opens the hotel itself with live reviews and prices from Booking.com, Agoda, Expedia and the hotel. */
+  window.hotelUrl = (name, city, inD, outD) => `https://www.google.com/travel/search?q=${encodeURIComponent(name + ' ' + city)}${inD ? `&dates=${ymd(inD)},${ymd(outD)}` : ''}`;
   const twelveGo = (from, to, d) => `https://12go.asia/en/travel/${encodeURIComponent(from.toLowerCase().replace(/[^a-z]+/g, '-'))}/${encodeURIComponent(to.toLowerCase().replace(/[^a-z]+/g, '-'))}${d ? '?date=' + ymd(d) + '&people=' + A.state.people : ''}`;
   const deskDone = new Set(store.get('deskDone', []));
   // With the ratings service on, desk chips only show picks already verified ≥ filter (from the ratings cache); unknown = hidden until checked.
@@ -355,7 +357,7 @@
       const hop = legRowFor(L[i], `hop${i}`, r ? (i === 0 ? new Date(r.start.getTime() - 86400000) : r.start) : null); if (hop) rows.push(hop);
       const evs = r && window.stopEvents ? window.stopEvents(s.id, r.start, r.end) : [];
       if (s.nights > 0) rows.push({ key: `stay${i}-${s.id}`, icon: '🛏️', kind: t('desk.stay'), title: `${d.emoji} ${d.name} · ${s.nights} ${s.nights === 1 ? (A.LANG.cur === 'de' ? 'Nacht' : 'night') : t('desk.nights')}`, sub: `${r ? dfmt(r.start) + ' → ' + dfmt(r.end) + ' · ' : ''}${Math.ceil(A.state.people / 2)} ${t('desk.rooms')} · ${d.perDay}/day${evs.length ? ' · ' + evs.map((e) => e.k.icon + ' ' + e.name).join(' · ') : ''}`,
-        links: [{ l: t('desk.booking'), u: bookingUrl(city, r?.start, r?.end), p: true }, { l: t('desk.ghotels'), u: ghotels(city, r?.start, r?.end) }, ...(G.picks[s.id] || []).filter((p) => p.tier !== 'budget' && pickPasses(p.n + ' ' + city)).slice(0, 3).map((p) => ({ l: '★ ' + p.n, u: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + city)}${r ? `&checkin=${ymd(r.start)}&checkout=${ymd(r.end)}` : ''}&group_adults=${A.state.people}&no_rooms=${Math.ceil(A.state.people / 2)}`, c: 'pickchip' }))] });
+        links: [{ l: t('desk.booking'), u: bookingUrl(city, r?.start, r?.end), p: true }, { l: t('desk.ghotels'), u: ghotels(city, r?.start, r?.end) }, ...(G.picks[s.id] || []).filter((p) => p.tier !== 'budget' && pickPasses(p.n + ' ' + city)).slice(0, 3).map((p) => ({ l: '★ ' + p.n, u: window.hotelUrl(p.n, city, r?.start, r?.end), c: 'pickchip' }))] });
       (G.ops[s.id] || []).filter((o) => o.kind === 'activity' || o.kind === 'boat' || o.kind === 'train').forEach((o, k) => rows.push({ key: `act${s.id}-${k}`, icon: ({ activity: '🎟️', boat: '⛵', train: '🚆' })[o.kind], kind: t('desk.book'), title: `${d.name} · ${o.n}`, sub: o.why, links: [{ l: o.n + ' ↗', u: o.url, p: true }] }));
     });
     const out = legRowFor(L[plan.length], 'hopOut', endD ? new Date(endD.getTime() - 86400000) : null); if (out) rows.push(out);
