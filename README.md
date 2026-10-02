@@ -4,7 +4,8 @@
 Pick your origin, home country, arrival and departure gateway, month, group size, style and
 currency — every section adapts.
 
-Live site (once GitHub Pages is enabled): **https://rohitranjan-codes.github.io/plan-india/**
+Live site: **https://rohitranjan-codes.github.io/plan-india/** (GitHub Pages) — being moved to
+Cloudflare Pages, see [Hosting](#hosting).
 
 ## What's inside
 
@@ -126,3 +127,18 @@ so nothing is post-processed.
 
 > All prices are approximate planning estimates written for a November trip — verify before
 > booking. Not affiliated with any airline, hotel or booking site.
+
+## Hosting
+
+The site is static files with no build step, so it runs on any static host. It is set up for
+**Cloudflare Pages** (free, unlimited bandwidth, fast from India, custom domain with HTTPS):
+
+1. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick this repo.
+2. Build settings: framework **None**, build command *empty*, build output directory **`/`**.
+3. Save and deploy. Every push to `main` (including the photo workflow's commits) redeploys.
+4. Optional: **Custom domains** tab → add your domain; Cloudflare issues the certificate.
+
+Files that only matter on Cloudflare Pages: `_headers` (security and cache headers) and
+`404.html`. GitHub Pages ignores `_headers` and keeps serving the site unchanged, so both hosts
+can run in parallel from the same repo.
+

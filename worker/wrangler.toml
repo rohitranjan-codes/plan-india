@@ -3,7 +3,7 @@ main = "ratings-worker.js"
 compatibility_date = "2026-01-01"
 
 [vars]
-# Lock CORS to your site once it is live, e.g. "https://rohitranjan-codes.github.io"
+# Lock CORS to your site once it is live, e.g. "https://plan-india.pages.dev" or your custom domain
 ALLOWED_ORIGIN = "*"
 
 # Secret (never commit): wrangler secret put GOOGLE_PLACES_KEY
