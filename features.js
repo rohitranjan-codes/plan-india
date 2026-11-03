@@ -33,25 +33,40 @@
   }
   on('checklistdone', () => confetti());
 
-  /* ---------- Passport stamps ---------- */
-  const stamps = new Set(store.get('stamps', []));
+  /* ---------- Passport stamps: one per destination in your trip ---------- */
+  const stamps = new Set();
   const stampCount = $('#stampCount'), passport = $('#passport');
+  function syncStamps() { stamps.clear(); (window.PLAN ? window.PLAN() : store.get('plan', [])).forEach((s) => stamps.add(s.id)); }
   function renderStamps() {
+    syncStamps();
     stampCount.textContent = `${stamps.size}/${T.destinations.length}`;
-    passport.innerHTML = `<div class="passport-head"><b>🛂 ${esc(A.LANG.cur === 'de' ? C.de['stamps.title'] : 'Your passport')}</b><span>${stamps.size} ${t('stamps.of')} ${T.destinations.length} · ${esc(A.LANG.cur === 'de' ? C.de['stamps.sub'] : 'Every destination you open earns a stamp.')}</span></div>
+    passport.innerHTML = `<div class="passport-head"><b>🛂 ${esc(A.LANG.cur === 'de' ? C.de['stamps.title'] : 'Your passport')}</b><span>${stamps.size} ${t('stamps.of')} ${T.destinations.length} · ${esc(A.LANG.cur === 'de' ? C.de['stamps.sub'] : 'Every destination in your trip earns a stamp.')}</span></div>
       <div class="stamp-row">${T.destinations.map((d) => `<button class="stamp-mini ${stamps.has(d.id) ? 'got' : ''}" data-id="${d.id}" title="${esc(d.name)}" style="--c:${(d.hue.match(/#[0-9a-f]{6}/i) || ['#e8590c'])[0]}">${stamps.has(d.id) ? d.emoji : ''}</button>`).join('')}</div>`;
   }
   passport.addEventListener('click', (e) => { const b = e.target.closest('.stamp-mini'); if (b) A.openDest(b.dataset.id); });
-  $('#stampsBtn').addEventListener('click', () => $('#destinations').scrollIntoView({ behavior: 'smooth' }));
-  on('destopened', (e) => {
-    const id = e.detail, fresh = !stamps.has(id);
-    stamps.add(id); store.set('stamps', [...stamps]); renderStamps();
-    const cover = $('#modal .sheet .cover'); if (!cover) return;
+  $('#stampsBtn').addEventListener('click', () => $('#builder').scrollIntoView({ behavior: 'smooth' }));
+  function stampCover(id, slam) {
+    const cover = $('#modal .sheet .cover'); if (!cover || cover.querySelector('.stamp')) return;
     const d = byId(id);
-    const el = document.createElement('div'); el.className = 'stamp' + (fresh ? ' slam' : '');
+    const el = document.createElement('div'); el.className = 'stamp' + (slam ? ' slam' : '');
     el.innerHTML = `<span>${t('stamps.stamped')}</span><b>${esc(d.name.toUpperCase())}</b><small>${(A.monthName ? A.monthName().slice(0, 3) : 'NOV').toUpperCase()} ${store.get('tripDate', '2026').slice(0, 4)} · ${A.state.gateway || 'BLR'}</small>`;
     cover.appendChild(el);
-    if (fresh && stamps.size === T.destinations.length) confetti(240);
+  }
+  function paintModalAdd(id) {
+    const b = $('#modalAdd'); if (!b) return;
+    const inPlan = stamps.has(id);
+    b.textContent = inPlan ? t('modal.added') : t('modal.add');
+    b.classList.toggle('added', inPlan);
+  }
+  on('destopened', (e) => { const id = e.detail; syncStamps(); if (stamps.has(id)) stampCover(id, false); paintModalAdd(id); });
+  on('planchange', () => { renderStamps(); const b = $('#modalAdd'); if (b && $('#modal').classList.contains('open')) paintModalAdd(b.dataset.id); });
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('#modalAdd'); if (!b) return;
+    const id = b.dataset.id;
+    if (stamps.has(id)) { $('#modal .close')?.click(); $('#builder').scrollIntoView({ behavior: 'smooth' }); return; }
+    if (window.addStop) window.addStop(id);
+    syncStamps(); stampCover(id, true); paintModalAdd(id);
+    if (stamps.size === T.destinations.length) confetti(240);
   });
   renderStamps();
 
@@ -288,6 +303,7 @@
   window.addStop = addStop;
   window.PLAN = () => plan; window.PLAN_DAYS = () => nights() + 2;
   window.setPlan = (p) => { plan = p.filter((s) => byId(s.id)); renderBuilder(); savePlan(); };
+  renderStamps();
 
   /* ---------- Dates: countdown, festivals, packing ---------- */
   const dateEl = $('#tripDate');

@@ -746,3 +746,14 @@ body.has-wish { padding-bottom: 96px; }
   .wall { grid-auto-rows: 140px; }
   .hide-phone { display: none; }
 }
+
+/* Modal: add-to-trip button */
+.modal-title { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "h b" "t b"; align-items: center; column-gap: 14px; }
+.modal-title h3 { grid-area: h; } .modal-title .tag { grid-area: t; }
+.modal-add { grid-area: b; white-space: nowrap; padding: 10px 16px; font-size: .9rem; }
+.modal-add.added { background: var(--ok, #2e7d32); }
+@media (max-width: 640px) { .modal-title { grid-template-columns: 1fr; grid-template-areas: "h" "t" "b"; row-gap: 8px; } .modal-add { justify-self: start; } }
+/* Stamp readable on photos; credit tucked under the close button so it never meets the title/button */
+.sheet .cover.has-photo .stamp { mix-blend-mode: normal; background: rgba(255, 255, 255, .86); backdrop-filter: blur(3px); box-shadow: 0 6px 18px rgba(0, 0, 0, .25); }
+.sheet .photo-credit { bottom: auto; top: 74px; right: 14px; }
+@media (max-width: 640px) { .sheet .cover.has-photo .stamp { top: 118px; left: 16px; transform: rotate(-10deg) scale(.92); } }

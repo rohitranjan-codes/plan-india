@@ -204,6 +204,7 @@
         <div class="modal-title">
           <h3>${esc(d.name)}</h3>
           <div class="tag">${esc(d.tag)}</div>
+          <button class="btn btn-primary modal-add" id="modalAdd" data-id="${d.id}">${t('modal.add')}</button>
         </div>
         ${(() => { const lg = legFromGateway(d); const AP = window.APP || {}; const r = AP.monthRating ? AP.monthRating(d) : 2; const RM = AP.RATING || {}; return `
         <div class="stat-tiles">
