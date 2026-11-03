@@ -131,14 +131,27 @@ so nothing is post-processed.
 ## Hosting
 
 The site is static files with no build step, so it runs on any static host. It is set up for
-**Cloudflare Pages** (free, unlimited bandwidth, fast from India, custom domain with HTTPS):
+**Cloudflare** (free, unlimited bandwidth, fast from India, custom domain with HTTPS). The
+`wrangler.toml` at the root tells Cloudflare to serve the repo root as static files and to use
+`404.html` for unknown paths; `.assetsignore` keeps the worker, tools and docs out of the upload.
 
-1. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick this repo.
-2. Build settings: framework **None**, build command *empty*, build output directory **`/`**.
-3. Save and deploy. Every push to `main` (including the photo workflow's commits) redeploys.
-4. Optional: **Custom domains** tab → add your domain; Cloudflare issues the certificate.
+**From the dashboard (recommended, redeploys on every push):**
 
-Files that only matter on Cloudflare Pages: `_headers` (security and cache headers) and
-`404.html`. GitHub Pages ignores `_headers` and keeps serving the site unchanged, so both hosts
-can run in parallel from the same repo.
+1. dash.cloudflare.com → **Workers & Pages → Create → Import a repository** → pick this repo.
+2. Build command: *leave empty* (nothing to compile).
+   Deploy command: `npx wrangler deploy` (uploads the files; reads `wrangler.toml`).
+3. Save and deploy. Every push to `main`, including the photo workflow's commits, redeploys.
+4. Optional: project → **Settings → Domains & Routes** → add your domain; the certificate is automatic.
 
+**From your own machine (no GitHub connection needed, Node 18+):**
+
+```bash
+npx wrangler login     # opens the browser once
+npx wrangler deploy    # prints the live URL, e.g. https://plan-india.<you>.workers.dev
+```
+
+If you prefer the older **Pages** product: Create → Pages → Connect to Git, framework None,
+build command empty, build output directory `/`. `_headers` and `404.html` work there too.
+
+GitHub Pages ignores all of these files and keeps serving the site unchanged, so both hosts can
+run in parallel from the same repo.

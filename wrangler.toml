@@ -1,0 +1,11 @@
+# Cloudflare config for the website (the ratings proxy in worker/ has its own file).
+# Serves the repo root as static files. Works for both:
+#   - the dashboard's Git flow: build command empty, deploy command `npx wrangler deploy`
+#   - your own machine:        `npx wrangler login` then `npx wrangler deploy`
+name = "plan-india"
+compatibility_date = "2026-01-01"
+
+[assets]
+directory = "."
+not_found_handling = "404-page"   # serves 404.html for unknown paths
+html_handling = "auto-trailing-slash"

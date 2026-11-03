@@ -1,0 +1,9 @@
+# Not uploaded to Cloudflare (everything else in the repo is the website)
+.git
+.github
+.wrangler
+node_modules
+worker
+tools
+wrangler.toml
+README.md
