@@ -158,13 +158,12 @@ run in parallel from the same repo.
 
 ## GitHub MCP server (for Claude Code)
 
-`.mcp.json` registers GitHub's hosted MCP server (issues, pull requests, Actions, repo browsing)
-for Claude Code sessions in this folder. It reads the token from an environment variable, so
-nothing secret is in the repo:
+GitHub's hosted MCP server is registered once, at user scope, so it is available in every
+project on your machine. Run this once in a terminal (not inside Claude Code):
 
-1. GitHub → Settings → Developer settings → Personal access tokens → create one with `repo` scope
-   (fine-grained: contents, issues, pull requests, actions on this repo).
-2. Export it before starting Claude Code: `export GITHUB_PAT=github_pat_…` (add it to your shell
-   profile to make it permanent).
-3. Start `claude` in this folder, approve the project server when asked, check with `/mcp`.
+```bash
+export GITHUB_PAT=github_pat_…   # token with `repo` scope; put this line in your shell profile too
+claude mcp add-json --scope user github '{"type":"http","url":"https://api.githubcopilot.com/mcp/","headers":{"Authorization":"Bearer '"$GITHUB_PAT"'"}}'
+```
 
+Then restart Claude Code and check with `claude mcp list` or `/mcp`.

@@ -6,4 +6,4 @@
 - **Commits are authored by the repository owner**, not by Claude:
   `git -c user.name="Rohit Ranjan" -c user.email="rohitranjan1087@gmail.com" commit …`
   (keep the `Co-Authored-By: Claude …` trailer).
-- GitHub MCP server is configured in `.mcp.json`; it needs `GITHUB_PAT` in the environment.
+- GitHub MCP server is registered at user scope on the owner's machine (see README), not in this repo.
