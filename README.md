@@ -4,8 +4,8 @@
 Pick your origin, home country, arrival and departure gateway, month, group size, style and
 currency — every section adapts.
 
-Live site: **https://rohitranjan-codes.github.io/plan-india/** (GitHub Pages) — being moved to
-Cloudflare Pages, see [Hosting](#hosting).
+Live site: **https://plan-india.rohitranjan1087.workers.dev** (Cloudflare, see [Hosting](#hosting)).
+Mirror: https://rohitranjan-codes.github.io/plan-india/ (GitHub Pages).
 
 ## What's inside
 
