@@ -155,3 +155,16 @@ build command empty, build output directory `/`. `_headers` and `404.html` work 
 
 GitHub Pages ignores all of these files and keeps serving the site unchanged, so both hosts can
 run in parallel from the same repo.
+
+## GitHub MCP server (for Claude Code)
+
+`.mcp.json` registers GitHub's hosted MCP server (issues, pull requests, Actions, repo browsing)
+for Claude Code sessions in this folder. It reads the token from an environment variable, so
+nothing secret is in the repo:
+
+1. GitHub → Settings → Developer settings → Personal access tokens → create one with `repo` scope
+   (fine-grained: contents, issues, pull requests, actions on this repo).
+2. Export it before starting Claude Code: `export GITHUB_PAT=github_pat_…` (add it to your shell
+   profile to make it permanent).
+3. Start `claude` in this folder, approve the project server when asked, check with `/mcp`.
+
