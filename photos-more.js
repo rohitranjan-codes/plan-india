@@ -1355,12 +1355,6 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Parsi_Mutton_Berry_Pulao.jpg"
   },
-  "butter-chicken": {
-   "src": "img/d/butter-chicken.jpg",
-   "author": "Wide Awake!",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Honey_Butter_chicken_from_Korean_Fried_Chicken_(2026-04-25).jpg"
-  },
   "tandoori": {
    "src": "img/d/tandoori.jpg",
    "author": "Acabashi",
@@ -1408,12 +1402,6 @@ window.PHOTOS_MORE = {
    "author": "Raseswari",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg"
-  },
-  "masala-chai": {
-   "src": "img/d/masala-chai.jpg",
-   "author": "TAPAS KUMAR HALDER",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Puffed_rice_with_Telebhaja_(Bengali_fritters)_Kolkata_-_West_Bengal_-_DSC_0046.jpg"
   }
  }
 };

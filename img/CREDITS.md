@@ -251,7 +251,6 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **Litti chokha** (dish) — [Litti preparation in Kolkata, India.jpg](https://commons.wikimedia.org/wiki/File:Litti_preparation_in_Kolkata,_India.jpg) by Salil Kumar Mukherjee · CC BY-SA 4.0
 - **Bun maska & chai** (dish) — [Pav - Bun Maska.jpg](https://commons.wikimedia.org/wiki/File:Pav_-_Bun_Maska.jpg) by Mokshjuneja · CC BY-SA 4.0
 - **Parsi café food** (dish) — [Parsi Mutton Berry Pulao.jpg](https://commons.wikimedia.org/wiki/File:Parsi_Mutton_Berry_Pulao.jpg) by Sumit Surai · CC BY-SA 4.0
-- **Butter chicken** (dish) — [Honey Butter chicken from Korean Fried Chicken (2026-04-25).jpg](https://commons.wikimedia.org/wiki/File:Honey_Butter_chicken_from_Korean_Fried_Chicken_(2026-04-25).jpg) by Wide Awake! · CC BY 4.0
 - **Tandoori chicken** (dish) — [Tandoori chicken and salad Spitalfields Market Tower Hamlets London England 02.jpg](https://commons.wikimedia.org/wiki/File:Tandoori_chicken_and_salad_Spitalfields_Market_Tower_Hamlets_London_England_02.jpg) by Acabashi · CC BY-SA 4.0
 - **Bengali thali** (dish) — [Bengali style Homemade nonveg thali with dessert and salad.jpg](https://commons.wikimedia.org/wiki/File:Bengali_style_Homemade_nonveg_thali_with_dessert_and_salad.jpg) by Mumujit · CC BY-SA 4.0
 - **Rajasthani thali** (dish) — [Traditional Rajasthani Thali-Jaipur-Rajastan-001.jpg](https://commons.wikimedia.org/wiki/File:Traditional_Rajasthani_Thali-Jaipur-Rajastan-001.jpg) by Kaapeine · CC BY-SA 4.0
@@ -260,4 +259,3 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **Siddu** (dish) — [Traditional Kulluvi Siddu.jpg](https://commons.wikimedia.org/wiki/File:Traditional_Kulluvi_Siddu.jpg) by Rajani Gairshail · CC BY-SA 4.0
 - **Tongba (millet beer)** (dish) — [Tongba at Hot Stimulating Cafe.jpg](https://commons.wikimedia.org/wiki/File:Tongba_at_Hot_Stimulating_Cafe.jpg) by Sumit Surai · CC BY-SA 4.0
 - **Dalma** (dish) — [Odia Dalma.jpg](https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg) by Raseswari · CC BY-SA 4.0
-- **Masala chai** (dish) — [Puffed rice with Telebhaja (Bengali fritters) Kolkata - West Bengal - DSC 0046.jpg](https://commons.wikimedia.org/wiki/File:Puffed_rice_with_Telebhaja_(Bengali_fritters)_Kolkata_-_West_Bengal_-_DSC_0046.jpg) by TAPAS KUMAR HALDER · CC BY-SA 4.0

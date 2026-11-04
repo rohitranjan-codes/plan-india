@@ -50,14 +50,14 @@ const EAT_QUERIES = {
 const BLOCK = {
   hotel: ['the-lodhi', 'taj-mahal-new-delhi', 'the-park-kolkata', 'the-park-bangalore', 'vythiri-resort', 'wayanad-wild-cgh-earth', 'barefoot-at-havelock', 'heritage-madurai', 'courtyard-by-marriott-madurai', 'le-dupleix', 'taj-ganges', 'the-oberoi-mumbai', 'taj-hotel-and-convention-centre-agra', 'trident-jaipur', 'the-himalayan', 'norwood-green', 'vivanta-aurangabad', 'mayfair-spa-resort-and-casino', 'jagat-niwas-palace', 'fort-house-hotel'],
   eat: ['karim-s', 'nizam-s'],
-  dish: ['malabar-biryani', 'karimeen'],
+  dish: [],
 };
 /* Commons search queries for dishes whose Wikipedia lead image is unusable */
 const DISH_QUERIES = {
-  'lassi': 'Lassi glass', 'jigarthanda': 'Jigarthanda Madurai', 'pandi-curry': 'Pandi curry Coorg pork', 'benne-dosa': 'Benne dosa', 'fish-thali': 'Goan fish thali curry rice', 'kerala-fish-curry': 'Kerala fish curry',
-  'litti-chokha': 'Litti chokha', 'bun-maska': 'Bun maska', 'parsi': 'Berry pulao', 'tandoori': 'Tandoori chicken', 'butter-chicken': 'Butter chicken', 'petha': 'Agra petha sweet', 'bengali-thali': 'Bengali thali',
-  'laal-maas': 'Laal maas', 'ker-sangri': 'Ker sangri', 'rajasthani-thali': 'Rajasthani thali', 'malpua': 'Malpua', 'kulfi': 'Kulfi', 'dham': 'Himachali dham', 'siddu': 'Siddu Himachal', 'tongba': 'Tongba',
-  'khar': 'Assamese khar', 'jadoh': 'Jadoh Khasi', 'dalma': 'Dalma Odia', 'malaiyo': 'Malaiyo Varanasi', 'masala-chai': 'Masala chai', 'karimeen': 'Karimeen pollichathu', 'malabar-biryani': 'Thalassery biryani', 'chocolate': 'Kodaikanal homemade chocolate',
+  'lassi': 'Lassi glass', 'jigarthanda': 'Jigarthanda drink', 'pandi-curry': 'Pandi curry Coorg pork', 'benne-dosa': 'Benne dosa', 'fish-thali': 'Goan fish thali curry rice', 'kerala-fish-curry': 'Kerala fish curry',
+  'litti-chokha': 'Litti chokha', 'bun-maska': 'Bun maska', 'parsi': 'Berry pulao', 'tandoori': 'Tandoori chicken', 'butter-chicken': 'Murgh makhani butter chicken curry', 'petha': 'Petha sweet Agra', 'bengali-thali': 'Bengali thali',
+  'laal-maas': 'Lal maas mutton curry', 'ker-sangri': 'Ker sangri Rajasthani sabzi', 'rajasthani-thali': 'Rajasthani thali', 'malpua': 'Malpua', 'kulfi': 'Kulfi', 'dham': 'Dham Himachal Pradesh feast', 'siddu': 'Siddu Himachal', 'tongba': 'Tongba',
+  'khar': 'Khar Assamese dish', 'jadoh': 'Jadoh rice Meghalaya', 'dalma': 'Dalma Odia', 'malaiyo': 'Malaiyo Varanasi', 'masala-chai': 'Masala chai tea glass India', 'karimeen': 'Karimeen fry pearl spot dish', 'malabar-biryani': 'Malabar biryani', 'chocolate': 'Kodaikanal homemade chocolate',
 };
 
 const OK_LICENSE = /^(cc0|cc[ -]by([ -]sa)?([ -][0-9.]+)?|pd|public domain)/i;

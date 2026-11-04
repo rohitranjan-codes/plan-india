@@ -2203,15 +2203,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:Parsi_Mutton_Berry_Pulao.jpg",
         "via": "commons:Berry pulao"
       },
-      "butter-chicken": {
-        "file": "img/d/butter-chicken.jpg",
-        "name": "Butter chicken",
-        "title": "Honey Butter chicken from Korean Fried Chicken (2026-04-25).jpg",
-        "author": "Wide Awake!",
-        "license": "CC BY 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Honey_Butter_chicken_from_Korean_Fried_Chicken_(2026-04-25).jpg",
-        "via": "commons:Butter chicken"
-      },
       "tandoori": {
         "file": "img/d/tandoori.jpg",
         "name": "Tandoori chicken",
@@ -2283,15 +2274,6 @@
         "license": "CC BY-SA 4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg",
         "via": "commons:Dalma Odia"
-      },
-      "masala-chai": {
-        "file": "img/d/masala-chai.jpg",
-        "name": "Masala chai",
-        "title": "Puffed rice with Telebhaja (Bengali fritters) Kolkata - West Bengal - DSC 0046.jpg",
-        "author": "TAPAS KUMAR HALDER",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Puffed_rice_with_Telebhaja_(Bengali_fritters)_Kolkata_-_West_Bengal_-_DSC_0046.jpg",
-        "via": "commons:Masala chai"
       }
     }
   }
