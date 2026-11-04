@@ -1040,6 +1040,172 @@
           "page": "https://commons.wikimedia.org/wiki/File:Thanjavur_2.jpg",
           "via": "wikipedia:Thanjavur"
         }
+      ],
+      "mysuru": [
+        {
+          "file": "img/g/mysuru-1.jpg",
+          "caption": "Mysore Palace night",
+          "title": "Mysore palace at night 01.jpg",
+          "author": "Pinakpani",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Mysore_palace_at_night_01.jpg",
+          "via": "commons:Mysore Palace night"
+        },
+        {
+          "file": "img/g/mysuru-2.jpg",
+          "caption": "Mysore Palace",
+          "title": "Mysore Palace Windows.jpg",
+          "author": "Sumit Surai",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Mysore_Palace_Windows.jpg",
+          "via": "commons:Mysore Palace"
+        },
+        {
+          "file": "img/g/mysuru-3.jpg",
+          "caption": "Amba Vilas Palace",
+          "title": "Mysore Amba Vilas palace.jpg",
+          "author": "Ravihegde1",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Mysore_Amba_Vilas_palace.jpg",
+          "via": "commons:Amba Vilas Palace"
+        }
+      ],
+      "gokarna": [
+        {
+          "file": "img/g/gokarna-1.jpg",
+          "caption": "Kudle Beach",
+          "title": "Kudle Beach, Gokarna.jpg",
+          "author": "Malavikanandan30",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kudle_Beach,_Gokarna.jpg",
+          "via": "commons:Kudle Beach"
+        },
+        {
+          "file": "img/g/gokarna-2.jpg",
+          "caption": "Gokarna Karnataka",
+          "title": "PXL 20260103 054657562.MP Paradise beach gokarna Paradise Beach Trail, Gokarna, Karnataka 581326 01.jpg",
+          "author": "Sourabh",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:PXL_20260103_054657562.MP_Paradise_beach_gokarna_Paradise_Beach_Trail,_Gokarna,_Karnataka_581326_01.jpg",
+          "via": "commons:Gokarna Karnataka"
+        }
+      ],
+      "chennai": [
+        {
+          "file": "img/g/chennai-1.jpg",
+          "caption": "Kapaleeshwarar Temple",
+          "title": "Teppakulam of Kapaleeshwarar Temple - 2025.jpg",
+          "author": "KurinchiRays",
+          "license": "CC BY 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Teppakulam_of_Kapaleeshwarar_Temple_-_2025.jpg",
+          "via": "commons:Kapaleeshwarar Temple"
+        },
+        {
+          "file": "img/g/chennai-2.jpg",
+          "caption": "Mahabalipuram Shore Temple",
+          "title": "Mamallapuram, Shore Temple, India.jpg",
+          "author": "Vyacheslav Argenberg",
+          "license": "CC BY 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Mamallapuram,_Shore_Temple,_India.jpg",
+          "via": "commons:Mahabalipuram Shore Temple"
+        },
+        {
+          "file": "img/g/chennai-3.jpg",
+          "caption": "Marina Beach Chennai",
+          "title": "MGR Memorial, Marina Beach.jpg",
+          "author": "Dey",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:MGR_Memorial,_Marina_Beach.jpg",
+          "via": "commons:Marina Beach Chennai"
+        }
+      ],
+      "jodhpur": [
+        {
+          "file": "img/g/jodhpur-1.jpg",
+          "caption": "Mehrangarh Fort",
+          "title": "20191210 Mehrangarh Fort, Jodhpur 1016 7834.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:20191210_Mehrangarh_Fort,_Jodhpur_1016_7834.jpg",
+          "via": "commons:Mehrangarh Fort"
+        }
+      ],
+      "ranthambore": [
+        {
+          "file": "img/g/ranthambore-1.jpg",
+          "caption": "Ranthambore tiger",
+          "title": "081 Bengal tiger marking its territory in Ranthambore National Park Photo by Giles Laurent.jpg",
+          "author": "Giles Laurent",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:081_Bengal_tiger_marking_its_territory_in_Ranthambore_National_Park_Photo_by_Giles_Laurent.jpg",
+          "via": "commons:Ranthambore tiger"
+        }
+      ],
+      "amritsar": [
+        {
+          "file": "img/g/amritsar-1.jpg",
+          "caption": "Golden Temple Amritsar",
+          "title": "Harmandir Sahib, Amritsar, India.jpg",
+          "author": "Dey",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Harmandir_Sahib,_Amritsar,_India.jpg",
+          "via": "commons:Golden Temple Amritsar"
+        }
+      ],
+      "corbett": [
+        {
+          "file": "img/g/corbett-1.jpg",
+          "caption": "Corbett National Park",
+          "title": "001 Golden jackal and azureum flowers in Jim Corbett National Park Photo by Giles Laurent.jpg",
+          "author": "Giles Laurent",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:001_Golden_jackal_and_azureum_flowers_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg",
+          "via": "commons:Corbett National Park"
+        }
+      ],
+      "bandhavgarh": [
+        {
+          "file": "img/g/bandhavgarh-1.jpg",
+          "caption": "Bandhavgarh tiger",
+          "title": "Bengal tiger in Bandhavgarh National Park 02.jpg",
+          "author": "Bernard Gagnon",
+          "license": "CC BY 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_in_Bandhavgarh_National_Park_02.jpg",
+          "via": "commons:Bandhavgarh tiger"
+        }
+      ],
+      "kanha": [
+        {
+          "file": "img/g/kanha-1.jpg",
+          "caption": "Kanha National Park",
+          "title": "Southern plains grey langur (Semnopithecus dussumieri) female head.jpg",
+          "author": "Charles J",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Southern_plains_grey_langur_(Semnopithecus_dussumieri)_female_head.jpg",
+          "via": "commons:Kanha National Park"
+        }
+      ],
+      "aurangabad": [
+        {
+          "file": "img/g/aurangabad-1.jpg",
+          "caption": "Kailasa Temple Ellora",
+          "title": "Courtyard and Mahabharata Reliefs at the Kailasa Temple, Ellora 01.jpg",
+          "author": "Rohit Sharma",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Courtyard_and_Mahabharata_Reliefs_at_the_Kailasa_Temple,_Ellora_01.jpg",
+          "via": "commons:Kailasa Temple Ellora"
+        }
+      ],
+      "kodaikanal": [
+        {
+          "file": "img/g/kodaikanal-1.jpg",
+          "caption": "Kodaikanal Lake",
+          "title": "Kodaikanal Lake 2.jpg",
+          "author": "Devasenathipathi1957",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kodaikanal_Lake_2.jpg",
+          "via": "commons:Kodaikanal Lake"
+        }
       ]
     },
     "hotel": {
@@ -1339,6 +1505,15 @@
         "license": "CC BY 2.0",
         "page": "https://commons.wikimedia.org/wiki/File:Ideal_River_View_Resort,_Thanjavur_(1)_(36829584043).jpg",
         "via": "commons"
+      },
+      "palm-tree-heritage": {
+        "file": "img/h/palm-tree-heritage.jpg",
+        "name": "Palm Tree Heritage",
+        "title": "Palm Springs from the Museum Trail.jpg",
+        "author": "Visitor7",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Palm_Springs_from_the_Museum_Trail.jpg",
+        "via": "wikipedia:Palm Springs, California"
       }
     },
     "eat": {
@@ -1946,6 +2121,177 @@
         "license": "CC BY-SA 4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Three_Bars_(1).jpg",
         "via": "wikipedia:Chocolate"
+      },
+      "benne-dosa": {
+        "file": "img/d/benne-dosa.jpg",
+        "name": "Benne (butter) dosa",
+        "title": "Butter Dosa.JPG",
+        "author": "Srutiagarwal123",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Butter_Dosa.JPG",
+        "via": "commons:Benne dosa"
+      },
+      "fish-thali": {
+        "file": "img/d/fish-thali.jpg",
+        "name": "Goan fish curry rice",
+        "title": "Fish Curry Rice Thali (27457732363).jpg",
+        "author": "Joegoaukfishcurry2",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Fish_Curry_Rice_Thali_(27457732363).jpg",
+        "via": "commons:Goan fish thali curry rice"
+      },
+      "kerala-fish-curry": {
+        "file": "img/d/kerala-fish-curry.jpg",
+        "name": "Kerala fish curry",
+        "title": "Meen curry (fish curry) from Kerala, traditionally prepared in earthern pot.jpg",
+        "author": "Sandra Sivanandan",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Meen_curry_(fish_curry)_from_Kerala,_traditionally_prepared_in_earthern_pot.jpg",
+        "via": "commons:Kerala fish curry"
+      },
+      "pandi-curry": {
+        "file": "img/d/pandi-curry.jpg",
+        "name": "Pandi curry",
+        "title": "Pandi Curry.jpg",
+        "author": "Rupak76",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pandi_Curry.jpg",
+        "via": "commons:Pandi curry Coorg pork"
+      },
+      "lassi": {
+        "file": "img/d/lassi.jpg",
+        "name": "Lassi",
+        "title": "Coffee and mango lassi at restaurant South Asian Street Food.jpg",
+        "author": "JIP",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Coffee_and_mango_lassi_at_restaurant_South_Asian_Street_Food.jpg",
+        "via": "commons:Lassi glass"
+      },
+      "malaiyo": {
+        "file": "img/d/malaiyo.jpg",
+        "name": "Malaiyo",
+        "title": "Neemus - Sheherwali Milk Foam.jpg",
+        "author": "Sumit Surai",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Neemus_-_Sheherwali_Milk_Foam.jpg",
+        "via": "commons:Malaiyo Varanasi"
+      },
+      "litti-chokha": {
+        "file": "img/d/litti-chokha.jpg",
+        "name": "Litti chokha",
+        "title": "Litti preparation in Kolkata, India.jpg",
+        "author": "Salil Kumar Mukherjee",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Litti_preparation_in_Kolkata,_India.jpg",
+        "via": "commons:Litti chokha"
+      },
+      "bun-maska": {
+        "file": "img/d/bun-maska.jpg",
+        "name": "Bun maska & chai",
+        "title": "Pav - Bun Maska.jpg",
+        "author": "Mokshjuneja",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pav_-_Bun_Maska.jpg",
+        "via": "commons:Bun maska"
+      },
+      "parsi": {
+        "file": "img/d/parsi.jpg",
+        "name": "Parsi café food",
+        "title": "Parsi Mutton Berry Pulao.jpg",
+        "author": "Sumit Surai",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Parsi_Mutton_Berry_Pulao.jpg",
+        "via": "commons:Berry pulao"
+      },
+      "butter-chicken": {
+        "file": "img/d/butter-chicken.jpg",
+        "name": "Butter chicken",
+        "title": "Honey Butter chicken from Korean Fried Chicken (2026-04-25).jpg",
+        "author": "Wide Awake!",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Honey_Butter_chicken_from_Korean_Fried_Chicken_(2026-04-25).jpg",
+        "via": "commons:Butter chicken"
+      },
+      "tandoori": {
+        "file": "img/d/tandoori.jpg",
+        "name": "Tandoori chicken",
+        "title": "Tandoori chicken and salad Spitalfields Market Tower Hamlets London England 02.jpg",
+        "author": "Acabashi",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tandoori_chicken_and_salad_Spitalfields_Market_Tower_Hamlets_London_England_02.jpg",
+        "via": "commons:Tandoori chicken"
+      },
+      "bengali-thali": {
+        "file": "img/d/bengali-thali.jpg",
+        "name": "Bengali thali",
+        "title": "Bengali style Homemade nonveg thali with dessert and salad.jpg",
+        "author": "Mumujit",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Bengali_style_Homemade_nonveg_thali_with_dessert_and_salad.jpg",
+        "via": "commons:Bengali thali"
+      },
+      "rajasthani-thali": {
+        "file": "img/d/rajasthani-thali.jpg",
+        "name": "Rajasthani thali",
+        "title": "Traditional Rajasthani Thali-Jaipur-Rajastan-001.jpg",
+        "author": "Kaapeine",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Traditional_Rajasthani_Thali-Jaipur-Rajastan-001.jpg",
+        "via": "commons:Rajasthani thali"
+      },
+      "malpua": {
+        "file": "img/d/malpua.jpg",
+        "name": "Malpua",
+        "title": "A street vendor preparing Malpua Sweet in Kolkata, India.jpg",
+        "author": "Salil Kumar Mukherjee",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:A_street_vendor_preparing_Malpua_Sweet_in_Kolkata,_India.jpg",
+        "via": "commons:Malpua"
+      },
+      "kulfi": {
+        "file": "img/d/kulfi.jpg",
+        "name": "Kulfi",
+        "title": "PXL 20231129 142321748 Mango Kulfi Desert at Chawri Bazar Chandni Chowk Food Walk, New Delhi, Delhi 110006.jpg",
+        "author": "Sourabh",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:PXL_20231129_142321748_Mango_Kulfi_Desert_at_Chawri_Bazar_Chandni_Chowk_Food_Walk,_New_Delhi,_Delhi_110006.jpg",
+        "via": "commons:Kulfi"
+      },
+      "siddu": {
+        "file": "img/d/siddu.jpg",
+        "name": "Siddu",
+        "title": "Traditional Kulluvi Siddu.jpg",
+        "author": "Rajani Gairshail",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Traditional_Kulluvi_Siddu.jpg",
+        "via": "commons:Siddu Himachal"
+      },
+      "tongba": {
+        "file": "img/d/tongba.jpg",
+        "name": "Tongba (millet beer)",
+        "title": "Tongba at Hot Stimulating Cafe.jpg",
+        "author": "Sumit Surai",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tongba_at_Hot_Stimulating_Cafe.jpg",
+        "via": "commons:Tongba"
+      },
+      "dalma": {
+        "file": "img/d/dalma.jpg",
+        "name": "Dalma",
+        "title": "Odia Dalma.jpg",
+        "author": "Raseswari",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg",
+        "via": "commons:Dalma Odia"
+      },
+      "masala-chai": {
+        "file": "img/d/masala-chai.jpg",
+        "name": "Masala chai",
+        "title": "Puffed rice with Telebhaja (Bengali fritters) Kolkata - West Bengal - DSC 0046.jpg",
+        "author": "TAPAS KUMAR HALDER",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Puffed_rice_with_Telebhaja_(Bengali_fritters)_Kolkata_-_West_Bengal_-_DSC_0046.jpg",
+        "via": "commons:Masala chai"
       }
     }
   }

@@ -125,6 +125,22 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **puri** (gallery) — [Shri Jagannath temple.jpg](https://commons.wikimedia.org/wiki/File:Shri_Jagannath_temple.jpg) by Prachites · CC BY-SA 3.0
 - **thanjavur** (gallery) — [Ranganathaswamy temple tiruchirappalli.jpg](https://commons.wikimedia.org/wiki/File:Ranganathaswamy_temple_tiruchirappalli.jpg) by RUPESH MAURYA · CC BY-SA 4.0
 - **thanjavur** (gallery) — [Thanjavur 2.jpg](https://commons.wikimedia.org/wiki/File:Thanjavur_2.jpg) by Arun2117dts · CC BY-SA 4.0
+- **mysuru** (gallery) — [Mysore palace at night 01.jpg](https://commons.wikimedia.org/wiki/File:Mysore_palace_at_night_01.jpg) by Pinakpani · CC BY-SA 4.0
+- **mysuru** (gallery) — [Mysore Palace Windows.jpg](https://commons.wikimedia.org/wiki/File:Mysore_Palace_Windows.jpg) by Sumit Surai · CC BY-SA 4.0
+- **mysuru** (gallery) — [Mysore Amba Vilas palace.jpg](https://commons.wikimedia.org/wiki/File:Mysore_Amba_Vilas_palace.jpg) by Ravihegde1 · CC BY-SA 4.0
+- **gokarna** (gallery) — [Kudle Beach, Gokarna.jpg](https://commons.wikimedia.org/wiki/File:Kudle_Beach,_Gokarna.jpg) by Malavikanandan30 · CC BY-SA 4.0
+- **gokarna** (gallery) — [PXL 20260103 054657562.MP Paradise beach gokarna Paradise Beach Trail, Gokarna, Karnataka 581326 01.jpg](https://commons.wikimedia.org/wiki/File:PXL_20260103_054657562.MP_Paradise_beach_gokarna_Paradise_Beach_Trail,_Gokarna,_Karnataka_581326_01.jpg) by Sourabh · CC BY-SA 4.0
+- **chennai** (gallery) — [Teppakulam of Kapaleeshwarar Temple - 2025.jpg](https://commons.wikimedia.org/wiki/File:Teppakulam_of_Kapaleeshwarar_Temple_-_2025.jpg) by KurinchiRays · CC BY 4.0
+- **chennai** (gallery) — [Mamallapuram, Shore Temple, India.jpg](https://commons.wikimedia.org/wiki/File:Mamallapuram,_Shore_Temple,_India.jpg) by Vyacheslav Argenberg · CC BY 4.0
+- **chennai** (gallery) — [MGR Memorial, Marina Beach.jpg](https://commons.wikimedia.org/wiki/File:MGR_Memorial,_Marina_Beach.jpg) by Dey · CC BY-SA 4.0
+- **jodhpur** (gallery) — [20191210 Mehrangarh Fort, Jodhpur 1016 7834.jpg](https://commons.wikimedia.org/wiki/File:20191210_Mehrangarh_Fort,_Jodhpur_1016_7834.jpg) by Jakub Hałun · CC BY-SA 4.0
+- **ranthambore** (gallery) — [081 Bengal tiger marking its territory in Ranthambore National Park Photo by Giles Laurent.jpg](https://commons.wikimedia.org/wiki/File:081_Bengal_tiger_marking_its_territory_in_Ranthambore_National_Park_Photo_by_Giles_Laurent.jpg) by Giles Laurent · CC BY-SA 4.0
+- **amritsar** (gallery) — [Harmandir Sahib, Amritsar, India.jpg](https://commons.wikimedia.org/wiki/File:Harmandir_Sahib,_Amritsar,_India.jpg) by Dey · CC BY-SA 4.0
+- **corbett** (gallery) — [001 Golden jackal and azureum flowers in Jim Corbett National Park Photo by Giles Laurent.jpg](https://commons.wikimedia.org/wiki/File:001_Golden_jackal_and_azureum_flowers_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg) by Giles Laurent · CC BY-SA 4.0
+- **bandhavgarh** (gallery) — [Bengal tiger in Bandhavgarh National Park 02.jpg](https://commons.wikimedia.org/wiki/File:Bengal_tiger_in_Bandhavgarh_National_Park_02.jpg) by Bernard Gagnon · CC BY 4.0
+- **kanha** (gallery) — [Southern plains grey langur (Semnopithecus dussumieri) female head.jpg](https://commons.wikimedia.org/wiki/File:Southern_plains_grey_langur_(Semnopithecus_dussumieri)_female_head.jpg) by Charles J · CC BY-SA 4.0
+- **aurangabad** (gallery) — [Courtyard and Mahabharata Reliefs at the Kailasa Temple, Ellora 01.jpg](https://commons.wikimedia.org/wiki/File:Courtyard_and_Mahabharata_Reliefs_at_the_Kailasa_Temple,_Ellora_01.jpg) by Rohit Sharma · CC BY-SA 4.0
+- **kodaikanal** (gallery) — [Kodaikanal Lake 2.jpg](https://commons.wikimedia.org/wiki/File:Kodaikanal_Lake_2.jpg) by Devasenathipathi1957 · CC BY-SA 4.0
 - **The Oberoi New Delhi** (hotel) — [The Oberoi, New Delhi.jpg](https://commons.wikimedia.org/wiki/File:The_Oberoi,_New_Delhi.jpg) by Murtaza · CC BY-SA 4.0
 - **The Imperial** (hotel) — [The bar at 1911 restaurant, Imperial Hotel, New Delhi.jpg](https://commons.wikimedia.org/wiki/File:The_bar_at_1911_restaurant,_Imperial_Hotel,_New_Delhi.jpg) by V Malik · CC BY-SA 2.0
 - **ITC Grand Chola** (hotel) — [ITC-Grand-Chola-Chennai-2.JPG](https://commons.wikimedia.org/wiki/File:ITC-Grand-Chola-Chennai-2.JPG) by Destination8infinity · CC BY-SA 3.0
@@ -158,6 +174,7 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **Mayfair Darjeeling** (hotel) — [Mayfair Hotel, Darjeeling, West Bengal, India.jpg](https://commons.wikimedia.org/wiki/File:Mayfair_Hotel,_Darjeeling,_West_Bengal,_India.jpg) by Mr · CC BY-SA 4.0
 - **Elgin Darjeeling** (hotel) — [Colonial-Era Hotel Elgin - Darjeeling - West Bengal - India (12406988513).jpg](https://commons.wikimedia.org/wiki/File:Colonial-Era_Hotel_Elgin_-_Darjeeling_-_West_Bengal_-_India_(12406988513).jpg) by Adam Jones from Kelowna, BC, Canada · CC BY-SA 2.0
 - **Ideal River View Resort** (hotel) — [Ideal River View Resort, Thanjavur (1) (36829584043).jpg](https://commons.wikimedia.org/wiki/File:Ideal_River_View_Resort,_Thanjavur_(1)_(36829584043).jpg) by Richard Mortel from Riyadh, Saudi Arabia · CC BY 2.0
+- **Palm Tree Heritage** (hotel) — [Palm Springs from the Museum Trail.jpg](https://commons.wikimedia.org/wiki/File:Palm_Springs_from_the_Museum_Trail.jpg) by Visitor7 · CC BY-SA 3.0
 - **Murugan Idli Shop** (eat) — [Ghee Podi Idli - Murugan Idli Shop, Chennai - TamilNadu - PXL0246.jpg](https://commons.wikimedia.org/wiki/File:Ghee_Podi_Idli_-_Murugan_Idli_Shop,_Chennai_-_TamilNadu_-_PXL0246.jpg) by Harikrishnan N · CC BY-SA 4.0
 - **Peter Cat** (eat) — [The Chelo Kabab.jpg](https://commons.wikimedia.org/wiki/File:The_Chelo_Kabab.jpg) by Devang Mukherjee · CC BY-SA 4.0
 - **Vidyarthi Bhavan** (eat) — [Vidyarthi Bhavan Masala Dosa.jpg](https://commons.wikimedia.org/wiki/File:Vidyarthi_Bhavan_Masala_Dosa.jpg) by Maharana7573 · CC BY-SA 4.0
@@ -225,3 +242,22 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **Assamese thali** (dish) — [Assamese Thali.jpg](https://commons.wikimedia.org/wiki/File:Assamese_Thali.jpg) by Soyuz Sharma · CC BY-SA 3.0
 - **Chhena poda** (dish) — [Chenapoda.jpg](https://commons.wikimedia.org/wiki/File:Chenapoda.jpg) by Subhahish Panigahi · CC BY-SA 3.0
 - **Homemade chocolate** (dish) — [Three Bars (1).jpg](https://commons.wikimedia.org/wiki/File:Three_Bars_(1).jpg) by Lynnereal · CC BY-SA 4.0
+- **Benne (butter) dosa** (dish) — [Butter Dosa.JPG](https://commons.wikimedia.org/wiki/File:Butter_Dosa.JPG) by Srutiagarwal123 · CC BY-SA 4.0
+- **Goan fish curry rice** (dish) — [Fish Curry Rice Thali (27457732363).jpg](https://commons.wikimedia.org/wiki/File:Fish_Curry_Rice_Thali_(27457732363).jpg) by Joegoaukfishcurry2 · CC BY-SA 2.0
+- **Kerala fish curry** (dish) — [Meen curry (fish curry) from Kerala, traditionally prepared in earthern pot.jpg](https://commons.wikimedia.org/wiki/File:Meen_curry_(fish_curry)_from_Kerala,_traditionally_prepared_in_earthern_pot.jpg) by Sandra Sivanandan · CC BY-SA 4.0
+- **Pandi curry** (dish) — [Pandi Curry.jpg](https://commons.wikimedia.org/wiki/File:Pandi_Curry.jpg) by Rupak76 · CC BY-SA 4.0
+- **Lassi** (dish) — [Coffee and mango lassi at restaurant South Asian Street Food.jpg](https://commons.wikimedia.org/wiki/File:Coffee_and_mango_lassi_at_restaurant_South_Asian_Street_Food.jpg) by JIP · CC BY-SA 4.0
+- **Malaiyo** (dish) — [Neemus - Sheherwali Milk Foam.jpg](https://commons.wikimedia.org/wiki/File:Neemus_-_Sheherwali_Milk_Foam.jpg) by Sumit Surai · CC BY-SA 4.0
+- **Litti chokha** (dish) — [Litti preparation in Kolkata, India.jpg](https://commons.wikimedia.org/wiki/File:Litti_preparation_in_Kolkata,_India.jpg) by Salil Kumar Mukherjee · CC BY-SA 4.0
+- **Bun maska & chai** (dish) — [Pav - Bun Maska.jpg](https://commons.wikimedia.org/wiki/File:Pav_-_Bun_Maska.jpg) by Mokshjuneja · CC BY-SA 4.0
+- **Parsi café food** (dish) — [Parsi Mutton Berry Pulao.jpg](https://commons.wikimedia.org/wiki/File:Parsi_Mutton_Berry_Pulao.jpg) by Sumit Surai · CC BY-SA 4.0
+- **Butter chicken** (dish) — [Honey Butter chicken from Korean Fried Chicken (2026-04-25).jpg](https://commons.wikimedia.org/wiki/File:Honey_Butter_chicken_from_Korean_Fried_Chicken_(2026-04-25).jpg) by Wide Awake! · CC BY 4.0
+- **Tandoori chicken** (dish) — [Tandoori chicken and salad Spitalfields Market Tower Hamlets London England 02.jpg](https://commons.wikimedia.org/wiki/File:Tandoori_chicken_and_salad_Spitalfields_Market_Tower_Hamlets_London_England_02.jpg) by Acabashi · CC BY-SA 4.0
+- **Bengali thali** (dish) — [Bengali style Homemade nonveg thali with dessert and salad.jpg](https://commons.wikimedia.org/wiki/File:Bengali_style_Homemade_nonveg_thali_with_dessert_and_salad.jpg) by Mumujit · CC BY-SA 4.0
+- **Rajasthani thali** (dish) — [Traditional Rajasthani Thali-Jaipur-Rajastan-001.jpg](https://commons.wikimedia.org/wiki/File:Traditional_Rajasthani_Thali-Jaipur-Rajastan-001.jpg) by Kaapeine · CC BY-SA 4.0
+- **Malpua** (dish) — [A street vendor preparing Malpua Sweet in Kolkata, India.jpg](https://commons.wikimedia.org/wiki/File:A_street_vendor_preparing_Malpua_Sweet_in_Kolkata,_India.jpg) by Salil Kumar Mukherjee · CC BY-SA 4.0
+- **Kulfi** (dish) — [PXL 20231129 142321748 Mango Kulfi Desert at Chawri Bazar Chandni Chowk Food Walk, New Delhi, Delhi 110006.jpg](https://commons.wikimedia.org/wiki/File:PXL_20231129_142321748_Mango_Kulfi_Desert_at_Chawri_Bazar_Chandni_Chowk_Food_Walk,_New_Delhi,_Delhi_110006.jpg) by Sourabh · CC BY-SA 4.0
+- **Siddu** (dish) — [Traditional Kulluvi Siddu.jpg](https://commons.wikimedia.org/wiki/File:Traditional_Kulluvi_Siddu.jpg) by Rajani Gairshail · CC BY-SA 4.0
+- **Tongba (millet beer)** (dish) — [Tongba at Hot Stimulating Cafe.jpg](https://commons.wikimedia.org/wiki/File:Tongba_at_Hot_Stimulating_Cafe.jpg) by Sumit Surai · CC BY-SA 4.0
+- **Dalma** (dish) — [Odia Dalma.jpg](https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg) by Raseswari · CC BY-SA 4.0
+- **Masala chai** (dish) — [Puffed rice with Telebhaja (Bengali fritters) Kolkata - West Bengal - DSC 0046.jpg](https://commons.wikimedia.org/wiki/File:Puffed_rice_with_Telebhaja_(Bengali_fritters)_Kolkata_-_West_Bengal_-_DSC_0046.jpg) by TAPAS KUMAR HALDER · CC BY-SA 4.0

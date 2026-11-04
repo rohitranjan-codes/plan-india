@@ -554,6 +554,140 @@ window.PHOTOS_MORE = {
     "page": "https://commons.wikimedia.org/wiki/File:Thanjavur_2.jpg",
     "caption": "Thanjavur"
    }
+  ],
+  "mysuru": [
+   {
+    "src": "img/g/mysuru-1.jpg",
+    "author": "Pinakpani",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mysore_palace_at_night_01.jpg",
+    "caption": "Mysore Palace night"
+   },
+   {
+    "src": "img/g/mysuru-2.jpg",
+    "author": "Sumit Surai",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mysore_Palace_Windows.jpg",
+    "caption": "Mysore Palace"
+   },
+   {
+    "src": "img/g/mysuru-3.jpg",
+    "author": "Ravihegde1",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mysore_Amba_Vilas_palace.jpg",
+    "caption": "Amba Vilas Palace"
+   }
+  ],
+  "gokarna": [
+   {
+    "src": "img/g/gokarna-1.jpg",
+    "author": "Malavikanandan30",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kudle_Beach,_Gokarna.jpg",
+    "caption": "Kudle Beach"
+   },
+   {
+    "src": "img/g/gokarna-2.jpg",
+    "author": "Sourabh",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:PXL_20260103_054657562.MP_Paradise_beach_gokarna_Paradise_Beach_Trail,_Gokarna,_Karnataka_581326_01.jpg",
+    "caption": "Gokarna Karnataka"
+   }
+  ],
+  "chennai": [
+   {
+    "src": "img/g/chennai-1.jpg",
+    "author": "KurinchiRays",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Teppakulam_of_Kapaleeshwarar_Temple_-_2025.jpg",
+    "caption": "Kapaleeshwarar Temple"
+   },
+   {
+    "src": "img/g/chennai-2.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mamallapuram,_Shore_Temple,_India.jpg",
+    "caption": "Mahabalipuram Shore Temple"
+   },
+   {
+    "src": "img/g/chennai-3.jpg",
+    "author": "Dey",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:MGR_Memorial,_Marina_Beach.jpg",
+    "caption": "Marina Beach Chennai"
+   }
+  ],
+  "jodhpur": [
+   {
+    "src": "img/g/jodhpur-1.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20191210_Mehrangarh_Fort,_Jodhpur_1016_7834.jpg",
+    "caption": "Mehrangarh Fort"
+   }
+  ],
+  "ranthambore": [
+   {
+    "src": "img/g/ranthambore-1.jpg",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:081_Bengal_tiger_marking_its_territory_in_Ranthambore_National_Park_Photo_by_Giles_Laurent.jpg",
+    "caption": "Ranthambore tiger"
+   }
+  ],
+  "amritsar": [
+   {
+    "src": "img/g/amritsar-1.jpg",
+    "author": "Dey",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Harmandir_Sahib,_Amritsar,_India.jpg",
+    "caption": "Golden Temple Amritsar"
+   }
+  ],
+  "corbett": [
+   {
+    "src": "img/g/corbett-1.jpg",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:001_Golden_jackal_and_azureum_flowers_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg",
+    "caption": "Corbett National Park"
+   }
+  ],
+  "bandhavgarh": [
+   {
+    "src": "img/g/bandhavgarh-1.jpg",
+    "author": "Bernard Gagnon",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_in_Bandhavgarh_National_Park_02.jpg",
+    "caption": "Bandhavgarh tiger"
+   }
+  ],
+  "kanha": [
+   {
+    "src": "img/g/kanha-1.jpg",
+    "author": "Charles J",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Southern_plains_grey_langur_(Semnopithecus_dussumieri)_female_head.jpg",
+    "caption": "Kanha National Park"
+   }
+  ],
+  "aurangabad": [
+   {
+    "src": "img/g/aurangabad-1.jpg",
+    "author": "Rohit Sharma",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Courtyard_and_Mahabharata_Reliefs_at_the_Kailasa_Temple,_Ellora_01.jpg",
+    "caption": "Kailasa Temple Ellora"
+   }
+  ],
+  "kodaikanal": [
+   {
+    "src": "img/g/kodaikanal-1.jpg",
+    "author": "Devasenathipathi1957",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kodaikanal_Lake_2.jpg",
+    "caption": "Kodaikanal Lake"
+   }
   ]
  },
  "hotel": {
@@ -754,6 +888,12 @@ window.PHOTOS_MORE = {
    "author": "Richard Mortel from Riyadh, Saudi Arabia",
    "license": "CC BY 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Ideal_River_View_Resort,_Thanjavur_(1)_(36829584043).jpg"
+  },
+  "palm-tree-heritage": {
+   "src": "img/h/palm-tree-heritage.jpg",
+   "author": "Visitor7",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Palm_Springs_from_the_Museum_Trail.jpg"
   }
  },
  "eat": {
@@ -1160,6 +1300,120 @@ window.PHOTOS_MORE = {
    "author": "Lynnereal",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Three_Bars_(1).jpg"
+  },
+  "benne-dosa": {
+   "src": "img/d/benne-dosa.jpg",
+   "author": "Srutiagarwal123",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Butter_Dosa.JPG"
+  },
+  "fish-thali": {
+   "src": "img/d/fish-thali.jpg",
+   "author": "Joegoaukfishcurry2",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fish_Curry_Rice_Thali_(27457732363).jpg"
+  },
+  "kerala-fish-curry": {
+   "src": "img/d/kerala-fish-curry.jpg",
+   "author": "Sandra Sivanandan",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Meen_curry_(fish_curry)_from_Kerala,_traditionally_prepared_in_earthern_pot.jpg"
+  },
+  "pandi-curry": {
+   "src": "img/d/pandi-curry.jpg",
+   "author": "Rupak76",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pandi_Curry.jpg"
+  },
+  "lassi": {
+   "src": "img/d/lassi.jpg",
+   "author": "JIP",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coffee_and_mango_lassi_at_restaurant_South_Asian_Street_Food.jpg"
+  },
+  "malaiyo": {
+   "src": "img/d/malaiyo.jpg",
+   "author": "Sumit Surai",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Neemus_-_Sheherwali_Milk_Foam.jpg"
+  },
+  "litti-chokha": {
+   "src": "img/d/litti-chokha.jpg",
+   "author": "Salil Kumar Mukherjee",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Litti_preparation_in_Kolkata,_India.jpg"
+  },
+  "bun-maska": {
+   "src": "img/d/bun-maska.jpg",
+   "author": "Mokshjuneja",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pav_-_Bun_Maska.jpg"
+  },
+  "parsi": {
+   "src": "img/d/parsi.jpg",
+   "author": "Sumit Surai",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Parsi_Mutton_Berry_Pulao.jpg"
+  },
+  "butter-chicken": {
+   "src": "img/d/butter-chicken.jpg",
+   "author": "Wide Awake!",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Honey_Butter_chicken_from_Korean_Fried_Chicken_(2026-04-25).jpg"
+  },
+  "tandoori": {
+   "src": "img/d/tandoori.jpg",
+   "author": "Acabashi",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tandoori_chicken_and_salad_Spitalfields_Market_Tower_Hamlets_London_England_02.jpg"
+  },
+  "bengali-thali": {
+   "src": "img/d/bengali-thali.jpg",
+   "author": "Mumujit",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bengali_style_Homemade_nonveg_thali_with_dessert_and_salad.jpg"
+  },
+  "rajasthani-thali": {
+   "src": "img/d/rajasthani-thali.jpg",
+   "author": "Kaapeine",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Traditional_Rajasthani_Thali-Jaipur-Rajastan-001.jpg"
+  },
+  "malpua": {
+   "src": "img/d/malpua.jpg",
+   "author": "Salil Kumar Mukherjee",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_street_vendor_preparing_Malpua_Sweet_in_Kolkata,_India.jpg"
+  },
+  "kulfi": {
+   "src": "img/d/kulfi.jpg",
+   "author": "Sourabh",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:PXL_20231129_142321748_Mango_Kulfi_Desert_at_Chawri_Bazar_Chandni_Chowk_Food_Walk,_New_Delhi,_Delhi_110006.jpg"
+  },
+  "siddu": {
+   "src": "img/d/siddu.jpg",
+   "author": "Rajani Gairshail",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Traditional_Kulluvi_Siddu.jpg"
+  },
+  "tongba": {
+   "src": "img/d/tongba.jpg",
+   "author": "Sumit Surai",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tongba_at_Hot_Stimulating_Cafe.jpg"
+  },
+  "dalma": {
+   "src": "img/d/dalma.jpg",
+   "author": "Raseswari",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg"
+  },
+  "masala-chai": {
+   "src": "img/d/masala-chai.jpg",
+   "author": "TAPAS KUMAR HALDER",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Puffed_rice_with_Telebhaja_(Bengali_fritters)_Kolkata_-_West_Bengal_-_DSC_0046.jpg"
   }
  }
 };
