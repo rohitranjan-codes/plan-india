@@ -57,4 +57,195 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 
 ## Galleries, hotels, restaurants and dishes
 
-
+- **bengaluru** (gallery) — [Lighting of Vidhana Soudha.jpg](https://commons.wikimedia.org/wiki/File:Lighting_of_Vidhana_Soudha.jpg) by Yashaswi · CC BY-SA 4.0
+- **bengaluru** (gallery) — [View from Visvesvaraya Industrial and Technological Museum (2025) 02.jpg](https://commons.wikimedia.org/wiki/File:View_from_Visvesvaraya_Industrial_and_Technological_Museum_(2025)_02.jpg) by Gpkp · CC BY-SA 4.0
+- **goa** (gallery) — [BeachFun.jpg](https://commons.wikimedia.org/wiki/File:BeachFun.jpg) by Sam 8393 · CC BY-SA 4.0
+- **munnar** (gallery) — [Eravikulam National Park (49444006652).jpg](https://commons.wikimedia.org/wiki/File:Eravikulam_National_Park_(49444006652).jpg) by Mike Prince from Bangalore, India · CC BY 2.0
+- **munnar** (gallery) — [AnaimudiPeak DSC 4834.jpg](https://commons.wikimedia.org/wiki/File:AnaimudiPeak_DSC_4834.jpg) by Mdmadhu · CC BY-SA 4.0
+- **kochi** (gallery) — [Kochi, Fishing nets at sunset, Kerala, India.jpg](https://commons.wikimedia.org/wiki/File:Kochi,_Fishing_nets_at_sunset,_Kerala,_India.jpg) by Vyacheslav Argenberg · CC BY 4.0
+- **kochi** (gallery) — [Alappuzha Boat Beauty W.jpg](https://commons.wikimedia.org/wiki/File:Alappuzha_Boat_Beauty_W.jpg) by Augustus Binu/ facebook · CC BY-SA 3.0
+- **thekkady** (gallery) — [Thekkady.jpg](https://commons.wikimedia.org/wiki/File:Thekkady.jpg) by Jigyasu · CC BY-SA 4.0
+- **thekkady** (gallery) — [Fish net over Periyar River 0.jpg](https://commons.wikimedia.org/wiki/File:Fish_net_over_Periyar_River_0.jpg) by KannanVM · CC BY-SA 4.0
+- **coorg** (gallery) — [Abbey Falls New.jpg](https://commons.wikimedia.org/wiki/File:Abbey_Falls_New.jpg) by Santhoshkumar Sugumar · CC BY-SA 4.0
+- **coorg** (gallery) — [Raja's Seat View Point.jpg](https://commons.wikimedia.org/wiki/File:Raja%27s_Seat_View_Point.jpg) by Pawanrao · CC BY-SA 4.0
+- **hampi** (gallery) — [Complex of Virupaksha Temple, Hampi (04).jpg](https://commons.wikimedia.org/wiki/File:Complex_of_Virupaksha_Temple,_Hampi_(04).jpg) by iMahesh · CC BY-SA 4.0
+- **hyderabad** (gallery) — [Chowmahalla Palace 01.jpg](https://commons.wikimedia.org/wiki/File:Chowmahalla_Palace_01.jpg) by Bernard Gagnon · CC BY-SA 3.0
+- **hyderabad** (gallery) — [Aerial view of Durgam cheruvu and Hitech CIty.jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Durgam_cheruvu_and_Hitech_CIty.jpg) by iMahesh · CC BY-SA 4.0
+- **ooty** (gallery) — [Arts College Hill Ooty Nilgiris Mar21 A7C 00188.jpg](https://commons.wikimedia.org/wiki/File:Arts_College_Hill_Ooty_Nilgiris_Mar21_A7C_00188.jpg) by Timothy A · CC BY-SA 4.0
+- **ooty** (gallery) — [Coonoor.JPG](https://commons.wikimedia.org/wiki/File:Coonoor.JPG) by Robinder Uppal · CC BY-SA 3.0
+- **kabini** (gallery) — [Kabani River.jpg](https://commons.wikimedia.org/wiki/File:Kabani_River.jpg) by Vinodnellackal at en · CC BY-SA 3.0
+- **chikmagalur** (gallery) — [Shola Grasslands and forests in the Kudremukh National Park, Western Ghats, Karnataka.jpg](https://commons.wikimedia.org/wiki/File:Shola_Grasslands_and_forests_in_the_Kudremukh_National_Park,_Western_Ghats,_Karnataka.jpg) by Karunakar Rayker · CC BY 2.0
+- **chikmagalur** (gallery) — [Kudremukh national park.jpg](https://commons.wikimedia.org/wiki/File:Kudremukh_national_park.jpg) by Naveen · Public domain
+- **wayanad** (gallery) — [Blue, Green & White.jpg](https://commons.wikimedia.org/wiki/File:Blue,_Green_%26_White.jpg) by Karkiabhijeet · CC BY-SA 4.0
+- **wayanad** (gallery) — [Chembra.jpg](https://commons.wikimedia.org/wiki/File:Chembra.jpg) by Aneesh Jose · CC BY-SA 3.0
+- **varkala** (gallery) — [Varkala Beach, Varkala, Kerala.jpg](https://commons.wikimedia.org/wiki/File:Varkala_Beach,_Varkala,_Kerala.jpg) by Devender Goyal · CC BY-SA 4.0
+- **varkala** (gallery) — [Kovalam beach trivandrum kerala.jpg](https://commons.wikimedia.org/wiki/File:Kovalam_beach_trivandrum_kerala.jpg) by Georgeumartin · CC BY-SA 4.0
+- **andaman** (gallery) — [Havelock, Andaman & Nicobar Islands.JPG](https://commons.wikimedia.org/wiki/File:Havelock,_Andaman_%26_Nicobar_Islands.JPG) by Dr · CC BY-SA 3.0
+- **andaman** (gallery) — [Keshet neal island india.jpg](https://commons.wikimedia.org/wiki/File:Keshet_neal_island_india.jpg) by Dorhodor · CC BY-SA 3.0
+- **madurai** (gallery) — [Meenakshi Amman West Tower.jpg](https://commons.wikimedia.org/wiki/File:Meenakshi_Amman_West_Tower.jpg) by KennyOMG · CC BY-SA 4.0
+- **badami** (gallery) — [Pattadakal 000.JPG](https://commons.wikimedia.org/wiki/File:Pattadakal_000.JPG) by Nithin bolar k · CC BY-SA 3.0
+- **badami** (gallery) — [8th century Durga temple exterior view, Aihole Hindu temples and monuments 3.jpg](https://commons.wikimedia.org/wiki/File:8th_century_Durga_temple_exterior_view,_Aihole_Hindu_temples_and_monuments_3.jpg) by Ms Sarah Welch · CC BY-SA 4.0
+- **pondicherry** (gallery) — [Pondicherry-Rock beach aerial view.jpg](https://commons.wikimedia.org/wiki/File:Pondicherry-Rock_beach_aerial_view.jpg) by Karthik Easvur · CC BY-SA 3.0
+- **pondicherry** (gallery) — [Town Hall of Auroville.jpg](https://commons.wikimedia.org/wiki/File:Town_Hall_of_Auroville.jpg) by Kaspar Konrad · Public domain
+- **varanasi** (gallery) — [Varanasi, India, Ghats, Cremation ceremony in progress.jpg](https://commons.wikimedia.org/wiki/File:Varanasi,_India,_Ghats,_Cremation_ceremony_in_progress.jpg) by Vyacheslav Argenberg · CC BY 4.0
+- **varanasi** (gallery) — [Dasaswamedh ghat-varanasi india-andres larin.jpg](https://commons.wikimedia.org/wiki/File:Dasaswamedh_ghat-varanasi_india-andres_larin.jpg) by Saaremees · CC BY-SA 4.0
+- **rishikesh** (gallery) — [Trayambakeshwar Temple VK.jpg](https://commons.wikimedia.org/wiki/File:Trayambakeshwar_Temple_VK.jpg) by VK1983 · CC BY-SA 4.0
+- **mumbai** (gallery) — [Mumbai Bandra-Worli Sea Link.jpg](https://commons.wikimedia.org/wiki/File:Mumbai_Bandra-Worli_Sea_Link.jpg) by Rutiknatekar · CC BY-SA 4.0
+- **delhi** (gallery) — [India Gate front.jpg](https://commons.wikimedia.org/wiki/File:India_Gate_front.jpg) by AKS · CC BY-SA 4.0
+- **delhi** (gallery) — [LotusDelhi.jpg](https://commons.wikimedia.org/wiki/File:LotusDelhi.jpg) by Vandelizer · CC BY 2.0
+- **delhi** (gallery) — [Delhi fort.jpg](https://commons.wikimedia.org/wiki/File:Delhi_fort.jpg) by PerSona77 · CC BY-SA 3.0
+- **kolkata** (gallery) — [Kolkata maidan.jpg](https://commons.wikimedia.org/wiki/File:Kolkata_maidan.jpg) by NalGup20 · CC BY-SA 4.0
+- **agra** (gallery) — [Mehtab Bagh facing Taj Mahal.JPG](https://commons.wikimedia.org/wiki/File:Mehtab_Bagh_facing_Taj_Mahal.JPG) by g · CC BY-SA 3.0
+- **jaipur** (gallery) — [East facade Hawa Mahal Jaipur from ground level (July 2022) - img 01.jpg](https://commons.wikimedia.org/wiki/File:East_facade_Hawa_Mahal_Jaipur_from_ground_level_(July_2022)_-_img_01.jpg) by Chainwit · CC BY-SA 4.0
+- **jaipur** (gallery) — [Chandra Mahal, City Palace, Jaipur, 20191218 0951 9043.jpg](https://commons.wikimedia.org/wiki/File:Chandra_Mahal,_City_Palace,_Jaipur,_20191218_0951_9043.jpg) by Jakub Hałun · CC BY-SA 4.0
+- **udaipur** (gallery) — [Udaipur City Palace.jpg](https://commons.wikimedia.org/wiki/File:Udaipur_City_Palace.jpg) by Henrik Bennetsen · CC BY-SA 2.0
+- **udaipur** (gallery) — [Udaipur Lake India.JPG](https://commons.wikimedia.org/wiki/File:Udaipur_Lake_India.JPG) by Uri Sittan Tripo · CC BY-SA 3.0
+- **udaipur** (gallery) — [Evening view, City Palace, Udaipur.jpg](https://commons.wikimedia.org/wiki/File:Evening_view,_City_Palace,_Udaipur.jpg) by Geri from Biel/Bienne, Schweiz · CC BY-SA 2.0
+- **jaisalmer** (gallery) — [Thar desert Rajasthan India.jpg](https://commons.wikimedia.org/wiki/File:Thar_desert_Rajasthan_India.jpg) by sushmita balasubramani · CC BY 2.0
+- **pushkar** (gallery) — [(A) Camel Pushkar fair.jpg](https://commons.wikimedia.org/wiki/File:(A)_Camel_Pushkar_fair.jpg) by sheetal saini · CC BY 2.0
+- **shimla** (gallery) — [Landscape of Shimla , Himachal Pradesh.jpg](https://commons.wikimedia.org/wiki/File:Landscape_of_Shimla_,_Himachal_Pradesh.jpg) by Navneet Sharma · CC BY-SA 4.0
+- **shimla** (gallery) — [The Ridge Shimla 5.jpg](https://commons.wikimedia.org/wiki/File:The_Ridge_Shimla_5.jpg) by Virusism · CC BY-SA 4.0
+- **manali** (gallery) — [Kullu Valley from Rohtang Pass, India.jpg](https://commons.wikimedia.org/wiki/File:Kullu_Valley_from_Rohtang_Pass,_India.jpg) by Vyacheslav Argenberg · CC BY 4.0
+- **dharamshala** (gallery) — [Dharamshala 03 (Cropped).jpg](https://commons.wikimedia.org/wiki/File:Dharamshala_03_(Cropped).jpg) by Amit Phulera · CC BY-SA 4.0
+- **dharamshala** (gallery) — [Triund (22356802630).jpg](https://commons.wikimedia.org/wiki/File:Triund_(22356802630).jpg) by Ashish Gupta from Noida, India · CC BY 2.0
+- **dharamshala** (gallery) — [Dhauladhar.jpg](https://commons.wikimedia.org/wiki/File:Dhauladhar.jpg) by Ashish Sharma · CC BY-SA 4.0
+- **leh** (gallery) — [Leh Palace 2011.jpg](https://commons.wikimedia.org/wiki/File:Leh_Palace_2011.jpg) by KennyOMG · CC BY-SA 4.0
+- **leh** (gallery) — [Hemis Monastery 02.jpg](https://commons.wikimedia.org/wiki/File:Hemis_Monastery_02.jpg) by Bernard Gagnon Canon EOS REBEL T4i · CC BY-SA 4.0
+- **leh** (gallery) — [ISS054-E-7809 - View of Earth (cropped).jpg](https://commons.wikimedia.org/wiki/File:ISS054-E-7809_-_View_of_Earth_(cropped).jpg) by Earth Science and Remote Sensing Unit, NASA Johnson Space Ce · Public domain
+- **leh** (gallery) — [5 Nubra valley.jpg](https://commons.wikimedia.org/wiki/File:5_Nubra_valley.jpg) by Addy6697 · CC BY-SA 4.0
+- **khajuraho** (gallery) — [Khajuraho.KandariyaMahadeva.jpg](https://commons.wikimedia.org/wiki/File:Khajuraho.KandariyaMahadeva.jpg) by China Crisis · CC BY-SA 3.0
+- **kutch** (gallery) — [Pragmahal Bhuj Kutch Gujarat.jpg](https://commons.wikimedia.org/wiki/File:Pragmahal_Bhuj_Kutch_Gujarat.jpg) by Nizil Shah · CC BY-SA 3.0
+- **darjeeling** (gallery) — [Tiger Hill Darjeeling West Bengal India (3).JPG](https://commons.wikimedia.org/wiki/File:Tiger_Hill_Darjeeling_West_Bengal_India_(3).JPG) by Shahnoor Habib Munmun · CC BY 3.0
+- **darjeeling** (gallery) — [Kangchenjunga PangPema.JPG](https://commons.wikimedia.org/wiki/File:Kangchenjunga_PangPema.JPG) by Tomabarker · CC BY 3.0
+- **gangtok** (gallery) — [Rumtek Monastery alias Dharma Chakra Centre near Gangtok, East Sikkim 09.jpg](https://commons.wikimedia.org/wiki/File:Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok,_East_Sikkim_09.jpg) by Anjan Kumar Kundu · CC BY 4.0
+- **kaziranga** (gallery) — [Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg](https://commons.wikimedia.org/wiki/File:Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg) by Mayank1704 · CC BY-SA 4.0
+- **shillong** (gallery) — [NohKaLikai Falls V2 Wiki.jpg](https://commons.wikimedia.org/wiki/File:NohKaLikai_Falls_V2_Wiki.jpg) by Vikramjit Kakati · CC BY-SA 4.0
+- **shillong** (gallery) — [Elephant Falls II, Shillong.jpg](https://commons.wikimedia.org/wiki/File:Elephant_Falls_II,_Shillong.jpg) by Prasanta Kr Dutta · CC BY-SA 4.0
+- **shillong** (gallery) — [Umngot river, Dawki.jpg](https://commons.wikimedia.org/wiki/File:Umngot_river,_Dawki.jpg) by Vikramjit Kakati · CC BY-SA 4.0
+- **puri** (gallery) — [Shri Jagannath temple.jpg](https://commons.wikimedia.org/wiki/File:Shri_Jagannath_temple.jpg) by Prachites · CC BY-SA 3.0
+- **thanjavur** (gallery) — [Ranganathaswamy temple tiruchirappalli.jpg](https://commons.wikimedia.org/wiki/File:Ranganathaswamy_temple_tiruchirappalli.jpg) by RUPESH MAURYA · CC BY-SA 4.0
+- **thanjavur** (gallery) — [Thanjavur 2.jpg](https://commons.wikimedia.org/wiki/File:Thanjavur_2.jpg) by Arun2117dts · CC BY-SA 4.0
+- **The Oberoi New Delhi** (hotel) — [The Oberoi, New Delhi.jpg](https://commons.wikimedia.org/wiki/File:The_Oberoi,_New_Delhi.jpg) by Murtaza · CC BY-SA 4.0
+- **The Imperial** (hotel) — [The bar at 1911 restaurant, Imperial Hotel, New Delhi.jpg](https://commons.wikimedia.org/wiki/File:The_bar_at_1911_restaurant,_Imperial_Hotel,_New_Delhi.jpg) by V Malik · CC BY-SA 2.0
+- **The Lodhi** (hotel) — [Gol Gumbad (3545160603).jpg](https://commons.wikimedia.org/wiki/File:Gol_Gumbad_(3545160603).jpg) by Varun Shiv Kapur from New Delhi, India · CC BY 2.0
+- **Taj Mahal, New Delhi** (hotel) — [Indian External Affairs Minister S Jaishankar and Prime Minister Sheikh Hasina meeting at Hotel Taj Mahal New Delhi 2019-10-05 (PID-0036697).jpg](https://commons.wikimedia.org/wiki/File:Indian_External_Affairs_Minister_S_Jaishankar_and_Prime_Minister_Sheikh_Hasina_meeting_at_Hotel_Taj_Mahal_New_Delhi_2019-10-05_(PID-0036697).jpg) by Press Information Department · Public domain
+- **ITC Grand Chola** (hotel) — [ITC-Grand-Chola-Chennai-2.JPG](https://commons.wikimedia.org/wiki/File:ITC-Grand-Chola-Chennai-2.JPG) by Destination8infinity · CC BY-SA 3.0
+- **Hyatt Regency Chennai** (hotel) — [The first Hyatt Hotel in South India.jpg](https://commons.wikimedia.org/wiki/File:The_first_Hyatt_Hotel_in_South_India.jpg) by Hyatt Regency Chennai · CC BY-SA 3.0
+- **ITC Royal Bengal** (hotel) — [ITC Royal Bengal, Kolkata.jpg](https://commons.wikimedia.org/wiki/File:ITC_Royal_Bengal,_Kolkata.jpg) by Kolkatametro · CC BY-SA 4.0
+- **Taj Bengal** (hotel) — [Belvadere Road 'Taj Bengal' (1).jpg](https://commons.wikimedia.org/wiki/File:Belvadere_Road_%27Taj_Bengal%27_(1).jpg) by Kolkatan · CC BY-SA 3.0
+- **The Park Kolkata** (hotel) — [DurgaPuja2018 - Pandal of Jagat Mukherjee Park in Kolkata 13.jpg](https://commons.wikimedia.org/wiki/File:DurgaPuja2018_-_Pandal_of_Jagat_Mukherjee_Park_in_Kolkata_13.jpg) by Indrajit Das · CC BY-SA 4.0
+- **Taj West End** (hotel) — [Taj West End Bangalore (17495).jpg](https://commons.wikimedia.org/wiki/File:Taj_West_End_Bangalore_(17495).jpg) by Thejeshgn · CC BY-SA 4.0
+- **The Park Bangalore** (hotel) — [BBMP Step Hill Garden Park (Sir M. Visvesvaraya park), Bangalore (2026).jpg](https://commons.wikimedia.org/wiki/File:BBMP_Step_Hill_Garden_Park_(Sir_M._Visvesvaraya_park),_Bangalore_(2026).jpg) by Gpkp · CC BY-SA 4.0
+- **Brunton Boatyard (CGH Earth)** (hotel) — [Brunton Boatyard Hotel.jpg](https://commons.wikimedia.org/wiki/File:Brunton_Boatyard_Hotel.jpg) by നിരക്ഷരൻ · CC BY-SA 3.0
+- **Old Harbour Hotel** (hotel) — [I Old harbor - front-01 after.jpg](https://commons.wikimedia.org/wiki/File:I_Old_harbor_-_front-01_after.jpg) by ArchKarl · CC BY-SA 4.0
+- **Fort House Hotel** (hotel) — [2008 06 Fort Harrison Hotel.jpg](https://commons.wikimedia.org/wiki/File:2008_06_Fort_Harrison_Hotel.jpg) by Anonymous9000 · CC BY 2.0
+- **Hampi's Boulders** (hotel) — [Hampi, India, Rocky landscape of Hampi, Granite rocks of Matanga Hill.jpg](https://commons.wikimedia.org/wiki/File:Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg) by Vyacheslav Argenberg · CC BY 4.0
+- **Taj Falaknuma Palace** (hotel) — [Falaknuma Palace 03.jpg](https://commons.wikimedia.org/wiki/File:Falaknuma_Palace_03.jpg) by Bernard Gagnon · CC BY-SA 3.0
+- **Kabini River Lodge (Jungle Lodges)** (hotel) — [Kabini Reservoir South View Karnataka Dec21 D72 21839.jpg](https://commons.wikimedia.org/wiki/File:Kabini_Reservoir_South_View_Karnataka_Dec21_D72_21839.jpg) by Timothy A · CC BY-SA 4.0
+- **Red Earth Kabini** (hotel) — [Sunset at Kabini River, overlooking Nagarhole National Park.jpg](https://commons.wikimedia.org/wiki/File:Sunset_at_Kabini_River,_overlooking_Nagarhole_National_Park.jpg) by Shriya Palchaudhuri · CC BY-SA 4.0
+- **SwaSwara (CGH Earth)** (hotel) — [SwaSwara Gokarna image.jpg](https://commons.wikimedia.org/wiki/File:SwaSwara_Gokarna_image.jpg) by Titodutta · CC BY-SA 4.0
+- **Vythiri Resort** (hotel) — [Kerala Veterinary and Animal Sciences University 05918.JPG](https://commons.wikimedia.org/wiki/File:Kerala_Veterinary_and_Animal_Sciences_University_05918.JPG) by Vengolis · CC BY-SA 4.0
+- **Wayanad Wild (CGH Earth)** (hotel) — [Wayanadu 93.jpg](https://commons.wikimedia.org/wiki/File:Wayanadu_93.jpg) by Vengolis · CC BY 4.0
+- **Barefoot at Havelock** (hotel) — [Havelock (Andaman Islands), RTW 2012 (8411605228).jpg](https://commons.wikimedia.org/wiki/File:Havelock_(Andaman_Islands),_RTW_2012_(8411605228).jpg) by Ana Raquel S · CC BY-SA 2.0
+- **Heritage Madurai** (hotel) — [Iranyankudiyiruppu - Rajakkalmangalam Sculptures Site 2.jpg](https://commons.wikimedia.org/wiki/File:Iranyankudiyiruppu_-_Rajakkalmangalam_Sculptures_Site_2.jpg) by Perumalism · CC BY-SA 4.0
+- **Courtyard by Marriott Madurai** (hotel) — [Chef Raghavan.jpg](https://commons.wikimedia.org/wiki/File:Chef_Raghavan.jpg) by Chef raghavan · CC BY-SA 4.0
+- **Palais de Mahé (CGH Earth)** (hotel) — [Hotel Palais de Mahe, Pondicherry (2) (23663252618).jpg](https://commons.wikimedia.org/wiki/File:Hotel_Palais_de_Mahe,_Pondicherry_(2)_(23663252618).jpg) by Richard Mortel from Riyadh, Saudi Arabia · CC BY 2.0
+- **Le Dupleix** (hotel) — [Statue de Joseph François Dupleix Landrecies 3.JPG](https://commons.wikimedia.org/wiki/File:Statue_de_Joseph_Fran%C3%A7ois_Dupleix_Landrecies_3.JPG) by Chatsam · CC BY-SA 3.0
+- **BrijRama Palace** (hotel) — [Brijrama Palace, Varanasi.jpg](https://commons.wikimedia.org/wiki/File:Brijrama_Palace,_Varanasi.jpg) by Dudva · CC0
+- **Taj Ganges** (hotel) — [2023-08-26 K M Khalid speech G-20 Culture Ministers meeting Varanasi Hotel Taj Ganges (PID-0014015).jpg](https://commons.wikimedia.org/wiki/File:2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_(PID-0014015).jpg) by Press Information Department · Public domain
+- **Ananda in the Himalayas** (hotel) — [Viceregal Palace, Ananda - In the Himalayas, Narendra Nagar, Uttarakhand.jpg](https://commons.wikimedia.org/wiki/File:Viceregal_Palace,_Ananda_-_In_the_Himalayas,_Narendra_Nagar,_Uttarakhand.jpg) by https://www · CC BY 2.0
+- **The Taj Mahal Palace** (hotel) — [Taj Mahal Palace Hotel photo.jpg](https://commons.wikimedia.org/wiki/File:Taj_Mahal_Palace_Hotel_photo.jpg) by Photofinder · CC BY-SA 4.0
+- **The Oberoi Mumbai** (hotel) — [Marine Drive in Mumbai 08.jpg](https://commons.wikimedia.org/wiki/File:Marine_Drive_in_Mumbai_08.jpg) by Pinakpani · CC BY-SA 4.0
+- **Taj Hotel & Convention Centre Agra** (hotel) — [Taj Mahal, Agra, India.jpg](https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India.jpg) by Yann (talk) · CC BY-SA 4.0
+- **Rambagh Palace** (hotel) — [Rambagh Palace hotel Jaipur lobby courtyard.jpg](https://commons.wikimedia.org/wiki/File:Rambagh_Palace_hotel_Jaipur_lobby_courtyard.jpg) by Chainwit · CC BY-SA 4.0
+- **The Oberoi Rajvilas** (hotel) — [Raj Vilas, Rajastan.jpg](https://commons.wikimedia.org/wiki/File:Raj_Vilas,_Rajastan.jpg) by Gryffindor · Public domain
+- **Samode Haveli** (hotel) — [Samode Haveli Jaipur.jpg](https://commons.wikimedia.org/wiki/File:Samode_Haveli_Jaipur.jpg) by Pcrtravel · CC BY-SA 4.0
+- **Trident Jaipur** (hotel) — [Akbar and Tansen visit Haridas.jpg](https://commons.wikimedia.org/wiki/File:Akbar_and_Tansen_visit_Haridas.jpg) by unknown painter in Rajasthani miniature style · Public domain
+- **Umaid Bhawan Palace** (hotel) — [1996 -218-20A Jodhpur Hotel Umaid Bhawan Palace (2233393509).jpg](https://commons.wikimedia.org/wiki/File:1996_-218-20A_Jodhpur_Hotel_Umaid_Bhawan_Palace_(2233393509).jpg) by Dan Lundberg · CC BY-SA 2.0
+- **Taj Lake Palace** (hotel) — [Udaipur Lake Palace.jpg](https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg) by user:Flicka · CC BY-SA 3.0
+- **The Oberoi Udaivilas** (hotel) — [Rajasthan (6373261127).jpg](https://commons.wikimedia.org/wiki/File:Rajasthan_(6373261127).jpg) by Christopher Michel · CC BY 2.0
+- **Jagat Niwas Palace** (hotel) — [Jag Niwas with Royal Gangaur Boat.jpg](https://commons.wikimedia.org/wiki/File:Jag_Niwas_with_Royal_Gangaur_Boat.jpg) by Deepank Ranka · CC BY-SA 4.0
+- **Pushkar Palace** (hotel) — [Palace in Pushkar (Ajmer, Rajasthan).jpg](https://commons.wikimedia.org/wiki/File:Palace_in_Pushkar_(Ajmer,_Rajasthan).jpg) by Hardik Dayal · CC BY-SA 4.0
+- **The Oberoi Cecil** (hotel) — [Cecil Oberoi.jpg](https://commons.wikimedia.org/wiki/File:Cecil_Oberoi.jpg) by Shyamal · CC BY-SA 3.0
+- **Clarkes Shimla** (hotel) — [Clarkes Hotel Shimla.jpg](https://commons.wikimedia.org/wiki/File:Clarkes_Hotel_Shimla.jpg) by Shyamal L · CC BY-SA 3.0
+- **The Himalayan** (hotel) — [Manali Bus Stand (Himachal Pradesh).jpg](https://commons.wikimedia.org/wiki/File:Manali_Bus_Stand_(Himachal_Pradesh).jpg) by Rajani Gairshail · CC BY-SA 4.0
+- **Norwood Green** (hotel) — [The Parade at Norwood, South Australia in June 2026 (DSCF7814).jpg](https://commons.wikimedia.org/wiki/File:The_Parade_at_Norwood,_South_Australia_in_June_2026_(DSCF7814).jpg) by Yu Chu Chin · CC BY-SA 4.0
+- **The Lalit Temple View** (hotel) — [India-5566 - Flickr - archer10 (Dennis).jpg](https://commons.wikimedia.org/wiki/File:India-5566_-_Flickr_-_archer10_(Dennis).jpg) by Dennis G · CC BY-SA 2.0
+- **Vivanta Aurangabad** (hotel) — [Bibi Ka Maqbara - The Taj Of Deccan.jpg](https://commons.wikimedia.org/wiki/File:Bibi_Ka_Maqbara_-_The_Taj_Of_Deccan.jpg) by Pranaysahu26 · CC BY-SA 4.0
+- **Lemon Tree Hotel Aurangabad** (hotel) — [Lemon Tree Hotel, Aurangabad (50750333928).jpg](https://commons.wikimedia.org/wiki/File:Lemon_Tree_Hotel,_Aurangabad_(50750333928).jpg) by Dinesh Valke from Thane, India · CC BY-SA 2.0
+- **Glenburn Tea Estate** (hotel) — [Kangchenjunga from Glenburn Tea Estate AJTJohnsingh DSC01329.jpg](https://commons.wikimedia.org/wiki/File:Kangchenjunga_from_Glenburn_Tea_Estate_AJTJohnsingh_DSC01329.jpg) by A · CC BY-SA 4.0
+- **Mayfair Darjeeling** (hotel) — [Mayfair Hotel, Darjeeling, West Bengal, India.jpg](https://commons.wikimedia.org/wiki/File:Mayfair_Hotel,_Darjeeling,_West_Bengal,_India.jpg) by Mr · CC BY-SA 4.0
+- **Elgin Darjeeling** (hotel) — [Colonial-Era Hotel Elgin - Darjeeling - West Bengal - India (12406988513).jpg](https://commons.wikimedia.org/wiki/File:Colonial-Era_Hotel_Elgin_-_Darjeeling_-_West_Bengal_-_India_(12406988513).jpg) by Adam Jones from Kelowna, BC, Canada · CC BY-SA 2.0
+- **Mayfair Spa Resort & Casino** (hotel) — [Caesars Palace Casino (7980362756).jpg](https://commons.wikimedia.org/wiki/File:Caesars_Palace_Casino_(7980362756).jpg) by Sean MacEntee from Monaghan, Ireland · CC BY 2.0
+- **Ideal River View Resort** (hotel) — [Ideal River View Resort, Thanjavur (1) (36829584043).jpg](https://commons.wikimedia.org/wiki/File:Ideal_River_View_Resort,_Thanjavur_(1)_(36829584043).jpg) by Richard Mortel from Riyadh, Saudi Arabia · CC BY 2.0
+- **Karim's** (eat) — [Old Delhi market, Jama Masjid.jpg](https://commons.wikimedia.org/wiki/File:Old_Delhi_market,_Jama_Masjid.jpg) by Benison P Baby · CC BY-SA 4.0
+- **Murugan Idli Shop** (eat) — [Ghee Podi Idli - Murugan Idli Shop, Chennai - TamilNadu - PXL0246.jpg](https://commons.wikimedia.org/wiki/File:Ghee_Podi_Idli_-_Murugan_Idli_Shop,_Chennai_-_TamilNadu_-_PXL0246.jpg) by Harikrishnan N · CC BY-SA 4.0
+- **Nizam's** (eat) — [Purani Haveli - Nizam Palace - Stairs.jpg](https://commons.wikimedia.org/wiki/File:Purani_Haveli_-_Nizam_Palace_-_Stairs.jpg) by Rajashree Talukdar · CC BY-SA 4.0
+- **Peter Cat** (eat) — [The Chelo Kabab.jpg](https://commons.wikimedia.org/wiki/File:The_Chelo_Kabab.jpg) by Devang Mukherjee · CC BY-SA 4.0
+- **Vidyarthi Bhavan** (eat) — [Vidyarthi Bhavan Masala Dosa.jpg](https://commons.wikimedia.org/wiki/File:Vidyarthi_Bhavan_Masala_Dosa.jpg) by Maharana7573 · CC BY-SA 4.0
+- **Paradise Biryani** (eat) — [Vegetable biryani served at Paradise Restaurant, Hyderabad 02.jpg](https://commons.wikimedia.org/wiki/File:Vegetable_biryani_served_at_Paradise_Restaurant,_Hyderabad_02.jpg) by Dev Jadiya · CC BY-SA 4.0
+- **Blue Lassi Shop** (eat) — [World's Best Lassi - Blue Lassi - Old City - Varanasi - Uttar Pradesh - India (12498958194).jpg](https://commons.wikimedia.org/wiki/File:World%27s_Best_Lassi_-_Blue_Lassi_-_Old_City_-_Varanasi_-_Uttar_Pradesh_-_India_(12498958194).jpg) by Adam Jones from Kelowna, BC, Canada · CC BY-SA 2.0
+- **Britannia & Co.** (eat) — [Britannia and Co.jpg](https://commons.wikimedia.org/wiki/File:Britannia_and_Co.jpg) by Kanad Sanyal · CC BY-SA 4.0
+- **Bademiya** (eat) — [Bademiya restaurant, Mumbai.jpg](https://commons.wikimedia.org/wiki/File:Bademiya_restaurant,_Mumbai.jpg) by Benjamin Vander Steen from Victoria, Canada · CC BY 2.0
+- **Lassiwala** (eat) — [Shreenath Lassiwala Jaipur (2022) - img 03.jpg](https://commons.wikimedia.org/wiki/File:Shreenath_Lassiwala_Jaipur_(2022)_-_img_03.jpg) by Chainwit · CC BY-SA 4.0
+- **Glenary's** (eat) — [Glenary's the heritage restaurant in Darjeeling 08.jpg](https://commons.wikimedia.org/wiki/File:Glenary%27s_the_heritage_restaurant_in_Darjeeling_08.jpg) by Pinakpani · CC BY-SA 4.0
+- **Keventer's** (eat) — [Keventers Darjeeling.jpg](https://commons.wikimedia.org/wiki/File:Keventers_Darjeeling.jpg) by Riddhimaan · CC BY 4.0
+- **Masala dosa** (dish) — [Masala Dosa 2023.jpg](https://commons.wikimedia.org/wiki/File:Masala_Dosa_2023.jpg) by Yakshitha · CC BY-SA 4.0
+- **Filter coffee** (dish) — [Filter kaapi.JPG](https://commons.wikimedia.org/wiki/File:Filter_kaapi.JPG) by Vallari · CC BY-SA 4.0
+- **Idli & sambar** (dish) — [Idli Sambar.JPG](https://commons.wikimedia.org/wiki/File:Idli_Sambar.JPG) by Soumya dey at English Wikipedia · CC BY-SA 3.0
+- **Thali** (dish) — [Vegetarian Curry.jpeg](https://commons.wikimedia.org/wiki/File:Vegetarian_Curry.jpeg) by GracinhaMarco Abundo · CC BY 2.0
+- **Bisi bele bath** (dish) — [Bisi Bele Bath (Bisibelebath).JPG](https://commons.wikimedia.org/wiki/File:Bisi_Bele_Bath_(Bisibelebath).JPG) by Food and Remedy, LLC · CC BY-SA 3.0
+- **Ragi mudde** (dish) — [RAGI MUDDE.JPG](https://commons.wikimedia.org/wiki/File:RAGI_MUDDE.JPG) by Vsigamany · CC BY-SA 4.0
+- **Pork vindaloo** (dish) — [Beef Vindaloo - Chilli Mama, Chadstone (3014236693).jpg](https://commons.wikimedia.org/wiki/File:Beef_Vindaloo_-_Chilli_Mama,_Chadstone_(3014236693).jpg) by Alpha from Melbourne, Australia · CC BY-SA 2.0
+- **Prawn balchão** (dish) — [Balchao.jpg](https://commons.wikimedia.org/wiki/File:Balchao.jpg) by Unknown · CC BY-SA 4.0
+- **Bebinca** (dish) — [Bebinca com gelado.jpg](https://commons.wikimedia.org/wiki/File:Bebinca_com_gelado.jpg) by Warren Noronha · CC BY 2.0
+- **Feni** (dish) — [Cashew apples after plucking in Chorao, Goa, India.JPG](https://commons.wikimedia.org/wiki/File:Cashew_apples_after_plucking_in_Chorao,_Goa,_India.JPG) by Fredericknoronha · CC BY-SA 3.0
+- **Kerala sadya** (dish) — [Sadhya DSW.jpg](https://commons.wikimedia.org/wiki/File:Sadhya_DSW.jpg) by Augustus Binu/ facebook · CC BY-SA 3.0
+- **Appam & stew** (dish) — [Appam - அப்பம்.jpg](https://commons.wikimedia.org/wiki/File:Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg) by VinPrasad · CC BY-SA 4.0
+- **Puttu & kadala** (dish) — [Puttu (Rice Flour steamed cake).jpg](https://commons.wikimedia.org/wiki/File:Puttu_(Rice_Flour_steamed_cake).jpg) by Mathew Jibin · CC BY-SA 4.0
+- **Idiyappam** (dish) — [Idiyappam with Egg Masala Curry.jpg](https://commons.wikimedia.org/wiki/File:Idiyappam_with_Egg_Masala_Curry.jpg) by Viewfinder18 · CC BY-SA 4.0
+- **Beef fry & parotta** (dish) — [ബീഫ്ഫ്രൈ.jpg](https://commons.wikimedia.org/wiki/File:%E0%B4%AC%E0%B5%80%E0%B4%AB%E0%B5%8D%E0%B4%AB%E0%B5%8D%E0%B4%B0%E0%B5%88.jpg) by Challiyan at Malayalam Wikipedia · CC BY-SA 2.5
+- **Karimeen pollichathu** (dish) — [Etroplus suratensis.jpg](https://commons.wikimedia.org/wiki/File:Etroplus_suratensis.jpg) by Peter Corbett · CC BY 2.0
+- **Fish moilee** (dish) — [Fish Moilee Kerala Style (aka KeralaFish Molly).JPG](https://commons.wikimedia.org/wiki/File:Fish_Moilee_Kerala_Style_(aka_KeralaFish_Molly).JPG) by Drsoumyadeepb · CC BY-SA 4.0
+- **Parotta** (dish) — [Malabar Porotta (cropped).jpg](https://commons.wikimedia.org/wiki/File:Malabar_Porotta_(cropped).jpg) by Praveen · CC BY-SA 4.0
+- **Payasam** (dish) — [Kheer.jpg](https://commons.wikimedia.org/wiki/File:Kheer.jpg) by stu spivack · CC BY-SA 2.0
+- **Mysore pak** (dish) — [Mysore pak.jpg](https://commons.wikimedia.org/wiki/File:Mysore_pak.jpg) by Charles Haynes · CC BY-SA 2.0
+- **Akki roti** (dish) — [ಅಕ್ಕಿ ರೊಟ್ಟಿ .jpg](https://commons.wikimedia.org/wiki/File:%E0%B2%85%E0%B2%95%E0%B3%8D%E0%B2%95%E0%B2%BF_%E0%B2%B0%E0%B3%8A%E0%B2%9F%E0%B3%8D%E0%B2%9F%E0%B2%BF_.jpg) by Lakshmi Vijayadas · CC BY-SA 4.0
+- **Jolada rotti meal** (dish) — [Another Vegetarian Meal.jpg](https://commons.wikimedia.org/wiki/File:Another_Vegetarian_Meal.jpg) by Nick Gray · CC BY-SA 2.0
+- **Hyderabadi biryani** (dish) — [Hyderabadi Chicken Biryani.jpg](https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg) by Garrett Ziegler from New York, United States · CC BY 2.0
+- **Malabar biryani** (dish) — [Thalassery Falooda.jpg](https://commons.wikimedia.org/wiki/File:Thalassery_Falooda.jpg) by Dinner Series, Ashwin Kumar · CC BY-SA 2.0
+- **Haleem** (dish) — [Pakistani Haleem served with garnish.jpg](https://commons.wikimedia.org/wiki/File:Pakistani_Haleem_served_with_garnish.jpg) by Halt123halt · CC BY-SA 3.0
+- **Irani chai & Osmania biscuit** (dish) — [Yazdani Bakery in Fort.jpg](https://commons.wikimedia.org/wiki/File:Yazdani_Bakery_in_Fort.jpg) by Nick Gray · CC BY-SA 2.0
+- **Qubani ka meetha** (dish) — [Khobani Ka Meetha.JPG](https://commons.wikimedia.org/wiki/File:Khobani_Ka_Meetha.JPG) by Miansari66 · CC0
+- **Chettinad chicken** (dish) — [Chettinad Chicken Fry-Home-AndhraPradesh-005.jpg](https://commons.wikimedia.org/wiki/File:Chettinad_Chicken_Fry-Home-AndhraPradesh-005.jpg) by M N Swarna · CC BY-SA 4.0
+- **Nilgiri tea** (dish) — [Nilgiritea.jpg](https://commons.wikimedia.org/wiki/File:Nilgiritea.jpg) by Badagnani (talk) · CC BY-SA 3.0
+- **Fish curry (machher jhol)** (dish) — [Alu ar dhonepata diye Boyal machher jhol.jpg](https://commons.wikimedia.org/wiki/File:Alu_ar_dhonepata_diye_Boyal_machher_jhol.jpg) by Atudu · CC BY-SA 4.0
+- **French bakery** (dish) — [Croissant-Petr Kratochvil.jpg](https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg) by Petr Kratochvil · CC0
+- **Kachori** (dish) — [Rajasthani Raj Kachori.jpg](https://commons.wikimedia.org/wiki/File:Rajasthani_Raj_Kachori.jpg) by Jaipuriamanasi · CC BY-SA 4.0
+- **Banarasi paan** (dish) — [Betel 1.jpg](https://commons.wikimedia.org/wiki/File:Betel_1.jpg) by Unknown artistUnknown artist · Public domain
+- **Vada pav** (dish) — [Vada Pav-Indian street food.JPG](https://commons.wikimedia.org/wiki/File:Vada_Pav-Indian_street_food.JPG) by Rutvi Mistry · CC BY-SA 4.0
+- **Pav bhaji** (dish) — [Bambayya Pav bhaji.jpg](https://commons.wikimedia.org/wiki/File:Bambayya_Pav_bhaji.jpg) by Rupali Banarase · CC BY-SA 4.0
+- **Seekh kebab** (dish) — [Pakistani Food Beef Kabobs.jpg](https://commons.wikimedia.org/wiki/File:Pakistani_Food_Beef_Kabobs.jpg) by Jess Lander from Culver City, CA, USA · CC BY 2.0
+- **Nihari** (dish) — [Nalli Nihari India.jpg](https://commons.wikimedia.org/wiki/File:Nalli_Nihari_India.jpg) by Nilanjan Sasmal · CC BY-SA 4.0
+- **Chaat** (dish) — [Dahi puri, Doi phuchka.jpg](https://commons.wikimedia.org/wiki/File:Dahi_puri,_Doi_phuchka.jpg) by Rupamdas75 · CC BY-SA 4.0
+- **Dal makhani** (dish) — [Punjabi style Dal Makhani.jpg](https://commons.wikimedia.org/wiki/File:Punjabi_style_Dal_Makhani.jpg) by Radhikamprabhu82 · CC BY-SA 4.0
+- **Kathi roll** (dish) — [Kolkata Rolls.jpg](https://commons.wikimedia.org/wiki/File:Kolkata_Rolls.jpg) by Satyajit Dhawale (Satyajit888) · CC BY-SA 4.0
+- **Chelo kebab** (dish) — [Kebab Bakhtyari.jpg](https://commons.wikimedia.org/wiki/File:Kebab_Bakhtyari.jpg) by Taylor and Kevin · CC BY 2.0
+- **Rasgulla** (dish) — [Rasgulla.jpg](https://commons.wikimedia.org/wiki/File:Rasgulla.jpg) by HrichikHv · CC BY-SA 4.0
+- **Mishti doi** (dish) — [Mishti Doi.jpg](https://commons.wikimedia.org/wiki/File:Mishti_Doi.jpg) by Kirti Poddar · CC BY 2.0
+- **Ghewar** (dish) — [Ghevar with Malai Topping.jpg](https://commons.wikimedia.org/wiki/File:Ghevar_with_Malai_Topping.jpg) by Pradeep717 · CC BY-SA 4.0
+- **Dal baati churma** (dish) — [DalBati.jpg](https://commons.wikimedia.org/wiki/File:DalBati.jpg) by Niranjan · CC BY-SA 4.0
+- **Falafel (yes, in Pushkar)** (dish) — [Falafels 2.jpg](https://commons.wikimedia.org/wiki/File:Falafels_2.jpg) by Popo le Chien · CC BY-SA 3.0
+- **Amritsari kulcha** (dish) — [Chole Kulcha Meal - Order Food Online in Mumbai (31013272937).jpg](https://commons.wikimedia.org/wiki/File:Chole_Kulcha_Meal_-_Order_Food_Online_in_Mumbai_(31013272937).jpg) by Gaurav Nemade · CC BY-SA 2.0
+- **Langar at the Golden Temple** (dish) — [Langar.jpg](https://commons.wikimedia.org/wiki/File:Langar.jpg) by Harisingh at en · CC BY-SA 3.0
+- **Momos** (dish) — [Momo nepal.jpg](https://commons.wikimedia.org/wiki/File:Momo_nepal.jpg) by Kushal Goyal · CC BY-SA 3.0
+- **Thukpa** (dish) — [Thukpa, Tibetan noodle in Osaka, Japan.jpg](https://commons.wikimedia.org/wiki/File:Thukpa,_Tibetan_noodle_in_Osaka,_Japan.jpg) by m-louis from Osaka · CC BY-SA 2.0
+- **Butter tea** (dish) — [Tibetan butter tea.jpg](https://commons.wikimedia.org/wiki/File:Tibetan_butter_tea.jpg) by Yosomono · CC BY 2.0
+- **Naan qalia** (dish) — [Naan Qalia.jpg](https://commons.wikimedia.org/wiki/File:Naan_Qalia.jpg) by Nefirious (talk) 07:52, 26 July 2009 (UTC) · CC BY-SA 3.0
+- **Dabeli** (dish) — [Daabeli.JPG](https://commons.wikimedia.org/wiki/File:Daabeli.JPG) by Kanikatwl · CC BY-SA 4.0
+- **Gujarati thali** (dish) — [Gujarat Thali.JPG](https://commons.wikimedia.org/wiki/File:Gujarat_Thali.JPG) by Kamlevikram · CC BY-SA 4.0
+- **Darjeeling tea** (dish) — [Darjeeling, India, Darjeeling tea in variety, Black tea.jpg](https://commons.wikimedia.org/wiki/File:Darjeeling,_India,_Darjeeling_tea_in_variety,_Black_tea.jpg) by Vyacheslav Argenberg · CC BY 4.0
+- **Gundruk** (dish) — [Gundruk NP.jpg](https://commons.wikimedia.org/wiki/File:Gundruk_NP.jpg) by Krish Dulal · CC BY-SA 3.0
+- **Assamese thali** (dish) — [Assamese Thali.jpg](https://commons.wikimedia.org/wiki/File:Assamese_Thali.jpg) by Soyuz Sharma · CC BY-SA 3.0
+- **Chhena poda** (dish) — [Chenapoda.jpg](https://commons.wikimedia.org/wiki/File:Chenapoda.jpg) by Subhahish Panigahi · CC BY-SA 3.0
+- **Homemade chocolate** (dish) — [Three Bars (1).jpg](https://commons.wikimedia.org/wiki/File:Three_Bars_(1).jpg) by Lynnereal · CC BY-SA 4.0

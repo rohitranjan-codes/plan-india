@@ -350,9 +350,1819 @@
     "query": "wikipedia:Kodaikanal"
   },
   "_more": {
-    "gallery": {},
-    "hotel": {},
-    "eat": {},
-    "dish": {}
+    "gallery": {
+      "bengaluru": [
+        {
+          "file": "img/g/bengaluru-1.jpg",
+          "caption": "Vidhana Soudha",
+          "title": "Lighting of Vidhana Soudha.jpg",
+          "author": "Yashaswi",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Lighting_of_Vidhana_Soudha.jpg",
+          "via": "wikipedia:Vidhana Soudha"
+        },
+        {
+          "file": "img/g/bengaluru-2.jpg",
+          "caption": "Bengaluru",
+          "title": "View from Visvesvaraya Industrial and Technological Museum (2025) 02.jpg",
+          "author": "Gpkp",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:View_from_Visvesvaraya_Industrial_and_Technological_Museum_(2025)_02.jpg",
+          "via": "wikipedia:Bangalore"
+        }
+      ],
+      "goa": [
+        {
+          "file": "img/g/goa-1.jpg",
+          "caption": "Goa",
+          "title": "BeachFun.jpg",
+          "author": "Sam 8393",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:BeachFun.jpg",
+          "via": "wikipedia:Goa"
+        }
+      ],
+      "munnar": [
+        {
+          "file": "img/g/munnar-1.jpg",
+          "caption": "Eravikulam National Park",
+          "title": "Eravikulam National Park (49444006652).jpg",
+          "author": "Mike Prince from Bangalore, India",
+          "license": "CC BY 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Eravikulam_National_Park_(49444006652).jpg",
+          "via": "wikipedia:Eravikulam National Park"
+        },
+        {
+          "file": "img/g/munnar-2.jpg",
+          "caption": "Anamudi",
+          "title": "AnaimudiPeak DSC 4834.jpg",
+          "author": "Mdmadhu",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:AnaimudiPeak_DSC_4834.jpg",
+          "via": "wikipedia:Anamudi"
+        }
+      ],
+      "kochi": [
+        {
+          "file": "img/g/kochi-1.jpg",
+          "caption": "Fort Kochi",
+          "title": "Kochi, Fishing nets at sunset, Kerala, India.jpg",
+          "author": "Vyacheslav Argenberg",
+          "license": "CC BY 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kochi,_Fishing_nets_at_sunset,_Kerala,_India.jpg",
+          "via": "wikipedia:Fort Kochi"
+        },
+        {
+          "file": "img/g/kochi-2.jpg",
+          "caption": "Alappuzha",
+          "title": "Alappuzha Boat Beauty W.jpg",
+          "author": "Augustus Binu/ facebook",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Alappuzha_Boat_Beauty_W.jpg",
+          "via": "wikipedia:Alappuzha"
+        }
+      ],
+      "thekkady": [
+        {
+          "file": "img/g/thekkady-1.jpg",
+          "caption": "Thekkady",
+          "title": "Thekkady.jpg",
+          "author": "Jigyasu",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Thekkady.jpg",
+          "via": "wikipedia:Thekkady"
+        },
+        {
+          "file": "img/g/thekkady-2.jpg",
+          "caption": "Periyar River",
+          "title": "Fish net over Periyar River 0.jpg",
+          "author": "KannanVM",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Fish_net_over_Periyar_River_0.jpg",
+          "via": "wikipedia:Periyar Lake"
+        }
+      ],
+      "coorg": [
+        {
+          "file": "img/g/coorg-1.jpg",
+          "caption": "Abbey Falls",
+          "title": "Abbey Falls New.jpg",
+          "author": "Santhoshkumar Sugumar",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Abbey_Falls_New.jpg",
+          "via": "wikipedia:Abbey Falls"
+        },
+        {
+          "file": "img/g/coorg-2.jpg",
+          "caption": "Madikeri",
+          "title": "Raja's Seat View Point.jpg",
+          "author": "Pawanrao",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Raja%27s_Seat_View_Point.jpg",
+          "via": "wikipedia:Madikeri"
+        }
+      ],
+      "hampi": [
+        {
+          "file": "img/g/hampi-1.jpg",
+          "caption": "Virupaksha Temple, Hampi",
+          "title": "Complex of Virupaksha Temple, Hampi (04).jpg",
+          "author": "iMahesh",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Complex_of_Virupaksha_Temple,_Hampi_(04).jpg",
+          "via": "wikipedia:Virupaksha Temple, Hampi"
+        }
+      ],
+      "hyderabad": [
+        {
+          "file": "img/g/hyderabad-1.jpg",
+          "caption": "Chowmahalla Palace",
+          "title": "Chowmahalla Palace 01.jpg",
+          "author": "Bernard Gagnon",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Chowmahalla_Palace_01.jpg",
+          "via": "wikipedia:Chowmahalla Palace"
+        },
+        {
+          "file": "img/g/hyderabad-2.jpg",
+          "caption": "Hyderabad",
+          "title": "Aerial view of Durgam cheruvu and Hitech CIty.jpg",
+          "author": "iMahesh",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Durgam_cheruvu_and_Hitech_CIty.jpg",
+          "via": "wikipedia:Hyderabad"
+        }
+      ],
+      "ooty": [
+        {
+          "file": "img/g/ooty-1.jpg",
+          "caption": "Doddabetta",
+          "title": "Arts College Hill Ooty Nilgiris Mar21 A7C 00188.jpg",
+          "author": "Timothy A",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Arts_College_Hill_Ooty_Nilgiris_Mar21_A7C_00188.jpg",
+          "via": "wikipedia:Doddabetta"
+        },
+        {
+          "file": "img/g/ooty-2.jpg",
+          "caption": "Coonoor",
+          "title": "Coonoor.JPG",
+          "author": "Robinder Uppal",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Coonoor.JPG",
+          "via": "wikipedia:Coonoor"
+        }
+      ],
+      "kabini": [
+        {
+          "file": "img/g/kabini-1.jpg",
+          "caption": "Kabini River",
+          "title": "Kabani River.jpg",
+          "author": "Vinodnellackal at en",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kabani_River.jpg",
+          "via": "wikipedia:Kabini River"
+        }
+      ],
+      "chikmagalur": [
+        {
+          "file": "img/g/chikmagalur-1.jpg",
+          "caption": "Kudremukha",
+          "title": "Shola Grasslands and forests in the Kudremukh National Park, Western Ghats, Karnataka.jpg",
+          "author": "Karunakar Rayker",
+          "license": "CC BY 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Shola_Grasslands_and_forests_in_the_Kudremukh_National_Park,_Western_Ghats,_Karnataka.jpg",
+          "via": "wikipedia:Kudremukh"
+        },
+        {
+          "file": "img/g/chikmagalur-2.jpg",
+          "caption": "Kudremukh National Park",
+          "title": "Kudremukh national park.jpg",
+          "author": "Naveen",
+          "license": "Public domain",
+          "page": "https://commons.wikimedia.org/wiki/File:Kudremukh_national_park.jpg",
+          "via": "wikipedia:Kudremukh National Park"
+        }
+      ],
+      "wayanad": [
+        {
+          "file": "img/g/wayanad-1.jpg",
+          "caption": "Wayanad district",
+          "title": "Blue, Green & White.jpg",
+          "author": "Karkiabhijeet",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Blue,_Green_%26_White.jpg",
+          "via": "wikipedia:Wayanad district"
+        },
+        {
+          "file": "img/g/wayanad-2.jpg",
+          "caption": "Chembra Peak",
+          "title": "Chembra.jpg",
+          "author": "Aneesh Jose",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Chembra.jpg",
+          "via": "wikipedia:Chembra Peak"
+        }
+      ],
+      "varkala": [
+        {
+          "file": "img/g/varkala-1.jpg",
+          "caption": "Varkala",
+          "title": "Varkala Beach, Varkala, Kerala.jpg",
+          "author": "Devender Goyal",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Varkala_Beach,_Varkala,_Kerala.jpg",
+          "via": "wikipedia:Varkala"
+        },
+        {
+          "file": "img/g/varkala-2.jpg",
+          "caption": "Kovalam",
+          "title": "Kovalam beach trivandrum kerala.jpg",
+          "author": "Georgeumartin",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kovalam_beach_trivandrum_kerala.jpg",
+          "via": "wikipedia:Kovalam"
+        }
+      ],
+      "andaman": [
+        {
+          "file": "img/g/andaman-1.jpg",
+          "caption": "Havelock Island",
+          "title": "Havelock, Andaman & Nicobar Islands.JPG",
+          "author": "Dr",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Havelock,_Andaman_%26_Nicobar_Islands.JPG",
+          "via": "wikipedia:Havelock Island"
+        },
+        {
+          "file": "img/g/andaman-2.jpg",
+          "caption": "Neil Island",
+          "title": "Keshet neal island india.jpg",
+          "author": "Dorhodor",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Keshet_neal_island_india.jpg",
+          "via": "wikipedia:Neil Island"
+        }
+      ],
+      "madurai": [
+        {
+          "file": "img/g/madurai-1.jpg",
+          "caption": "Madurai",
+          "title": "Meenakshi Amman West Tower.jpg",
+          "author": "KennyOMG",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Meenakshi_Amman_West_Tower.jpg",
+          "via": "wikipedia:Madurai"
+        }
+      ],
+      "badami": [
+        {
+          "file": "img/g/badami-1.jpg",
+          "caption": "Pattadakal",
+          "title": "Pattadakal 000.JPG",
+          "author": "Nithin bolar k",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Pattadakal_000.JPG",
+          "via": "wikipedia:Pattadakal"
+        },
+        {
+          "file": "img/g/badami-2.jpg",
+          "caption": "Aihole",
+          "title": "8th century Durga temple exterior view, Aihole Hindu temples and monuments 3.jpg",
+          "author": "Ms Sarah Welch",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:8th_century_Durga_temple_exterior_view,_Aihole_Hindu_temples_and_monuments_3.jpg",
+          "via": "wikipedia:Aihole"
+        }
+      ],
+      "pondicherry": [
+        {
+          "file": "img/g/pondicherry-1.jpg",
+          "caption": "Promenade Beach",
+          "title": "Pondicherry-Rock beach aerial view.jpg",
+          "author": "Karthik Easvur",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Pondicherry-Rock_beach_aerial_view.jpg",
+          "via": "wikipedia:Promenade Beach"
+        },
+        {
+          "file": "img/g/pondicherry-2.jpg",
+          "caption": "Auroville",
+          "title": "Town Hall of Auroville.jpg",
+          "author": "Kaspar Konrad",
+          "license": "Public domain",
+          "page": "https://commons.wikimedia.org/wiki/File:Town_Hall_of_Auroville.jpg",
+          "via": "wikipedia:Auroville"
+        }
+      ],
+      "varanasi": [
+        {
+          "file": "img/g/varanasi-1.jpg",
+          "caption": "Varanasi",
+          "title": "Varanasi, India, Ghats, Cremation ceremony in progress.jpg",
+          "author": "Vyacheslav Argenberg",
+          "license": "CC BY 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Varanasi,_India,_Ghats,_Cremation_ceremony_in_progress.jpg",
+          "via": "wikipedia:Varanasi"
+        },
+        {
+          "file": "img/g/varanasi-2.jpg",
+          "caption": "Dashashwamedh Ghat",
+          "title": "Dasaswamedh ghat-varanasi india-andres larin.jpg",
+          "author": "Saaremees",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Dasaswamedh_ghat-varanasi_india-andres_larin.jpg",
+          "via": "wikipedia:Dashashwamedh Ghat"
+        }
+      ],
+      "rishikesh": [
+        {
+          "file": "img/g/rishikesh-1.jpg",
+          "caption": "Rishikesh",
+          "title": "Trayambakeshwar Temple VK.jpg",
+          "author": "VK1983",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Trayambakeshwar_Temple_VK.jpg",
+          "via": "wikipedia:Rishikesh"
+        }
+      ],
+      "mumbai": [
+        {
+          "file": "img/g/mumbai-1.jpg",
+          "caption": "Mumbai",
+          "title": "Mumbai Bandra-Worli Sea Link.jpg",
+          "author": "Rutiknatekar",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Mumbai_Bandra-Worli_Sea_Link.jpg",
+          "via": "wikipedia:Mumbai"
+        }
+      ],
+      "delhi": [
+        {
+          "file": "img/g/delhi-1.jpg",
+          "caption": "India Gate",
+          "title": "India Gate front.jpg",
+          "author": "AKS",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:India_Gate_front.jpg",
+          "via": "wikipedia:India Gate"
+        },
+        {
+          "file": "img/g/delhi-2.jpg",
+          "caption": "Lotus Temple",
+          "title": "LotusDelhi.jpg",
+          "author": "Vandelizer",
+          "license": "CC BY 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:LotusDelhi.jpg",
+          "via": "wikipedia:Lotus Temple"
+        },
+        {
+          "file": "img/g/delhi-3.jpg",
+          "caption": "Red Fort",
+          "title": "Delhi fort.jpg",
+          "author": "PerSona77",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Delhi_fort.jpg",
+          "via": "wikipedia:Red Fort"
+        }
+      ],
+      "kolkata": [
+        {
+          "file": "img/g/kolkata-1.jpg",
+          "caption": "Kolkata",
+          "title": "Kolkata maidan.jpg",
+          "author": "NalGup20",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kolkata_maidan.jpg",
+          "via": "wikipedia:Kolkata"
+        }
+      ],
+      "agra": [
+        {
+          "file": "img/g/agra-1.jpg",
+          "caption": "Mehtab Bagh",
+          "title": "Mehtab Bagh facing Taj Mahal.JPG",
+          "author": "g",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Mehtab_Bagh_facing_Taj_Mahal.JPG",
+          "via": "wikipedia:Mehtab Bagh"
+        }
+      ],
+      "jaipur": [
+        {
+          "file": "img/g/jaipur-1.jpg",
+          "caption": "Hawa Mahal",
+          "title": "East facade Hawa Mahal Jaipur from ground level (July 2022) - img 01.jpg",
+          "author": "Chainwit",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:East_facade_Hawa_Mahal_Jaipur_from_ground_level_(July_2022)_-_img_01.jpg",
+          "via": "wikipedia:Hawa Mahal"
+        },
+        {
+          "file": "img/g/jaipur-2.jpg",
+          "caption": "City Palace, Jaipur",
+          "title": "Chandra Mahal, City Palace, Jaipur, 20191218 0951 9043.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Chandra_Mahal,_City_Palace,_Jaipur,_20191218_0951_9043.jpg",
+          "via": "wikipedia:City Palace, Jaipur"
+        }
+      ],
+      "udaipur": [
+        {
+          "file": "img/g/udaipur-1.jpg",
+          "caption": "City Palace, Udaipur",
+          "title": "Udaipur City Palace.jpg",
+          "author": "Henrik Bennetsen",
+          "license": "CC BY-SA 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Udaipur_City_Palace.jpg",
+          "via": "wikipedia:City Palace, Udaipur"
+        },
+        {
+          "file": "img/g/udaipur-2.jpg",
+          "caption": "Lake Pichola",
+          "title": "Udaipur Lake India.JPG",
+          "author": "Uri Sittan Tripo",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Udaipur_Lake_India.JPG",
+          "via": "wikipedia:Lake Pichola"
+        },
+        {
+          "file": "img/g/udaipur-3.jpg",
+          "caption": "Udaipur",
+          "title": "Evening view, City Palace, Udaipur.jpg",
+          "author": "Geri from Biel/Bienne, Schweiz",
+          "license": "CC BY-SA 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Evening_view,_City_Palace,_Udaipur.jpg",
+          "via": "wikipedia:Udaipur"
+        }
+      ],
+      "jaisalmer": [
+        {
+          "file": "img/g/jaisalmer-1.jpg",
+          "caption": "Thar Desert",
+          "title": "Thar desert Rajasthan India.jpg",
+          "author": "sushmita balasubramani",
+          "license": "CC BY 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Thar_desert_Rajasthan_India.jpg",
+          "via": "wikipedia:Thar Desert"
+        }
+      ],
+      "pushkar": [
+        {
+          "file": "img/g/pushkar-1.jpg",
+          "caption": "Pushkar Fair",
+          "title": "(A) Camel Pushkar fair.jpg",
+          "author": "sheetal saini",
+          "license": "CC BY 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:(A)_Camel_Pushkar_fair.jpg",
+          "via": "wikipedia:Pushkar Fair"
+        }
+      ],
+      "shimla": [
+        {
+          "file": "img/g/shimla-1.jpg",
+          "caption": "Shimla",
+          "title": "Landscape of Shimla , Himachal Pradesh.jpg",
+          "author": "Navneet Sharma",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Landscape_of_Shimla_,_Himachal_Pradesh.jpg",
+          "via": "wikipedia:Shimla"
+        },
+        {
+          "file": "img/g/shimla-2.jpg",
+          "caption": "The Ridge, Shimla",
+          "title": "The Ridge Shimla 5.jpg",
+          "author": "Virusism",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:The_Ridge_Shimla_5.jpg",
+          "via": "wikipedia:The Ridge, Shimla"
+        }
+      ],
+      "manali": [
+        {
+          "file": "img/g/manali-1.jpg",
+          "caption": "Rohtang Pass",
+          "title": "Kullu Valley from Rohtang Pass, India.jpg",
+          "author": "Vyacheslav Argenberg",
+          "license": "CC BY 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kullu_Valley_from_Rohtang_Pass,_India.jpg",
+          "via": "wikipedia:Rohtang Pass"
+        }
+      ],
+      "dharamshala": [
+        {
+          "file": "img/g/dharamshala-1.jpg",
+          "caption": "Dharamshala",
+          "title": "Dharamshala 03 (Cropped).jpg",
+          "author": "Amit Phulera",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Dharamshala_03_(Cropped).jpg",
+          "via": "wikipedia:Dharamshala"
+        },
+        {
+          "file": "img/g/dharamshala-2.jpg",
+          "caption": "Triund",
+          "title": "Triund (22356802630).jpg",
+          "author": "Ashish Gupta from Noida, India",
+          "license": "CC BY 2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Triund_(22356802630).jpg",
+          "via": "wikipedia:Triund"
+        },
+        {
+          "file": "img/g/dharamshala-3.jpg",
+          "caption": "Dhauladhar",
+          "title": "Dhauladhar.jpg",
+          "author": "Ashish Sharma",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Dhauladhar.jpg",
+          "via": "wikipedia:Dhauladhar"
+        }
+      ],
+      "leh": [
+        {
+          "file": "img/g/leh-1.jpg",
+          "caption": "Leh Palace",
+          "title": "Leh Palace 2011.jpg",
+          "author": "KennyOMG",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Leh_Palace_2011.jpg",
+          "via": "wikipedia:Leh Palace"
+        },
+        {
+          "file": "img/g/leh-2.jpg",
+          "caption": "Hemis Monastery",
+          "title": "Hemis Monastery 02.jpg",
+          "author": "Bernard Gagnon Canon EOS REBEL T4i",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Hemis_Monastery_02.jpg",
+          "via": "wikipedia:Hemis Monastery"
+        },
+        {
+          "file": "img/g/leh-3.jpg",
+          "caption": "Pangong Tso",
+          "title": "ISS054-E-7809 - View of Earth (cropped).jpg",
+          "author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Ce",
+          "license": "Public domain",
+          "page": "https://commons.wikimedia.org/wiki/File:ISS054-E-7809_-_View_of_Earth_(cropped).jpg",
+          "via": "wikipedia:Pangong Tso"
+        },
+        {
+          "file": "img/g/leh-4.jpg",
+          "caption": "Nubra",
+          "title": "5 Nubra valley.jpg",
+          "author": "Addy6697",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:5_Nubra_valley.jpg",
+          "via": "wikipedia:Nubra Valley"
+        }
+      ],
+      "khajuraho": [
+        {
+          "file": "img/g/khajuraho-1.jpg",
+          "caption": "Kandariya Mahadeva Temple",
+          "title": "Khajuraho.KandariyaMahadeva.jpg",
+          "author": "China Crisis",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Khajuraho.KandariyaMahadeva.jpg",
+          "via": "wikipedia:Kandariya Mahadeva Temple"
+        }
+      ],
+      "kutch": [
+        {
+          "file": "img/g/kutch-1.jpg",
+          "caption": "Bhuj",
+          "title": "Pragmahal Bhuj Kutch Gujarat.jpg",
+          "author": "Nizil Shah",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Pragmahal_Bhuj_Kutch_Gujarat.jpg",
+          "via": "wikipedia:Bhuj"
+        }
+      ],
+      "darjeeling": [
+        {
+          "file": "img/g/darjeeling-1.jpg",
+          "caption": "Tiger Hill, Darjeeling",
+          "title": "Tiger Hill Darjeeling West Bengal India (3).JPG",
+          "author": "Shahnoor Habib Munmun",
+          "license": "CC BY 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Tiger_Hill_Darjeeling_West_Bengal_India_(3).JPG",
+          "via": "wikipedia:Tiger Hill, Darjeeling"
+        },
+        {
+          "file": "img/g/darjeeling-2.jpg",
+          "caption": "Kangchenjunga",
+          "title": "Kangchenjunga PangPema.JPG",
+          "author": "Tomabarker",
+          "license": "CC BY 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Kangchenjunga_PangPema.JPG",
+          "via": "wikipedia:Kangchenjunga"
+        }
+      ],
+      "gangtok": [
+        {
+          "file": "img/g/gangtok-1.jpg",
+          "caption": "Rumtek Monastery",
+          "title": "Rumtek Monastery alias Dharma Chakra Centre near Gangtok, East Sikkim 09.jpg",
+          "author": "Anjan Kumar Kundu",
+          "license": "CC BY 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok,_East_Sikkim_09.jpg",
+          "via": "wikipedia:Rumtek Monastery"
+        }
+      ],
+      "kaziranga": [
+        {
+          "file": "img/g/kaziranga-1.jpg",
+          "caption": "Indian rhinoceros",
+          "title": "Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg",
+          "author": "Mayank1704",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg",
+          "via": "wikipedia:Indian rhinoceros"
+        }
+      ],
+      "shillong": [
+        {
+          "file": "img/g/shillong-1.jpg",
+          "caption": "Nohkalikai Falls",
+          "title": "NohKaLikai Falls V2 Wiki.jpg",
+          "author": "Vikramjit Kakati",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:NohKaLikai_Falls_V2_Wiki.jpg",
+          "via": "wikipedia:Nohkalikai Falls"
+        },
+        {
+          "file": "img/g/shillong-2.jpg",
+          "caption": "Shillong",
+          "title": "Elephant Falls II, Shillong.jpg",
+          "author": "Prasanta Kr Dutta",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Elephant_Falls_II,_Shillong.jpg",
+          "via": "wikipedia:Shillong"
+        },
+        {
+          "file": "img/g/shillong-3.jpg",
+          "caption": "Dawki",
+          "title": "Umngot river, Dawki.jpg",
+          "author": "Vikramjit Kakati",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Umngot_river,_Dawki.jpg",
+          "via": "wikipedia:Dawki"
+        }
+      ],
+      "puri": [
+        {
+          "file": "img/g/puri-1.jpg",
+          "caption": "Jagannath Temple, Puri",
+          "title": "Shri Jagannath temple.jpg",
+          "author": "Prachites",
+          "license": "CC BY-SA 3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Shri_Jagannath_temple.jpg",
+          "via": "wikipedia:Jagannath Temple, Puri"
+        }
+      ],
+      "thanjavur": [
+        {
+          "file": "img/g/thanjavur-1.jpg",
+          "caption": "Ranganathaswamy Temple, Srirangam",
+          "title": "Ranganathaswamy temple tiruchirappalli.jpg",
+          "author": "RUPESH MAURYA",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Ranganathaswamy_temple_tiruchirappalli.jpg",
+          "via": "wikipedia:Ranganathaswamy Temple, Srirangam"
+        },
+        {
+          "file": "img/g/thanjavur-2.jpg",
+          "caption": "Thanjavur",
+          "title": "Thanjavur 2.jpg",
+          "author": "Arun2117dts",
+          "license": "CC BY-SA 4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Thanjavur_2.jpg",
+          "via": "wikipedia:Thanjavur"
+        }
+      ]
+    },
+    "hotel": {
+      "the-oberoi-new-delhi": {
+        "file": "img/h/the-oberoi-new-delhi.jpg",
+        "name": "The Oberoi New Delhi",
+        "title": "The Oberoi, New Delhi.jpg",
+        "author": "Murtaza",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Oberoi,_New_Delhi.jpg",
+        "via": "commons"
+      },
+      "the-imperial": {
+        "file": "img/h/the-imperial.jpg",
+        "name": "The Imperial",
+        "title": "The bar at 1911 restaurant, Imperial Hotel, New Delhi.jpg",
+        "author": "V Malik",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_bar_at_1911_restaurant,_Imperial_Hotel,_New_Delhi.jpg",
+        "via": "commons"
+      },
+      "the-lodhi": {
+        "file": "img/h/the-lodhi.jpg",
+        "name": "The Lodhi",
+        "title": "Gol Gumbad (3545160603).jpg",
+        "author": "Varun Shiv Kapur from New Delhi, India",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Gol_Gumbad_(3545160603).jpg",
+        "via": "wikipedia:The Lodhi"
+      },
+      "taj-mahal-new-delhi": {
+        "file": "img/h/taj-mahal-new-delhi.jpg",
+        "name": "Taj Mahal, New Delhi",
+        "title": "Indian External Affairs Minister S Jaishankar and Prime Minister Sheikh Hasina meeting at Hotel Taj Mahal New Delhi 2019-10-05 (PID-0036697).jpg",
+        "author": "Press Information Department",
+        "license": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Indian_External_Affairs_Minister_S_Jaishankar_and_Prime_Minister_Sheikh_Hasina_meeting_at_Hotel_Taj_Mahal_New_Delhi_2019-10-05_(PID-0036697).jpg",
+        "via": "commons"
+      },
+      "itc-grand-chola": {
+        "file": "img/h/itc-grand-chola.jpg",
+        "name": "ITC Grand Chola",
+        "title": "ITC-Grand-Chola-Chennai-2.JPG",
+        "author": "Destination8infinity",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:ITC-Grand-Chola-Chennai-2.JPG",
+        "via": "wikipedia:ITC Grand Chola"
+      },
+      "hyatt-regency-chennai": {
+        "file": "img/h/hyatt-regency-chennai.jpg",
+        "name": "Hyatt Regency Chennai",
+        "title": "The first Hyatt Hotel in South India.jpg",
+        "author": "Hyatt Regency Chennai",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_first_Hyatt_Hotel_in_South_India.jpg",
+        "via": "wikipedia:Hyatt Regency Chennai"
+      },
+      "itc-royal-bengal": {
+        "file": "img/h/itc-royal-bengal.jpg",
+        "name": "ITC Royal Bengal",
+        "title": "ITC Royal Bengal, Kolkata.jpg",
+        "author": "Kolkatametro",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:ITC_Royal_Bengal,_Kolkata.jpg",
+        "via": "commons"
+      },
+      "taj-bengal": {
+        "file": "img/h/taj-bengal.jpg",
+        "name": "Taj Bengal",
+        "title": "Belvadere Road 'Taj Bengal' (1).jpg",
+        "author": "Kolkatan",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Belvadere_Road_%27Taj_Bengal%27_(1).jpg",
+        "via": "wikipedia:Taj Bengal"
+      },
+      "the-park-kolkata": {
+        "file": "img/h/the-park-kolkata.jpg",
+        "name": "The Park Kolkata",
+        "title": "DurgaPuja2018 - Pandal of Jagat Mukherjee Park in Kolkata 13.jpg",
+        "author": "Indrajit Das",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:DurgaPuja2018_-_Pandal_of_Jagat_Mukherjee_Park_in_Kolkata_13.jpg",
+        "via": "commons"
+      },
+      "taj-west-end": {
+        "file": "img/h/taj-west-end.jpg",
+        "name": "Taj West End",
+        "title": "Taj West End Bangalore (17495).jpg",
+        "author": "Thejeshgn",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Taj_West_End_Bangalore_(17495).jpg",
+        "via": "commons"
+      },
+      "the-park-bangalore": {
+        "file": "img/h/the-park-bangalore.jpg",
+        "name": "The Park Bangalore",
+        "title": "BBMP Step Hill Garden Park (Sir M. Visvesvaraya park), Bangalore (2026).jpg",
+        "author": "Gpkp",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:BBMP_Step_Hill_Garden_Park_(Sir_M._Visvesvaraya_park),_Bangalore_(2026).jpg",
+        "via": "commons"
+      },
+      "brunton-boatyard-cgh-earth": {
+        "file": "img/h/brunton-boatyard-cgh-earth.jpg",
+        "name": "Brunton Boatyard (CGH Earth)",
+        "title": "Brunton Boatyard Hotel.jpg",
+        "author": "നിരക്ഷരൻ",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Brunton_Boatyard_Hotel.jpg",
+        "via": "wikipedia:Brunton Boatyard"
+      },
+      "old-harbour-hotel": {
+        "file": "img/h/old-harbour-hotel.jpg",
+        "name": "Old Harbour Hotel",
+        "title": "I Old harbor - front-01 after.jpg",
+        "author": "ArchKarl",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:I_Old_harbor_-_front-01_after.jpg",
+        "via": "wikipedia:Old Harbour Hotel"
+      },
+      "fort-house-hotel": {
+        "file": "img/h/fort-house-hotel.jpg",
+        "name": "Fort House Hotel",
+        "title": "2008 06 Fort Harrison Hotel.jpg",
+        "author": "Anonymous9000",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:2008_06_Fort_Harrison_Hotel.jpg",
+        "via": "wikipedia:Fort Harrison Hotel"
+      },
+      "hampi-s-boulders": {
+        "file": "img/h/hampi-s-boulders.jpg",
+        "name": "Hampi's Boulders",
+        "title": "Hampi, India, Rocky landscape of Hampi, Granite rocks of Matanga Hill.jpg",
+        "author": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg",
+        "via": "commons"
+      },
+      "taj-falaknuma-palace": {
+        "file": "img/h/taj-falaknuma-palace.jpg",
+        "name": "Taj Falaknuma Palace",
+        "title": "Falaknuma Palace 03.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Falaknuma_Palace_03.jpg",
+        "via": "commons"
+      },
+      "kabini-river-lodge-jungle-lodges": {
+        "file": "img/h/kabini-river-lodge-jungle-lodges.jpg",
+        "name": "Kabini River Lodge (Jungle Lodges)",
+        "title": "Kabini Reservoir South View Karnataka Dec21 D72 21839.jpg",
+        "author": "Timothy A",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kabini_Reservoir_South_View_Karnataka_Dec21_D72_21839.jpg",
+        "via": "commons"
+      },
+      "red-earth-kabini": {
+        "file": "img/h/red-earth-kabini.jpg",
+        "name": "Red Earth Kabini",
+        "title": "Sunset at Kabini River, overlooking Nagarhole National Park.jpg",
+        "author": "Shriya Palchaudhuri",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Sunset_at_Kabini_River,_overlooking_Nagarhole_National_Park.jpg",
+        "via": "commons"
+      },
+      "swaswara-cgh-earth": {
+        "file": "img/h/swaswara-cgh-earth.jpg",
+        "name": "SwaSwara (CGH Earth)",
+        "title": "SwaSwara Gokarna image.jpg",
+        "author": "Titodutta",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:SwaSwara_Gokarna_image.jpg",
+        "via": "commons"
+      },
+      "vythiri-resort": {
+        "file": "img/h/vythiri-resort.jpg",
+        "name": "Vythiri Resort",
+        "title": "Kerala Veterinary and Animal Sciences University 05918.JPG",
+        "author": "Vengolis",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kerala_Veterinary_and_Animal_Sciences_University_05918.JPG",
+        "via": "wikipedia:Vythiri"
+      },
+      "wayanad-wild-cgh-earth": {
+        "file": "img/h/wayanad-wild-cgh-earth.jpg",
+        "name": "Wayanad Wild (CGH Earth)",
+        "title": "Wayanadu 93.jpg",
+        "author": "Vengolis",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Wayanadu_93.jpg",
+        "via": "commons"
+      },
+      "barefoot-at-havelock": {
+        "file": "img/h/barefoot-at-havelock.jpg",
+        "name": "Barefoot at Havelock",
+        "title": "Havelock (Andaman Islands), RTW 2012 (8411605228).jpg",
+        "author": "Ana Raquel S",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Havelock_(Andaman_Islands),_RTW_2012_(8411605228).jpg",
+        "via": "commons"
+      },
+      "heritage-madurai": {
+        "file": "img/h/heritage-madurai.jpg",
+        "name": "Heritage Madurai",
+        "title": "Iranyankudiyiruppu - Rajakkalmangalam Sculptures Site 2.jpg",
+        "author": "Perumalism",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Iranyankudiyiruppu_-_Rajakkalmangalam_Sculptures_Site_2.jpg",
+        "via": "commons"
+      },
+      "courtyard-by-marriott-madurai": {
+        "file": "img/h/courtyard-by-marriott-madurai.jpg",
+        "name": "Courtyard by Marriott Madurai",
+        "title": "Chef Raghavan.jpg",
+        "author": "Chef raghavan",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Chef_Raghavan.jpg",
+        "via": "commons"
+      },
+      "palais-de-mah-cgh-earth": {
+        "file": "img/h/palais-de-mah-cgh-earth.jpg",
+        "name": "Palais de Mahé (CGH Earth)",
+        "title": "Hotel Palais de Mahe, Pondicherry (2) (23663252618).jpg",
+        "author": "Richard Mortel from Riyadh, Saudi Arabia",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Hotel_Palais_de_Mahe,_Pondicherry_(2)_(23663252618).jpg",
+        "via": "commons"
+      },
+      "le-dupleix": {
+        "file": "img/h/le-dupleix.jpg",
+        "name": "Le Dupleix",
+        "title": "Statue de Joseph François Dupleix Landrecies 3.JPG",
+        "author": "Chatsam",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Statue_de_Joseph_Fran%C3%A7ois_Dupleix_Landrecies_3.JPG",
+        "via": "commons"
+      },
+      "brijrama-palace": {
+        "file": "img/h/brijrama-palace.jpg",
+        "name": "BrijRama Palace",
+        "title": "Brijrama Palace, Varanasi.jpg",
+        "author": "Dudva",
+        "license": "CC0",
+        "page": "https://commons.wikimedia.org/wiki/File:Brijrama_Palace,_Varanasi.jpg",
+        "via": "commons"
+      },
+      "taj-ganges": {
+        "file": "img/h/taj-ganges.jpg",
+        "name": "Taj Ganges",
+        "title": "2023-08-26 K M Khalid speech G-20 Culture Ministers meeting Varanasi Hotel Taj Ganges (PID-0014015).jpg",
+        "author": "Press Information Department",
+        "license": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_(PID-0014015).jpg",
+        "via": "commons"
+      },
+      "ananda-in-the-himalayas": {
+        "file": "img/h/ananda-in-the-himalayas.jpg",
+        "name": "Ananda in the Himalayas",
+        "title": "Viceregal Palace, Ananda - In the Himalayas, Narendra Nagar, Uttarakhand.jpg",
+        "author": "https://www",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Viceregal_Palace,_Ananda_-_In_the_Himalayas,_Narendra_Nagar,_Uttarakhand.jpg",
+        "via": "wikipedia:Ananda in the Himalayas"
+      },
+      "the-taj-mahal-palace": {
+        "file": "img/h/the-taj-mahal-palace.jpg",
+        "name": "The Taj Mahal Palace",
+        "title": "Taj Mahal Palace Hotel photo.jpg",
+        "author": "Photofinder",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Palace_Hotel_photo.jpg",
+        "via": "wikipedia:Taj Mahal Palace Hotel"
+      },
+      "the-oberoi-mumbai": {
+        "file": "img/h/the-oberoi-mumbai.jpg",
+        "name": "The Oberoi Mumbai",
+        "title": "Marine Drive in Mumbai 08.jpg",
+        "author": "Pinakpani",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Marine_Drive_in_Mumbai_08.jpg",
+        "via": "commons"
+      },
+      "taj-hotel-and-convention-centre-agra": {
+        "file": "img/h/taj-hotel-and-convention-centre-agra.jpg",
+        "name": "Taj Hotel & Convention Centre Agra",
+        "title": "Taj Mahal, Agra, India.jpg",
+        "author": "Yann (talk)",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India.jpg",
+        "via": "wikipedia:Agra"
+      },
+      "rambagh-palace": {
+        "file": "img/h/rambagh-palace.jpg",
+        "name": "Rambagh Palace",
+        "title": "Rambagh Palace hotel Jaipur lobby courtyard.jpg",
+        "author": "Chainwit",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rambagh_Palace_hotel_Jaipur_lobby_courtyard.jpg",
+        "via": "wikipedia:Rambagh Palace"
+      },
+      "the-oberoi-rajvilas": {
+        "file": "img/h/the-oberoi-rajvilas.jpg",
+        "name": "The Oberoi Rajvilas",
+        "title": "Raj Vilas, Rajastan.jpg",
+        "author": "Gryffindor",
+        "license": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Raj_Vilas,_Rajastan.jpg",
+        "via": "commons"
+      },
+      "samode-haveli": {
+        "file": "img/h/samode-haveli.jpg",
+        "name": "Samode Haveli",
+        "title": "Samode Haveli Jaipur.jpg",
+        "author": "Pcrtravel",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Samode_Haveli_Jaipur.jpg",
+        "via": "commons"
+      },
+      "trident-jaipur": {
+        "file": "img/h/trident-jaipur.jpg",
+        "name": "Trident Jaipur",
+        "title": "Akbar and Tansen visit Haridas.jpg",
+        "author": "unknown painter in Rajasthani miniature style",
+        "license": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Akbar_and_Tansen_visit_Haridas.jpg",
+        "via": "commons"
+      },
+      "umaid-bhawan-palace": {
+        "file": "img/h/umaid-bhawan-palace.jpg",
+        "name": "Umaid Bhawan Palace",
+        "title": "1996 -218-20A Jodhpur Hotel Umaid Bhawan Palace (2233393509).jpg",
+        "author": "Dan Lundberg",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:1996_-218-20A_Jodhpur_Hotel_Umaid_Bhawan_Palace_(2233393509).jpg",
+        "via": "wikipedia:Umaid Bhawan Palace"
+      },
+      "taj-lake-palace": {
+        "file": "img/h/taj-lake-palace.jpg",
+        "name": "Taj Lake Palace",
+        "title": "Udaipur Lake Palace.jpg",
+        "author": "user:Flicka",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Udaipur_Lake_Palace.jpg",
+        "via": "wikipedia:Lake Palace"
+      },
+      "the-oberoi-udaivilas": {
+        "file": "img/h/the-oberoi-udaivilas.jpg",
+        "name": "The Oberoi Udaivilas",
+        "title": "Rajasthan (6373261127).jpg",
+        "author": "Christopher Michel",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rajasthan_(6373261127).jpg",
+        "via": "wikipedia:The Oberoi Udaivilas"
+      },
+      "jagat-niwas-palace": {
+        "file": "img/h/jagat-niwas-palace.jpg",
+        "name": "Jagat Niwas Palace",
+        "title": "Jag Niwas with Royal Gangaur Boat.jpg",
+        "author": "Deepank Ranka",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Jag_Niwas_with_Royal_Gangaur_Boat.jpg",
+        "via": "commons"
+      },
+      "pushkar-palace": {
+        "file": "img/h/pushkar-palace.jpg",
+        "name": "Pushkar Palace",
+        "title": "Palace in Pushkar (Ajmer, Rajasthan).jpg",
+        "author": "Hardik Dayal",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Palace_in_Pushkar_(Ajmer,_Rajasthan).jpg",
+        "via": "commons"
+      },
+      "the-oberoi-cecil": {
+        "file": "img/h/the-oberoi-cecil.jpg",
+        "name": "The Oberoi Cecil",
+        "title": "Cecil Oberoi.jpg",
+        "author": "Shyamal",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Cecil_Oberoi.jpg",
+        "via": "commons"
+      },
+      "clarkes-shimla": {
+        "file": "img/h/clarkes-shimla.jpg",
+        "name": "Clarkes Shimla",
+        "title": "Clarkes Hotel Shimla.jpg",
+        "author": "Shyamal L",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Clarkes_Hotel_Shimla.jpg",
+        "via": "commons"
+      },
+      "the-himalayan": {
+        "file": "img/h/the-himalayan.jpg",
+        "name": "The Himalayan",
+        "title": "Manali Bus Stand (Himachal Pradesh).jpg",
+        "author": "Rajani Gairshail",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Manali_Bus_Stand_(Himachal_Pradesh).jpg",
+        "via": "commons"
+      },
+      "norwood-green": {
+        "file": "img/h/norwood-green.jpg",
+        "name": "Norwood Green",
+        "title": "The Parade at Norwood, South Australia in June 2026 (DSCF7814).jpg",
+        "author": "Yu Chu Chin",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Parade_at_Norwood,_South_Australia_in_June_2026_(DSCF7814).jpg",
+        "via": "wikipedia:Norwood, South Australia"
+      },
+      "the-lalit-temple-view": {
+        "file": "img/h/the-lalit-temple-view.jpg",
+        "name": "The Lalit Temple View",
+        "title": "India-5566 - Flickr - archer10 (Dennis).jpg",
+        "author": "Dennis G",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:India-5566_-_Flickr_-_archer10_(Dennis).jpg",
+        "via": "commons"
+      },
+      "vivanta-aurangabad": {
+        "file": "img/h/vivanta-aurangabad.jpg",
+        "name": "Vivanta Aurangabad",
+        "title": "Bibi Ka Maqbara - The Taj Of Deccan.jpg",
+        "author": "Pranaysahu26",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Bibi_Ka_Maqbara_-_The_Taj_Of_Deccan.jpg",
+        "via": "wikipedia:Aurangabad"
+      },
+      "lemon-tree-hotel-aurangabad": {
+        "file": "img/h/lemon-tree-hotel-aurangabad.jpg",
+        "name": "Lemon Tree Hotel Aurangabad",
+        "title": "Lemon Tree Hotel, Aurangabad (50750333928).jpg",
+        "author": "Dinesh Valke from Thane, India",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lemon_Tree_Hotel,_Aurangabad_(50750333928).jpg",
+        "via": "commons"
+      },
+      "glenburn-tea-estate": {
+        "file": "img/h/glenburn-tea-estate.jpg",
+        "name": "Glenburn Tea Estate",
+        "title": "Kangchenjunga from Glenburn Tea Estate AJTJohnsingh DSC01329.jpg",
+        "author": "A",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kangchenjunga_from_Glenburn_Tea_Estate_AJTJohnsingh_DSC01329.jpg",
+        "via": "commons"
+      },
+      "mayfair-darjeeling": {
+        "file": "img/h/mayfair-darjeeling.jpg",
+        "name": "Mayfair Darjeeling",
+        "title": "Mayfair Hotel, Darjeeling, West Bengal, India.jpg",
+        "author": "Mr",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mayfair_Hotel,_Darjeeling,_West_Bengal,_India.jpg",
+        "via": "commons"
+      },
+      "elgin-darjeeling": {
+        "file": "img/h/elgin-darjeeling.jpg",
+        "name": "Elgin Darjeeling",
+        "title": "Colonial-Era Hotel Elgin - Darjeeling - West Bengal - India (12406988513).jpg",
+        "author": "Adam Jones from Kelowna, BC, Canada",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Colonial-Era_Hotel_Elgin_-_Darjeeling_-_West_Bengal_-_India_(12406988513).jpg",
+        "via": "wikipedia:The Elgin, Darjeeling"
+      },
+      "mayfair-spa-resort-and-casino": {
+        "file": "img/h/mayfair-spa-resort-and-casino.jpg",
+        "name": "Mayfair Spa Resort & Casino",
+        "title": "Caesars Palace Casino (7980362756).jpg",
+        "author": "Sean MacEntee from Monaghan, Ireland",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_Casino_(7980362756).jpg",
+        "via": "wikipedia:Casino"
+      },
+      "ideal-river-view-resort": {
+        "file": "img/h/ideal-river-view-resort.jpg",
+        "name": "Ideal River View Resort",
+        "title": "Ideal River View Resort, Thanjavur (1) (36829584043).jpg",
+        "author": "Richard Mortel from Riyadh, Saudi Arabia",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Ideal_River_View_Resort,_Thanjavur_(1)_(36829584043).jpg",
+        "via": "commons"
+      }
+    },
+    "eat": {
+      "karim-s": {
+        "file": "img/r/karim-s.jpg",
+        "name": "Karim's",
+        "title": "Old Delhi market, Jama Masjid.jpg",
+        "author": "Benison P Baby",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Old_Delhi_market,_Jama_Masjid.jpg",
+        "via": "commons"
+      },
+      "murugan-idli-shop": {
+        "file": "img/r/murugan-idli-shop.jpg",
+        "name": "Murugan Idli Shop",
+        "title": "Ghee Podi Idli - Murugan Idli Shop, Chennai - TamilNadu - PXL0246.jpg",
+        "author": "Harikrishnan N",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Ghee_Podi_Idli_-_Murugan_Idli_Shop,_Chennai_-_TamilNadu_-_PXL0246.jpg",
+        "via": "commons"
+      },
+      "nizam-s": {
+        "file": "img/r/nizam-s.jpg",
+        "name": "Nizam's",
+        "title": "Purani Haveli - Nizam Palace - Stairs.jpg",
+        "author": "Rajashree Talukdar",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Purani_Haveli_-_Nizam_Palace_-_Stairs.jpg",
+        "via": "commons"
+      },
+      "peter-cat": {
+        "file": "img/r/peter-cat.jpg",
+        "name": "Peter Cat",
+        "title": "The Chelo Kabab.jpg",
+        "author": "Devang Mukherjee",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Chelo_Kabab.jpg",
+        "via": "commons"
+      },
+      "vidyarthi-bhavan": {
+        "file": "img/r/vidyarthi-bhavan.jpg",
+        "name": "Vidyarthi Bhavan",
+        "title": "Vidyarthi Bhavan Masala Dosa.jpg",
+        "author": "Maharana7573",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Vidyarthi_Bhavan_Masala_Dosa.jpg",
+        "via": "commons"
+      },
+      "paradise-biryani": {
+        "file": "img/r/paradise-biryani.jpg",
+        "name": "Paradise Biryani",
+        "title": "Vegetable biryani served at Paradise Restaurant, Hyderabad 02.jpg",
+        "author": "Dev Jadiya",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani_served_at_Paradise_Restaurant,_Hyderabad_02.jpg",
+        "via": "commons"
+      },
+      "blue-lassi-shop": {
+        "file": "img/r/blue-lassi-shop.jpg",
+        "name": "Blue Lassi Shop",
+        "title": "World's Best Lassi - Blue Lassi - Old City - Varanasi - Uttar Pradesh - India (12498958194).jpg",
+        "author": "Adam Jones from Kelowna, BC, Canada",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:World%27s_Best_Lassi_-_Blue_Lassi_-_Old_City_-_Varanasi_-_Uttar_Pradesh_-_India_(12498958194).jpg",
+        "via": "commons"
+      },
+      "britannia-and-co": {
+        "file": "img/r/britannia-and-co.jpg",
+        "name": "Britannia & Co.",
+        "title": "Britannia and Co.jpg",
+        "author": "Kanad Sanyal",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Britannia_and_Co.jpg",
+        "via": "commons"
+      },
+      "bademiya": {
+        "file": "img/r/bademiya.jpg",
+        "name": "Bademiya",
+        "title": "Bademiya restaurant, Mumbai.jpg",
+        "author": "Benjamin Vander Steen from Victoria, Canada",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Bademiya_restaurant,_Mumbai.jpg",
+        "via": "commons"
+      },
+      "lassiwala": {
+        "file": "img/r/lassiwala.jpg",
+        "name": "Lassiwala",
+        "title": "Shreenath Lassiwala Jaipur (2022) - img 03.jpg",
+        "author": "Chainwit",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Shreenath_Lassiwala_Jaipur_(2022)_-_img_03.jpg",
+        "via": "commons"
+      },
+      "glenary-s": {
+        "file": "img/r/glenary-s.jpg",
+        "name": "Glenary's",
+        "title": "Glenary's the heritage restaurant in Darjeeling 08.jpg",
+        "author": "Pinakpani",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Glenary%27s_the_heritage_restaurant_in_Darjeeling_08.jpg",
+        "via": "commons"
+      },
+      "keventer-s": {
+        "file": "img/r/keventer-s.jpg",
+        "name": "Keventer's",
+        "title": "Keventers Darjeeling.jpg",
+        "author": "Riddhimaan",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Keventers_Darjeeling.jpg",
+        "via": "commons"
+      }
+    },
+    "dish": {
+      "masala-dosa": {
+        "file": "img/d/masala-dosa.jpg",
+        "name": "Masala dosa",
+        "title": "Masala Dosa 2023.jpg",
+        "author": "Yakshitha",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Masala_Dosa_2023.jpg",
+        "via": "wikipedia:Masala dosa"
+      },
+      "filter-coffee": {
+        "file": "img/d/filter-coffee.jpg",
+        "name": "Filter coffee",
+        "title": "Filter kaapi.JPG",
+        "author": "Vallari",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Filter_kaapi.JPG",
+        "via": "wikipedia:Indian filter coffee"
+      },
+      "idli": {
+        "file": "img/d/idli.jpg",
+        "name": "Idli & sambar",
+        "title": "Idli Sambar.JPG",
+        "author": "Soumya dey at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Idli_Sambar.JPG",
+        "via": "wikipedia:Idli"
+      },
+      "thali": {
+        "file": "img/d/thali.jpg",
+        "name": "Thali",
+        "title": "Vegetarian Curry.jpeg",
+        "author": "GracinhaMarco Abundo",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Vegetarian_Curry.jpeg",
+        "via": "wikipedia:Thali"
+      },
+      "bisi-bele-bath": {
+        "file": "img/d/bisi-bele-bath.jpg",
+        "name": "Bisi bele bath",
+        "title": "Bisi Bele Bath (Bisibelebath).JPG",
+        "author": "Food and Remedy, LLC",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Bisi_Bele_Bath_(Bisibelebath).JPG",
+        "via": "wikipedia:Bisi bele bath"
+      },
+      "ragi-mudde": {
+        "file": "img/d/ragi-mudde.jpg",
+        "name": "Ragi mudde",
+        "title": "RAGI MUDDE.JPG",
+        "author": "Vsigamany",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:RAGI_MUDDE.JPG",
+        "via": "wikipedia:Ragi mudde"
+      },
+      "vindaloo": {
+        "file": "img/d/vindaloo.jpg",
+        "name": "Pork vindaloo",
+        "title": "Beef Vindaloo - Chilli Mama, Chadstone (3014236693).jpg",
+        "author": "Alpha from Melbourne, Australia",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Beef_Vindaloo_-_Chilli_Mama,_Chadstone_(3014236693).jpg",
+        "via": "wikipedia:Vindaloo"
+      },
+      "balchao": {
+        "file": "img/d/balchao.jpg",
+        "name": "Prawn balchão",
+        "title": "Balchao.jpg",
+        "author": "Unknown",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Balchao.jpg",
+        "via": "wikipedia:Balchão"
+      },
+      "bebinca": {
+        "file": "img/d/bebinca.jpg",
+        "name": "Bebinca",
+        "title": "Bebinca com gelado.jpg",
+        "author": "Warren Noronha",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Bebinca_com_gelado.jpg",
+        "via": "wikipedia:Bebinca"
+      },
+      "feni": {
+        "file": "img/d/feni.jpg",
+        "name": "Feni",
+        "title": "Cashew apples after plucking in Chorao, Goa, India.JPG",
+        "author": "Fredericknoronha",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Cashew_apples_after_plucking_in_Chorao,_Goa,_India.JPG",
+        "via": "wikipedia:Feni (liquor)"
+      },
+      "sadya": {
+        "file": "img/d/sadya.jpg",
+        "name": "Kerala sadya",
+        "title": "Sadhya DSW.jpg",
+        "author": "Augustus Binu/ facebook",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Sadhya_DSW.jpg",
+        "via": "wikipedia:Sadya"
+      },
+      "appam": {
+        "file": "img/d/appam.jpg",
+        "name": "Appam & stew",
+        "title": "Appam - அப்பம்.jpg",
+        "author": "VinPrasad",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg",
+        "via": "wikipedia:Appam"
+      },
+      "puttu": {
+        "file": "img/d/puttu.jpg",
+        "name": "Puttu & kadala",
+        "title": "Puttu (Rice Flour steamed cake).jpg",
+        "author": "Mathew Jibin",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Puttu_(Rice_Flour_steamed_cake).jpg",
+        "via": "wikipedia:Puttu"
+      },
+      "idiyappam": {
+        "file": "img/d/idiyappam.jpg",
+        "name": "Idiyappam",
+        "title": "Idiyappam with Egg Masala Curry.jpg",
+        "author": "Viewfinder18",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Idiyappam_with_Egg_Masala_Curry.jpg",
+        "via": "wikipedia:Idiyappam"
+      },
+      "beef-fry": {
+        "file": "img/d/beef-fry.jpg",
+        "name": "Beef fry & parotta",
+        "title": "ബീഫ്ഫ്രൈ.jpg",
+        "author": "Challiyan at Malayalam Wikipedia",
+        "license": "CC BY-SA 2.5",
+        "page": "https://commons.wikimedia.org/wiki/File:%E0%B4%AC%E0%B5%80%E0%B4%AB%E0%B5%8D%E0%B4%AB%E0%B5%8D%E0%B4%B0%E0%B5%88.jpg",
+        "via": "wikipedia:Kerala beef fry"
+      },
+      "karimeen": {
+        "file": "img/d/karimeen.jpg",
+        "name": "Karimeen pollichathu",
+        "title": "Etroplus suratensis.jpg",
+        "author": "Peter Corbett",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Etroplus_suratensis.jpg",
+        "via": "wikipedia:Green chromide"
+      },
+      "fish-moilee": {
+        "file": "img/d/fish-moilee.jpg",
+        "name": "Fish moilee",
+        "title": "Fish Moilee Kerala Style (aka KeralaFish Molly).JPG",
+        "author": "Drsoumyadeepb",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Fish_Moilee_Kerala_Style_(aka_KeralaFish_Molly).JPG",
+        "via": "wikipedia:Fish molee"
+      },
+      "parotta": {
+        "file": "img/d/parotta.jpg",
+        "name": "Parotta",
+        "title": "Malabar Porotta (cropped).jpg",
+        "author": "Praveen",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Malabar_Porotta_(cropped).jpg",
+        "via": "wikipedia:Parotta"
+      },
+      "payasam": {
+        "file": "img/d/payasam.jpg",
+        "name": "Payasam",
+        "title": "Kheer.jpg",
+        "author": "stu spivack",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kheer.jpg",
+        "via": "wikipedia:Payasam"
+      },
+      "mysore-pak": {
+        "file": "img/d/mysore-pak.jpg",
+        "name": "Mysore pak",
+        "title": "Mysore pak.jpg",
+        "author": "Charles Haynes",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mysore_pak.jpg",
+        "via": "wikipedia:Mysore pak"
+      },
+      "akki-roti": {
+        "file": "img/d/akki-roti.jpg",
+        "name": "Akki roti",
+        "title": "ಅಕ್ಕಿ ರೊಟ್ಟಿ .jpg",
+        "author": "Lakshmi Vijayadas",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%E0%B2%85%E0%B2%95%E0%B3%8D%E0%B2%95%E0%B2%BF_%E0%B2%B0%E0%B3%8A%E0%B2%9F%E0%B3%8D%E0%B2%9F%E0%B2%BF_.jpg",
+        "via": "wikipedia:Akki rotti"
+      },
+      "jolada-rotti": {
+        "file": "img/d/jolada-rotti.jpg",
+        "name": "Jolada rotti meal",
+        "title": "Another Vegetarian Meal.jpg",
+        "author": "Nick Gray",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Another_Vegetarian_Meal.jpg",
+        "via": "wikipedia:Jolada rotti"
+      },
+      "hyderabadi-biryani": {
+        "file": "img/d/hyderabadi-biryani.jpg",
+        "name": "Hyderabadi biryani",
+        "title": "Hyderabadi Chicken Biryani.jpg",
+        "author": "Garrett Ziegler from New York, United States",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg",
+        "via": "wikipedia:Hyderabadi biryani"
+      },
+      "malabar-biryani": {
+        "file": "img/d/malabar-biryani.jpg",
+        "name": "Malabar biryani",
+        "title": "Thalassery Falooda.jpg",
+        "author": "Dinner Series, Ashwin Kumar",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Thalassery_Falooda.jpg",
+        "via": "wikipedia:Thalassery biryani"
+      },
+      "haleem": {
+        "file": "img/d/haleem.jpg",
+        "name": "Haleem",
+        "title": "Pakistani Haleem served with garnish.jpg",
+        "author": "Halt123halt",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pakistani_Haleem_served_with_garnish.jpg",
+        "via": "wikipedia:Haleem"
+      },
+      "irani-chai": {
+        "file": "img/d/irani-chai.jpg",
+        "name": "Irani chai & Osmania biscuit",
+        "title": "Yazdani Bakery in Fort.jpg",
+        "author": "Nick Gray",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Yazdani_Bakery_in_Fort.jpg",
+        "via": "wikipedia:Irani chai"
+      },
+      "qubani": {
+        "file": "img/d/qubani.jpg",
+        "name": "Qubani ka meetha",
+        "title": "Khobani Ka Meetha.JPG",
+        "author": "Miansari66",
+        "license": "CC0",
+        "page": "https://commons.wikimedia.org/wiki/File:Khobani_Ka_Meetha.JPG",
+        "via": "wikipedia:Qubani ka meetha"
+      },
+      "chettinad-chicken": {
+        "file": "img/d/chettinad-chicken.jpg",
+        "name": "Chettinad chicken",
+        "title": "Chettinad Chicken Fry-Home-AndhraPradesh-005.jpg",
+        "author": "M N Swarna",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Chettinad_Chicken_Fry-Home-AndhraPradesh-005.jpg",
+        "via": "wikipedia:Chicken Chettinad"
+      },
+      "nilgiri-tea": {
+        "file": "img/d/nilgiri-tea.jpg",
+        "name": "Nilgiri tea",
+        "title": "Nilgiritea.jpg",
+        "author": "Badagnani (talk)",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Nilgiritea.jpg",
+        "via": "wikipedia:Nilgiri tea"
+      },
+      "machher-jhol": {
+        "file": "img/d/machher-jhol.jpg",
+        "name": "Fish curry (machher jhol)",
+        "title": "Alu ar dhonepata diye Boyal machher jhol.jpg",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Alu_ar_dhonepata_diye_Boyal_machher_jhol.jpg",
+        "via": "wikipedia:Machher jhol"
+      },
+      "croissant": {
+        "file": "img/d/croissant.jpg",
+        "name": "French bakery",
+        "title": "Croissant-Petr Kratochvil.jpg",
+        "author": "Petr Kratochvil",
+        "license": "CC0",
+        "page": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg",
+        "via": "wikipedia:Croissant"
+      },
+      "kachori": {
+        "file": "img/d/kachori.jpg",
+        "name": "Kachori",
+        "title": "Rajasthani Raj Kachori.jpg",
+        "author": "Jaipuriamanasi",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rajasthani_Raj_Kachori.jpg",
+        "via": "wikipedia:Kachori"
+      },
+      "paan": {
+        "file": "img/d/paan.jpg",
+        "name": "Banarasi paan",
+        "title": "Betel 1.jpg",
+        "author": "Unknown artistUnknown artist",
+        "license": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Betel_1.jpg",
+        "via": "wikipedia:Paan"
+      },
+      "vada-pav": {
+        "file": "img/d/vada-pav.jpg",
+        "name": "Vada pav",
+        "title": "Vada Pav-Indian street food.JPG",
+        "author": "Rutvi Mistry",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Vada_Pav-Indian_street_food.JPG",
+        "via": "wikipedia:Vada pav"
+      },
+      "pav-bhaji": {
+        "file": "img/d/pav-bhaji.jpg",
+        "name": "Pav bhaji",
+        "title": "Bambayya Pav bhaji.jpg",
+        "author": "Rupali Banarase",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Bambayya_Pav_bhaji.jpg",
+        "via": "wikipedia:Pav bhaji"
+      },
+      "kebab": {
+        "file": "img/d/kebab.jpg",
+        "name": "Seekh kebab",
+        "title": "Pakistani Food Beef Kabobs.jpg",
+        "author": "Jess Lander from Culver City, CA, USA",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pakistani_Food_Beef_Kabobs.jpg",
+        "via": "wikipedia:Seekh kebab"
+      },
+      "nihari": {
+        "file": "img/d/nihari.jpg",
+        "name": "Nihari",
+        "title": "Nalli Nihari India.jpg",
+        "author": "Nilanjan Sasmal",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Nalli_Nihari_India.jpg",
+        "via": "wikipedia:Nihari"
+      },
+      "chaat": {
+        "file": "img/d/chaat.jpg",
+        "name": "Chaat",
+        "title": "Dahi puri, Doi phuchka.jpg",
+        "author": "Rupamdas75",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Dahi_puri,_Doi_phuchka.jpg",
+        "via": "wikipedia:Chaat"
+      },
+      "dal-makhani": {
+        "file": "img/d/dal-makhani.jpg",
+        "name": "Dal makhani",
+        "title": "Punjabi style Dal Makhani.jpg",
+        "author": "Radhikamprabhu82",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Punjabi_style_Dal_Makhani.jpg",
+        "via": "wikipedia:Dal makhani"
+      },
+      "kathi-roll": {
+        "file": "img/d/kathi-roll.jpg",
+        "name": "Kathi roll",
+        "title": "Kolkata Rolls.jpg",
+        "author": "Satyajit Dhawale (Satyajit888)",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kolkata_Rolls.jpg",
+        "via": "wikipedia:Kati roll"
+      },
+      "chelo-kebab": {
+        "file": "img/d/chelo-kebab.jpg",
+        "name": "Chelo kebab",
+        "title": "Kebab Bakhtyari.jpg",
+        "author": "Taylor and Kevin",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kebab_Bakhtyari.jpg",
+        "via": "wikipedia:Chelo kebab"
+      },
+      "rasgulla": {
+        "file": "img/d/rasgulla.jpg",
+        "name": "Rasgulla",
+        "title": "Rasgulla.jpg",
+        "author": "HrichikHv",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rasgulla.jpg",
+        "via": "wikipedia:Rasgulla"
+      },
+      "mishti-doi": {
+        "file": "img/d/mishti-doi.jpg",
+        "name": "Mishti doi",
+        "title": "Mishti Doi.jpg",
+        "author": "Kirti Poddar",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mishti_Doi.jpg",
+        "via": "wikipedia:Mishti doi"
+      },
+      "ghewar": {
+        "file": "img/d/ghewar.jpg",
+        "name": "Ghewar",
+        "title": "Ghevar with Malai Topping.jpg",
+        "author": "Pradeep717",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Ghevar_with_Malai_Topping.jpg",
+        "via": "wikipedia:Ghevar"
+      },
+      "dal-baati": {
+        "file": "img/d/dal-baati.jpg",
+        "name": "Dal baati churma",
+        "title": "DalBati.jpg",
+        "author": "Niranjan",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:DalBati.jpg",
+        "via": "wikipedia:Dal baati"
+      },
+      "falafel": {
+        "file": "img/d/falafel.jpg",
+        "name": "Falafel (yes, in Pushkar)",
+        "title": "Falafels 2.jpg",
+        "author": "Popo le Chien",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg",
+        "via": "wikipedia:Falafel"
+      },
+      "kulcha": {
+        "file": "img/d/kulcha.jpg",
+        "name": "Amritsari kulcha",
+        "title": "Chole Kulcha Meal - Order Food Online in Mumbai (31013272937).jpg",
+        "author": "Gaurav Nemade",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Chole_Kulcha_Meal_-_Order_Food_Online_in_Mumbai_(31013272937).jpg",
+        "via": "wikipedia:Amritsari kulcha"
+      },
+      "langar": {
+        "file": "img/d/langar.jpg",
+        "name": "Langar at the Golden Temple",
+        "title": "Langar.jpg",
+        "author": "Harisingh at en",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Langar.jpg",
+        "via": "wikipedia:Langar (Sikhism)"
+      },
+      "momo": {
+        "file": "img/d/momo.jpg",
+        "name": "Momos",
+        "title": "Momo nepal.jpg",
+        "author": "Kushal Goyal",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Momo_nepal.jpg",
+        "via": "wikipedia:Momo (food)"
+      },
+      "thukpa": {
+        "file": "img/d/thukpa.jpg",
+        "name": "Thukpa",
+        "title": "Thukpa, Tibetan noodle in Osaka, Japan.jpg",
+        "author": "m-louis from Osaka",
+        "license": "CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Thukpa,_Tibetan_noodle_in_Osaka,_Japan.jpg",
+        "via": "wikipedia:Thukpa"
+      },
+      "butter-tea": {
+        "file": "img/d/butter-tea.jpg",
+        "name": "Butter tea",
+        "title": "Tibetan butter tea.jpg",
+        "author": "Yosomono",
+        "license": "CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tibetan_butter_tea.jpg",
+        "via": "wikipedia:Butter tea"
+      },
+      "naan-qalia": {
+        "file": "img/d/naan-qalia.jpg",
+        "name": "Naan qalia",
+        "title": "Naan Qalia.jpg",
+        "author": "Nefirious (talk) 07:52, 26 July 2009 (UTC)",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Naan_Qalia.jpg",
+        "via": "wikipedia:Naan qalia"
+      },
+      "dabeli": {
+        "file": "img/d/dabeli.jpg",
+        "name": "Dabeli",
+        "title": "Daabeli.JPG",
+        "author": "Kanikatwl",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Daabeli.JPG",
+        "via": "wikipedia:Dabeli"
+      },
+      "gujarati-thali": {
+        "file": "img/d/gujarati-thali.jpg",
+        "name": "Gujarati thali",
+        "title": "Gujarat Thali.JPG",
+        "author": "Kamlevikram",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Gujarat_Thali.JPG",
+        "via": "wikipedia:Gujarati thali"
+      },
+      "darjeeling-tea": {
+        "file": "img/d/darjeeling-tea.jpg",
+        "name": "Darjeeling tea",
+        "title": "Darjeeling, India, Darjeeling tea in variety, Black tea.jpg",
+        "author": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Darjeeling,_India,_Darjeeling_tea_in_variety,_Black_tea.jpg",
+        "via": "wikipedia:Darjeeling tea"
+      },
+      "gundruk": {
+        "file": "img/d/gundruk.jpg",
+        "name": "Gundruk",
+        "title": "Gundruk NP.jpg",
+        "author": "Krish Dulal",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Gundruk_NP.jpg",
+        "via": "wikipedia:Gundruk"
+      },
+      "assamese-thali": {
+        "file": "img/d/assamese-thali.jpg",
+        "name": "Assamese thali",
+        "title": "Assamese Thali.jpg",
+        "author": "Soyuz Sharma",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Assamese_Thali.jpg",
+        "via": "wikipedia:Assamese cuisine"
+      },
+      "chhena-poda": {
+        "file": "img/d/chhena-poda.jpg",
+        "name": "Chhena poda",
+        "title": "Chenapoda.jpg",
+        "author": "Subhahish Panigahi",
+        "license": "CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Chenapoda.jpg",
+        "via": "wikipedia:Chhena poda"
+      },
+      "chocolate": {
+        "file": "img/d/chocolate.jpg",
+        "name": "Homemade chocolate",
+        "title": "Three Bars (1).jpg",
+        "author": "Lynnereal",
+        "license": "CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Three_Bars_(1).jpg",
+        "via": "wikipedia:Chocolate"
+      }
+    }
   }
 }
