@@ -35,7 +35,7 @@
     const sf = get('sf'); if (sf && [3, 4, 5].includes(+sf)) state.safety = +sf;
   }
   function writeUrl() {
-    const keep = (location.hash.match(/plan=[^&]+/) || [''])[0];
+    const keep = ['plan', 'w'].map((k) => ((location.hash.match(new RegExp('(?:#|&)' + k + '=[^&]+')) || [''])[0]).replace(/^[#&]/, '')).filter(Boolean).join('&');
     const parts = [keep, `o=${state.origin}`, `c=${state.country}`, `g=${state.gateway}`, state.gateway2 && state.gateway2 !== state.gateway ? `g2=${state.gateway2}` : '', `d=${store.get('tripDate', '')}`, `p=${state.people}`, `s=${state.style}`, `sf=${state.safety || 3}`, `cur=${state.currency}`].filter(Boolean);
     history.replaceState(null, '', '#' + parts.join('&'));
   }

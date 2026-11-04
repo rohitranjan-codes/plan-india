@@ -818,3 +818,15 @@ body.has-wish { padding-bottom: 96px; }
 #toast.on { opacity: 1; transform: translate(-50%, 0); }
 @media (max-width: 760px) { .gw-suggest { font-size: .78rem; padding: 6px 10px; } }
 .tile figcaption .sbadge { justify-self: start; width: max-content; margin: 4px 0 0; }
+
+/* ---------- Interest first: welcome back, shared picks ---------- */
+.welcome { display: flex; align-items: center; gap: 12px; margin-top: 14px; padding: 10px 14px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow-sm); max-width: 640px; }
+.welcome[hidden] { display: none; }
+.welcome-text { flex: 1; min-width: 0; } .welcome-text b { display: block; font-size: .92rem; } .welcome-text small { display: block; color: var(--muted); font-size: .76rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.welcome .btn { padding: 9px 14px; font-size: .84rem; white-space: nowrap; }
+.shared-note { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 12px; padding: 12px 16px; border-radius: 16px; background: color-mix(in srgb, var(--accent) 12%, var(--card)); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); font-size: .9rem; }
+.shared-note[hidden] { display: none; } .shared-note > span { flex: 1; min-width: 220px; } .shared-note .btn { padding: 9px 14px; font-size: .84rem; }
+.tile.shared { outline: 3px solid var(--accent); outline-offset: -3px; }
+.shared-tag { position: absolute; top: 12px; left: 12px; z-index: 3; padding: 4px 10px; border-radius: 999px; background: var(--accent); color: #fff; font-size: .7rem; font-weight: 900; box-shadow: 0 2px 10px rgba(0, 0, 0, .25); }
+@media (max-width: 760px) { .hero .welcome { display: flex; margin-top: 8px; padding: 8px 10px; } .welcome[hidden] { display: none; } .welcome .wish-thumbs { display: none; } .welcome .btn-ghost { display: none; } }
+.shared-tag { left: auto; right: 58px; }

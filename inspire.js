@@ -10,6 +10,11 @@
   if (!wall) return;
   const wish = new Set(store.get('wish', []));
   let mood = 'all', seed = 0;
+  const de = () => A.LANG.cur === 'de';
+  /* Picks shared by a friend arrive in the URL as w=id.id.id */
+  const sharedIds = (((window.INITIAL_HASH || location.hash).match(/[#&]w=([^&]+)/) || [])[1] || '').split('.').filter((id) => T.destinations.some((d) => d.id === id));
+  const shared = new Set(sharedIds.filter((id) => !wish.has(id)));
+  const dropSharedFromUrl = () => { history.replaceState(null, '', location.hash.replace(/[#&]w=[^&]*/, (m) => (m[0] === '#' ? '#' : '')).replace(/^#&/, '#')); };
 
   const MOODS = { all: { en: 'Everything', de: 'Alles', icon: '✨' }, beach: { en: 'Sea & sand', de: 'Meer & Sand', icon: '🏖️' }, hills: { en: 'Mountains & tea', de: 'Berge & Tee', icon: '🏔️' }, culture: { en: 'Palaces & temples', de: 'Paläste & Tempel', icon: '🏛️' }, wildlife: { en: 'Tigers & wild', de: 'Tiger & Wildnis', icon: '🐯' }, city: { en: 'Cities & food', de: 'Städte & Essen', icon: '🍛' }, best: { en: 'Best this month', de: 'Beste diesen Monat', icon: '📅' } };
   const label = (m) => A.LANG.cur === 'de' ? m.de : m.en;
@@ -31,13 +36,15 @@
     const mr = A.monthRating || (() => 2);
     const base = T.destinations.filter((d) => mood === 'all' || (mood === 'best' ? mr(d) === 3 : d.type === mood));
     const fits = A.fits || (() => true), showAll = A.showAll ? A.showAll() : false;
-    let list = base.filter((d) => showAll || fits(d));
+    let list = base.filter((d) => showAll || fits(d) || shared.has(d.id));
     list = seed ? order(list) : list.slice().sort((a, b) => mr(b) - mr(a) || (((b.safety || {}).score || 0) - ((a.safety || {}).score || 0)) || (b.comfort.score - a.comfort.score));
+    if (shared.size) list.sort((a, b) => (shared.has(b.id) ? 1 : 0) - (shared.has(a.id) ? 1 : 0));
+    renderShared();
     const hid = $('#wallHidden'); if (hid) hid.innerHTML = A.hiddenNote ? A.hiddenNote(base.length - base.filter(fits).length) : '';
     wall.innerHTML = list.map((d, i) => {
       const p = window.photoOf && window.photoOf(d.id);
       const big = i % 7 === 0 || i % 7 === 4;
-      return `<figure class="tile ${big ? 'big' : ''}" data-id="${d.id}" style="--i:${i % 12}">
+      return `<figure class="tile ${big ? 'big' : ''} ${shared.has(d.id) ? 'shared' : ''}" data-id="${d.id}" style="--i:${i % 12}">${shared.has(d.id) ? `<span class="shared-tag">💌 ${de() ? 'Für dich ausgesucht' : 'Picked for you'}</span>` : ''}
         ${p ? `<img src="${p.src}" alt="${esc(d.name)}" loading="lazy">` : (window.sceneSVG ? window.sceneSVG(d.id, d.type, d.hue) : '')}
         <button class="heart ${wish.has(d.id) ? 'on' : ''}" data-wish="${d.id}" aria-label="Save ${esc(d.name)}">${wish.has(d.id) ? '♥' : '♡'}</button>
         <figcaption><span class="tile-region">${esc((T.regions || {})[d.region] || d.region)}</span><b>${d.emoji} ${esc(d.name)}</b><small>${esc(d.tag)}</small>${A.monthBadge ? A.monthBadge(d) : ''} ${A.safetyBadge ? A.safetyBadge(d) : ''}</figcaption>
@@ -57,16 +64,48 @@
     $$(`.heart[data-wish="${id}"]`, wall).forEach((h) => { h.classList.toggle('on', wish.has(id)); h.textContent = wish.has(id) ? '♥' : '♡'; });
     renderBar();
   }
+  function renderShared() {
+    const el = $('#sharedNote'); if (!el) return;
+    el.hidden = shared.size === 0; if (!shared.size) return;
+    const names = [...shared].map((id) => T.destinations.find((d) => d.id === id)).filter(Boolean).map((d) => d.name).join(' · ');
+    el.innerHTML = `<span>💌 <b>${de() ? `Jemand hat ${shared.size} Orte für euch ausgesucht` : `Someone picked ${shared.size} places for your trip`}</b> — ${esc(names)}. ${de() ? 'Tippt auf die Herzen, die euch gefallen.' : 'Tap the hearts you like too.'}</span><button class="btn btn-primary" id="sharedAll">♥ ${de() ? 'Alle übernehmen' : 'Love them all'}</button><button class="btn btn-ghost" id="sharedDismiss">✕</button>`;
+    $('#sharedAll').addEventListener('click', () => { shared.forEach((id) => wish.add(id)); store.set('wish', [...wish]); shared.clear(); dropSharedFromUrl(); render(); });
+    $('#sharedDismiss').addEventListener('click', () => { shared.clear(); dropSharedFromUrl(); render(); });
+  }
+  function shareUrl() {
+    const base = location.href.replace(/[#&]w=[^&]*/, '').replace(/#$/, '');
+    return base + (base.includes('#') ? '&' : '#') + 'w=' + [...wish].join('.');
+  }
+  function share() {
+    const names = [...wish].map((id) => (T.destinations.find((d) => d.id === id) || {}).name).filter(Boolean);
+    const text = de() ? `Ich habe ${names.length} Orte in Indien für uns ausgesucht: ${names.join(', ')}. Tippt auf die Herzen, die euch gefallen: ${shareUrl()}` : `I picked ${names.length} places in India for us: ${names.join(', ')}. Tap the hearts you like: ${shareUrl()}`;
+    if (navigator.share) { navigator.share({ text }).catch(() => {}); return; }
+    open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  }
+  window.SHARE_URL = shareUrl;
+  function renderWelcome() {
+    const el = $('#welcomeBack'); if (!el) return;
+    const n = wish.size; el.hidden = n === 0 || shared.size > 0; if (el.hidden) return;
+    const names = [...wish].map((id) => T.destinations.find((d) => d.id === id)).filter(Boolean);
+    el.innerHTML = `<div class="wish-thumbs">${names.slice(0, 5).map((d) => { const p = window.photoOf && window.photoOf(d.id); return p ? `<img src="${p.src}" alt="" title="${esc(d.name)}">` : `<span>${d.emoji}</span>`; }).join('')}</div>
+      <div class="welcome-text"><b>${de() ? 'Willkommen zurück' : 'Welcome back'} 👋</b><small>${de() ? `${n} gemerkte Orte` : `${n} saved ${n === 1 ? 'place' : 'places'}`}: ${esc(names.map((d) => d.name).slice(0, 4).join(', '))}${n > 4 ? '…' : ''}</small></div>
+      <a class="btn btn-primary" href="#builder" id="welcomePlan">${de() ? 'Weiterplanen' : 'Continue planning'} →</a><button class="btn btn-ghost" id="welcomeShare">📤 ${de() ? 'Teilen' : 'Share'}</button>`;
+    $('#welcomePlan').addEventListener('click', planFromWish);
+    $('#welcomeShare').addEventListener('click', share);
+  }
   function renderBar() {
     const n = wish.size;
     bar.hidden = n === 0; document.body.classList.toggle('has-wish', n > 0);
+    renderWelcome();
     if (!n) return;
     const names = [...wish].map((id) => T.destinations.find((d) => d.id === id)).filter(Boolean);
     bar.innerHTML = `<div class="wish-thumbs">${names.slice(0, 6).map((d) => { const p = window.photoOf && window.photoOf(d.id); return p ? `<img src="${p.src}" alt="" title="${esc(d.name)}">` : `<span>${d.emoji}</span>`; }).join('')}${n > 6 ? `<i>+${n - 6}</i>` : ''}</div>
       <div class="wish-text"><b>${n} ${A.LANG.cur === 'de' ? (n === 1 ? 'Ort gemerkt' : 'Orte gemerkt') : (n === 1 ? 'place saved' : 'places saved')}</b><small>${esc(names.map((d) => d.name).join(' · '))}</small></div>
       <button class="btn btn-primary" id="wishPlan">${A.LANG.cur === 'de' ? 'Daraus einen Plan machen' : 'Plan these'} →</button>
+      <button class="btn btn-ghost" id="wishShare" title="${de() ? 'Mit Freunden teilen' : 'Share with friends'}">📤</button>
       <button class="btn btn-ghost" id="wishClear">✕</button>`;
     $('#wishPlan').addEventListener('click', planFromWish);
+    $('#wishShare').addEventListener('click', share);
     $('#wishClear').addEventListener('click', () => { wish.clear(); store.set('wish', []); render(); });
   }
   /* Order the saved places by nearest-neighbour from the gateway, give each its suggested nights, hand to the builder */

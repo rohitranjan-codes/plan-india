@@ -2,6 +2,7 @@
    Europe → India, any month — page logic
    ------------------------------------------------------------------ */
 (function () {
+  window.INITIAL_HASH = location.hash;
   const T = window.TRIP;
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];

@@ -27,12 +27,12 @@
   <a class="brand" href="#top"><span class="dot">✈</span> Plan India</a>
   <ul class="nav-links">
     <li><a href="#inspire" data-i18n="nav.inspire">Explore</a></li>
-    <li><a href="#flights" data-i18n="nav.flights">Flights</a></li>
-    <li><a href="#routes" data-i18n="nav.routes">Routes</a></li>
-    <li><a href="#map" data-i18n="nav.map">Map</a></li>
     <li><a href="#destinations" data-i18n="nav.destinations">Destinations</a></li>
     <li><a href="#food" data-i18n="nav.food">Food</a></li>
+    <li><a href="#map" data-i18n="nav.map">Map</a></li>
+    <li><a href="#routes" data-i18n="nav.routes">Routes</a></li>
     <li><a href="#builder" data-i18n="nav.builder">Build</a></li>
+    <li><a href="#flights" data-i18n="nav.flights">Flights</a></li>
     <li><a href="#desk" data-i18n="nav.desk">Book</a></li>
     <li><a href="#safety" data-i18n="nav.safety">Safety</a></li>
   </ul>
@@ -59,6 +59,7 @@
         <a class="btn btn-primary" href="#builder" data-i18n="hero.cta1">Build your trip</a>
         <a class="btn btn-ghost" href="#settings" data-i18n="hero.cta2">⚙️ Trip settings</a>
       </div>
+      <div class="welcome" id="welcomeBack" hidden></div>
     </div>
 
   </div>
@@ -73,23 +74,12 @@
       <p data-i18n="inspire.p">Tap a heart on the places that pull you in. We'll turn them into a plan.</p>
     </div>
     <div class="filters wall-chips" id="wallChips"></div>
+      <div class="shared-note" id="sharedNote" hidden></div>
       <p class="hidden-note" id="wallHidden"></p>
     <div class="wall" id="wall"></div>
   </div>
 </section>
-<div class="wish-bar" id="wishBar" hidden></div>
 
-<!-- ================= SETTINGS ================= -->
-<section id="settings" class="settings-section">
-  <div class="container">
-    <div class="settings-card reveal in">
-      <div class="settings-title"><span>🧭</span><b data-i18n="set.title">Your trip settings</b><small data-i18n="set.sub">Everything below adapts: flights, routes, costs, weather, safety and booking links.</small></div>
-      <div class="settings-bar" id="settingsBar"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TICKER ================= -->
 <div class="ticker" id="ticker" hidden>
   <div class="container ticker-inner">
     <span class="ticker-label" id="tickerLabel"></span>
@@ -99,8 +89,80 @@
 </div>
 <div class="event-pop" id="eventPop" hidden></div>
 
+<!-- ================= DESTINATIONS ================= -->
+<section id="destinations" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="dest.kicker">Destinations</span>
+      <h2 data-i18n="dest.h2">Where you'll actually go.</h2>
+      <p data-i18n="dest.p">Filter by mood, tap a card for the full guide.</p>
+    </div>
+    <div class="passport" id="passport"></div>
+    <div class="dest-toolbar">
+      <div class="filters" id="destFilters"></div>
+      <div class="filters regions" id="regionFilters"></div>
+      <label class="best-toggle"><input type="checkbox" id="bestOnly"> <span data-i18n="dest.bestOnly">Best this month</span></label>
+      <span id="destCount"></span>
+      <p class="hidden-note" id="destHidden"></p>
+    </div>
+    <div class="dest-grid" id="destGrid"></div>
+  </div>
+</section>
+
+<!-- ================= FOOD ================= -->
+<section id="food">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="food.kicker">Eat this</span>
+      <h2 data-i18n="food.h2">The dishes worth flying for.</h2>
+      <p data-i18n="food.p">Sixteen dishes, with spice level and where to eat them.</p>
+    </div>
+    <div class="food-grid" id="foodGrid"></div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section id="map" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="map.kicker">The map</span>
+      <h2 data-i18n="map.h2">Everything within reach of Bengaluru.</h2>
+      <p data-i18n="map.p">Hover a pin for time and cost from your gateway. Click to explore or add to your trip.</p>
+    </div>
+    <div id="mapWrap" class="reveal">
+      <div id="mapEl" role="region" aria-label="Map of destinations"></div>
+      <div class="map-foot"><div class="map-legend" id="mapLegend"></div><span id="mapNote"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="quiz.kicker">A quick game</span>
+      <h2 data-i18n="quiz.h2">Which trip is you?</h2>
+      <p data-i18n="quiz.p">Five questions, thirty seconds, one route.</p>
+    </div>
+    <div class="quiz card reveal" id="quizBox"></div>
+  </div>
+</section>
+
+<!-- ================= ROUTES ================= -->
+<section id="routes" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="routes.kicker">Itineraries</span>
+      <h2 data-i18n="routes.h2">Three routes, one gateway.</h2>
+      <p data-i18n="routes.p">Ready-made plans for your gateway. Pick one or build your own below.</p>
+    </div>
+    <div class="tabs" id="routeTabs"></div>
+    <div class="route-panel" id="routePanel"></div>
+  </div>
+</section>
+
 <!-- ================= WEATHER ================= -->
-<section id="weather" class="alt" style="padding-top:70px">
+<section id="weather" style="padding-top:70px">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker" data-i18n="weather.kicker">When to go</span>
@@ -111,6 +173,16 @@
     <p class="wx-status" id="weatherNovNote" style="margin:22px 0 6px">November in the south, in detail:</p>
     <div class="weather-row" id="weatherRow"></div>
     <p class="wx-status" id="wxStatus"></p>
+  </div>
+</section>
+
+<!-- ================= SETTINGS ================= -->
+<section id="settings" class="settings-section alt">
+  <div class="container">
+    <div class="settings-card reveal in">
+      <div class="settings-title"><span>🧭</span><b data-i18n="set.title">Your trip settings</b><small data-i18n="set.sub">Everything below adapts: flights, routes, costs, weather, safety and booking links.</small></div>
+      <div class="settings-bar" id="settingsBar"></div>
+    </div>
   </div>
 </section>
 
@@ -164,80 +236,8 @@
   </div>
 </section>
 
-<!-- ================= QUIZ ================= -->
-<section id="quiz" class="alt">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="kicker" data-i18n="quiz.kicker">A quick game</span>
-      <h2 data-i18n="quiz.h2">Which trip is you?</h2>
-      <p data-i18n="quiz.p">Five questions, thirty seconds, one route.</p>
-    </div>
-    <div class="quiz card reveal" id="quizBox"></div>
-  </div>
-</section>
-
-<!-- ================= ROUTES ================= -->
-<section id="routes">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="kicker" data-i18n="routes.kicker">Itineraries</span>
-      <h2 data-i18n="routes.h2">Three routes, one gateway.</h2>
-      <p data-i18n="routes.p">Ready-made plans for your gateway. Pick one or build your own below.</p>
-    </div>
-    <div class="tabs" id="routeTabs"></div>
-    <div class="route-panel" id="routePanel"></div>
-  </div>
-</section>
-
-<!-- ================= MAP ================= -->
-<section id="map" class="alt">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="kicker" data-i18n="map.kicker">The map</span>
-      <h2 data-i18n="map.h2">Everything within reach of Bengaluru.</h2>
-      <p data-i18n="map.p">Hover a pin for time and cost from your gateway. Click to explore or add to your trip.</p>
-    </div>
-    <div id="mapWrap" class="reveal">
-      <div id="mapEl" role="region" aria-label="Map of destinations"></div>
-      <div class="map-foot"><div class="map-legend" id="mapLegend"></div><span id="mapNote"></span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= DESTINATIONS ================= -->
-<section id="destinations">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="kicker" data-i18n="dest.kicker">Destinations</span>
-      <h2 data-i18n="dest.h2">Where you'll actually go.</h2>
-      <p data-i18n="dest.p">Filter by mood, tap a card for the full guide.</p>
-    </div>
-    <div class="passport" id="passport"></div>
-    <div class="dest-toolbar">
-      <div class="filters" id="destFilters"></div>
-      <div class="filters regions" id="regionFilters"></div>
-      <label class="best-toggle"><input type="checkbox" id="bestOnly"> <span data-i18n="dest.bestOnly">Best this month</span></label>
-      <span id="destCount"></span>
-      <p class="hidden-note" id="destHidden"></p>
-    </div>
-    <div class="dest-grid" id="destGrid"></div>
-  </div>
-</section>
-
-<!-- ================= FOOD ================= -->
-<section id="food" class="alt">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="kicker" data-i18n="food.kicker">Eat this</span>
-      <h2 data-i18n="food.h2">The dishes worth flying for.</h2>
-      <p data-i18n="food.p">Sixteen dishes, with spice level and where to eat them.</p>
-    </div>
-    <div class="food-grid" id="foodGrid"></div>
-  </div>
-</section>
-
 <!-- ================= BUILDER ================= -->
-<section id="builder">
+<section id="builder" class="alt">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker" data-i18n="builder.kicker">Your trip</span>
@@ -266,7 +266,26 @@
   </div>
 </section>
 
-<!-- ================= BOOKING DESK ================= -->
+<!-- ================= DATES ================= -->
+<section id="dates">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker" data-i18n="dates.kicker">Your dates</span>
+      <h2 data-i18n="dates.h2">Countdown, festivals & packing.</h2>
+      <p data-i18n="dates.p">Countdown, festivals in your window, and a packing list from your plan.</p>
+    </div>
+    <div class="dates-layout">
+      <div class="card date-card reveal">
+        <p class="picks-note" data-i18n="dates.moved">Departure date is set in the trip settings at the top.</p>
+        <div class="countdown" id="countdown"></div>
+      </div>
+      <div class="card reveal" data-delay="2"><h3 class="small" data-i18n="dates.festivals">🎆 Festivals during your trip</h3><div id="festivalList"></div></div>
+      <div class="card reveal" data-delay="3"><h3 class="small" data-i18n="dates.packing">🎒 Your packing list</h3><div class="packing" id="packingList"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DESK ================= -->
 <section id="desk" class="alt">
   <div class="container">
     <div class="section-head reveal">
@@ -320,27 +339,8 @@
   </div>
 </section>
 
-<!-- ================= DATES ================= -->
-<section id="dates" class="alt">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="kicker" data-i18n="dates.kicker">Your dates</span>
-      <h2 data-i18n="dates.h2">Countdown, festivals & packing.</h2>
-      <p data-i18n="dates.p">Countdown, festivals in your window, and a packing list from your plan.</p>
-    </div>
-    <div class="dates-layout">
-      <div class="card date-card reveal">
-        <p class="picks-note" data-i18n="dates.moved">Departure date is set in the trip settings at the top.</p>
-        <div class="countdown" id="countdown"></div>
-      </div>
-      <div class="card reveal" data-delay="2"><h3 class="small" data-i18n="dates.festivals">🎆 Festivals during your trip</h3><div id="festivalList"></div></div>
-      <div class="card reveal" data-delay="3"><h3 class="small" data-i18n="dates.packing">🎒 Your packing list</h3><div class="packing" id="packingList"></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= SAFETY ================= -->
-<section id="safety">
+<section id="safety" class="alt">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker" data-i18n="safety.kicker">Safe & smooth</span>
@@ -377,7 +377,7 @@
 </section>
 
 <!-- ================= LINKS ================= -->
-<section id="links" class="alt">
+<section id="links">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker" data-i18n="links.kicker">Useful links</span>
@@ -387,6 +387,8 @@
     <div class="links-grid" id="linksGrid"></div>
   </div>
 </section>
+
+<div class="wish-bar" id="wishBar" hidden></div>
 
 <footer>
   <div class="container row">
