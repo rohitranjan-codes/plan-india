@@ -5,7 +5,6 @@ Pick your origin, home country, arrival and departure gateway, month, group size
 currency — every section adapts.
 
 Live site: **https://plan-india.rohitranjan1087.workers.dev** (Cloudflare, see [Hosting](#hosting)).
-Mirror: https://rohitranjan-codes.github.io/plan-india/ (GitHub Pages).
 
 ## What's inside
 
@@ -153,8 +152,7 @@ npx wrangler deploy    # prints the live URL, e.g. https://plan-india.<you>.work
 If you prefer the older **Pages** product: Create → Pages → Connect to Git, framework None,
 build command empty, build output directory `/`. `_headers` and `404.html` work there too.
 
-GitHub Pages ignores all of these files and keeps serving the site unchanged, so both hosts can
-run in parallel from the same repo.
+The repository is private; Cloudflare's GitHub app keeps its access, so pushes still deploy.
 
 ## GitHub MCP server (for Claude Code)
 
