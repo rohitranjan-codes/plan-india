@@ -803,3 +803,4 @@ body.has-wish { padding-bottom: 96px; }
 .ptile-emoji { width: 100%; align-self: stretch; flex: 0 0 auto; }
 .rating-summary:empty { display: none; }
 .ptile .pick-links { flex-wrap: wrap; gap: 5px; } .ptile .pick-links a { white-space: nowrap; padding: 4px 9px; font-size: .7rem; }
+.fest.mine .fest-date { background: color-mix(in srgb, var(--accent) 14%, var(--card)); }

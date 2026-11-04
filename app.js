@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------
-   Europe → South India · November — page logic
+   Europe → India, any month — page logic
    ------------------------------------------------------------------ */
 (function () {
   const T = window.TRIP;
@@ -103,7 +103,7 @@
       <div class="temp">${esc(w.temp)}</div>
       <div class="live" data-wx="${w.id}"></div>
       <p>${esc(w.note)}</p>
-      <span class="badge ${w.rating}">${w.rating === 'great' ? 'Perfect' : w.rating === 'good' ? 'Good' : 'Skip in Nov'}</span>
+      <span class="badge ${w.rating}">${w.rating === 'great' ? 'Perfect' : w.rating === 'good' ? 'Good' : 'Skip this month'}</span>
     </div>`).join('');
 
 

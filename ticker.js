@@ -26,6 +26,7 @@
     return false;
   }
   const overlaps = (e, w) => activeIn(e, w.start, w.end);
+  window.EVENTS_ACTIVE = activeIn;
   const inPlanRegions = (e, regions, places) => e.regions.includes('all') || e.regions.some((r) => regions.has(r)) || (e.places || []).some((p) => places.has(p));
 
   function planSets() {

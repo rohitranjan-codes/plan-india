@@ -96,7 +96,7 @@ window.CONTENT = {
     'hero.cta1': 'Reise planen', 'hero.cta2': '⚙️ Einstellungen',
     'hero.s1': 'Flugzeit nonstop', 'hero.s2': 'im Reisemonat', 'hero.s3': 'Ziele ab BLR', 'hero.s4': '€ pro Person ab',
     'hero.legend1': 'Langstrecke ≈ 9 h', 'hero.legend2': 'Inland ≈ 1 h',
-    'weather.kicker': 'Warum November', 'weather.h2': 'Der Monsun ist vorbei, die Massen kommen erst noch.', 'weather.p': 'Jeder Ort, bewertet für euren Monat.',
+    'weather.kicker': 'Wann reisen', 'weather.h2': 'Der Monsun ist vorbei, die Massen kommen erst noch.', 'weather.p': 'Jeder Ort, bewertet für euren Monat.',
     'flights.kicker': 'Anreise', 'flights.h2': 'Von eurem Flughafen nach Indien', 'flights.p': 'Von eurem Flughafen zum Gateway, dann weiter.',
     'flights.arrive': '🛬 Ankunft',
     'flights.th1': 'Weiterreise', 'flights.th2': 'Dauer', 'flights.th3': 'Preis p. P.', 'flights.th4': 'Anbieter',

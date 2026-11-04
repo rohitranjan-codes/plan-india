@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------
-   Data for the Europe → South India (November) travel planner.
+   Data for the Europe → India travel planner (any month).
    All prices are approximate, per person, in EUR unless noted, and
    were written as planning estimates — always re-check live prices.
    ------------------------------------------------------------------ */
@@ -55,7 +55,7 @@ window.TRIP = {
       id: 'goa', region: 'west', airport: 'GOI', via: null, priceIndex: 1.2, months: [3, 3, 2, 1, 0, 0, 0, 0, 1, 2, 3, 3], comfort: { score: 4, hospital: 'Manipal Hospital Goa (Panaji) · Victor Hospital (Margao)', notes: ['Use Goa Miles or hotel taxis; avoid scooters after dark and never after drinking.', 'Swim only at lifeguarded beaches (Drishti flags); rip currents are real.', 'Petty theft at beach shacks — leave valuables in the hotel safe.'] }, lat: 15.49, lng: 73.83, hours: 1.2, transfer: 130, type: 'beach', from: '1 h 10 flight', nights: '4–5 nights', name: 'Goa', tag: 'Beaches, forts & Portuguese lanes', emoji: '🏖️',
       hue: 'linear-gradient(135deg,#f59e0b,#ef4444)',
       weather: '23–33 °C · dry & sunny',
-      intro: 'Palm-lined beaches, 450 years of Portuguese heritage, night markets and the best seafood on the west coast. November is the sweet spot: dry, warm, not yet crowded.',
+      intro: 'Palm-lined beaches, 450 years of Portuguese heritage, night markets and the best seafood on the west coast. November to February is the sweet spot: dry, warm, lively.',
       todo: ['Sunset from Chapora Fort over Vagator', 'Ashwem & Morjim beaches (quiet, turtle nesting zone)', 'Old Goa: Basilica of Bom Jesus & Sé Cathedral (UNESCO)', 'Fontainhas Latin Quarter walk in Panaji', 'Dudhsagar Falls jeep safari + spice plantation lunch', 'Palolem & Agonda in the south — kayaking, dolphin boats', 'Anjuna Wednesday flea market · Arpora Saturday night market', 'IFFI film festival in Panaji (late Nov)'],
       food: ['Goan fish thali at Ritz Classic or Anand', 'Prawn balchão, pork vindaloo, xacuti at Viva Panjim', 'Beach-shack grilled kingfish & feni cocktails', 'Bebinca dessert, poi bread from a village bakery'],
       stay: { budget: 'Hostels & guesthouses in Anjuna/Palolem · €10–30', mid: 'Boutique villas in Assagao, Novotel Candolim · €70–140', lux: 'W Goa, Taj Fort Aguada, Alila Diwa, Ahilya by the Sea · €220–450' },
@@ -110,7 +110,7 @@ window.TRIP = {
       id: 'coorg', region: 'south', airport: null, via: 'BLR', priceIndex: 1.3, months: [3, 3, 2, 2, 1, 0, 0, 0, 2, 2, 3, 3], comfort: { score: 4, hospital: 'Madikeri district hospital (basic) · Mysuru 3 h for serious care', notes: ['No ride-hailing; use hotel cars. Roads are narrow and unlit at night.', 'Estate stays are remote — good for peace, check driving distances.'] }, lat: 12.42, lng: 75.74, hours: 5.5, transfer: 60, type: 'hills', from: '5–6 h drive', nights: '2 nights', name: 'Coorg (Kodagu)', tag: 'Coffee estates & waterfalls', emoji: '☕',
       hue: 'linear-gradient(135deg,#a16207,#78350f)',
       weather: '15–25 °C · fresh & green',
-      intro: 'The "Scotland of India": misty coffee plantations, Kodava culture and estate homestays where the harvest starts in November.',
+      intro: 'The "Scotland of India": misty coffee plantations, Kodava culture and estate homestays where the coffee harvest runs November to February.',
       todo: ['Stay on a working coffee estate', 'Abbey Falls & Raja\'s Seat sunset', 'Dubare Elephant Camp (ethical morning visit)', 'Namdroling Golden Temple, Bylakuppe Tibetan settlement', 'Talacauvery river source & Bhagamandala', 'Coffee-roasting walk and tasting'],
       food: ['Pandi curry (Kodava pork) with kadambuttu rice balls', 'Estate-grown coffee', 'Akki roti with coconut chutney'],
       stay: { budget: 'Homestays around Madikeri · €25–45', mid: 'Coorg Wilderness Resort, Amanvana · €90–160', lux: 'Evolve Back Coorg, Taj Madikeri Resort & Spa · €250–450' },
@@ -243,18 +243,18 @@ window.TRIP = {
       id: 'pondicherry', region: 'south', airport: null, via: 'MAA', priceIndex: 1.0, months: [3, 3, 2, 1, 0, 1, 1, 1, 2, 0, 0, 2], comfort: { score: 4, hospital: 'JIPMER (excellent teaching hospital)', notes: ['Cyclone season Oct–Dec — check IMD warnings before driving down.', 'White Town is calm and safe on foot at night.'] }, lat: 11.93, lng: 79.83, hours: 6, transfer: 60, type: 'beach', from: '6 h drive · 1 h flight to Chennai + 3 h', nights: '2 nights', name: 'Pondicherry', tag: 'French Quarter by the sea', emoji: '🇫🇷',
       hue: 'linear-gradient(135deg,#fbbf24,#f97316)',
       weather: '24–30 °C · rainiest month — late Nov onwards only',
-      intro: 'Mustard-yellow colonial villas, bougainvillea, croissants and a seaside promenade — plus the experimental township of Auroville. Charming, but November is the wettest month here; go in the last week or save it for another trip.',
+      intro: 'Mustard-yellow colonial villas, bougainvillea, croissants and a seaside promenade — plus the experimental township of Auroville. Charming; skip October–November, the wettest weeks, and come December to March.',
       todo: ['White Town heritage walk & Rue Romain Rolland', 'Auroville Matrimandir (book the viewing point ahead)', 'Promenade Beach at sunrise', 'Sri Aurobindo Ashram', 'Surfing at Serenity Beach', 'Paradise Beach boat trip (weather permitting)'],
       food: ['French bakeries: Baker Street, Zuka chocolate', 'Creole dishes at Villa Shanti & Le Dupleix', 'Tamil filter coffee and idli'],
       stay: { budget: 'Guesthouses & ashram rooms · €12–30', mid: 'Villa Shanti, Le Dupleix, Palais de Mahé (CGH) · €80–160', lux: 'La Villa, Maison Perumal · €150–250' },
-      area: 'Drive from Bengaluru is 6 h (leave early). Check the forecast: cyclone alerts are common in November.',
+      area: 'Drive from Bengaluru is 6 h (leave early). Check the forecast in Oct–Dec, when cyclone alerts are common.',
       perDay: '€30 – 120',
     },
     {
       id: 'goldentriangle', region: 'north', airport: 'AGR', via: null, priceIndex: 1.4, months: [2, 3, 3, 1, 0, 0, 1, 1, 2, 3, 2, 2], comfort: { score: 4, hospital: 'Medanta Gurugram · Max Saket (Delhi); Apollo Jaipur', notes: ['Touts at the Taj and Amber Fort: book official guides only.', 'Delhi air quality is severe Nov–Jan — masks, and limit Delhi nights.', 'Use pre-booked cars; avoid unmetered taxis at stations.'] }, lat: 27.18, lng: 78.01, hours: 2.7, transfer: 260, type: 'far', from: '2 h 40 flight to Delhi', nights: '5–6 nights', name: 'Delhi, Agra & Jaipur', tag: 'The Golden Triangle', emoji: '🕌',
       hue: 'linear-gradient(135deg,#ef4444,#9a3412)',
       weather: '12–28 °C · perfect season, Delhi smog risk',
-      intro: 'If the group has 6 spare days, North India in November is at its best: Taj Mahal at dawn, Mughal Delhi, Rajasthan\'s pink city. Caveat: Delhi\'s air quality is often very poor in November — keep Delhi short and spend nights in Agra and Jaipur.',
+      intro: 'If the group has 6 spare days, North India from October to March is at its best: Taj Mahal at dawn, Mughal Delhi, Rajasthan\'s pink city. Caveat: Delhi\'s air quality is often very poor from November to January — keep Delhi short and spend nights in Agra and Jaipur.',
       todo: ['Taj Mahal sunrise & Agra Fort', 'Fatehpur Sikri on the road to Jaipur', 'Amber Fort, Hawa Mahal, City Palace, Jaipur', 'Humayun\'s Tomb, Qutb Minar, Old Delhi food walk', 'Gatore cenotaphs & a block-printing workshop', 'Overnight in a Rajasthani heritage haveli'],
       food: ['Old Delhi: Karim\'s, parathe wali gali, chaat', 'Agra petha; Jaipur dal baati churma & laal maas', 'Lassi at Lassiwala, Jaipur'],
       stay: { budget: 'Hostels & havelis · €15–35', mid: 'Trident Agra / Jaipur, Samode Haveli · €90–180', lux: 'Oberoi Amarvilas (Taj view), Rambagh Palace, The Imperial · €350–900' },
@@ -265,7 +265,7 @@ window.TRIP = {
       id: 'rajasthan', region: 'north', airport: 'UDR', via: null, priceIndex: 1.5, months: [3, 3, 2, 1, 0, 0, 1, 1, 2, 3, 3, 3], comfort: { score: 4, hospital: 'Apollo Jaipur · GBH American Hospital Udaipur', notes: ['Well-worn tourist circuit with excellent hotels and drivers.', 'Bargain firmly but politely; ignore “government emporium” claims.', 'Dry heat in Mar–Apr; carry water.'] }, lat: 24.58, lng: 73.71, hours: 2.5, transfer: 250, type: 'far', from: '2 h 30 flight to Udaipur', nights: '5–6 nights', name: 'Udaipur & Jodhpur', tag: 'Lake palaces & the blue city', emoji: '🏯',
       hue: 'linear-gradient(135deg,#f59e0b,#7c2d12)',
       weather: '12–30 °C · dry, ideal',
-      intro: 'Rajasthan in November is close to perfect: cool mornings, golden light on Udaipur\'s lake palaces, the towering Mehrangarh Fort above Jodhpur\'s blue houses, and the Jain marble temples of Ranakpur in between.',
+      intro: 'Rajasthan from October to March is close to perfect: cool mornings, golden light on Udaipur\'s lake palaces, the towering Mehrangarh Fort above Jodhpur\'s blue houses, and the Jain marble temples of Ranakpur in between.',
       todo: ['Sunset boat on Lake Pichola & City Palace, Udaipur', 'Mehrangarh Fort and the blue lanes of Jodhpur (zip line over the fort)', 'Ranakpur Jain temple & Kumbhalgarh wall on the drive between the two', 'Bagore ki Haveli folk dance show', 'Block-printing workshop & bazaars', 'Pushkar Camel Fair (mid–late Nov, 4 h from Udaipur) if dates align'],
       food: ['Laal maas & dal baati churma', 'Mirchi vada and makhaniya lassi in Jodhpur', 'Rooftop dinner with a lake view at Ambrai'],
       stay: { budget: 'Zostel & havelis · €12–35', mid: 'Jagat Niwas, Raas Jodhpur, Jaipur\'s havelis · €90–200', lux: 'Taj Lake Palace, Umaid Bhawan Palace, Leela Palace Udaipur · €400–1,200' },
@@ -276,7 +276,7 @@ window.TRIP = {
       id: 'varanasi', region: 'north', airport: 'VNS', via: null, priceIndex: 1.1, months: [2, 3, 3, 1, 0, 0, 1, 1, 2, 3, 3, 3], comfort: { score: 3, hospital: 'Heritage Hospital · BHU Sir Sunderlal Hospital', notes: ['Intense crowds at the ghats; hire a licensed boatman via the hotel.', 'Do not drink or swim in the river; keep valuables minimal.', 'Stay on the riverfront in a heritage hotel for a calm base.'] }, lat: 25.32, lng: 83.01, hours: 2.5, transfer: 220, type: 'far', from: '2 h 30 flight', nights: '2–3 nights', name: 'Varanasi', tag: 'Ghats, fire & the Ganges', emoji: '🪔',
       hue: 'linear-gradient(135deg,#fb923c,#7f1d1d)',
       weather: '14–29 °C · pleasant, misty dawns',
-      intro: 'The oldest living city in the world, and the most intense. A sunrise rowing boat past the ghats, the evening Ganga aarti fire ceremony, silk lanes and Buddhist Sarnath. In late November 2026 it hosts Dev Deepawali, when a million lamps light the ghats.',
+      intro: 'The oldest living city in the world, and the most intense. A sunrise rowing boat past the ghats, the evening Ganga aarti fire ceremony, silk lanes and Buddhist Sarnath. Every year at Kartik Purnima (November) it hosts Dev Deepawali, when a million lamps light the ghats.',
       todo: ['Sunrise boat along the ghats', 'Ganga aarti at Dashashwamedh Ghat (arrive 17:30)', 'Old-city walking tour: Kashi Vishwanath lanes, Manikarnika', 'Sarnath — where the Buddha first taught', 'Banarasi silk weaving workshop', 'Dev Deepawali (Kartik Purnima, ≈ 24 Nov 2026)'],
       food: ['Kachori-sabzi breakfast & Blue Lassi', 'Banarasi paan and malaiyo (winter cream dessert)', 'Thali at Baati Chokha'],
       stay: { budget: 'Hostels near Assi Ghat · €8–25', mid: 'Ganpati Guest House, Suryauday Haveli (riverfront) · €60–130', lux: 'BrijRama Palace, Taj Ganges, Taj Nadesar Palace · €200–450' },
@@ -287,11 +287,11 @@ window.TRIP = {
       id: 'rishikesh', region: 'north', airport: null, via: 'DED', priceIndex: 1.2, months: [2, 3, 3, 3, 2, 0, 0, 0, 2, 3, 3, 2], comfort: { score: 4, hospital: 'AIIMS Rishikesh (major hospital)', notes: ['Rafting only with licensed operators, helmets and life jackets.', 'Vegetarian and alcohol-free town — plan expectations.', 'Monkeys on the bridges: hold on to bags and glasses.'] }, lat: 30.09, lng: 78.27, hours: 3.5, transfer: 230, type: 'far', from: '3 h flight to Dehradun + 45 min', nights: '3 nights', name: 'Rishikesh', tag: 'Yoga, rafting & the Himalayan foothills', emoji: '🧘',
       hue: 'linear-gradient(135deg,#34d399,#1e3a8a)',
       weather: '10–26 °C · crisp, clear, rafting season',
-      intro: 'Where the Ganges leaves the Himalayas. Yoga ashrams, white-water rafting at its best in November, suspension bridges, the graffiti-covered Beatles Ashram and the great evening aarti at Haridwar down the road.',
+      intro: 'Where the Ganges leaves the Himalayas. Yoga ashrams, white-water rafting at its best from October to April, suspension bridges, the graffiti-covered Beatles Ashram and the great evening aarti at Haridwar down the road.',
       todo: ['White-water rafting (Shivpuri → Rishikesh, grade II–III)', 'Sunrise yoga class or a 3-day ashram taster', 'Beatles Ashram (Chaurasi Kutia) street art', 'Triveni Ghat evening aarti', 'Rajaji National Park jeep safari', 'Har Ki Pauri aarti in Haridwar (45 min)'],
       food: ['Vegetarian only in town: thalis, Chotiwala', 'Cafés on the Laxman Jhula side: Little Buddha, Beatles Café', 'Fresh juices, no alcohol served'],
       stay: { budget: 'Ashrams & Zostel Rishikesh · €8–25', mid: 'Aloha on the Ganges, Divine Resort · €60–120', lux: 'Ananda in the Himalayas (spa), Taj Rishikesh · €250–700' },
-      area: 'Fly BLR → Dehradun (DED, 3 h, €60–130), then 45 min taxi. Rafting operators: book a morning slot; November water is cold but clear.',
+      area: 'Fly BLR → Dehradun (DED, 3 h, €60–130), then 45 min taxi. Rafting operators: book a morning slot; the water is cold but clear in the cool months.',
       perDay: '€30 – 250',
     },
     {
@@ -317,7 +317,7 @@ window.TRIP = {
       perDay: '€60 – 300',
     },
     {
-      id: 'chennai', region: 'south', airport: 'MAA', via: null, priceIndex: 0.9, months: [3,2,1,0,0,0,1,1,2,1,0,2], comfort: { score: 4, hospital: 'Apollo Greams Road (India\'s best-known hospital) · MIOT', notes: ['Hot and humid most of the year; November brings heavy northeast-monsoon rain.', 'Safe, conservative city; dress modestly at temples and beaches.'] }, lat: 13.08, lng: 80.27, hours: 1, transfer: 110, type: 'city', from: '1 h flight', nights: '1–2 nights', name: 'Chennai', tag: 'Tamil culture & the Coromandel coast', emoji: '🏛️',
+      id: 'chennai', region: 'south', airport: 'MAA', via: null, priceIndex: 0.9, months: [3,2,1,0,0,0,1,1,2,1,0,2], comfort: { score: 4, hospital: 'Apollo Greams Road (India\'s best-known hospital) · MIOT', notes: ['Hot and humid most of the year; October–December bring heavy northeast-monsoon rain.', 'Safe, conservative city; dress modestly at temples and beaches.'] }, lat: 13.08, lng: 80.27, hours: 1, transfer: 110, type: 'city', from: '1 h flight', nights: '1–2 nights', name: 'Chennai', tag: 'Tamil culture & the Coromandel coast', emoji: '🏛️',
       hue: 'linear-gradient(135deg,#0ea5e9,#7c2d12)',
       weather: '24–30 °C in Nov · rainy',
       intro: 'The cultural capital of Tamil Nadu: Carnatic music, silk, Dravidian temples and a 13-km beach. Best as a gateway to Mahabalipuram, Pondicherry and the temple trail — outside the Oct–Dec monsoon.',
@@ -465,7 +465,7 @@ window.TRIP = {
     { icon: '📱', title: 'SIM & connectivity', text: 'Buy an Airtel or Jio tourist SIM at BLR arrivals (passport + visa needed, ~€8 for 28 days), or install an eSIM (Airalo, Holafly) before you fly. WhatsApp is how everyone communicates.', link: { label: 'Airalo India eSIM', url: 'https://www.airalo.com/india-esim' } },
     { icon: '👗', title: 'Culture & dress', text: 'Cover shoulders and knees at temples and remove shoes. Bargain politely at markets, tip 5–10 % in restaurants. Public affection is frowned upon; alcohol is fine in Goa and Bengaluru bars.', link: null },
     { icon: '🕵️', title: 'Common scams to skip', text: '"Your hotel is closed" taxi stories, gem/carpet "export" deals, unofficial guides at monuments, and card skimmers at isolated ATMs. Politely say no and keep walking.', link: null },
-    { icon: '🔌', title: 'Plugs, time & tips', text: 'Type C/D/M sockets, 230 V — a universal adapter works. IST is UTC+5:30 (CET +4:30 in November). Diwali 2026 falls on 8 November: fireworks, sweets and some closures — plan around it.', link: null },
+    { icon: '🔌', title: 'Plugs, time & tips', text: 'Type C/D/M sockets, 230 V — a universal adapter works. IST is UTC+5:30 (CET +4:30 in winter, +3:30 in summer). Big festivals such as Diwali and Holi bring fireworks, sweets and some closures — the ticker at the top flags them for your dates.', link: null },
   ],
 
   links: [

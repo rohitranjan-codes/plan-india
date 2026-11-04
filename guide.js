@@ -372,7 +372,7 @@ window.GUIDE = {
       { n: 'Kolukkumalai sunrise jeep', kind: 'activity', url: 'https://www.google.com/maps/search/Kolukkumalai+jeep+safari+Suryanelli', why: 'Arrange through your hotel the day before; 04:30 start.' },
     ],
     kochi: [
-      { n: 'Spice Routes / Lakes & Lagoons houseboats', kind: 'boat', url: 'https://www.spiceroutes.in/', why: 'Book a private houseboat 2–4 weeks ahead for November.' },
+      { n: 'Spice Routes / Lakes & Lagoons houseboats', kind: 'boat', url: 'https://www.spiceroutes.in/', why: 'Book a private houseboat 2–4 weeks ahead in high season (Nov–Feb).' },
       { n: 'Kerala Kathakali Centre', kind: 'activity', url: 'https://www.kathakalicentre.com/', why: 'Daily 18:00 show; arrive 17:00 for the make-up session.' },
       { n: 'Uber / Ola', kind: 'cab', url: 'https://www.uber.com/in/en/', why: 'Works well in Kochi; Fort Kochi is best on foot.' },
     ],
@@ -390,7 +390,7 @@ window.GUIDE = {
     hampi: [
       { n: 'Hampi Express (IRCTC)', kind: 'train', url: 'https://www.irctc.co.in/', why: 'Overnight from Bengaluru; book 2AC a month ahead.' },
       { n: 'Auto / e-bike hire in Hampi Bazaar', kind: 'cab', url: 'https://www.google.com/maps/search/bicycle+rental+Hampi', why: 'Full-day auto ≈ ₹1,200; e-bikes and cycles ≈ ₹300.' },
-      { n: 'Hampi Utsav dates', kind: 'activity', url: 'https://www.karnatakatourism.org/', why: 'Check the festival dates before fixing your November nights.' },
+      { n: 'Hampi Utsav dates', kind: 'activity', url: 'https://www.karnatakatourism.org/', why: 'Check the festival dates before fixing your Hampi nights.' },
     ],
     hyderabad: [
       { n: 'Uber / Ola / Rapido', kind: 'cab', url: 'https://www.uber.com/in/en/', why: 'Traffic is heavy; use the Metro for Charminar-side trips.' },

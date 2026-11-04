@@ -323,8 +323,14 @@
       cd.innerHTML = diff > 0 ? `<b>${diff}</b><span>${t('dates.days')}</span>` : `<b>✈️</b><span>${diff === 0 ? t('dates.today') : t('dates.gone')}</span>`;
     }
     const days = nights() + 2, end = d0 ? new Date(d0.getTime() + days * 86400000) : null;
-    const list = C.festivals.filter((f) => { if (!d0) return true; const fd = new Date(f.date + 'T00:00:00'); return fd >= d0 && fd <= end; });
-    $('#festivalList').innerHTML = list.length ? list.map((f) => { const fd = new Date(f.date + 'T00:00:00'); return `<div class="fest"><div class="fest-date"><b>${fd.getDate()}</b><span>${fd.toLocaleDateString(A.LANG.cur === 'de' ? 'de-DE' : 'en-GB', { month: 'short' })}</span></div><div><b>${esc(f.name)}${f.approx ? ` <em>(${t('dates.approx')})</em>` : ''}</b><small>📍 ${esc(f.where)}</small><p>${esc(f.text)}</p></div></div>`; }).join('') : `<p class="tip">${t('dates.none')}</p>`;
+    const EV = window.EVENTS || [], act = window.EVENTS_ACTIVE;
+    const start = d0 || new Date(new Date().setHours(0, 0, 0, 0)), fin = end || new Date(start.getTime() + 60 * 86400000);
+    const planIds = new Set(plan.map((s) => s.id)), planRegions = new Set(plan.map((s) => byId(s.id).region));
+    const concerns = (e) => e.regions.includes('all') || e.regions.some((r) => planRegions.has(r)) || (e.places || []).some((x) => planIds.has(x));
+    const list = act ? EV.filter((e) => !e.weekly && act(e, start, fin)).sort((a, b) => (concerns(b) - concerns(a)) || a.start.localeCompare(b.start)).slice(0, 10) : [];
+    const KIND = { celebrate: '🎉', caution: '⚠️', closed: '⛔' };
+    const whereOf = (e) => (e.places || []).map((x) => (byId(x) || {}).name).filter(Boolean).slice(0, 3).join(', ') || (e.regions.includes('all') ? (A.LANG.cur === 'de' ? 'Ganz Indien' : 'All of India') : e.regions.map((r) => (T.regions && T.regions[r]) || r).join(', '));
+    $('#festivalList').innerHTML = list.length ? list.map((e) => { const fd = new Date(e.start + 'T00:00:00'); return `<div class="fest ${concerns(e) ? 'mine' : ''}"><div class="fest-date"><b>${fd.getDate()}</b><span>${fd.toLocaleDateString(A.LANG.cur === 'de' ? 'de-DE' : 'en-GB', { month: 'short' })}</span></div><div><b>${KIND[e.kind] || ''} ${esc(e.name)}${e.approx ? ` <em>(${t('dates.approx')})</em>` : ''}</b><small>📍 ${esc(whereOf(e))}</small><p>${esc(e.text)}</p></div></div>`; }).join('') : `<p class="tip">${t('dates.none')}</p>`;
     const packed = new Set(store.get('packed', []));
     $('#packingList').innerHTML = packingItems().map((x) => `<label class="pack"><input type="checkbox" value="${esc(x)}" ${packed.has(x) ? 'checked' : ''}><span>${esc(x)}</span></label>`).join('');
   }
@@ -397,7 +403,7 @@
   }
   deskEl.addEventListener('change', (e) => { const row = e.target.closest('.desk-row'); if (!row) return; deskEl.dataset.touched = '1'; e.target.checked ? deskDone.add(row.dataset.key) : deskDone.delete(row.dataset.key); store.set('deskDone', [...deskDone]); renderDesk(); });
   renderDesk(); prefetchDeskRatings();
-  on('eventsready', () => { renderBuilder(); renderDesk(); });
+  on('eventsready', () => { renderBuilder(); renderDesk(); renderDates(); });
   on('planchange', () => { renderDesk(); prefetchDeskRatings(); }); on('costchange', renderDesk); on('langchange', renderDesk);
   dateEl.addEventListener('change', renderDesk);
 
