@@ -2,6 +2,8 @@
 
 All photos from Wikimedia Commons under the licence shown. Thank you to the photographers.
 
+## Destinations
+
 - **goa** — [Palolem Beach, South Goa.jpg](https://commons.wikimedia.org/wiki/File:Palolem_Beach,_South_Goa.jpg) by iMahesh · CC BY-SA 4.0
 - **munnar** — [Munnar Overview.jpg](https://commons.wikimedia.org/wiki/File:Munnar_Overview.jpg) by Kondephy · CC BY-SA 4.0
 - **kochi** — [Chinese Fishing Net Raising Birds Sunrise Ashtamudi Kollam Mar22 A7C 01784.jpg](https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Net_Raising_Birds_Sunrise_Ashtamudi_Kollam_Mar22_A7C_01784.jpg) by Timothy A · CC BY-SA 4.0
@@ -52,3 +54,7 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **puri** — [Konarka Temple.jpg](https://commons.wikimedia.org/wiki/File:Konarka_Temple.jpg) by Subham9423 · CC BY-SA 4.0
 - **thanjavur** — [Brihadisvara Temple during Maha Shivaratri-WUS03611 (edit).jpg](https://commons.wikimedia.org/wiki/File:Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_(edit).jpg) by Original:  Rainer Halama · CC BY-SA 4.0
 - **kodaikanal** — [Boating in Kodaikanal Lake with Mist.jpg](https://commons.wikimedia.org/wiki/File:Boating_in_Kodaikanal_Lake_with_Mist.jpg) by KARTY JazZ · CC BY-SA 4.0
+
+## Galleries, hotels, restaurants and dishes
+
+

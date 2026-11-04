@@ -11,6 +11,10 @@ on:
         description: "Space-separated destination ids to fetch (empty = all)"
         type: string
         default: ""
+      more:
+        description: "Extra photos to fetch: gallery hotels eat dishes (space-separated, 'all', or empty to skip)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -23,12 +27,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Fetch photos from Wikimedia Commons
+      - name: Fetch destination photos from Wikimedia Commons
+        if: ${{ inputs.more == '' || inputs.ids != '' }}
         run: node tools/fetch-photos.mjs ${{ inputs.force && '--force' || '' }} ${{ inputs.ids }}
+      - name: Fetch galleries, hotels, restaurants and dishes
+        if: ${{ inputs.more != '' }}
+        run: node tools/fetch-more-photos.mjs ${{ inputs.force && '--force' || '' }} ${{ inputs.more != 'all' && inputs.more || '' }}
       - name: Commit photos
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add img photos.js
-          git diff --cached --quiet && echo "No changes" || git commit -m "Add destination photos from Wikimedia Commons (credits in img/CREDITS.md)"
+          git config user.name "Rohit Ranjan"
+          git config user.email "rohitranjan1087@gmail.com"
+          git add img photos.js photos-more.js
+          git diff --cached --quiet && echo "No changes" || git commit -m "Add photos from Wikimedia Commons (credits in img/CREDITS.md)"
           git push
