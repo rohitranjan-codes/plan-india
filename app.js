@@ -197,15 +197,33 @@
   const modal = $('#modal');
   function openDest(id) {
     const d = T.destinations.find((x) => x.id === id); if (!d) return;
+    const PM = window.PHOTOS_MORE || { gallery: {}, hotel: {}, eat: {}, dish: {} };
+    const FX = window.FACTS || { dest: {}, hotel: {}, eat: {}, dish: {}, dishes: {}, eatDish: {} };
+    const slug = (x) => x.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    const city = (window.GUIDE && window.GUIDE.searchCity[d.id]) || d.name;
+    const creditHTML = (p) => p && p.author ? `<a class="photo-credit" target="_blank" rel="noopener" href="${esc(p.page || '#')}">📷 ${esc(p.author)} · ${esc(p.license || '')}</a>` : '';
+    const cover = window.photoOf && window.photoOf(d.id);
+    const slides = [cover ? { ...cover, caption: d.name } : null, ...(PM.gallery[d.id] || [])].filter(Boolean);
+    const galleryHTML = slides.length ? `
+      <div class="cover has-photo gallery" style="background:${d.hue}">
+        <div class="gal-track" id="galTrack">${slides.map((p, i) => `<figure class="gal-slide"><img src="${esc(p.src)}" alt="${esc(p.caption || d.name)}" loading="${i ? 'lazy' : 'eager'}">${p.caption && i ? `<figcaption>${esc(p.caption)}</figcaption>` : ''}${creditHTML(p)}</figure>`).join('')}</div>
+        ${slides.length > 1 ? `<button class="gal-btn prev" type="button" aria-label="Previous photo">‹</button><button class="gal-btn next" type="button" aria-label="Next photo">›</button><div class="gal-dots">${slides.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('')}</div>` : ''}
+      </div>` : window.coverHTML(d);
+    const tile = (photo, label, sub = '', cls = '') => `<div class="ptile ${cls} ${photo ? 'has-photo' : ''}">${photo ? `<img src="${esc(photo.src)}" alt="${esc(label)}" loading="lazy">${creditHTML(photo)}` : `<span class="ptile-emoji">${cls.includes('dtile') ? '🍛' : '🏨'}</span>`}<div class="ptile-txt"><b>${esc(label)}</b>${sub ? `<small>${esc(sub)}</small>` : ''}</div></div>`;
+    const eatList = (window.GUIDE && window.GUIDE.eat[d.id]) || [];
+    const picks = ((window.GUIDE && window.GUIDE.picks[d.id]) || []).filter((p) => p.tier !== 'budget');
+    const dishes = (FX.dishes[d.id] || []).map((k) => ({ k, ...(FX.dish[k] || { n: k }), photo: PM.dish[k] })).filter((x) => x.n);
+    const facts = FX.dest[d.id] || [];
     $('.sheet', modal).innerHTML = `
       <button class="close" aria-label="Close">✕</button>
-      ${window.coverHTML(d, (() => { const p = window.photoOf && window.photoOf(d.id); return p && p.author ? `<a class="photo-credit" target="_blank" rel="noopener" href="${esc(p.page || '#')}">📷 ${esc(p.author)} · ${esc(p.license || '')}</a>` : ''; })())}
+      ${galleryHTML}
       <div class="content">
         <div class="modal-title">
           <h3>${esc(d.name)}</h3>
           <div class="tag">${esc(d.tag)}</div>
           <button class="btn btn-primary modal-add" id="modalAdd" data-id="${d.id}">${t('modal.add')}</button>
         </div>
+        ${facts.length ? `<div class="facts">${facts.map((f, i) => `<div class="fact" style="--i:${i}"><span>💡</span><p>${esc(f)}</p></div>`).join('')}</div>` : ''}
         ${(() => { const lg = legFromGateway(d); const AP = window.APP || {}; const r = AP.monthRating ? AP.monthRating(d) : 2; const RM = AP.RATING || {}; return `
         <div class="stat-tiles">
           <div class="stile"><span class="stile-k">${LANG.cur === 'de' ? 'Dieser Monat' : 'This month'}</span><b class="mbadge ${(RM[r] || {}).cls || ''}">${t((RM[r] || {}).k || 'month.good')}</b><div class="month-strip mini">${(d.months || []).map((x, i) => `<span class="r${x} ${AP.month && AP.month() === i + 1 ? 'cur' : ''}"></span>`).join('')}</div></div>
@@ -214,45 +232,54 @@
           <div class="stile"><span class="stile-k">${M.styles[state.style].label} · ${M.styles[state.style].stars}</span><b>${fmtNum(nightPrice(d))}</b><small>${LANG.cur === 'de' ? 'pro Nacht' : 'per night'} · 🛏 ${esc(d.nights)}</small></div>
         </div>`; })()}
         <div class="live modal-live" data-wx="${d.id}"></div>
-        <p class="intro">${esc(d.intro)}</p>
         <h4>✨ ${LANG.cur === 'de' ? 'Erleben' : 'Things to do'}</h4>
         <div class="todo-strip">${d.todo.map((x, i) => `<div class="todo-card" style="--i:${i}"><span>${['🌅', '🏛️', '🛶', '🥾', '🎭', '🛍️', '🍃', '📸'][i % 8]}</span><p>${esc(x)}</p></div>`).join('')}</div>
         <details class="safety-notes"><summary>🛡️ ${t('comfort.title')}</summary><ul>${d.comfort.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul></details>
-        <div class="cols">
-          <div>
-            <h4>🍛 ${t('guide.eat')}</h4>
-            <p class="rating-summary"></p>
-            <div class="picks">${(window.GUIDE?.eat[d.id] || []).length ? (window.GUIDE.eat[d.id]).map((p) => `
-              <div class="pick-row rated" data-q="${esc(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">
-                <span class="tier tier-eat">🍽️</span>
-                <div><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(p.why)}</p>
-                  <div class="pick-links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">Google ↗</a><a target="_blank" rel="noopener" href="https://www.zomato.com/search?q=${encodeURIComponent(p.n)}">Zomato ↗</a></div>
-                </div>
-              </div>`).join('') : `<p class="picks-note">${t('guide.eatNone')}</p>`}</div>
-            <h4 style="margin-top:14px">🥘 Dishes to try</h4><ul>${d.food.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
-          </div>
-          <div>
-            <h4>🛏️ ${t('guide.picks')}</h4>
-            <p class="picks-note">${t('guide.picksNote')}</p>
-            <p class="rating-summary"></p>
-            <div class="picks">${(window.GUIDE?.picks[d.id] || []).filter((p) => p.tier !== 'budget').map((p) => `
-              <div class="pick-row pick-card rated tier-band-${p.tier}" data-q="${esc(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">
-                <span class="tier tier-${p.tier}">${t('tier.' + p.tier)}</span>
-                <div><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(p.why)}</p>
-                  <div class="pick-links"><a class="primary" target="_blank" rel="noopener" href="${window.hotelUrl ? window.hotelUrl(p.n, window.GUIDE.searchCity[d.id] || d.name) : '#'}">${t('guide.hotelLink')} ↗</a><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}&dest_type=hotel">Booking.com ↗</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(p.n + ' ' + (window.GUIDE.searchCity[d.id] || d.name))}">${t('guide.maps')} ↗</a></div>
-                </div>
-              </div>`).join('')}</div>
-            <div class="chip-row" style="margin-top:12px">
-              <a class="chip" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent((window.GUIDE?.searchCity[d.id] || d.name) + ', India')}">${t('guide.allHotels')} ↗</a>
-              <a class="chip warm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(d.name + ' India')}">${t('guide.maps')} ↗</a>
+
+        <h4>🥘 ${t('modal.dishes')}</h4>
+        <div class="ptiles dishes">${dishes.map((x) => tile(x.photo, x.n, '', 'dtile')).join('')}</div>
+
+        ${eatList.length ? `<h4>🍽️ ${t('guide.eat')}</h4>
+        <p class="rating-summary"></p>
+        <div class="picks ptiles cards">${eatList.map((p) => { const photo = PM.eat[slug(p.n)] || (FX.eatDish[p.n] && PM.dish[FX.eatDish[p.n]]) || null; const q = p.n + ' ' + city; return `
+          <div class="ptile card rated ${photo ? 'has-photo' : ''}" data-q="${esc(q)}">
+            ${photo ? `<img src="${esc(photo.src)}" alt="${esc(p.n)}" loading="lazy">${creditHTML(photo)}` : '<span class="ptile-emoji">🍽️</span>'}
+            <div class="ptile-txt"><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(FX.eat[p.n] || p.why)}</p>
+              <div class="pick-links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(q)}">${t('guide.maps')} ↗</a><a target="_blank" rel="noopener" href="https://www.zomato.com/search?q=${encodeURIComponent(p.n)}">Zomato ↗</a></div>
             </div>
-            <h4 style="margin-top:20px">🧭 ${t('guide.around')}</h4>
-            <p style="color:var(--ink-2);font-size:.93rem">${esc(d.area)}</p>
-            <div class="ops">${(window.GUIDE?.ops[d.id] || []).map((o) => `
-              <a class="op" target="_blank" rel="noopener" href="${esc(o.url)}"><span class="op-kind">${({ cab: '🚕', car: '🚗', bus: '🚌', boat: '⛵', train: '🚆', activity: '🎟️' })[o.kind] || '🔗'}</span><div><b>${esc(o.n)} ↗</b><small>${esc(o.why)}</small></div></a>`).join('')}</div>
-          </div>
+          </div>`; }).join('')}</div>` : ''}
+
+        <h4>🛏️ ${t('guide.picks')}</h4>
+        <p class="picks-note">${t('guide.picksNote')}</p>
+        <p class="rating-summary"></p>
+        <div class="picks ptiles cards">${picks.map((p) => { const photo = PM.hotel[slug(p.n)] || null; const q = p.n + ' ' + city; return `
+          <div class="ptile card rated tier-band-${p.tier} ${photo ? 'has-photo' : ''}" data-q="${esc(q)}">
+            ${photo ? `<img src="${esc(photo.src)}" alt="${esc(p.n)}" loading="lazy">${creditHTML(photo)}` : '<span class="ptile-emoji">🏨</span>'}
+            <span class="tier tier-${p.tier}">${t('tier.' + p.tier)}</span>
+            <div class="ptile-txt"><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(FX.hotel[p.n] || p.why)}</p>
+              <div class="pick-links"><a class="primary" target="_blank" rel="noopener" href="${window.hotelUrl ? window.hotelUrl(p.n, city) : '#'}">${t('guide.hotelLink')} ↗</a><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(q)}&dest_type=hotel">Booking.com ↗</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(q)}">${t('guide.maps')} ↗</a></div>
+            </div>
+          </div>`; }).join('')}</div>
+        <div class="chip-row">
+          <a class="chip" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city + ', India')}">${t('guide.allHotels')} ↗</a>
+          <a class="chip warm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(d.name + ' India')}">${t('guide.maps')} ↗</a>
         </div>
+
+        <details class="more-text"><summary>📖 ${t('modal.story')}</summary><p class="intro">${esc(d.intro)}</p></details>
+        <details class="more-text"><summary>🧭 ${t('guide.around')}</summary>
+          <p style="color:var(--ink-2);font-size:.93rem">${esc(d.area)}</p>
+          <div class="ops">${((window.GUIDE && window.GUIDE.ops[d.id]) || []).map((o) => `
+            <a class="op" target="_blank" rel="noopener" href="${esc(o.url)}"><span class="op-kind">${({ cab: '🚕', car: '🚗', bus: '🚌', boat: '⛵', train: '🚆', activity: '🎟️' })[o.kind] || '🔗'}</span><div><b>${esc(o.n)} ↗</b><small>${esc(o.why)}</small></div></a>`).join('')}</div>
+        </details>
       </div>`;
+    const track = $('#galTrack', modal);
+    if (track) {
+      const dots = $$('.gal-dots i', modal);
+      const go = (dir) => track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' });
+      $('.gal-btn.prev', modal)?.addEventListener('click', () => go(-1));
+      $('.gal-btn.next', modal)?.addEventListener('click', () => go(1));
+      track.addEventListener('scroll', () => { const i = Math.round(track.scrollLeft / track.clientWidth); dots.forEach((x, k) => x.classList.toggle('on', k === i)); }, { passive: true });
+    }
     modal.classList.add('open'); document.body.style.overflow = 'hidden';
     $('.close', modal).addEventListener('click', closeModal);
     dispatchEvent(new CustomEvent('destopened', { detail: d.id }));
