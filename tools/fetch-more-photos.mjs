@@ -46,6 +46,20 @@ const EAT_QUERIES = {
   'Peter Cat': 'Peter Cat Kolkata', 'Nizam\'s': 'Nizam\'s Kolkata', 'Leopold Cafe': 'Leopold Cafe', 'Murugan Idli Shop': 'Murugan Idli Shop',
 };
 
+/* Reviewed by hand: matches that were wrong (a park instead of The Park, a palace in Australia…). Never fetched again. */
+const BLOCK = {
+  hotel: ['the-lodhi', 'taj-mahal-new-delhi', 'the-park-kolkata', 'the-park-bangalore', 'vythiri-resort', 'wayanad-wild-cgh-earth', 'barefoot-at-havelock', 'heritage-madurai', 'courtyard-by-marriott-madurai', 'le-dupleix', 'taj-ganges', 'the-oberoi-mumbai', 'taj-hotel-and-convention-centre-agra', 'trident-jaipur', 'the-himalayan', 'norwood-green', 'vivanta-aurangabad', 'mayfair-spa-resort-and-casino', 'jagat-niwas-palace', 'fort-house-hotel'],
+  eat: ['karim-s', 'nizam-s'],
+  dish: ['malabar-biryani', 'karimeen'],
+};
+/* Commons search queries for dishes whose Wikipedia lead image is unusable */
+const DISH_QUERIES = {
+  'lassi': 'Lassi glass', 'jigarthanda': 'Jigarthanda Madurai', 'pandi-curry': 'Pandi curry Coorg pork', 'benne-dosa': 'Benne dosa', 'fish-thali': 'Goan fish thali curry rice', 'kerala-fish-curry': 'Kerala fish curry',
+  'litti-chokha': 'Litti chokha', 'bun-maska': 'Bun maska', 'parsi': 'Berry pulao', 'tandoori': 'Tandoori chicken', 'butter-chicken': 'Butter chicken', 'petha': 'Agra petha sweet', 'bengali-thali': 'Bengali thali',
+  'laal-maas': 'Laal maas', 'ker-sangri': 'Ker sangri', 'rajasthani-thali': 'Rajasthani thali', 'malpua': 'Malpua', 'kulfi': 'Kulfi', 'dham': 'Himachali dham', 'siddu': 'Siddu Himachal', 'tongba': 'Tongba',
+  'khar': 'Assamese khar', 'jadoh': 'Jadoh Khasi', 'dalma': 'Dalma Odia', 'malaiyo': 'Malaiyo Varanasi', 'masala-chai': 'Masala chai', 'karimeen': 'Karimeen pollichathu', 'malabar-biryani': 'Thalassery biryani', 'chocolate': 'Kodaikanal homemade chocolate',
+};
+
 const OK_LICENSE = /^(cc0|cc[ -]by([ -]sa)?([ -][0-9.]+)?|pd|public domain)/i;
 const BAD_ANY = /\b(map|logo|diagram|plan|chart|stamp|coin|banknote|drawing|sketch|painting|poster|flag|coat of arms|collage|montage|selfie|portrait|wedding|satellite|miniature|replica)\b|\.svg$|\.png$|\.gif$/i;
 const BAD_PLACE = /\b(interior|inside|hotel|restaurant|cafe|menu|room|bedroom|crowd|people|butterfly|moth|bird|egret|flower|hibiscus|seed|bulb|leaf|insect|spider|frog|snake|lizard|fungus|mushroom|macro|closeup|close-up|panorama)\b|\b(18|19)\d\d\b/i;
@@ -103,6 +117,11 @@ function relevant(c, name, city) {
   const cityOk = !city || tokens(city).some((w) => hay.includes(w)) || hay.includes('india');
   return toks.some((w) => hay.includes(w)) && cityOk;
 }
+function relevantDish(c, label) {
+  const hay = `${c.title} ${c.desc} ${c.cats}`.toLowerCase();
+  const toks = label.toLowerCase().replace(/\(.*?\)/g, ' ').split(/[^a-z]+/).filter((w) => w.length >= 4 && !['food', 'with', 'style', 'yes'].includes(w));
+  return toks.length > 0 && hay.includes(toks[0]) && toks.filter((w) => hay.includes(w)).length * 2 >= toks.length;
+}
 const best = (list) => list.sort((a, b) => (b.quality - a.quality) || (b.year - a.year) || (b.width - a.width))[0];
 async function download(url, file) {
   const r = await fetch(url, { headers: { 'User-Agent': UA } });
@@ -121,11 +140,13 @@ for (const d of ['img/g', 'img/h', 'img/r', 'img/d']) await mkdir(d, { recursive
 let credits = {};
 try { credits = JSON.parse(await readFile('img/credits.json', 'utf8')); } catch { /* none yet */ }
 const more = credits._more || (credits._more = { gallery: {}, hotel: {}, eat: {}, dish: {} });
+for (const kind of ['hotel', 'eat', 'dish']) for (const k of BLOCK[kind]) delete more[kind][k];
 
 /* 1. Galleries: lead images of the other Wikipedia articles listed for the destination (tools/fetch-photos.mjs ARTICLES) */
 if (want('gallery')) {
   const src = await readFile('tools/fetch-photos.mjs', 'utf8');
   const ARTICLES = vm.runInNewContext('(' + src.slice(src.indexOf('const ARTICLES = ') + 'const ARTICLES = '.length, src.indexOf('};', src.indexOf('const ARTICLES = ')) + 1) + ')');
+  const QUERIES = vm.runInNewContext('(' + src.slice(src.indexOf('const QUERIES = ') + 'const QUERIES = '.length, src.indexOf('};', src.indexOf('const QUERIES = ')) + 1) + ')');
   for (const d of T.destinations) {
     const id = d.id, have = more.gallery[id] || [];
     if (!force && have.length) { console.log(`= gallery ${id} (kept ${have.length})`); continue; }
@@ -142,6 +163,17 @@ if (want('gallery')) {
       }
       await sleep(200);
     }
+    for (const q of QUERIES[id] || []) {
+      if (out.length >= 3) break;
+      let rec = null;
+      try { rec = best((await commonsSearch(q, { width: 1200, minW: 1000, minAspect: 1.2, bad: BAD_PLACE })).filter((c) => relevant(c, q, '') && !seen.has(c.title.replace(/^File:/, '')))); } catch (e) { console.warn(`  ! ${id}/${q}: ${e.message}`); }
+      if (rec) {
+        seen.add(rec.title.replace(/^File:/, ''));
+        const file = `img/g/${id}-${out.length + 1}.jpg`;
+        try { await download(rec.thumb, file); out.push({ file, caption: q, ...credit(rec, 'commons:' + q) }); } catch (e) { console.warn(`  ! ${id}: ${e.message}`); }
+      }
+      await sleep(250);
+    }
     if (out.length) more.gallery[id] = out;
     console.log(`+ gallery ${id}: ${out.length} photo(s)`);
   }
@@ -154,7 +186,7 @@ if (want('hotels')) {
     for (const p of list) {
       if (p.tier === 'budget') continue;
       const key = slug(p.n);
-      if (!force && more.hotel[key]) { continue; }
+      if (BLOCK.hotel.includes(key) || (!force && more.hotel[key])) continue;
       const opts = { width: 900, minW: 700, minAspect: 1.0 };
       let rec = null, via = '';
       try {
@@ -175,7 +207,7 @@ if (want('eat')) {
   for (const [id, list] of Object.entries(G.eat)) {
     const city = G.searchCity[id] || '';
     for (const p of list) {
-      const key = slug(p.n); const q = EAT_QUERIES[p.n]; if (!q) continue;
+      const key = slug(p.n); const q = EAT_QUERIES[p.n]; if (!q || BLOCK.eat.includes(key)) continue;
       if (!force && more.eat[key]) continue;
       let rec = null;
       try { rec = best((await commonsSearch(q, { width: 900, minW: 600, minAspect: 0.9 })).filter((c) => relevant(c, p.n, city))); } catch (e) { console.warn(`  ! eat ${p.n}: ${e.message}`); }
@@ -190,12 +222,16 @@ if (want('eat')) {
 /* 4. Dishes: lead image of the dish's Wikipedia article */
 if (want('dishes')) {
   for (const [key, d] of Object.entries(F.dish)) {
-    if (!force && more.dish[key]) continue;
+    if (BLOCK.dish.includes(key) || (!force && more.dish[key])) continue;
     let rec = null, via = '';
-    for (const art of d.art) {
+    for (const art of BLOCK.dish.includes(key) ? [] : d.art) {
       try { rec = await leadImage(art, { width: 900, minW: 500, minAspect: 0.8, minYear: 0 }); } catch (e) { console.warn(`  ! dish ${key}/${art}: ${e.message}`); }
       if (rec) { via = 'wikipedia:' + art; break; }
       await sleep(150);
+    }
+    if (!rec) {
+      const q = DISH_QUERIES[key] || d.n;
+      try { rec = best((await commonsSearch(`${q} food`, { width: 900, minW: 500, minAspect: 0.8, minYear: 0 })).filter((c) => relevantDish(c, q))); via = 'commons:' + q; } catch (e) { console.warn(`  ! dish ${key}: ${e.message}`); }
     }
     if (!rec) { console.log(`x dish ${key}`); continue; }
     const file = `img/d/${key}.jpg`;

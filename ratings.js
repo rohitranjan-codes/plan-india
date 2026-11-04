@@ -52,10 +52,7 @@
     const f = filter();
     const t = (window.APP && window.APP.t) || ((k) => k);
     if (!rows.length) return;
-    if (!endpoint()) {
-      if (summary) summary.innerHTML = `<span class="rs-off">${t('rating.off').replace('{min}', f.min.toFixed(1)).replace('{count}', f.minCount)}</span>`;
-      return;
-    }
+    if (!endpoint()) { if (summary) summary.innerHTML = ''; return; }
     if (summary) summary.innerHTML = `<span class="rs-loading">${t('rating.loading')}</span>`;
     let map;
     try { map = await get(rows.map((r) => r.dataset.q)); }

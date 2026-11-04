@@ -241,8 +241,8 @@
 
         ${eatList.length ? `<h4>🍽️ ${t('guide.eat')}</h4>
         <p class="rating-summary"></p>
-        <div class="picks ptiles cards">${eatList.map((p) => { const photo = PM.eat[slug(p.n)] || (FX.eatDish[p.n] && PM.dish[FX.eatDish[p.n]]) || null; const q = p.n + ' ' + city; return `
-          <div class="ptile card rated ${photo ? 'has-photo' : ''}" data-q="${esc(q)}">
+        <div class="picks ptiles pcards">${eatList.map((p) => { const photo = PM.eat[slug(p.n)] || (FX.eatDish[p.n] && PM.dish[FX.eatDish[p.n]]) || null; const q = p.n + ' ' + city; return `
+          <div class="ptile pcard rated ${photo ? 'has-photo' : ''}" data-q="${esc(q)}">
             ${photo ? `<img src="${esc(photo.src)}" alt="${esc(p.n)}" loading="lazy">${creditHTML(photo)}` : '<span class="ptile-emoji">🍽️</span>'}
             <div class="ptile-txt"><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(FX.eat[p.n] || p.why)}</p>
               <div class="pick-links"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(q)}">${t('guide.maps')} ↗</a><a target="_blank" rel="noopener" href="https://www.zomato.com/search?q=${encodeURIComponent(p.n)}">Zomato ↗</a></div>
@@ -252,8 +252,8 @@
         <h4>🛏️ ${t('guide.picks')}</h4>
         <p class="picks-note">${t('guide.picksNote')}</p>
         <p class="rating-summary"></p>
-        <div class="picks ptiles cards">${picks.map((p) => { const photo = PM.hotel[slug(p.n)] || null; const q = p.n + ' ' + city; return `
-          <div class="ptile card rated tier-band-${p.tier} ${photo ? 'has-photo' : ''}" data-q="${esc(q)}">
+        <div class="picks ptiles pcards">${picks.map((p) => { const photo = PM.hotel[slug(p.n)] || null; const q = p.n + ' ' + city; return `
+          <div class="ptile pcard rated tier-band-${p.tier} ${photo ? 'has-photo' : ''}" data-q="${esc(q)}">
             ${photo ? `<img src="${esc(photo.src)}" alt="${esc(p.n)}" loading="lazy">${creditHTML(photo)}` : '<span class="ptile-emoji">🏨</span>'}
             <span class="tier tier-${p.tier}">${t('tier.' + p.tier)}</span>
             <div class="ptile-txt"><b>${esc(p.n)}</b><small>${esc(p.area)}</small><p>${esc(FX.hotel[p.n] || p.why)}</p>

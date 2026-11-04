@@ -569,18 +569,6 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:The_bar_at_1911_restaurant,_Imperial_Hotel,_New_Delhi.jpg"
   },
-  "the-lodhi": {
-   "src": "img/h/the-lodhi.jpg",
-   "author": "Varun Shiv Kapur from New Delhi, India",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Gol_Gumbad_(3545160603).jpg"
-  },
-  "taj-mahal-new-delhi": {
-   "src": "img/h/taj-mahal-new-delhi.jpg",
-   "author": "Press Information Department",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Indian_External_Affairs_Minister_S_Jaishankar_and_Prime_Minister_Sheikh_Hasina_meeting_at_Hotel_Taj_Mahal_New_Delhi_2019-10-05_(PID-0036697).jpg"
-  },
   "itc-grand-chola": {
    "src": "img/h/itc-grand-chola.jpg",
    "author": "Destination8infinity",
@@ -605,23 +593,11 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Belvadere_Road_%27Taj_Bengal%27_(1).jpg"
   },
-  "the-park-kolkata": {
-   "src": "img/h/the-park-kolkata.jpg",
-   "author": "Indrajit Das",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:DurgaPuja2018_-_Pandal_of_Jagat_Mukherjee_Park_in_Kolkata_13.jpg"
-  },
   "taj-west-end": {
    "src": "img/h/taj-west-end.jpg",
    "author": "Thejeshgn",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Taj_West_End_Bangalore_(17495).jpg"
-  },
-  "the-park-bangalore": {
-   "src": "img/h/the-park-bangalore.jpg",
-   "author": "Gpkp",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:BBMP_Step_Hill_Garden_Park_(Sir_M._Visvesvaraya_park),_Bangalore_(2026).jpg"
   },
   "brunton-boatyard-cgh-earth": {
    "src": "img/h/brunton-boatyard-cgh-earth.jpg",
@@ -634,12 +610,6 @@ window.PHOTOS_MORE = {
    "author": "ArchKarl",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:I_Old_harbor_-_front-01_after.jpg"
-  },
-  "fort-house-hotel": {
-   "src": "img/h/fort-house-hotel.jpg",
-   "author": "Anonymous9000",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:2008_06_Fort_Harrison_Hotel.jpg"
   },
   "hampi-s-boulders": {
    "src": "img/h/hampi-s-boulders.jpg",
@@ -671,59 +641,17 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:SwaSwara_Gokarna_image.jpg"
   },
-  "vythiri-resort": {
-   "src": "img/h/vythiri-resort.jpg",
-   "author": "Vengolis",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Kerala_Veterinary_and_Animal_Sciences_University_05918.JPG"
-  },
-  "wayanad-wild-cgh-earth": {
-   "src": "img/h/wayanad-wild-cgh-earth.jpg",
-   "author": "Vengolis",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Wayanadu_93.jpg"
-  },
-  "barefoot-at-havelock": {
-   "src": "img/h/barefoot-at-havelock.jpg",
-   "author": "Ana Raquel S",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Havelock_(Andaman_Islands),_RTW_2012_(8411605228).jpg"
-  },
-  "heritage-madurai": {
-   "src": "img/h/heritage-madurai.jpg",
-   "author": "Perumalism",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Iranyankudiyiruppu_-_Rajakkalmangalam_Sculptures_Site_2.jpg"
-  },
-  "courtyard-by-marriott-madurai": {
-   "src": "img/h/courtyard-by-marriott-madurai.jpg",
-   "author": "Chef raghavan",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Chef_Raghavan.jpg"
-  },
   "palais-de-mah-cgh-earth": {
    "src": "img/h/palais-de-mah-cgh-earth.jpg",
    "author": "Richard Mortel from Riyadh, Saudi Arabia",
    "license": "CC BY 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Hotel_Palais_de_Mahe,_Pondicherry_(2)_(23663252618).jpg"
   },
-  "le-dupleix": {
-   "src": "img/h/le-dupleix.jpg",
-   "author": "Chatsam",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Statue_de_Joseph_Fran%C3%A7ois_Dupleix_Landrecies_3.JPG"
-  },
   "brijrama-palace": {
    "src": "img/h/brijrama-palace.jpg",
    "author": "Dudva",
    "license": "CC0",
    "page": "https://commons.wikimedia.org/wiki/File:Brijrama_Palace,_Varanasi.jpg"
-  },
-  "taj-ganges": {
-   "src": "img/h/taj-ganges.jpg",
-   "author": "Press Information Department",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_(PID-0014015).jpg"
   },
   "ananda-in-the-himalayas": {
    "src": "img/h/ananda-in-the-himalayas.jpg",
@@ -736,18 +664,6 @@ window.PHOTOS_MORE = {
    "author": "Photofinder",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Palace_Hotel_photo.jpg"
-  },
-  "the-oberoi-mumbai": {
-   "src": "img/h/the-oberoi-mumbai.jpg",
-   "author": "Pinakpani",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Marine_Drive_in_Mumbai_08.jpg"
-  },
-  "taj-hotel-and-convention-centre-agra": {
-   "src": "img/h/taj-hotel-and-convention-centre-agra.jpg",
-   "author": "Yann (talk)",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India.jpg"
   },
   "rambagh-palace": {
    "src": "img/h/rambagh-palace.jpg",
@@ -767,12 +683,6 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Samode_Haveli_Jaipur.jpg"
   },
-  "trident-jaipur": {
-   "src": "img/h/trident-jaipur.jpg",
-   "author": "unknown painter in Rajasthani miniature style",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Akbar_and_Tansen_visit_Haridas.jpg"
-  },
   "umaid-bhawan-palace": {
    "src": "img/h/umaid-bhawan-palace.jpg",
    "author": "Dan Lundberg",
@@ -790,12 +700,6 @@ window.PHOTOS_MORE = {
    "author": "Christopher Michel",
    "license": "CC BY 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Rajasthan_(6373261127).jpg"
-  },
-  "jagat-niwas-palace": {
-   "src": "img/h/jagat-niwas-palace.jpg",
-   "author": "Deepank Ranka",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Jag_Niwas_with_Royal_Gangaur_Boat.jpg"
   },
   "pushkar-palace": {
    "src": "img/h/pushkar-palace.jpg",
@@ -815,29 +719,11 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Clarkes_Hotel_Shimla.jpg"
   },
-  "the-himalayan": {
-   "src": "img/h/the-himalayan.jpg",
-   "author": "Rajani Gairshail",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Manali_Bus_Stand_(Himachal_Pradesh).jpg"
-  },
-  "norwood-green": {
-   "src": "img/h/norwood-green.jpg",
-   "author": "Yu Chu Chin",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:The_Parade_at_Norwood,_South_Australia_in_June_2026_(DSCF7814).jpg"
-  },
   "the-lalit-temple-view": {
    "src": "img/h/the-lalit-temple-view.jpg",
    "author": "Dennis G",
    "license": "CC BY-SA 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:India-5566_-_Flickr_-_archer10_(Dennis).jpg"
-  },
-  "vivanta-aurangabad": {
-   "src": "img/h/vivanta-aurangabad.jpg",
-   "author": "Pranaysahu26",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Bibi_Ka_Maqbara_-_The_Taj_Of_Deccan.jpg"
   },
   "lemon-tree-hotel-aurangabad": {
    "src": "img/h/lemon-tree-hotel-aurangabad.jpg",
@@ -863,12 +749,6 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Colonial-Era_Hotel_Elgin_-_Darjeeling_-_West_Bengal_-_India_(12406988513).jpg"
   },
-  "mayfair-spa-resort-and-casino": {
-   "src": "img/h/mayfair-spa-resort-and-casino.jpg",
-   "author": "Sean MacEntee from Monaghan, Ireland",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_Casino_(7980362756).jpg"
-  },
   "ideal-river-view-resort": {
    "src": "img/h/ideal-river-view-resort.jpg",
    "author": "Richard Mortel from Riyadh, Saudi Arabia",
@@ -877,23 +757,11 @@ window.PHOTOS_MORE = {
   }
  },
  "eat": {
-  "karim-s": {
-   "src": "img/r/karim-s.jpg",
-   "author": "Benison P Baby",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Old_Delhi_market,_Jama_Masjid.jpg"
-  },
   "murugan-idli-shop": {
    "src": "img/r/murugan-idli-shop.jpg",
    "author": "Harikrishnan N",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Ghee_Podi_Idli_-_Murugan_Idli_Shop,_Chennai_-_TamilNadu_-_PXL0246.jpg"
-  },
-  "nizam-s": {
-   "src": "img/r/nizam-s.jpg",
-   "author": "Rajashree Talukdar",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Purani_Haveli_-_Nizam_Palace_-_Stairs.jpg"
   },
   "peter-cat": {
    "src": "img/r/peter-cat.jpg",
@@ -1041,12 +909,6 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 2.5",
    "page": "https://commons.wikimedia.org/wiki/File:%E0%B4%AC%E0%B5%80%E0%B4%AB%E0%B5%8D%E0%B4%AB%E0%B5%8D%E0%B4%B0%E0%B5%88.jpg"
   },
-  "karimeen": {
-   "src": "img/d/karimeen.jpg",
-   "author": "Peter Corbett",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Etroplus_suratensis.jpg"
-  },
   "fish-moilee": {
    "src": "img/d/fish-moilee.jpg",
    "author": "Drsoumyadeepb",
@@ -1088,12 +950,6 @@ window.PHOTOS_MORE = {
    "author": "Garrett Ziegler from New York, United States",
    "license": "CC BY 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg"
-  },
-  "malabar-biryani": {
-   "src": "img/d/malabar-biryani.jpg",
-   "author": "Dinner Series, Ashwin Kumar",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Thalassery_Falooda.jpg"
   },
   "haleem": {
    "src": "img/d/haleem.jpg",

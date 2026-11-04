@@ -1061,24 +1061,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:The_bar_at_1911_restaurant,_Imperial_Hotel,_New_Delhi.jpg",
         "via": "commons"
       },
-      "the-lodhi": {
-        "file": "img/h/the-lodhi.jpg",
-        "name": "The Lodhi",
-        "title": "Gol Gumbad (3545160603).jpg",
-        "author": "Varun Shiv Kapur from New Delhi, India",
-        "license": "CC BY 2.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Gol_Gumbad_(3545160603).jpg",
-        "via": "wikipedia:The Lodhi"
-      },
-      "taj-mahal-new-delhi": {
-        "file": "img/h/taj-mahal-new-delhi.jpg",
-        "name": "Taj Mahal, New Delhi",
-        "title": "Indian External Affairs Minister S Jaishankar and Prime Minister Sheikh Hasina meeting at Hotel Taj Mahal New Delhi 2019-10-05 (PID-0036697).jpg",
-        "author": "Press Information Department",
-        "license": "Public domain",
-        "page": "https://commons.wikimedia.org/wiki/File:Indian_External_Affairs_Minister_S_Jaishankar_and_Prime_Minister_Sheikh_Hasina_meeting_at_Hotel_Taj_Mahal_New_Delhi_2019-10-05_(PID-0036697).jpg",
-        "via": "commons"
-      },
       "itc-grand-chola": {
         "file": "img/h/itc-grand-chola.jpg",
         "name": "ITC Grand Chola",
@@ -1115,15 +1097,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:Belvadere_Road_%27Taj_Bengal%27_(1).jpg",
         "via": "wikipedia:Taj Bengal"
       },
-      "the-park-kolkata": {
-        "file": "img/h/the-park-kolkata.jpg",
-        "name": "The Park Kolkata",
-        "title": "DurgaPuja2018 - Pandal of Jagat Mukherjee Park in Kolkata 13.jpg",
-        "author": "Indrajit Das",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:DurgaPuja2018_-_Pandal_of_Jagat_Mukherjee_Park_in_Kolkata_13.jpg",
-        "via": "commons"
-      },
       "taj-west-end": {
         "file": "img/h/taj-west-end.jpg",
         "name": "Taj West End",
@@ -1131,15 +1104,6 @@
         "author": "Thejeshgn",
         "license": "CC BY-SA 4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Taj_West_End_Bangalore_(17495).jpg",
-        "via": "commons"
-      },
-      "the-park-bangalore": {
-        "file": "img/h/the-park-bangalore.jpg",
-        "name": "The Park Bangalore",
-        "title": "BBMP Step Hill Garden Park (Sir M. Visvesvaraya park), Bangalore (2026).jpg",
-        "author": "Gpkp",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:BBMP_Step_Hill_Garden_Park_(Sir_M._Visvesvaraya_park),_Bangalore_(2026).jpg",
         "via": "commons"
       },
       "brunton-boatyard-cgh-earth": {
@@ -1159,15 +1123,6 @@
         "license": "CC BY-SA 4.0",
         "page": "https://commons.wikimedia.org/wiki/File:I_Old_harbor_-_front-01_after.jpg",
         "via": "wikipedia:Old Harbour Hotel"
-      },
-      "fort-house-hotel": {
-        "file": "img/h/fort-house-hotel.jpg",
-        "name": "Fort House Hotel",
-        "title": "2008 06 Fort Harrison Hotel.jpg",
-        "author": "Anonymous9000",
-        "license": "CC BY 2.0",
-        "page": "https://commons.wikimedia.org/wiki/File:2008_06_Fort_Harrison_Hotel.jpg",
-        "via": "wikipedia:Fort Harrison Hotel"
       },
       "hampi-s-boulders": {
         "file": "img/h/hampi-s-boulders.jpg",
@@ -1214,51 +1169,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:SwaSwara_Gokarna_image.jpg",
         "via": "commons"
       },
-      "vythiri-resort": {
-        "file": "img/h/vythiri-resort.jpg",
-        "name": "Vythiri Resort",
-        "title": "Kerala Veterinary and Animal Sciences University 05918.JPG",
-        "author": "Vengolis",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Kerala_Veterinary_and_Animal_Sciences_University_05918.JPG",
-        "via": "wikipedia:Vythiri"
-      },
-      "wayanad-wild-cgh-earth": {
-        "file": "img/h/wayanad-wild-cgh-earth.jpg",
-        "name": "Wayanad Wild (CGH Earth)",
-        "title": "Wayanadu 93.jpg",
-        "author": "Vengolis",
-        "license": "CC BY 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Wayanadu_93.jpg",
-        "via": "commons"
-      },
-      "barefoot-at-havelock": {
-        "file": "img/h/barefoot-at-havelock.jpg",
-        "name": "Barefoot at Havelock",
-        "title": "Havelock (Andaman Islands), RTW 2012 (8411605228).jpg",
-        "author": "Ana Raquel S",
-        "license": "CC BY-SA 2.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Havelock_(Andaman_Islands),_RTW_2012_(8411605228).jpg",
-        "via": "commons"
-      },
-      "heritage-madurai": {
-        "file": "img/h/heritage-madurai.jpg",
-        "name": "Heritage Madurai",
-        "title": "Iranyankudiyiruppu - Rajakkalmangalam Sculptures Site 2.jpg",
-        "author": "Perumalism",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Iranyankudiyiruppu_-_Rajakkalmangalam_Sculptures_Site_2.jpg",
-        "via": "commons"
-      },
-      "courtyard-by-marriott-madurai": {
-        "file": "img/h/courtyard-by-marriott-madurai.jpg",
-        "name": "Courtyard by Marriott Madurai",
-        "title": "Chef Raghavan.jpg",
-        "author": "Chef raghavan",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Chef_Raghavan.jpg",
-        "via": "commons"
-      },
       "palais-de-mah-cgh-earth": {
         "file": "img/h/palais-de-mah-cgh-earth.jpg",
         "name": "Palais de Mahé (CGH Earth)",
@@ -1268,15 +1178,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:Hotel_Palais_de_Mahe,_Pondicherry_(2)_(23663252618).jpg",
         "via": "commons"
       },
-      "le-dupleix": {
-        "file": "img/h/le-dupleix.jpg",
-        "name": "Le Dupleix",
-        "title": "Statue de Joseph François Dupleix Landrecies 3.JPG",
-        "author": "Chatsam",
-        "license": "CC BY-SA 3.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Statue_de_Joseph_Fran%C3%A7ois_Dupleix_Landrecies_3.JPG",
-        "via": "commons"
-      },
       "brijrama-palace": {
         "file": "img/h/brijrama-palace.jpg",
         "name": "BrijRama Palace",
@@ -1284,15 +1185,6 @@
         "author": "Dudva",
         "license": "CC0",
         "page": "https://commons.wikimedia.org/wiki/File:Brijrama_Palace,_Varanasi.jpg",
-        "via": "commons"
-      },
-      "taj-ganges": {
-        "file": "img/h/taj-ganges.jpg",
-        "name": "Taj Ganges",
-        "title": "2023-08-26 K M Khalid speech G-20 Culture Ministers meeting Varanasi Hotel Taj Ganges (PID-0014015).jpg",
-        "author": "Press Information Department",
-        "license": "Public domain",
-        "page": "https://commons.wikimedia.org/wiki/File:2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_(PID-0014015).jpg",
         "via": "commons"
       },
       "ananda-in-the-himalayas": {
@@ -1312,24 +1204,6 @@
         "license": "CC BY-SA 4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Palace_Hotel_photo.jpg",
         "via": "wikipedia:Taj Mahal Palace Hotel"
-      },
-      "the-oberoi-mumbai": {
-        "file": "img/h/the-oberoi-mumbai.jpg",
-        "name": "The Oberoi Mumbai",
-        "title": "Marine Drive in Mumbai 08.jpg",
-        "author": "Pinakpani",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Marine_Drive_in_Mumbai_08.jpg",
-        "via": "commons"
-      },
-      "taj-hotel-and-convention-centre-agra": {
-        "file": "img/h/taj-hotel-and-convention-centre-agra.jpg",
-        "name": "Taj Hotel & Convention Centre Agra",
-        "title": "Taj Mahal, Agra, India.jpg",
-        "author": "Yann (talk)",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India.jpg",
-        "via": "wikipedia:Agra"
       },
       "rambagh-palace": {
         "file": "img/h/rambagh-palace.jpg",
@@ -1356,15 +1230,6 @@
         "author": "Pcrtravel",
         "license": "CC BY-SA 4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Samode_Haveli_Jaipur.jpg",
-        "via": "commons"
-      },
-      "trident-jaipur": {
-        "file": "img/h/trident-jaipur.jpg",
-        "name": "Trident Jaipur",
-        "title": "Akbar and Tansen visit Haridas.jpg",
-        "author": "unknown painter in Rajasthani miniature style",
-        "license": "Public domain",
-        "page": "https://commons.wikimedia.org/wiki/File:Akbar_and_Tansen_visit_Haridas.jpg",
         "via": "commons"
       },
       "umaid-bhawan-palace": {
@@ -1394,15 +1259,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:Rajasthan_(6373261127).jpg",
         "via": "wikipedia:The Oberoi Udaivilas"
       },
-      "jagat-niwas-palace": {
-        "file": "img/h/jagat-niwas-palace.jpg",
-        "name": "Jagat Niwas Palace",
-        "title": "Jag Niwas with Royal Gangaur Boat.jpg",
-        "author": "Deepank Ranka",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Jag_Niwas_with_Royal_Gangaur_Boat.jpg",
-        "via": "commons"
-      },
       "pushkar-palace": {
         "file": "img/h/pushkar-palace.jpg",
         "name": "Pushkar Palace",
@@ -1430,24 +1286,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:Clarkes_Hotel_Shimla.jpg",
         "via": "commons"
       },
-      "the-himalayan": {
-        "file": "img/h/the-himalayan.jpg",
-        "name": "The Himalayan",
-        "title": "Manali Bus Stand (Himachal Pradesh).jpg",
-        "author": "Rajani Gairshail",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Manali_Bus_Stand_(Himachal_Pradesh).jpg",
-        "via": "commons"
-      },
-      "norwood-green": {
-        "file": "img/h/norwood-green.jpg",
-        "name": "Norwood Green",
-        "title": "The Parade at Norwood, South Australia in June 2026 (DSCF7814).jpg",
-        "author": "Yu Chu Chin",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:The_Parade_at_Norwood,_South_Australia_in_June_2026_(DSCF7814).jpg",
-        "via": "wikipedia:Norwood, South Australia"
-      },
       "the-lalit-temple-view": {
         "file": "img/h/the-lalit-temple-view.jpg",
         "name": "The Lalit Temple View",
@@ -1456,15 +1294,6 @@
         "license": "CC BY-SA 2.0",
         "page": "https://commons.wikimedia.org/wiki/File:India-5566_-_Flickr_-_archer10_(Dennis).jpg",
         "via": "commons"
-      },
-      "vivanta-aurangabad": {
-        "file": "img/h/vivanta-aurangabad.jpg",
-        "name": "Vivanta Aurangabad",
-        "title": "Bibi Ka Maqbara - The Taj Of Deccan.jpg",
-        "author": "Pranaysahu26",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Bibi_Ka_Maqbara_-_The_Taj_Of_Deccan.jpg",
-        "via": "wikipedia:Aurangabad"
       },
       "lemon-tree-hotel-aurangabad": {
         "file": "img/h/lemon-tree-hotel-aurangabad.jpg",
@@ -1502,15 +1331,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:Colonial-Era_Hotel_Elgin_-_Darjeeling_-_West_Bengal_-_India_(12406988513).jpg",
         "via": "wikipedia:The Elgin, Darjeeling"
       },
-      "mayfair-spa-resort-and-casino": {
-        "file": "img/h/mayfair-spa-resort-and-casino.jpg",
-        "name": "Mayfair Spa Resort & Casino",
-        "title": "Caesars Palace Casino (7980362756).jpg",
-        "author": "Sean MacEntee from Monaghan, Ireland",
-        "license": "CC BY 2.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_Casino_(7980362756).jpg",
-        "via": "wikipedia:Casino"
-      },
       "ideal-river-view-resort": {
         "file": "img/h/ideal-river-view-resort.jpg",
         "name": "Ideal River View Resort",
@@ -1522,15 +1342,6 @@
       }
     },
     "eat": {
-      "karim-s": {
-        "file": "img/r/karim-s.jpg",
-        "name": "Karim's",
-        "title": "Old Delhi market, Jama Masjid.jpg",
-        "author": "Benison P Baby",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Old_Delhi_market,_Jama_Masjid.jpg",
-        "via": "commons"
-      },
       "murugan-idli-shop": {
         "file": "img/r/murugan-idli-shop.jpg",
         "name": "Murugan Idli Shop",
@@ -1538,15 +1349,6 @@
         "author": "Harikrishnan N",
         "license": "CC BY-SA 4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Ghee_Podi_Idli_-_Murugan_Idli_Shop,_Chennai_-_TamilNadu_-_PXL0246.jpg",
-        "via": "commons"
-      },
-      "nizam-s": {
-        "file": "img/r/nizam-s.jpg",
-        "name": "Nizam's",
-        "title": "Purani Haveli - Nizam Palace - Stairs.jpg",
-        "author": "Rajashree Talukdar",
-        "license": "CC BY-SA 4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Purani_Haveli_-_Nizam_Palace_-_Stairs.jpg",
         "via": "commons"
       },
       "peter-cat": {
@@ -1767,15 +1569,6 @@
         "page": "https://commons.wikimedia.org/wiki/File:%E0%B4%AC%E0%B5%80%E0%B4%AB%E0%B5%8D%E0%B4%AB%E0%B5%8D%E0%B4%B0%E0%B5%88.jpg",
         "via": "wikipedia:Kerala beef fry"
       },
-      "karimeen": {
-        "file": "img/d/karimeen.jpg",
-        "name": "Karimeen pollichathu",
-        "title": "Etroplus suratensis.jpg",
-        "author": "Peter Corbett",
-        "license": "CC BY 2.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Etroplus_suratensis.jpg",
-        "via": "wikipedia:Green chromide"
-      },
       "fish-moilee": {
         "file": "img/d/fish-moilee.jpg",
         "name": "Fish moilee",
@@ -1838,15 +1631,6 @@
         "license": "CC BY 2.0",
         "page": "https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg",
         "via": "wikipedia:Hyderabadi biryani"
-      },
-      "malabar-biryani": {
-        "file": "img/d/malabar-biryani.jpg",
-        "name": "Malabar biryani",
-        "title": "Thalassery Falooda.jpg",
-        "author": "Dinner Series, Ashwin Kumar",
-        "license": "CC BY-SA 2.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Thalassery_Falooda.jpg",
-        "via": "wikipedia:Thalassery biryani"
       },
       "haleem": {
         "file": "img/d/haleem.jpg",
