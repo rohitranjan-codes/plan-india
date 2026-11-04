@@ -207,14 +207,17 @@
     poolType = type;
     $$('.filter', $('#poolFilters')).forEach((b) => b.classList.toggle('active', b.dataset.type === type));
     const gd = gwDest();
-    $('#builderPool').innerHTML = T.destinations.filter((d) => type === 'all' || d.type === type).map((d) => { const l = d.id !== gd.id && window.GEO ? window.GEO.leg(gd, d, A.state.style, A.state.people) : null; return `<button class="pool-chip" draggable="true" data-id="${d.id}" style="--c:${TYPE_COLORS[d.type]}"><span>${d.emoji}</span><b>${esc(d.name)} ${A.monthBadge ? A.monthBadge(d) : ''}</b><small>${l ? `${window.GEO.MODE_ICON[l.mode]} ${l.hours} h ${t('desk.from')} ${esc(gd.name)}` : (A.LANG.cur === 'de' ? 'Euer Gateway' : 'Your gateway')}</small></button>`; }).join('');
+    const mr = A.monthRating || (() => 2), fits = A.fits || (() => true), showAll = A.showAll ? A.showAll() : false;
+    const base = T.destinations.filter((d) => type === 'all' || d.type === type);
+    const hidEl = $('#poolHidden'); if (hidEl) hidEl.innerHTML = A.hiddenNote ? A.hiddenNote(base.length - base.filter(fits).length) : '';
+    $('#builderPool').innerHTML = base.filter((d) => showAll || fits(d)).sort((a, b) => mr(b) - mr(a)).map((d) => { const l = d.id !== gd.id && window.GEO ? window.GEO.leg(gd, d, A.state.style, A.state.people) : null; return `<button class="pool-chip" draggable="true" data-id="${d.id}" style="--c:${TYPE_COLORS[d.type]}"><span>${d.emoji}</span><b>${esc(d.name)} ${A.monthBadge ? A.monthBadge(d) : ''}</b><small>${l ? `${window.GEO.MODE_ICON[l.mode]} ${l.hours} h ${t('desk.from')} ${esc(gd.name)}` : (A.LANG.cur === 'de' ? 'Euer Gateway' : 'Your gateway')}</small></button>`; }).join('');
   }
   let poolType = 'all';
   $('#poolFilters').innerHTML = ['all', ...Object.keys(TYPE_COLORS)].map((k) => `<button class="filter small" data-type="${k}">${k === 'all' ? '🧭' : A.TYPES[k].icon}</button>`).join('');
   $('#poolFilters').addEventListener('click', (e) => { const b = e.target.closest('.filter'); if (b) renderPool(b.dataset.type); });
   $('#builderPool').addEventListener('click', (e) => { const b = e.target.closest('.pool-chip'); if (b) { addStop(b.dataset.id); b.classList.add('added'); setTimeout(() => b.classList.remove('added'), 500); } });
   $('#builderPool').addEventListener('dragstart', (e) => { const b = e.target.closest('.pool-chip'); if (b) { e.dataTransfer.setData('text/plain', 'add:' + b.dataset.id); e.dataTransfer.effectAllowed = 'copy'; } });
-  const renderPresets = () => { $('#builderPresets').innerHTML = (A.routesFor ? A.routesFor() : T.routes).filter((r) => PRESETS[r.id]).map((r) => `<button class="tab small" data-preset="${r.id}">${r.emoji} ${esc(r.name)}</button>`).join(''); };
+  const renderPresets = () => { const ok = (r) => !A.fits || PRESETS[r.id].every(([id]) => A.fits(byId(id))); $('#builderPresets').innerHTML = (A.routesFor ? A.routesFor() : T.routes).filter((r) => PRESETS[r.id] && ok(r)).map((r) => `<button class="tab small" data-preset="${r.id}">${r.emoji} ${esc(r.name)}</button>`).join(''); };
   renderPresets();
   $('#builderPresets').addEventListener('click', (e) => { const b = e.target.closest('[data-preset]'); if (b) { plan = PRESETS[b.dataset.preset].map(([id, nights]) => ({ id, nights })); renderBuilder(); savePlan(); } });
 
@@ -404,6 +407,7 @@
   deskEl.addEventListener('change', (e) => { const row = e.target.closest('.desk-row'); if (!row) return; deskEl.dataset.touched = '1'; e.target.checked ? deskDone.add(row.dataset.key) : deskDone.delete(row.dataset.key); store.set('deskDone', [...deskDone]); renderDesk(); });
   renderDesk(); prefetchDeskRatings();
   on('eventsready', () => { renderBuilder(); renderDesk(); renderDates(); });
+  on('showallchange', () => renderPool());
   on('planchange', () => { renderDesk(); prefetchDeskRatings(); }); on('costchange', renderDesk); on('langchange', renderDesk);
   dateEl.addEventListener('change', renderDesk);
 

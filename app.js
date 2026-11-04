@@ -35,7 +35,7 @@
   /* ---------- Shared trip state (settings.js extends it) ---------- */
   const M = T.costModel;
   window.HAD_SAVED_SETTINGS = !!store.get('cost', null);
-  const state = Object.assign({ people: 4, days: 10, style: 'comfort', origin: 'FRA', country: 'DE', gateway: 'BLR', gateway2: '', month: 11, route: 'goa', currency: 'EUR', showInr: false }, store.get('cost', {}));
+  const state = Object.assign({ people: 4, days: 10, style: 'comfort', origin: 'FRA', country: 'DE', gateway: 'BLR', gateway2: '', month: 11, safety: 3, route: 'goa', currency: 'EUR', showInr: false }, store.get('cost', {}));
   if (!M.styles[state.style]) state.style = 'comfort';
   if (({ fra: 'FRA', zrh: 'ZRH', other: 'FRA' })[state.origin]) state.origin = ({ fra: 'FRA', zrh: 'ZRH', other: 'FRA' })[state.origin];
   if (!(window.EUROPE && window.EUROPE.currencies[state.currency])) state.currency = 'EUR';
@@ -167,12 +167,23 @@
   regionFilters.addEventListener('click', (e) => { const b = e.target.closest('.filter'); if (b) { destRegion = b.dataset.region; store.set('destRegion', destRegion); renderDests(); } });
   const bestOnly = $('#bestOnly'); bestOnly.checked = !!store.get('bestOnly', false);
   bestOnly.addEventListener('change', () => { store.set('bestOnly', bestOnly.checked); renderDests(); });
+  /* Season + safety gate shared by wall, grid and builder */
+  const inSeason = (d) => ((window.APP || {}).monthRating || (() => 2))(d) > 0;
+  const safeEnough = (d) => ((d.safety && d.safety.score) || 4) >= (state.safety || 3);
+  const fits = (d) => inSeason(d) && safeEnough(d);
+  const safetyBadge = (d) => { const s = (d.safety && d.safety.score) || 4; return `<span class="sbadge s${s}" title="${esc(t('safety.label'))}">🛡️ ${s}/5</span>`; };
+  let showAll = false;
+  const hiddenNote = (n) => n ? `${t('hidden.note').replace('{n}', n)} <button type="button" class="show-all-btn">${showAll ? t('hidden.hide') : t('hidden.show')}</button>` : '';
+  document.addEventListener('click', (e) => { if (e.target.closest('.show-all-btn')) { showAll = !showAll; dispatchEvent(new CustomEvent('showallchange')); } });
+  const toast = (msg) => { let el = $('#toast'); if (!el) { el = document.createElement('div'); el.id = 'toast'; document.body.appendChild(el); } el.textContent = msg; el.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove('on'), 3200); };
   const legFromGateway = (d) => { const AP = window.APP || {}; const gd = AP.gatewayDest && AP.gatewayDest(); return gd && window.GEO && gd.id !== d.id ? { gd, leg: window.GEO.leg(gd, d, state.style, state.people) } : null; };
   const nightPrice = (d) => M.styles[state.style].hotel * 2 * (d.priceIndex || 1);
   function renderDests(type = destType) {
     destType = type; renderFilters();
     const mr = (window.APP || {}).monthRating || (() => 2);
-    const list = T.destinations.filter((d) => (type === 'all' || d.type === type) && (destRegion === 'all' || d.region === destRegion) && (!bestOnly.checked || mr(d) === 3));
+    const base = T.destinations.filter((d) => (type === 'all' || d.type === type) && (destRegion === 'all' || d.region === destRegion) && (!bestOnly.checked || mr(d) === 3));
+    const list = base.filter((d) => showAll || fits(d)).sort((a, b) => mr(b) - mr(a) || ((b.safety || {}).score || 0) - ((a.safety || {}).score || 0));
+    $('#destHidden').innerHTML = hiddenNote(base.length - base.filter(fits).length);
     grid.innerHTML = list.map((d, i) => { const lg = legFromGateway(d); return `
       <article class="dest" style="--i:${i}" data-id="${d.id}" tabindex="0" role="button" aria-label="Open ${esc(d.name)}">
         ${window.coverHTML(d, `<em class="type-pill">${TYPES[d.type].icon} ${esc(TYPES[d.type].label)}</em>`)}
@@ -182,7 +193,7 @@
           <div class="month-line">${(window.APP || {}).monthBadge ? (window.APP || {}).monthBadge(d) : ''}<span>${(window.APP || {}).monthName ? (window.APP || {}).monthName() : ''}</span></div>
           <div class="meta">
             <span>${lg ? `${window.GEO.MODE_ICON[lg.leg.mode]} ${lg.leg.hours} h · ${fmtNum(lg.leg.cost)} ${t('desk.from')} ${esc(lg.gd.name)}` : '🛫 ' + esc(d.from)}</span>
-            <span>🏥 ${esc(d.comfort.hospital.split('·')[0].trim())} · ${t('comfort.score')} ${d.comfort.score}/5</span>
+            <span>${safetyBadge(d)} · 🏥 ${esc(d.comfort.hospital.split('·')[0].trim())}</span>
             <span><b class="cost">${fmtNum(nightPrice(d))}</b>/night · ${M.styles[state.style].stars} · ${esc(d.nights)}</span>
           </div>
           <span class="more">Explore</span>
@@ -194,6 +205,7 @@
   renderDests();
   addEventListener('langchange', () => renderDests());
   addEventListener('settingschange', () => renderDests());
+  addEventListener('showallchange', () => renderDests());
   const modal = $('#modal');
   function openDest(id) {
     const d = T.destinations.find((x) => x.id === id); if (!d) return;
@@ -228,13 +240,13 @@
         <div class="stat-tiles">
           <div class="stile"><span class="stile-k">${LANG.cur === 'de' ? 'Dieser Monat' : 'This month'}</span><b class="mbadge ${(RM[r] || {}).cls || ''}">${t((RM[r] || {}).k || 'month.good')}</b><div class="month-strip mini">${(d.months || []).map((x, i) => `<span class="r${x} ${AP.month && AP.month() === i + 1 ? 'cur' : ''}"></span>`).join('')}</div></div>
           <div class="stile"><span class="stile-k">${lg ? t('desk.from') + ' ' + esc(lg.gd.name) : t('gw.arrive')}</span><b>${lg ? `${window.GEO.MODE_ICON[lg.leg.mode]} ${lg.leg.hours} h` : '🛬'}</b><small>${lg ? `${esc(lg.leg.label)} · ${fmtNum(lg.leg.cost)} pp` : (LANG.cur === 'de' ? 'Euer Gateway' : 'Your gateway')}</small></div>
-          <div class="stile"><span class="stile-k">${t('comfort.score')}</span><b class="score">${[1, 2, 3, 4, 5].map((n) => `<i class="${n <= d.comfort.score ? 'on' : ''}"></i>`).join('')}</b><small>🏥 ${esc(d.comfort.hospital.split('·')[0].trim())}</small></div>
+          <div class="stile"><span class="stile-k">🛡️ ${t('safety.label')}</span><b class="score safety">${[1, 2, 3, 4, 5].map((n) => `<i class="${n <= ((d.safety || {}).score || 4) ? 'on' : ''}"></i>`).join('')}</b><small>🏥 ${esc(d.comfort.hospital.split('·')[0].trim())} · ${t('comfort.score')} ${d.comfort.score}/5</small></div>
           <div class="stile"><span class="stile-k">${M.styles[state.style].label} · ${M.styles[state.style].stars}</span><b>${fmtNum(nightPrice(d))}</b><small>${LANG.cur === 'de' ? 'pro Nacht' : 'per night'} · 🛏 ${esc(d.nights)}</small></div>
         </div>`; })()}
         <div class="live modal-live" data-wx="${d.id}"></div>
         <h4>✨ ${LANG.cur === 'de' ? 'Erleben' : 'Things to do'}</h4>
         <div class="todo-strip">${d.todo.map((x, i) => `<div class="todo-card" style="--i:${i}"><span>${['🌅', '🏛️', '🛶', '🥾', '🎭', '🛍️', '🍃', '📸'][i % 8]}</span><p>${esc(x)}</p></div>`).join('')}</div>
-        <details class="safety-notes"><summary>🛡️ ${t('comfort.title')}</summary><ul>${d.comfort.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul></details>
+        <details class="safety-notes"><summary>🛡️ ${t('comfort.title')} · ${t('safety.label')} ${(d.safety || {}).score || 4}/5</summary><ul>${d.safety && d.safety.why ? `<li><b>${esc(d.safety.why)}</b></li>` : ''}${d.comfort.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul></details>
 
         <h4>🥘 ${t('modal.dishes')}</h4>
         <div class="ptiles dishes">${dishes.map((x) => tile(x.photo, x.n, '', 'dtile')).join('')}</div>
@@ -397,6 +409,6 @@
   $('#year').textContent = new Date().getFullYear();
   $('#rate').textContent = T.eurToInr;
 
-  window.APP = { $, $$, esc, store, t, LANG, applyLang, TYPES, openDest, closeModal, setRoute, renderRoute, renderTabs, renderDests, calc, syncInputs, state, M, fmtNum, routesFor };
+  window.APP = { $, $$, esc, store, t, LANG, applyLang, TYPES, openDest, closeModal, setRoute, renderRoute, renderTabs, renderDests, calc, syncInputs, state, M, fmtNum, routesFor, toast, inSeason, safeEnough, fits, safetyBadge, hiddenNote, showAll: () => showAll };
   if (LANG.cur === 'de') applyLang();
 })();

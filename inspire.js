@@ -29,19 +29,23 @@
   function render() {
     renderChips();
     const mr = A.monthRating || (() => 2);
-    let list = T.destinations.filter((d) => mood === 'all' || (mood === 'best' ? mr(d) === 3 : d.type === mood));
-    list = seed ? order(list) : list.slice().sort((a, b) => mr(b) - mr(a) || (b.comfort.score - a.comfort.score));
+    const base = T.destinations.filter((d) => mood === 'all' || (mood === 'best' ? mr(d) === 3 : d.type === mood));
+    const fits = A.fits || (() => true), showAll = A.showAll ? A.showAll() : false;
+    let list = base.filter((d) => showAll || fits(d));
+    list = seed ? order(list) : list.slice().sort((a, b) => mr(b) - mr(a) || (((b.safety || {}).score || 0) - ((a.safety || {}).score || 0)) || (b.comfort.score - a.comfort.score));
+    const hid = $('#wallHidden'); if (hid) hid.innerHTML = A.hiddenNote ? A.hiddenNote(base.length - base.filter(fits).length) : '';
     wall.innerHTML = list.map((d, i) => {
       const p = window.photoOf && window.photoOf(d.id);
       const big = i % 7 === 0 || i % 7 === 4;
       return `<figure class="tile ${big ? 'big' : ''}" data-id="${d.id}" style="--i:${i % 12}">
         ${p ? `<img src="${p.src}" alt="${esc(d.name)}" loading="lazy">` : (window.sceneSVG ? window.sceneSVG(d.id, d.type, d.hue) : '')}
         <button class="heart ${wish.has(d.id) ? 'on' : ''}" data-wish="${d.id}" aria-label="Save ${esc(d.name)}">${wish.has(d.id) ? '♥' : '♡'}</button>
-        <figcaption><span class="tile-region">${esc((T.regions || {})[d.region] || d.region)}</span><b>${d.emoji} ${esc(d.name)}</b><small>${esc(d.tag)}</small>${A.monthBadge ? A.monthBadge(d) : ''}</figcaption>
+        <figcaption><span class="tile-region">${esc((T.regions || {})[d.region] || d.region)}</span><b>${d.emoji} ${esc(d.name)}</b><small>${esc(d.tag)}</small>${A.monthBadge ? A.monthBadge(d) : ''} ${A.safetyBadge ? A.safetyBadge(d) : ''}</figcaption>
       </figure>`;
     }).join('');
     renderBar();
   }
+  addEventListener('showallchange', render);
   wall.addEventListener('click', (e) => {
     const h = e.target.closest('.heart');
     if (h) { e.stopPropagation(); toggle(h.dataset.wish); return; }

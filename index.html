@@ -52,6 +52,7 @@
   <div class="container hero-compact">
     <div>
       <span class="eyebrow reveal in"><span class="pulse"></span> <span id="heroEyebrow">Europe → India</span> <a href="#settings" class="not-yours" id="notYours" hidden data-i18n="hero.notYours">Not your airport?</a></span>
+      <p class="gw-suggest" id="gwSuggest" hidden></p>
       <h1 data-i18n="hero.title">Europe to India, <br /><span class="accent">planned properly.</span></h1>
       <p class="lead" data-i18n="hero.lead">Safe, comfortable trips from any European airport to all of India. Pick the places you love — we do the planning.</p>
       <div class="hero-cta">
@@ -72,6 +73,7 @@
       <p data-i18n="inspire.p">Tap a heart on the places that pull you in. We'll turn them into a plan.</p>
     </div>
     <div class="filters wall-chips" id="wallChips"></div>
+      <p class="hidden-note" id="wallHidden"></p>
     <div class="wall" id="wall"></div>
   </div>
 </section>
@@ -216,6 +218,7 @@
       <div class="filters regions" id="regionFilters"></div>
       <label class="best-toggle"><input type="checkbox" id="bestOnly"> <span data-i18n="dest.bestOnly">Best this month</span></label>
       <span id="destCount"></span>
+      <p class="hidden-note" id="destHidden"></p>
     </div>
     <div class="dest-grid" id="destGrid"></div>
   </div>
@@ -246,6 +249,7 @@
         <h3 data-i18n="builder.pool">Add a stop</h3>
         <div class="pool-filters" id="poolFilters"></div>
         <div class="pool" id="builderPool"></div>
+        <p class="hidden-note small" id="poolHidden"></p>
       </aside>
       <div class="builder-main reveal" data-delay="2">
         <div class="presets"><span data-i18n="builder.presets">Load a template:</span><div id="builderPresets"></div></div>
@@ -407,6 +411,7 @@
 <script src="content.js"></script>
 <script src="guide.js"></script>
 <script src="destinations2.js"></script>
+<script src="safety.js"></script>
 <script src="events.js"></script>
 <script src="europe.js"></script>
 <script src="geo.js"></script>

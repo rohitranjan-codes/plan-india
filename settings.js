@@ -32,10 +32,11 @@
     const g2 = get('g2'); if (g2 && T.gateways.some((x) => x.code === g2)) state.gateway2 = g2;
     const d = get('d'); if (d && /^\d{4}-\d{2}-\d{2}$/.test(d)) store.set('tripDate', d);
     const cur = get('cur'); if (cur && E.currencies[cur]) state.currency = cur;
+    const sf = get('sf'); if (sf && [3, 4, 5].includes(+sf)) state.safety = +sf;
   }
   function writeUrl() {
     const keep = (location.hash.match(/plan=[^&]+/) || [''])[0];
-    const parts = [keep, `o=${state.origin}`, `c=${state.country}`, `g=${state.gateway}`, state.gateway2 && state.gateway2 !== state.gateway ? `g2=${state.gateway2}` : '', `d=${store.get('tripDate', '')}`, `p=${state.people}`, `s=${state.style}`, `cur=${state.currency}`].filter(Boolean);
+    const parts = [keep, `o=${state.origin}`, `c=${state.country}`, `g=${state.gateway}`, state.gateway2 && state.gateway2 !== state.gateway ? `g2=${state.gateway2}` : '', `d=${store.get('tripDate', '')}`, `p=${state.people}`, `s=${state.style}`, `sf=${state.safety || 3}`, `cur=${state.currency}`].filter(Boolean);
     history.replaceState(null, '', '#' + parts.join('&'));
   }
   A.writeUrl = writeUrl;
@@ -59,15 +60,22 @@
       <div class="set"><label>${t('set.date')}</label><input type="date" id="tripDate" min="2026-09-01" max="2028-12-31" value="${esc(store.get('tripDate', '2026-11-07'))}"></div>
       <div class="set"><label>${t('set.people')}</label><select id="setPeople">${Array.from({ length: 12 }, (_, i) => opt(i + 1, i + 1, state.people === i + 1)).join('')}</select></div>
       <div class="set set-wide"><label>${t('set.style')}</label><div class="style-tiles">${Object.entries(A.M.styles).map(([k, v]) => `<button class="style-tile ${state.style === k ? 'active' : ''}" data-v="${k}"><span>${({ comfort: '🏨', premium: '🏩', luxury: '🏰' })[k]}</span><b>${esc(v.label)}</b><small>${esc(v.stars)}</small></button>`).join('')}</div></div>
+      <div class="set"><label>🛡️ ${t('set.safety')}</label><select id="setSafety">${[3, 4, 5].map((v) => opt(v, t('safety.' + v), (state.safety || 3) === v)).join('')}</select></div>
       <div class="set"><label>${t('set.currency')}</label><select id="setCurrency">${Object.keys(E.currencies).map((k) => opt(k, k, state.currency === k)).join('')}</select></div>`;
     $('#setOrigin').addEventListener('change', (e) => { state.origin = e.target.value; state.country = origin().country; state.currency = E.countries[state.country]?.currency || 'EUR'; commit(true); });
     $('#setCountry').addEventListener('change', (e) => { state.country = e.target.value; state.currency = E.countries[state.country]?.currency || state.currency; commit(true); });
-    $('#setGateway').addEventListener('change', (e) => { state.gateway = e.target.value; if (state.gateway2 === state.gateway) state.gateway2 = ''; commit(true, true); });
+    $('#setGateway').addEventListener('change', (e) => { state.gateway = e.target.value; state.gatewayChosen = true; if (state.gateway2 === state.gateway) state.gateway2 = ''; commit(true, true); });
     $('#setGateway2').addEventListener('change', (e) => { state.gateway2 = e.target.value; commit(); });
-    $('#tripDate').addEventListener('change', (e) => { if (e.target.value) { store.set('tripDate', e.target.value); state.month = +e.target.value.slice(5, 7); } commit(); });
+    $('#tripDate').addEventListener('change', (e) => {
+      if (e.target.value) { store.set('tripDate', e.target.value); state.month = +e.target.value.slice(5, 7); }
+      const best = bestGateway();
+      if (!state.gatewayChosen && best !== state.gateway) { state.gateway = best; if (state.gateway2 === best) state.gateway2 = ''; A.toast && A.toast(t('gw.switched').replace('{city}', gw(best).city).replace('{month}', monthName())); commit(true, true); return; }
+      commit();
+    });
     $('#setPeople').addEventListener('change', (e) => { state.people = +e.target.value; commit(); });
     $$('.style-tile', bar).forEach((b) => b.addEventListener('click', () => { state.style = b.dataset.v; commit(true); }));
     $('#setCurrency').addEventListener('change', (e) => { state.currency = e.target.value; commit(); });
+    $('#setSafety').addEventListener('change', (e) => { state.safety = +e.target.value; commit(); });
   }
   function commit(rerenderBar = false, gatewayChanged = false) {
     store.set('cost', state); writeUrl();
@@ -78,6 +86,33 @@
   }
   A.commitSettings = commit;
 
+  /* ---------- Best arrival airport for the month: in-season places near each gateway, nonstop bonus ---------- */
+  function gatewayScores(m = month()) {
+    const o = origin(), fits = A.safeEnough || (() => true), out = {};
+    for (const g of T.gateways) {
+      const gd = byId(g.dest); if (!gd || !window.GEO) continue;
+      let s = 0;
+      for (const d of T.destinations) {
+        if (!fits(d)) continue;
+        const r = monthRating(d, m), w = r === 3 ? 2 : r === 2 ? 1 : r === 0 ? -0.5 : 0;
+        const km = window.GEO.km(gd, d);
+        s += w * (km < 50 ? 1.5 : km < 400 ? 1 : km < 900 ? 0.5 : 0);
+      }
+      if (o.nonstop[g.code]) s *= 1.3;
+      out[g.code] = s;
+    }
+    return out;
+  }
+  /* The best gateway for the month; a different one is suggested only if it beats the current by a clear margin */
+  function bestGateway(m = month(), margin = 0.35) {
+    const sc = gatewayScores(m);
+    const top = Object.keys(sc).sort((a, b) => sc[b] - sc[a])[0];
+    const cur = sc[state.gateway] || 0;
+    return sc[top] > cur * (1 + margin) ? top : state.gateway;
+  }
+  A.bestGateway = bestGateway;
+  document.addEventListener('click', (e) => { const b = e.target.closest('#gwSwitch'); if (!b) return; state.gateway = b.dataset.g; state.gatewayChosen = true; if (state.gateway2 === state.gateway) state.gateway2 = ''; commit(true, true); });
+
   /* ---------- Hero ---------- */
   function renderHero() {
     const o = origin(), g = gateway(), gd = gatewayDest();
@@ -86,6 +121,7 @@
     const best = T.destinations.filter((d) => monthRating(d) === 3).length;
     $('#heroEyebrow').textContent = `${o.city} → ${g.city} · ${monthName()} ${store.get('tripDate', '2026-11-07').slice(0, 4)}`;
     const nya = $('#notYours'); if (nya) nya.hidden = false;
+    const sug = $('#gwSuggest'); if (sug) { const best = bestGateway(); sug.hidden = best === g.code; if (best !== g.code) sug.innerHTML = `💡 ${esc(t('gw.suggest').replace('{month}', monthName()).replace('{city}', gw(best).city))} <button type="button" class="link-btn" id="gwSwitch" data-g="${best}">${esc(t('gw.switch'))} →</button>`; }
     $('#svgOrigin').textContent = o.city.split(' ')[0].toUpperCase();
     $('#svgGateway').textContent = g.city.toUpperCase();
     const nonstop = o.nonstop[g.code];
@@ -128,7 +164,7 @@
       <div class="chip-row"><span class="chip">${A.LANG.cur === 'de' ? 'e-Visum ausgedruckt + Rückflugticket' : 'Printed e-Visa + return ticket'}</span><span class="chip">${A.LANG.cur === 'de' ? 'SIM-Schalter in der Ankunftshalle' : 'SIM counters in arrivals'}</span><span class="chip warm">${A.LANG.cur === 'de' ? 'Hotelabholung vorbestellen' : 'Pre-book the hotel pickup'}</span><span class="chip warm">${esc(gd.comfort.hospital.split('·')[0].trim())}</span></div>
       <p style="color:var(--ink-2);font-size:.95rem">${esc(g.note)} ${esc(gd.area)}</p>`;
     // onward connections from the gateway
-    const legs = T.destinations.filter((d) => d.id !== gd.id).map((d) => ({ d, l: window.GEO.leg(gd, d, state.style, state.people) })).sort((a, b) => a.l.hours - b.l.hours);
+    const legs = T.destinations.filter((d) => d.id !== gd.id && (!A.fits || A.fits(d))).map((d) => ({ d, l: window.GEO.leg(gd, d, state.style, state.people) })).sort((a, b) => (monthRating(b.d) - monthRating(a.d)) || (a.l.hours - b.l.hours));
     $('#onwardTitle').textContent = A.LANG.cur === 'de' ? `Weiterreise ab ${gd.name}` : `Onward from ${gd.name}`;
     $('#onwardStrip').innerHTML = legs.map(({ d, l }, i) => `<button class="onward-tile" data-id="${d.id}" style="--i:${i}">${window.coverHTML(d)}<div class="ot-body"><b>${esc(d.name)}</b><span>${window.GEO.MODE_ICON[l.mode]} ${l.hours} h · ${A.fmtNum(l.cost)} pp</span>${monthBadge(d)}</div></button>`).join('');
   }
@@ -175,7 +211,7 @@
     return { origin: o.code, country: o.country, currency: E.countries[o.country]?.currency || 'EUR', gateway: gw };
   }
   const firstVisit = !window.HAD_SAVED_SETTINGS && !store.get('originChosen', false) && !/[#&](o|g|plan)=/.test(location.hash);
-  if (firstVisit) { const g = guessOrigin(); if (g) Object.assign(state, g); }
+  if (firstVisit) { const g = guessOrigin(); if (g) Object.assign(state, g); state.gateway = bestGateway(); }
   store.set('originChosen', true);
   readUrl();
   if (!store.get('tripDate', null)) store.set('tripDate', '2026-11-07');
