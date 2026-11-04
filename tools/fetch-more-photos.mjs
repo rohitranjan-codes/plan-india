@@ -50,7 +50,7 @@ const EAT_QUERIES = {
 const BLOCK = {
   hotel: ['the-lodhi', 'taj-mahal-new-delhi', 'the-park-kolkata', 'the-park-bangalore', 'vythiri-resort', 'wayanad-wild-cgh-earth', 'barefoot-at-havelock', 'heritage-madurai', 'courtyard-by-marriott-madurai', 'le-dupleix', 'taj-ganges', 'the-oberoi-mumbai', 'taj-hotel-and-convention-centre-agra', 'trident-jaipur', 'the-himalayan', 'norwood-green', 'vivanta-aurangabad', 'mayfair-spa-resort-and-casino', 'jagat-niwas-palace', 'fort-house-hotel'],
   eat: ['karim-s', 'nizam-s'],
-  dish: [],
+  dish: ['malabar-biryani', 'karimeen'],
 };
 /* Commons search queries for dishes whose Wikipedia lead image is unusable */
 const DISH_QUERIES = {

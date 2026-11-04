@@ -1403,18 +1403,6 @@ window.PHOTOS_MORE = {
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg"
   },
-  "karimeen": {
-   "src": "img/d/karimeen.jpg",
-   "author": "Peter Corbett",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Etroplus_suratensis.jpg"
-  },
-  "malabar-biryani": {
-   "src": "img/d/malabar-biryani.jpg",
-   "author": "Dinner Series, Ashwin Kumar",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Thalassery_Falooda.jpg"
-  },
   "laal-maas": {
    "src": "img/d/laal-maas.jpg",
    "author": "Aakash Singh Chauhan",
