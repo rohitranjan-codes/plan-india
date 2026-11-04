@@ -259,3 +259,7 @@ All photos from Wikimedia Commons under the licence shown. Thank you to the phot
 - **Siddu** (dish) — [Traditional Kulluvi Siddu.jpg](https://commons.wikimedia.org/wiki/File:Traditional_Kulluvi_Siddu.jpg) by Rajani Gairshail · CC BY-SA 4.0
 - **Tongba (millet beer)** (dish) — [Tongba at Hot Stimulating Cafe.jpg](https://commons.wikimedia.org/wiki/File:Tongba_at_Hot_Stimulating_Cafe.jpg) by Sumit Surai · CC BY-SA 4.0
 - **Dalma** (dish) — [Odia Dalma.jpg](https://commons.wikimedia.org/wiki/File:Odia_Dalma.jpg) by Raseswari · CC BY-SA 4.0
+- **Karimeen pollichathu** (dish) — [Etroplus suratensis.jpg](https://commons.wikimedia.org/wiki/File:Etroplus_suratensis.jpg) by Peter Corbett · CC BY 2.0
+- **Malabar biryani** (dish) — [Thalassery Falooda.jpg](https://commons.wikimedia.org/wiki/File:Thalassery_Falooda.jpg) by Dinner Series, Ashwin Kumar · CC BY-SA 2.0
+- **Laal maas** (dish) — [Lal Maas.jpg](https://commons.wikimedia.org/wiki/File:Lal_Maas.jpg) by Aakash Singh Chauhan · CC BY-SA 4.0
+- **Jadoh** (dish) — [Jadoh (Meghalaya.JPG](https://commons.wikimedia.org/wiki/File:Jadoh_(Meghalaya.JPG) by Real Sovan · CC BY-SA 4.0
