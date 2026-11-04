@@ -214,7 +214,7 @@
     const FX = window.FACTS || { dest: {}, hotel: {}, eat: {}, dish: {}, dishes: {}, eatDish: {} };
     const slug = (x) => x.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const city = (window.GUIDE && window.GUIDE.searchCity[d.id]) || d.name;
-    const creditHTML = (p) => p && p.author ? `<a class="photo-credit" target="_blank" rel="noopener" href="${esc(p.page || '#')}">📷 ${esc(p.author)} · ${esc(p.license || '')}</a>` : '';
+    const creditHTML = (p) => p && p.author ? `<button type="button" class="photo-credit" data-author="${esc(p.author)}" data-license="${esc(p.license || '')}" data-page="${esc(p.page || '')}" data-caption="${esc(p.caption || '')}">📷 ${esc(p.author)} · ${esc(p.license || '')}</button>` : '';
     const cover = window.photoOf && window.photoOf(d.id);
     const slides = [cover ? { ...cover, caption: d.name } : null, ...(PM.gallery[d.id] || [])].filter(Boolean);
     const galleryHTML = slides.length ? `
@@ -298,6 +298,19 @@
     dispatchEvent(new CustomEvent('destopened', { detail: d.id }));
     if (window.RATINGS) $$('.picks', modal).forEach((box) => window.RATINGS.apply(box.parentElement));
   }
+  /* Photo credit card: stays on the page; licence and source open in a new tab only if tapped */
+  const LICENSE_URL = (l) => { const m = /cc0/i.test(l) ? 'publicdomain/zero/1.0' : (/cc[ -]by[ -]sa/i.test(l) ? 'licenses/by-sa/' : /cc[ -]by/i.test(l) ? 'licenses/by/' : '') + ((l.match(/\d\.\d/) || ['4.0'])[0]); return /public domain|^pd/i.test(l) ? '' : 'https://creativecommons.org/' + m + '/'; };
+  document.addEventListener('click', (e) => {
+    const old = $('#creditPop'); if (old && !e.target.closest('#creditPop')) old.remove();
+    const b = e.target.closest('.photo-credit'); if (!b) return;
+    e.preventDefault(); e.stopPropagation();
+    const lic = b.dataset.license, lu = LICENSE_URL(lic);
+    const pop = document.createElement('div'); pop.id = 'creditPop';
+    pop.innerHTML = `<b>📷 ${LANG.cur === 'de' ? 'Foto' : 'Photo'}${b.dataset.caption ? `: ${esc(b.dataset.caption)}` : ''}</b><span>${LANG.cur === 'de' ? 'von' : 'by'} ${esc(b.dataset.author)}</span><span>${lu ? `<a target="_blank" rel="noopener license" href="${lu}">${esc(lic)} ↗</a>` : esc(lic)} · <a target="_blank" rel="noopener" href="${esc(b.dataset.page)}">Wikimedia Commons ↗</a></span><em>${LANG.cur === 'de' ? 'Frei lizenziert; die Fotografen werden genannt, wie es die Lizenz verlangt.' : 'Freely licensed; the photographer is credited as the licence requires.'}</em>`;
+    const host = b.closest('.cover, .gal-slide, .ptile') || b.parentElement; host.appendChild(pop);
+    const r = b.getBoundingClientRect(), h = host.getBoundingClientRect();
+    pop.style.top = `${r.bottom - h.top + 6}px`; pop.style.right = `${Math.max(6, h.right - r.right)}px`;
+  });
   function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
   grid.addEventListener('click', (e) => { const c = e.target.closest('.dest'); if (c) openDest(c.dataset.id); });
   grid.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { const c = e.target.closest('.dest'); if (c) { e.preventDefault(); openDest(c.dataset.id); } } });

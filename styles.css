@@ -830,3 +830,8 @@ body.has-wish { padding-bottom: 96px; }
 .shared-tag { position: absolute; top: 12px; left: 12px; z-index: 3; padding: 4px 10px; border-radius: 999px; background: var(--accent); color: #fff; font-size: .7rem; font-weight: 900; box-shadow: 0 2px 10px rgba(0, 0, 0, .25); }
 @media (max-width: 760px) { .hero .welcome { display: flex; margin-top: 8px; padding: 8px 10px; } .welcome[hidden] { display: none; } .welcome .wish-thumbs { display: none; } .welcome .btn-ghost { display: none; } }
 .shared-tag { left: auto; right: 58px; }
+
+/* Photo credit card */
+.photo-credit { border: 0; cursor: pointer; font-family: inherit; }
+#creditPop { position: absolute; z-index: 20; width: min(280px, 80vw); padding: 10px 12px; border-radius: 12px; background: var(--card); color: var(--ink); border: 1px solid var(--line); box-shadow: var(--shadow); font-size: .78rem; line-height: 1.4; display: grid; gap: 3px; text-align: left; animation: pop .25s var(--ease); }
+#creditPop b { font-size: .82rem; } #creditPop span { color: var(--ink-2); } #creditPop a { color: var(--accent-2); font-weight: 700; } #creditPop em { font-style: normal; color: var(--muted); font-size: .7rem; margin-top: 2px; }
